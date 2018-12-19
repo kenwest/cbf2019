@@ -13,10 +13,8 @@
 <div class="slider-wrapper" data-autoplay="6000">
   <div class="fullwidth-slider owl-carousel owl-theme">
     <?php foreach ($rows as $id => $row): ?>
-      <div class="<?php print $row_classes[$id]; ?> container">
-        <div class="row">
-          <?php print $row; ?>
-        </div>
+      <div class="<?php print $row_classes[$id]; ?>">
+        <?php print $row; ?>
       </div>
     <?php endforeach; ?>
   </div>

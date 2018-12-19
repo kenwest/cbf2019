@@ -702,22 +702,6 @@
 .view-content .owl-carousel {
   padding: 120px 0;
 }
-.view-content .owl-carousel .views-row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.view-content .owl-carousel .views-field {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 992px) {
-  .view-content .owl-carousel .views-field {
-    float: left;
-    width: 50%;
-  }
-}
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
   font-weight: bold;
