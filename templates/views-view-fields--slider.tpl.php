@@ -34,7 +34,11 @@
         <?php endif; ?>
         <?php print $field->wrapper_prefix; ?>
         <?php print $field->label_html; ?>
-        <?php print $field->content; ?>
+        <?php if (empty($row->__cbf_merge_events)): ?>
+          <?php print $field->content; ?>
+        <?php else: ?>
+          <?php print preg_replace('/href=\"([^"]+)\"/i', 'href="' . $row->__cbf_merge_events . '"', $field->content); ?>
+        <?php endif; ?>
         <?php print $field->wrapper_suffix; ?>
         <?php print $owl_carousel_column_formatting; ?>
         <?php $owl_carousel_column_formatting = ''; ?>
