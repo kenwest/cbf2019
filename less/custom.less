@@ -57,3 +57,15 @@
 .more-link a::after {
   content: "\00BB"; // &raquo;
 }
+
+/*********************************
+ * Fix anomalies which might occur
+ */
+.container .container {
+  /*
+   * Bootstrap containers are not designed to be nested
+   */
+  width: auto;
+  padding-right: initial;
+  padding-left: initial;
+}
