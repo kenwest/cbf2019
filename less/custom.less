@@ -4,22 +4,25 @@
 @import "../../cbootf/bootstrap/less/mixins/grid.less";
 @import "../../cbootf/bootstrap/less/mixins/grid-framework.less";
 
-/*
+/******************************
  * Format the contents of views
  */
 .view-content {
 
   /*
-   * Generic field formatting
+   * Undo the Rhythm settings
    */
   .views-field {
+    /*
+     * Generic field formatting
+     */
     margin-bottom: 1.3em;
   }
 
-  /*
-   * Generic title formatting
-   */
   .views-field-title {
+    /*
+     * Generic title formatting
+     */
     font-family: Dosis, arial, sans-serif;
     font-size: 24px;
     text-transform: uppercase;
@@ -29,11 +32,11 @@
     font-weight: 400;
   }
 
-  /*
-   * An OWL Carousel in a view
-   */
   .owl-carousel {
-    padding: 120px 0;
+    /*
+     * An OWL Carousel in a view
+     */
+    padding:  4*1.3em 0;
 
     .views-field-field-in-activity,
     .views-field-city {
