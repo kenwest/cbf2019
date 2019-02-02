@@ -673,36 +673,71 @@
     margin-left: 0%;
   }
 }
-/*
+/******************************
  * Format the contents of views
  */
+.view-header {
+  /*
+   * Undo the Rhythm settings
+   */
+  margin-bottom: initial;
+  float: none;
+}
 .view-content {
-  /*
-   * Generic field formatting
-   */
-  /*
-   * Generic title formatting
-   */
-  /*
-   * An OWL Carousel in a view
-   */
+  margin-bottom: 2.6em;
 }
 .view-content .views-field {
+  /*
+     * Generic field formatting
+     */
   margin-bottom: 1.3em;
 }
+.view-content .views-field:last-child {
+  margin-bottom: 2.6em;
+}
 .view-content .views-field-title {
+  /*
+     * Generic title formatting
+     */
   font-family: Dosis, arial, sans-serif;
+  font-weight: 400;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 1.3em;
   line-height: 1.4;
+}
+.view-content .views-field-title a {
+  font-family: Dosis, arial, sans-serif;
   font-weight: 400;
 }
 .view-content .owl-carousel {
-  padding: 120px 0;
+  /*
+     * An OWL Carousel in a view
+     */
+  padding: 5.2em 0;
 }
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
   font-weight: bold;
+}
+.bg-gray-view-content .view-content {
+  /*
+     * .bg-gray-view-content applies .bg-gray to .view-content only
+     */
+  background-color: #f4f4f4;
+}
+.more-link a::after {
+  content: "\00BB";
+}
+/*********************************
+ * Fix anomalies which might occur
+ */
+.container .container {
+  /*
+   * Bootstrap containers are not designed to be nested
+   */
+  width: auto;
+  padding-right: initial;
+  padding-left: initial;
 }
