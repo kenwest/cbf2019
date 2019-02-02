@@ -4,6 +4,6 @@
 
 drush vget nikadevs_cms_layout_cbf2019 --format=json > nikadevs_cms_layout_cbf2019.json
 
-#lessc less/style.less > css/style.css
-#yui-compressor css/style.css > css/style.min.css
-#drush -l reaching.city cc css-js
+lessc less/custom.less > css/custom.css
+yui-compressor css/custom.css > css/custom.min.css
+drush cc css-js
