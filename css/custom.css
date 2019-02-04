@@ -726,10 +726,12 @@
   background-color: #f4f4f4;
   padding: 5.2em 0;
 }
-.container-view-content .view-content {
+.container-view-content .view-content > div {
   /*
      * .container-view-content makes enclosed .view-content
-     * into a container
+     * into a container. The container class is applied to
+     * the DIV inside the .view-content so that the
+     * .bg-gray-view-content styling is not .container-ed.
      */
   padding-right: 15px;
   padding-left: 15px;
@@ -737,17 +739,17 @@
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  .container-view-content .view-content {
+  .container-view-content .view-content > div {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container-view-content .view-content {
+  .container-view-content .view-content > div {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container-view-content .view-content {
+  .container-view-content .view-content > div {
     width: 1170px;
   }
 }
@@ -758,7 +760,7 @@
  * Fix anomalies which might occur
  */
 .container .container,
-.container .container-view-content .view-content {
+.container .container-view-content .view-content > div {
   /*
    * Bootstrap containers are not designed to be nested
    */
