@@ -711,6 +711,16 @@
   font-family: Dosis, arial, sans-serif;
   font-weight: 400;
 }
+.view-content .views-field-field-resource-type {
+  /*
+     * Format .views-field-field-resource-type as twice
+     * the standard font size, hence no bottom margin,
+     * and float right.
+     */
+  float: right;
+  margin-bottom: 0;
+  font-size: 28px;
+}
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
   /*
