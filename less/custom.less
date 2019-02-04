@@ -70,6 +70,16 @@
   }
 }
 
+.container-view-content {
+  .view-content {
+    /*
+     * .container-view-content makes enclosed .view-content
+     * into a container
+     */
+    .container;
+  }
+}
+
 .more-link a::after {
   content: "\00BB"; // &raquo;
 }
@@ -77,7 +87,8 @@
 /*********************************
  * Fix anomalies which might occur
  */
-.container .container {
+.container .container,
+.container .container-view-content .view-content {
   /*
    * Bootstrap containers are not designed to be nested
    */

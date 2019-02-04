@@ -711,21 +711,45 @@
   font-family: Dosis, arial, sans-serif;
   font-weight: 400;
 }
-.view-content .owl-carousel {
-  /*
-     * An OWL Carousel in a view
-     */
-  padding: 5.2em 0;
-}
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
+  /*
+       * The In Activity and City fields are bold in an OWL Carousel
+       */
   font-weight: bold;
 }
 .bg-gray-view-content .view-content {
   /*
      * .bg-gray-view-content applies .bg-gray to .view-content only
+     * and adds vertical padding
      */
   background-color: #f4f4f4;
+  padding: 5.2em 0;
+}
+.container-view-content .view-content {
+  /*
+     * .container-view-content makes enclosed .view-content
+     * into a container
+     */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container-view-content .view-content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-view-content .view-content {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-view-content .view-content {
+    width: 1170px;
+  }
 }
 .more-link a::after {
   content: "\00BB";
@@ -733,7 +757,8 @@
 /*********************************
  * Fix anomalies which might occur
  */
-.container .container {
+.container .container,
+.container .container-view-content .view-content {
   /*
    * Bootstrap containers are not designed to be nested
    */
