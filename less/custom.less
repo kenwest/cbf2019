@@ -4,6 +4,72 @@
 @import "../../cbootf/bootstrap/less/mixins/grid.less";
 @import "../../cbootf/bootstrap/less/mixins/grid-framework.less";
 
+/***********************
+ * Format the Navigation
+ */
+.main-nav {
+  .inner-nav {
+    ul.clearlist ul.default-menu {
+      /*
+       * Float the menu to the left of the Search bar
+       */
+      float: left;
+
+      li {
+        /*
+         * Set the menu text at the same level as Search bar text
+         */
+        height: 75px;
+        line-height: 75px;
+        -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      }
+    }
+  }
+}
+
+.main-nav.mobile-on {
+  .inner-nav {
+    ul.clearlist ul.default-menu {
+      /*
+       * Unfloat the menu when the mobile menu is showing
+       */
+      float: none;
+
+      li {
+        /*
+         * Set the menu text at the same level as Search bar text
+         */
+        height: initial;
+        line-height: initial;
+      }
+    }
+  }
+}
+
+.main-nav.small-height {
+  .inner-nav {
+    ul.clearlist ul.default-menu {
+      li {
+        /*
+         * Set the menu text at the same level as Search bar text
+         * when the small-height menu is showing
+         */
+        height: 55px;
+        line-height: 55px;
+        -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      }
+    }
+  }
+}
+
 /******************************
  * Format the contents of views
  */
