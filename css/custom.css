@@ -811,7 +811,7 @@
   }
 }
 .more-link a::after {
-  content: "\00BB";
+  content: "\203A";
 }
 /*********************************
  * Fix anomalies which might occur
