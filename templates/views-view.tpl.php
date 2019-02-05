@@ -36,7 +36,7 @@
 
   <?php if ($header && $more): ?>
     <div class="container">
-      <div class="row">
+      <div class="row view-header-and-more">
         <div class="col-xs-8">
           <div class="view-header h4 align-left font-alt uppercase black bold">
             <?php print $header; ?>
@@ -51,7 +51,7 @@
     </div>
   <?php elseif ($header): ?>
     <div class="container">
-      <div class="row">
+      <div class="row view-header-and-more">
         <div class="col-xs-12">
           <div class="view-header h4 align-left font-alt uppercase black bold">
             <?php print $header; ?>
@@ -61,7 +61,7 @@
     </div>
   <?php elseif ($more): ?>
     <div class="container">
-      <div class="row">
+      <div class="row view-header-and-more">
         <div class="col-xs-12">
           <div class="h4 align-right uppercase">
             <?php print $more; ?>

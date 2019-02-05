@@ -747,6 +747,13 @@ h6,
   margin-bottom: initial;
   float: none;
 }
+.view-header-and-more {
+  /*
+  * Put 140px margin above the .view-header-and-more row
+  * and 60px below to match Janelle's spec.
+  */
+  margin: 140px 0 60px;
+}
 .view-content {
   margin-bottom: 2.6em;
 }
