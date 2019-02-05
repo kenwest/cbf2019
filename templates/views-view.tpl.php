@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="col-xs-4">
-          <div class="h5 align-right uppercase">
+          <div class="h4 align-right uppercase">
             <?php print $more; ?>
           </div>
         </div>
@@ -63,7 +63,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <div class="h5 align-right uppercase">
+          <div class="h4 align-right uppercase">
             <?php print $more; ?>
           </div>
         </div>
