@@ -166,8 +166,39 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 }
 
-.more-link a::after {
-  content: "\203A"; // &rsaquo;
+.more-link {
+  a {
+    /*
+     * Format a ".more-link a" in the same way as a .section-more
+     */
+    margin-top: 7px;
+    color: #999;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    text-decoration: none;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  }
+
+  a::after {
+    content: "\203A"; // &rsaquo;
+  }
+}
+
+.h4 {
+  .more-link a,
+  .section-more {
+    /*
+     * Pad the top of a '.more-link a' and a '.section-more' by 7px
+     * when inside a .h4. This aligns the bottom of the 'more' link
+     * and the h4 next to it (18px h4 - 11px link = 7px)
+     */
+    padding-top: 7px;
+  }
 }
 
 /*********************************

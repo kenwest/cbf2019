@@ -673,6 +673,23 @@
     margin-left: 0%;
   }
 }
+/**********************************************
+ * Overcome Bootstrap formatting of h1, .h1 etc
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 400 !important;
+}
 /***********************
  * Format the Navigation
  */
@@ -810,8 +827,33 @@
     width: 1170px;
   }
 }
+.more-link a {
+  /*
+     * Format a ".more-link a" in the same way as a .section-more
+     */
+  margin-top: 7px;
+  color: #999;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  text-decoration: none;
+  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+}
 .more-link a::after {
   content: "\203A";
+}
+.h4 .more-link a,
+.h4 .section-more {
+  /*
+     * Pad the top of a '.more-link a' and a '.section-more' by 7px
+     * when inside a .h4. This aligns the bottom of the 'more' link
+     * and the h4 next to it (18px h4 - 11px link = 7px)
+     */
+  padding-top: 7px;
 }
 /*********************************
  * Fix anomalies which might occur
