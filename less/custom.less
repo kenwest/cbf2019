@@ -96,6 +96,39 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 140px 0 60px;
 }
 
+.view-filters {
+  /*
+   * Undo the Rhythm defaults for .view-filters
+   */
+  float: none;
+  margin-top: 0;
+
+  /*
+   * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
+   */
+  .views-exposed-form .views-exposed-widget {
+    float: none;
+    padding: 0;
+
+    /*
+     * If using Better Exposed Forms to format filters as links, then use the Bootstrap grid
+     */
+    .bef-select-as-links {
+      .container;
+
+      > .form-item {
+        .make-row();
+
+        > .form-type-bef-link {
+          .make-xs-column(6);
+          .make-sm-column(3);
+          .make-lg-column(1);
+        }
+      }
+    }
+  }
+}
+
 .view-content {
   margin-bottom: 2*1.3em;
 

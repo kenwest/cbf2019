@@ -754,6 +754,68 @@ h6,
   */
   margin: 140px 0 60px;
 }
+.view-filters {
+  /*
+   * Undo the Rhythm defaults for .view-filters
+   */
+  float: none;
+  margin-top: 0;
+  /*
+   * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
+   */
+}
+.view-filters .views-exposed-form .views-exposed-widget {
+  float: none;
+  padding: 0;
+  /*
+     * If using Better Exposed Forms to format filters as links, then use the Bootstrap grid
+     */
+}
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+    width: 1170px;
+  }
+}
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
+    float: left;
+    width: 8.33333333%;
+  }
+}
 .view-content {
   margin-bottom: 2.6em;
 }
