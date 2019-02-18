@@ -124,6 +124,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
           .make-xs-column(6);
           .make-sm-column(3);
           .make-lg-column(1);
+
+          &.form-item-edit-field-office-tid-all {
+            /*
+             * Don't display the All/Any option for the Office taxonomy
+             */
+            display: none;
+          }
         }
       }
     }

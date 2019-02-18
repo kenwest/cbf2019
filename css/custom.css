@@ -817,6 +817,12 @@ h6,
     width: 8.33333333%;
   }
 }
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all {
+  /*
+             * Don't display the All/Any option for the Office taxonomy
+             */
+  display: none;
+}
 .view-content {
   margin-bottom: 2.6em;
 }
