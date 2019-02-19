@@ -760,7 +760,13 @@ h6,
    * Undo the Rhythm defaults for .view-filters
    */
   float: none;
-  margin-top: 0;
+  /* margin-top: 0; Overridden below.*/
+  /*
+   * Undo the margin-bottom of .view-header-and-more using a
+   * margin-top and add another margin-bottom. 
+   */
+  margin-top: -60px;
+  margin-bottom: 60px;
   /*
    * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
    */
@@ -804,6 +810,16 @@ h6,
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  /*
+           * Simulate a h5
+           */
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 1.3em;
+  line-height: 1.4;
 }
 @media (min-width: 768px) {
   .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
@@ -817,11 +833,24 @@ h6,
     width: 8.33333333%;
   }
 }
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link a {
+  font-weight: 400;
+}
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all {
   /*
              * Don't display the All/Any option for the Office taxonomy
              */
   display: none;
+}
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all + .form-type-bef-link {
+  /*
+               * On large displays, centre the 8 Offices by adding 2 columns to the grid
+               */
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all + .form-type-bef-link {
+    margin-left: 16.66666667%;
+  }
 }
 .view-content {
   margin-bottom: 2.6em;
@@ -841,9 +870,9 @@ h6,
      */
   font-family: Dosis, arial, sans-serif;
   font-weight: 400;
-  font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  font-size: 24px;
   margin-bottom: 1.3em;
   line-height: 1.4;
 }
@@ -930,6 +959,58 @@ h6,
      * and the h4 next to it (18px h4 - 11px link = 7px)
      */
   padding-top: 7px;
+}
+/*
+ * An .office-view uses the grid system to lay out the phone, addresses
+ * and email fields.
+ */
+.office-view .views-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.office-view .views-row .views-field {
+  float: left;
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  word-break: break-word;
+}
+@media (min-width: 992px) {
+  .office-view .views-row .views-field {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.office-view .views-row .views-field.view-icon {
+  float: left;
+  width: 16.66666667%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 42px;
+  line-height: 1.3em;
+  text-align: center;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .office-view .views-row .views-field.view-icon {
+    float: left;
+    width: 8.33333333%;
+  }
+}
+.office-view .views-row .views-field .views-label {
+  font-family: Dosis, arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: block;
+}
+.office-view .views-row .views-field .views-label a {
+  font-family: Dosis, arial, sans-serif;
+  font-weight: 400;
 }
 /*********************************
  * Fix anomalies which might occur

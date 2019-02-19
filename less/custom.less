@@ -153,6 +153,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
              * Don't display the All/Any option for the Office taxonomy
              */
             display: none;
+
+            + .form-type-bef-link {
+              /*
+               * On large displays, centre the 8 Offices by adding 2 columns to the grid
+               */
+              .make-lg-column-offset(2);
+            }
           }
         }
       }
