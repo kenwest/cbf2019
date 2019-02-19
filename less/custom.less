@@ -103,7 +103,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    * Undo the Rhythm defaults for .view-filters
    */
   float: none;
-  margin-top: 0;
+  /* margin-top: 0; Overridden below.*/
+
+  /*
+   * Undo the margin-bottom of .view-header-and-more using a
+   * margin-top and add another margin-bottom. 
+   */
+  margin-top: -60px;
+  margin-bottom: 60px;
 
   /*
    * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
