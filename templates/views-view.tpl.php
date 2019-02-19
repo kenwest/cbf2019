@@ -53,7 +53,7 @@
     <div class="container">
       <div class="row view-header-and-more">
         <div class="col-xs-12">
-          <div class="view-header h4 align-left font-alt uppercase black bold">
+          <div class="view-header h4 align-center font-alt uppercase black bold">
             <?php print $header; ?>
           </div>
         </div>
