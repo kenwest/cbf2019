@@ -1,6 +1,6 @@
 (function($) {
-Drupal.behaviors.myBehavior = {
-  attach: function (context, settings) {
+  Drupal.behaviors.cbf2019ExposedFilters = {
+    attach: function (context, settings) {
 
     var gmMapDiv = $("#map-canvas");
 
@@ -38,5 +38,4 @@ Drupal.behaviors.myBehavior = {
 
     }
   }
-}
 })(jQuery);
