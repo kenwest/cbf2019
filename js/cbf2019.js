@@ -66,6 +66,20 @@
           navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
       });
+
+      $(".item-carousel-4-view", context).each(function() {
+        var autoplay = $(this).closest('.slider-wrapper').data('autoplay')
+
+        $(this).owlCarousel({
+          autoPlay: autoplay ? autoplay : false,
+          items: 4,
+          itemsDesktop: [1199, 3],
+          itemsTabletSmall: [768, 2],
+          itemsMobile: [480, 1],
+          navigation: true,
+          navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        });
+      });
     }
   }
 })(jQuery);
