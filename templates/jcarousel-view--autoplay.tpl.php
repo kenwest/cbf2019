@@ -1,13 +1,7 @@
 <?php
 
 /**
- * @file jcarousel-view.tpl.php
- *
- * View template to display a list as an OWL carousel.
- *
- * @TODO: Develop OWL carousel as a style plugin of its own. Don't
- * need the full-blown Drupal OWL Carousel module as all the JS etc
- * is dupplied by the Rhythm theme.
+ * @file jcarousel-view--autoplay.tpl.php
  */
 ?>
 <div class="slider-wrapper" data-autoplay="6000">
