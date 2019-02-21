@@ -11,7 +11,7 @@
  */
 ?>
 <div class="slider-wrapper" data-autoplay="6000">
-  <div class="fullwidth-slider owl-carousel owl-theme">
+  <div class="fullwidth-slider-view owl-carousel owl-theme">
     <?php foreach ($rows as $id => $row): ?>
       <div class="<?php print $row_classes[$id]; ?>">
         <?php print $row; ?>

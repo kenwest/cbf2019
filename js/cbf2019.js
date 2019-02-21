@@ -54,6 +54,18 @@
         });
       });
 
+      $(".fullwidth-slider-view", context).each(function() {
+        var autoplay = $(this).closest('.slider-wrapper').data('autoplay')
+
+        $(this).owlCarousel({
+          autoPlay: autoplay ? autoplay : false,
+          slideSpeed: 350,
+          singleItem: true,
+          autoHeight: true,
+          navigation: true,
+          navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        });
+      });
     }
   }
 })(jQuery);
