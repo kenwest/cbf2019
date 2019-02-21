@@ -226,14 +226,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .container-view-content {
-  .view-content > div {
+  .view-content {
     /*
      * .container-view-content makes enclosed .view-content
      * into a container. The container class is applied to
      * the DIV inside the .view-content so that the
      * .bg-gray-view-content styling is not .container-ed.
      */
-    .container;
+    .views-bootstrap-grid-plugin-style {
+      .container;
+    }
   }
 }
 
@@ -327,13 +329,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /*********************************
  * Fix anomalies which might occur
  */
-.container .container,
-.container .container-view-content .view-content > div,
-.container .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
-  /*
-   * Bootstrap containers are not designed to be nested
-   */
-  width: auto;
-  padding-right: initial;
-  padding-left: initial;
+.container {
+  .container,
+  .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+  .office-view .view-content,
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+    /*
+     * Bootstrap containers are not designed to be nested
+     */
+    width: auto;
+    padding-right: initial;
+    padding-left: initial;
+  }
 }

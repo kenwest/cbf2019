@@ -799,6 +799,17 @@ h6,
     width: 1170px;
   }
 }
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .container,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .office-view .view-content,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+  /*
+     * Bootstrap containers are not designed to be nested
+     */
+  width: auto;
+  padding-right: initial;
+  padding-left: initial;
+}
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item {
   margin-right: -15px;
   margin-left: -15px;
@@ -905,32 +916,45 @@ h6,
   background-color: #f4f4f4;
   padding: 5.2em 0;
 }
-.container-view-content .view-content > div {
+.container-view-content .view-content {
   /*
      * .container-view-content makes enclosed .view-content
      * into a container. The container class is applied to
      * the DIV inside the .view-content so that the
      * .bg-gray-view-content styling is not .container-ed.
      */
+}
+.container-view-content .view-content .views-bootstrap-grid-plugin-style {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  .container-view-content .view-content > div {
+  .container-view-content .view-content .views-bootstrap-grid-plugin-style {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container-view-content .view-content > div {
+  .container-view-content .view-content .views-bootstrap-grid-plugin-style {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container-view-content .view-content > div {
+  .container-view-content .view-content .views-bootstrap-grid-plugin-style {
     width: 1170px;
   }
+}
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .container,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .office-view .view-content,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+  /*
+     * Bootstrap containers are not designed to be nested
+     */
+  width: auto;
+  padding-right: initial;
+  padding-left: initial;
 }
 .more-link a {
   /*
@@ -964,6 +988,38 @@ h6,
  * An .office-view uses the grid system to lay out the phone, addresses
  * and email fields.
  */
+.office-view .view-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .office-view .view-content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .office-view .view-content {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .office-view .view-content {
+    width: 1170px;
+  }
+}
+.office-view .view-content .container,
+.office-view .view-content .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.office-view .view-content .office-view .view-content,
+.office-view .view-content .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+  /*
+     * Bootstrap containers are not designed to be nested
+     */
+  width: auto;
+  padding-right: initial;
+  padding-left: initial;
+}
 .office-view .views-row {
   margin-right: -15px;
   margin-left: -15px;
@@ -1015,15 +1071,26 @@ h6,
 .office-view .view-footer {
   clear: both;
 }
+.map-canvas-view {
+  /*
+   * A map-canvas-view is formatted in the same way as
+   * Rhythm formats the #map-canvas element
+   */
+  height: 410px;
+  position: relative;
+  background-color: #111 !important;
+  z-index: 1;
+}
 /*********************************
  * Fix anomalies which might occur
  */
 .container .container,
-.container .container-view-content .view-content > div,
+.container .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.container .office-view .view-content,
 .container .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
   /*
-   * Bootstrap containers are not designed to be nested
-   */
+     * Bootstrap containers are not designed to be nested
+     */
   width: auto;
   padding-right: initial;
   padding-left: initial;
