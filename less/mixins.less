@@ -9,3 +9,31 @@
     font-weight: @font-weight;
   }
 }
+
+// Generate the 480px columns
+.make-480-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-right: (@gutter / 2);
+  padding-left: (@gutter / 2);
+
+  @media (min-width: @screen-xs-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+.make-480-column-offset(@columns) {
+  @media (min-width: @screen-xs-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-480-column-push(@columns) {
+  @media (min-width: @screen-xs-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-480-column-pull(@columns) {
+  @media (min-width: @screen-xs-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
