@@ -832,6 +832,12 @@ h6,
   margin-bottom: 1.3em;
   line-height: 1.4;
 }
+@media (min-width: 480px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
+    float: left;
+    width: 33.33333333%;
+  }
+}
 @media (min-width: 768px) {
   .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
     float: left;
@@ -875,7 +881,8 @@ h6,
 .view-content .views-field:last-child {
   margin-bottom: 2.6em;
 }
-.view-content .views-field-title {
+.view-content .views-field-title,
+.view-content .views-field-field-title {
   /*
      * Generic title formatting
      */
@@ -887,7 +894,8 @@ h6,
   margin-bottom: 1.3em;
   line-height: 1.4;
 }
-.view-content .views-field-title a {
+.view-content .views-field-title a,
+.view-content .views-field-field-title a {
   font-family: Dosis, arial, sans-serif;
   font-weight: 400;
 }
@@ -907,6 +915,15 @@ h6,
        * The In Activity and City fields are bold in an OWL Carousel
        */
   font-weight: bold;
+}
+.views-bootstrap-grid-plugin-style .views-field-title,
+.item-carousel-4-view .views-field-title,
+.views-bootstrap-grid-plugin-style .views-field-field-title,
+.item-carousel-4-view .views-field-field-title {
+  /*
+     * Reduce the size of titles in views which display multiple items
+     */
+  font-size: 16px;
 }
 .bg-gray-view-content .view-content {
   /*
@@ -1070,6 +1087,36 @@ h6,
 }
 .office-view .view-footer {
   clear: both;
+}
+.item-carousel-4-view .slide-wrapper {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.item-carousel-4-view .owl-item {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .item-carousel-4-view .owl-item {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .item-carousel-4-view .owl-item {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .item-carousel-4-view .owl-item {
+    float: left;
+    width: 25%;
+  }
 }
 .map-canvas-view {
   /*

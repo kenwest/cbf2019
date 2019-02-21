@@ -182,7 +182,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
   }
 
-  .views-field-title {
+  .views-field-title,
+  .views-field-field-title {
     /*
      * Generic title formatting
      */
@@ -212,6 +213,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
        */
       font-weight: bold;
     }
+  }
+}
+
+.views-bootstrap-grid-plugin-style,
+.item-carousel-4-view {
+  .views-field-title,
+  .views-field-field-title {
+    /*
+     * Reduce the size of titles in views which display multiple items
+     */
+    font-size: 16px;
   }
 }
 
