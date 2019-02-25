@@ -71,7 +71,7 @@ $page['content']['#prefix'] = render($title_prefix) . $messages . $tabs . render
 <div class = "page">
 
   <?php
-    if(function_exists('nikadevs_cms_page_layout') && variable_get('nikadevs_cms_layout_' . variable_get('theme_default', 'rhythm'), array()) != array()):
+    if(function_exists('nikadevs_cms_page_layout') && variable_get('nikadevs_cms_layout_cbf2019', array()) != array()):
       print nikadevs_cms_page_layout(array('page' => $page));
     else: ?>
     <?php print render($page['top']); ?>    
