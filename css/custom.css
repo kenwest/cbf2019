@@ -923,6 +923,13 @@ h6,
        */
   font-weight: bold;
 }
+.view-content .owl-carousel .owl-prev:before,
+.view-content .owl-carousel .owl-next:before {
+  /*
+         * The Previous and Next buttons on the OWL carousel are a mid grey
+         */
+  background-color: #ccc;
+}
 .views-bootstrap-grid-plugin-style .views-field-title,
 .item-carousel-4-view .views-field-title,
 .views-bootstrap-grid-plugin-style .views-field-field-title,
