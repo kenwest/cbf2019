@@ -5,7 +5,12 @@
     <?php if($logo): ?>
       <div class="nav-logo-wrap local-scroll">
         <a href="<?php print url('<front>'); ?>" class="logo">
-            <img src="<?php print $logo; ?>" alt="<?php print variable_get('site_name', ''); ?>" title = "<?php print variable_get('site_name', ''); ?>" />
+          <object data="<?php print $logo; ?>" type="image/svg+xml">
+            <img
+              src="<?php print str_replace('.svg', '.png', $logo); ?>"
+              alt="<?php print variable_get('site_name', ''); ?>"
+              title = "<?php print variable_get('site_name', ''); ?>" />
+          </object>
         </a>
       </div>
     <?php endif; ?>
