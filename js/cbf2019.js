@@ -77,7 +77,8 @@
           itemsTabletSmall: [768, 2],
           itemsMobile: [480, 1],
           navigation: true,
-          navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+          navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+          scrollPerPage : true
         });
       });
     }

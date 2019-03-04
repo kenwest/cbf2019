@@ -5,7 +5,7 @@
  */
 ?>
 <div class="container">
-  <div class="slider-wrapper" data-autoplay="false" data-scrollperpage="true">
+  <div class="slider-wrapper" data-autoplay="false">
     <div class="item-carousel-4-view owl-carousel owl-theme">
       <?php foreach ($rows as $id => $row): ?>
         <div class="<?php print $row_classes[$id]; ?>">
