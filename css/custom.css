@@ -693,6 +693,13 @@ h6,
 /***********************
  * Format the Navigation
  */
+.main-nav .nav-logo-wrap .logo {
+  /*
+     * This width gives a reasonable sized logo image and allows enough
+     * room for the logo replacement text
+     */
+  max-width: 210px;
+}
 .main-nav .inner-nav ul.clearlist ul.default-menu {
   /*
        * Float the menu to the left of the Search bar
