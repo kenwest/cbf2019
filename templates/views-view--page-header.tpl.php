@@ -45,13 +45,21 @@
   ?>
 </div>
 <?php
+  $fid = 0;
+  if (isset($view->result)) {
+    $result = reset($view->result);
+    if (isset($result->field_field_title_image)) {
+      $image = reset($result->field_field_title_image);
+      $fid = $image['raw']['fid'];
+    }
+  }
   print rhythm_shortcodes_shortcode_header(
     [
       'class' => '',
       'size' => 'page-section',
       'description' => '',
       /* 'title' => Use drupal_get_title by default */
-      'fid' => 10663,
+      'fid' => $fid,
       'type' => 'bg-dark-alfa-50',
       'breadcrumbs' => true,
     ],
