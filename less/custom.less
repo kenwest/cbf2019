@@ -126,6 +126,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    */
   margin-top: -60px;
   margin-bottom: 60px;
+  &:first-child {
+    margin-top: 140px;
+  }
 
   /*
    * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
@@ -176,6 +179,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                */
               .make-lg-column-offset(2);
             }
+          }
+
+          &.form-item-edit-taxonomy-vocabulary-1-tid-all {
+            /*
+             * On large displays, centre the Ministry Centres by adding 2 columns to
+             * the grid (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
+             */
+            .make-lg-column-offset(2);
           }
         }
       }
