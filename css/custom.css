@@ -750,6 +750,12 @@ h6,
 .bg-dark-alfa-50::before {
   background: rgba(34, 34, 170, 0.5);
 }
+/*************************
+ * Format SVG images
+ */
+object[type="image/svg+xml"] {
+  pointer-events: none;
+}
 /******************************
  * Format the contents of views
  */
