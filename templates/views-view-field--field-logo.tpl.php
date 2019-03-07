@@ -1,12 +1,17 @@
 <?php
 
 /**
- * @file
- * This template is used to print a single field in a view.
  *
- * It is not actually used in default Views, as this is registered as a theme
- * function which has better performance. For single overrides, the template is
- * perfectly okay.
+ * If the field_logo needs to be displayed as an SVG OBJECT element, then the normal
+ * Views rewriting won't work as Views strips out OBJECT elements as unsafe. But Views
+ * is happy this is supplied in a template.
+ *
+ * To use this feature ...
+ *   . Format the field_logo as a 'Download URL'
+ *   . Rewrite the field to '###[field_logo]###'
+ *   . The output will be '<object data="URL" type="image/svg+xml"></object>'
+ *   . When rewriting the field, keep it on one line
+ *
  *
  * Variables available:
  * - $view: The view object
