@@ -5,6 +5,15 @@
     <?php if($logo): ?>
       <div class="nav-logo-wrap local-scroll">
         <a href="<?php print url('<front>'); ?>" class="logo">
+          <?php
+            if (
+              $is_front
+                || $_SERVER['REQUEST_URI'] == '/home'
+                || strpos($_SERVER['REQUEST_URI'], '/home?') === 0
+            ) {
+              $logo = str_replace('logo.svg', 'logo-white.svg', $logo);
+            }
+          ?>
           <object data="<?php print $logo; ?>" type="image/svg+xml">
             <img
               src="<?php print str_replace('.svg', '.png', $logo); ?>"
