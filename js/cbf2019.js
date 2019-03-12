@@ -46,7 +46,6 @@
                 {"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},
                 {"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},
                 {"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
-                {},
                 {"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}
               ]
             }
