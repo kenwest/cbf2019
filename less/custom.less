@@ -584,6 +584,46 @@ object[type="image/svg+xml"] {
   }
 }
 
+.view.venue {
+
+  text-transform: uppercase;
+  font-weight: 600;
+
+  .view-content {
+    margin-bottom: 0;
+  }
+
+  .views-field {
+    .make-row();
+
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+
+      .field-content {
+        padding-bottom: 1.6em;
+      }
+    }
+  }
+
+  .views-label {
+    .make-xs-column(6);
+    .make-480-column(4);
+    .make-sm-column(3);
+
+    border-top: 1px solid #888;
+  }
+
+  .field-content {
+    .make-xs-column(6);
+    .make-480-column(8);
+    .make-sm-column(9);
+
+    border-top: 1px solid #888;
+  }
+}
+
 
 /*********************************
  * Fix anomalies which might occur
