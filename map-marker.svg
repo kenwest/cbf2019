@@ -25,31 +25,31 @@
   <defs
      id="defs8">
     <filter
-       id="filter4366"
+       id="filter4419"
        style="color-interpolation-filters:sRGB;">
       <feFlood
-         id="feFlood4368"
+         id="feFlood4421"
          result="flood"
          flood-color="rgb(127,127,127)"
          flood-opacity="0.498039" />
       <feComposite
-         id="feComposite4370"
+         id="feComposite4423"
          result="composite1"
          operator="in"
          in2="SourceGraphic"
          in="flood" />
       <feGaussianBlur
-         id="feGaussianBlur4372"
+         id="feGaussianBlur4425"
          result="blur"
-         stdDeviation="20"
+         stdDeviation="50"
          in="composite1" />
       <feOffset
-         id="feOffset4374"
+         id="feOffset4427"
          result="offset"
-         dy="40"
-         dx="40" />
+         dy="50"
+         dx="50" />
       <feComposite
-         id="feComposite4376"
+         id="feComposite4429"
          result="composite2"
          operator="over"
          in2="offset"
@@ -57,7 +57,7 @@
     </filter>
   </defs>
   <path
-     style="fill:#1c9cd6;fill-opacity:1;filter:url(#filter4366)"
+     style="fill:#1c9cd6;fill-opacity:1;filter:url(#filter4419)"
      id="path4"
      d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z" />
 </svg>
