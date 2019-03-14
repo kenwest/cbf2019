@@ -12,7 +12,7 @@
           marker: {
             address: gmMarkerAddress,
             options: {
-              icon: Drupal.settings.base_path + Drupal.settings.theme_path + "/images/map-marker.png"
+              icon: "https://citybibleforum.org/sites/all/themes/cbf2019/map-marker.png"
             }
           },
           map: {
