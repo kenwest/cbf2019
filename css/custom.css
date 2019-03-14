@@ -759,7 +759,11 @@ h6,
  * Format the Title header
  */
 .bg-dark-alfa-50::before {
-  background: rgba(34, 34, 170, 0.5);
+  /*
+   * When displayed over a white background, this background colour gives the theme's
+   * 'City blue' which is rgb(28, 156, 214)
+   */
+  background: rgba(4, 146, 210, 0.9);
 }
 /*************************
  * Format SVG images
