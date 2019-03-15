@@ -930,7 +930,8 @@ object[type="image/svg+xml"] {
   margin-bottom: 2.6em;
 }
 .view-content .views-field-title,
-.view-content .views-field-field-title {
+.view-content .views-field-field-title,
+.view-content .views-field-name {
   /*
      * Generic title formatting
      */
@@ -943,7 +944,8 @@ object[type="image/svg+xml"] {
   line-height: 1.4;
 }
 .view-content .views-field-title a,
-.view-content .views-field-field-title a {
+.view-content .views-field-field-title a,
+.view-content .views-field-name a {
   font-family: Dosis, arial, sans-serif;
   font-weight: 400;
 }
@@ -970,6 +972,37 @@ object[type="image/svg+xml"] {
          * The Previous and Next buttons on the OWL carousel are a mid grey
          */
   background-color: #ccc;
+}
+.view-content .owl-carousel .owl-item .views-field-field-title-image,
+.view-content .owl-carousel .owl-item .views-field-field-highlight {
+  /*
+         * Apply the pattern for Bootstrap's .embed-responsive-16by9 class
+         * to make the image in the proportion 653x368 which is the Rhythm
+         * theme's large portfolio image format. Make the background of the
+         * .field-content the same as .bg-gray.
+         */
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0 0 56.36%;
+  overflow: hidden;
+}
+.view-content .owl-carousel .owl-item .views-field-field-title-image .field-content,
+.view-content .owl-carousel .owl-item .views-field-field-highlight .field-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f4f4f4;
+}
+.view-content .owl-carousel .owl-item .views-field-field-title-image .field-content img,
+.view-content .owl-carousel .owl-item .views-field-field-highlight .field-content img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
 }
 .views-bootstrap-grid-plugin-style .views-field-title,
 .item-carousel-4-view .views-field-title,
