@@ -116,6 +116,14 @@
                 {"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
                 {"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}
               ]
+            },
+            events:{
+              click: function(){
+                var infowindow = $(this).gmap3({get:{name:"infowindow"}});
+                if (infowindow){
+                  infowindow.close();
+                }
+              }
             }
           },
           marker: {
