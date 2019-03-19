@@ -686,6 +686,9 @@ body.html a {
   font-style: normal;
   font-weight: 400;
 }
+body.html strong {
+  font-weight: 400;
+}
 body.html .font-alt {
   font-family: 'Rubik', arial, sans-serif;
 }
@@ -980,7 +983,7 @@ object[type="image/svg+xml"] {
   /*
        * The In Activity and City fields are bold in an OWL Carousel
        */
-  font-weight: bold;
+  font-weight: 500;
 }
 .view-content .owl-carousel .owl-prev:before,
 .view-content .owl-carousel .owl-next:before {
@@ -1362,7 +1365,7 @@ object[type="image/svg+xml"] {
 }
 .view.venue {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
 }
 .view.venue .view-content {
   margin-bottom: 0;
