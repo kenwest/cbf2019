@@ -124,7 +124,7 @@
               draggable: false
             },
             events: {
-              mouseover: function(marker, event, context){
+              click: function(marker, event, context){
                 var map = $(this).gmap3("get"),
                   infowindow = $(this).gmap3({get:{name:"infowindow"}});
                 if (infowindow) {
@@ -137,12 +137,6 @@
                       options:{content: context.data}
                     }
                   });
-                }
-              },
-              mouseout: function(){
-                var infowindow = $(this).gmap3({get:{name:"infowindow"}});
-                if (infowindow){
-                  infowindow.close();
                 }
               }
             }
