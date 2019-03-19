@@ -674,7 +674,7 @@
   }
 }
 /*****************
- * Body formatting
+ * Font formatting
  */
 body.html {
   font-family: 'Rubik', arial, sans-serif;
@@ -689,7 +689,9 @@ body.html a {
 body.html strong {
   font-weight: 400;
 }
-body.html .font-alt {
+body.html .font-alt,
+body.html form ul.token-input-list,
+body.html div.token-input-dropdown {
   font-family: 'Rubik', arial, sans-serif;
 }
 /**********************************************
