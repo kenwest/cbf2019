@@ -673,6 +673,22 @@
     margin-left: 0%;
   }
 }
+/*****************
+ * Body formatting
+ */
+body.html {
+  font-family: 'Rubik', arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+body.html a {
+  font-family: 'Rubik', arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+body.html .font-alt {
+  font-family: 'Rubik', arial, sans-serif;
+}
 /**********************************************
  * Overcome Bootstrap formatting of h1, .h1 etc
  */
@@ -688,7 +704,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 /***********************
  * Format the Navigation
@@ -935,7 +951,7 @@ object[type="image/svg+xml"] {
   /*
      * Generic title formatting
      */
-  font-family: Dosis, arial, sans-serif;
+  font-family: 'Rubik', arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -946,7 +962,7 @@ object[type="image/svg+xml"] {
 .view-content .views-field-title a,
 .view-content .views-field-field-title a,
 .view-content .views-field-name a {
-  font-family: Dosis, arial, sans-serif;
+  font-family: 'Rubik', arial, sans-serif;
   font-weight: 400;
 }
 .view-content .views-field-field-resource-type {
@@ -1163,14 +1179,14 @@ object[type="image/svg+xml"] {
   }
 }
 .office-view .views-row .views-field .views-label {
-  font-family: Dosis, arial, sans-serif;
+  font-family: 'Rubik', arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   display: block;
 }
 .office-view .views-row .views-field .views-label a {
-  font-family: Dosis, arial, sans-serif;
+  font-family: 'Rubik', arial, sans-serif;
   font-weight: 400;
 }
 .office-view .view-footer {

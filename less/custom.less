@@ -5,11 +5,30 @@
 @import "../../cbootf/bootstrap/less/mixins/grid-framework.less";
 @import "mixins.less";
 
+/*****************
+ * Body formatting
+ */
+body.html {
+  font-family: 'Rubik', arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+  a {
+    font-family: 'Rubik', arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .font-alt {
+    font-family: 'Rubik', arial, sans-serif;
+  }
+}
+
 /**********************************************
  * Overcome Bootstrap formatting of h1, .h1 etc
  */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 
 /***********************
