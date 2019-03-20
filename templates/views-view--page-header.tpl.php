@@ -48,9 +48,16 @@
   $fid = 0;
   if (isset($view->result)) {
     $result = reset($view->result);
-    if (isset($result->field_field_title_image)) {
-      $image = reset($result->field_field_title_image);
-      $fid = $image['raw']['fid'];
+    $imageFieldsByPreference = [
+      'field_field_title_image',
+      'field_field_title_image_1',
+    ];
+    foreach ($imageFieldsByPreference as $imageField) {
+      if (!empty($result->$imageField)) {
+        $image = reset($result->$imageField);
+        $fid = $image['raw']['fid'];
+        break;
+      }
     }
   }
   print rhythm_shortcodes_shortcode_header(
