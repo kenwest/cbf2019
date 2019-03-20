@@ -1431,27 +1431,43 @@ object[type="image/svg+xml"] {
 /******************************
  * Format various content types
  */
-.node-type-activity .region-content .block-views:first-child {
+.node-type-activity .region-content,
+.page-civicrm-event .region-content {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.node-type-activity .region-content .block-views,
+.page-civicrm-event .region-content .block-views {
+  position: relative;
   float: left;
   width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.node-type-activity .region-content .block-views:first-child,
+.page-civicrm-event .region-content .block-views:first-child {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 480px) {
-  .node-type-activity .region-content .block-views:first-child {
+  .node-type-activity .region-content .block-views:first-child,
+  .page-civicrm-event .region-content .block-views:first-child {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  .node-type-activity .region-content .block-views:first-child {
+  .node-type-activity .region-content .block-views:first-child,
+  .page-civicrm-event .region-content .block-views:first-child {
     float: left;
     width: 33.33333333%;
   }
 }
-.node-type-activity .region-content .block-system {
+.node-type-activity .region-content .block-system,
+.page-civicrm-event .region-content .block-system {
   position: relative;
   float: left;
   width: 100%;
@@ -1462,47 +1478,58 @@ object[type="image/svg+xml"] {
   column-gap: 30px;
 }
 @media (min-width: 768px) {
-  .node-type-activity .region-content .block-system {
+  .node-type-activity .region-content .block-system,
+  .page-civicrm-event .region-content .block-system {
     column-count: 2;
   }
 }
 @media (min-width: 992px) {
-  .node-type-activity .region-content .block-system {
+  .node-type-activity .region-content .block-system,
+  .page-civicrm-event .region-content .block-system {
     column-count: 3;
   }
 }
-.node-type-activity .region-content .block-views + .block-system {
+.node-type-activity .region-content .block-views + .block-system,
+.page-civicrm-event .region-content .block-views + .block-system {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 480px) {
-  .node-type-activity .region-content .block-views + .block-system {
+  .node-type-activity .region-content .block-views + .block-system,
+  .page-civicrm-event .region-content .block-views + .block-system {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  .node-type-activity .region-content .block-views + .block-system {
+  .node-type-activity .region-content .block-views + .block-system,
+  .page-civicrm-event .region-content .block-views + .block-system {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 768px) {
-  .node-type-activity .region-content .block-views + .block-system {
+  .node-type-activity .region-content .block-views + .block-system,
+  .page-civicrm-event .region-content .block-views + .block-system {
     column-count: 1;
   }
 }
 @media (min-width: 992px) {
-  .node-type-activity .region-content .block-views + .block-system {
+  .node-type-activity .region-content .block-views + .block-system,
+  .page-civicrm-event .region-content .block-views + .block-system {
     column-count: 2;
   }
 }
 .node-type-activity .region-content .field-name-field-add-to-calendar,
+.page-civicrm-event .region-content .field-name-field-add-to-calendar,
 .node-type-activity .region-content .field-name-field-in-activity,
+.page-civicrm-event .region-content .field-name-field-in-activity,
 .node-type-activity .region-content .field-name-field-image,
-.node-type-activity .region-content .field-name-field-details {
+.page-civicrm-event .region-content .field-name-field-image,
+.node-type-activity .region-content .field-name-field-details,
+.page-civicrm-event .region-content .field-name-field-details {
   display: none;
 }
 /*********************************
