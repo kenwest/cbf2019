@@ -13,3 +13,10 @@ function cbf2019_preprocess_html(&$variables) {
     array('group' => CSS_THEME)
   );
 }
+
+/*
+ * An implementation of theme_entity_property()
+ */
+function cbf2019_entity_property($variables) {
+  return cbf_entity_property($variables);
+}
