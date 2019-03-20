@@ -29,9 +29,29 @@
  */
 ?>
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <?php print render($title_suffix); ?>
-
   <div class="content"<?php print $content_attributes; ?>>
-    <?php print render($content); ?>
+    <?php
+      /*
+       * Only print the properties we want. We can't rely on the Full display
+       * setting because different themes show different properties. And this
+       * approach is easier that creating new entity displays (CiviCRM Events
+       * have 80 properties ;-)
+       */
+      $propertyList = [
+        'description' => [
+          '#access' => true,
+          '#label_hidden' => true,
+        ],
+        'field_staff_contact' => [
+          '#access' => true,
+        ],
+      ];
+      foreach ($propertyList as $propertyName => $propertySettings) {
+        foreach ($propertySettings as $propertyKey => $propertyValue) {
+          $content[$propertyName][$propertyKey] = $propertyValue;
+        }
+        print render($content[$propertyName]);
+      }
+    ?>
   </div>
 </div>
