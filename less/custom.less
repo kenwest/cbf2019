@@ -690,6 +690,81 @@ object[type="image/svg+xml"] {
 
     border-top: 1px solid #888;
   }
+
+  .view.event-price {
+
+    .views-row,
+    h3 {
+      .make-row();
+    }
+
+    .views-field {
+      .unmake-row();
+      .make-xs-column(7);
+      .make-sm-column(8);
+      .make-md-column(7);
+      .make-lg-column(8);
+
+      padding-right: 3px;
+
+      &.views-field-amount {
+        .make-xs-column(5);
+        .make-sm-column(4);
+        .make-md-column(5);
+        .make-lg-column(4);
+
+        padding-left: 3px;
+
+        text-align: right;
+      }
+
+      &:last-child {
+
+        .field-content {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .views-label {
+      .unmake-column();
+
+      border-top: 0;
+    }
+
+    .field-content {
+      .unmake-column();
+
+      border-top: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: @font-size-base;
+      line-height: @line-height-base;
+
+      .Radio,
+      .CheckBox,
+      .Text {
+        display: none;
+      }
+
+      .Select {
+        .make-xs-column(12);
+
+        padding-top: @line-height-computed;
+      }
+    }
+
+    h3:first-child {
+	  .Select {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
 }
 
 
