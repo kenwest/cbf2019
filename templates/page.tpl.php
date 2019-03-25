@@ -74,9 +74,9 @@ $page['content']['#prefix'] = render($title_prefix) . $messages . $tabs . render
     if(function_exists('nikadevs_cms_page_layout') && variable_get('nikadevs_cms_layout_cbf2019', array()) != array()):
       print nikadevs_cms_page_layout(array('page' => $page));
     else: ?>
-    <?php print render($page['top']); ?>    
+    <?php print render($page['top']); ?>
       <div class="container contextual-links-region">
-        <?php print render($page['content_top']); ?>  
+        <?php print render($page['content_top']); ?>
         <div class = "row">
           <div class = "col-md-12">
             <?php print render($page['content']); ?>
@@ -85,14 +85,14 @@ $page['content']['#prefix'] = render($title_prefix) . $messages . $tabs . render
             <?php print render($page['sidebar']); ?>
           </div>
         </div>
-        <?php print render($page['bottom']); ?>  
+        <?php print render($page['bottom']); ?>
       </div>
 
     <?php print render($page['footer']); ?>
   <?php endif;?>
 
   <div class="local-scroll">
-    <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+    <a href="#top" class="link-to-top"><i class="fal fa-caret-up"></i></a>
   </div>
 
 </div>

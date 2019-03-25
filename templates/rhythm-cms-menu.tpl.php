@@ -24,9 +24,9 @@
       </div>
     <?php endif; ?>
     <div class="mobile-nav">
-        <i class="fa fa-bars"></i>
+        <i class="fal fa-bars"></i>
     </div>
-    
+
     <!-- Main Menu -->
     <div class="inner-nav desktop-nav">
       <ul class="clearlist">
@@ -43,7 +43,7 @@
         <?php endif; ?>
         <?php if(isset($search) && $search && module_exists('search')): ?>
           <li class="search-dropdown-list">
-            <a href="#" class="mn-has-sub" style="height: 75px; line-height: 75px;"><i class="fa fa-search"></i> <?php print t('Search'); ?></a>
+            <a href="#" class="mn-has-sub" style="height: 75px; line-height: 75px;"><i class="fal fa-search"></i> <?php print t('Search'); ?></a>
             <ul class="mn-sub" style="display: none;">
               <li>
                 <div class="mn-wrap">
@@ -60,14 +60,14 @@
         <?php endif; ?>
         <?php if(isset($cart) && $cart && module_exists('commerce_cart')): ?>
           <li>
-            <a href="<?php print url('cart'); ?>" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> <?php print t('Cart') . '(' . _rhythm_cart_count() . ')'; ?></a>
+            <a href="<?php print url('cart'); ?>" style="height: 75px; line-height: 75px;"><i class="fal fa-shopping-cart"></i> <?php print t('Cart') . '(' . _rhythm_cart_count() . ')'; ?></a>
           </li>
         <?php endif; ?>
         <?php if($language && module_exists('locale') && drupal_multilingual()):
           global $language;
         ?>
           <li>
-            <a href="#" style="height: 75px; line-height: 75px;" class = "mn-has-sub"><?php print $language->language; ?> <i class="fa fa-angle-down"></i></a>
+            <a href="#" style="height: 75px; line-height: 75px;" class = "mn-has-sub"><?php print $language->language; ?> <i class="fal fa-angle-down"></i></a>
               <?php
                 $path = drupal_is_front_page() ? '<front>' : $_GET['q'];
                 $links = language_negotiation_get_switch_links('language', $path);

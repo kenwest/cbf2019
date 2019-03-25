@@ -167,7 +167,7 @@
           singleItem: true,
           autoHeight: true,
           navigation: true,
-          navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+          navigationText: ["<i class='fal fa-angle-left'></i>", "<i class='fal fa-angle-right'></i>"]
         });
       });
 
@@ -181,7 +181,7 @@
           itemsTabletSmall: [768, 2],
           itemsMobile: [480, 1],
           navigation: true,
-          navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+          navigationText: ["<i class='fal fa-angle-left'></i>", "<i class='fal fa-angle-right'></i>"],
           scrollPerPage : true
         });
       });
