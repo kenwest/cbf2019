@@ -1179,6 +1179,7 @@ object[type="image/svg+xml"] {
   line-height: 1.3em;
   text-align: center;
   margin-bottom: 0;
+  color: #1c9cd6;
 }
 @media (min-width: 992px) {
   .office-view .views-row .views-field.view-icon {
