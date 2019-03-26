@@ -673,6 +673,32 @@
     margin-left: 0%;
   }
 }
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
 /*****************
  * Font formatting
  */
@@ -794,6 +820,31 @@ h6,
  */
 object[type="image/svg+xml"] {
   pointer-events: none;
+}
+/*************************************************************
+ * Embedded videos are responsive and have a 16:9 aspect ratio
+ */
+div.video-filter {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  clear: both;
+}
+div.video-filter .embed-responsive-item,
+div.video-filter iframe,
+div.video-filter embed,
+div.video-filter object,
+div.video-filter video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 /******************************
  * Format the contents of views

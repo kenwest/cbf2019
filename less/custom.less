@@ -3,6 +3,7 @@
 @import "../../cbootf/bootstrap/less/grid.less";
 @import "../../cbootf/bootstrap/less/mixins/grid.less";
 @import "../../cbootf/bootstrap/less/mixins/grid-framework.less";
+@import "../../cbootf/bootstrap/less/responsive-embed.less";
 @import "mixins.less";
 
 /*****************
@@ -143,6 +144,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  */
 object[type="image/svg+xml"] {
   pointer-events: none;
+}
+
+/*************************************************************
+ * Embedded videos are responsive and have a 16:9 aspect ratio
+ */
+
+div.video-filter {
+  .embed-responsive;
+  .embed-responsive-16by9;
+
+  clear: both;
 }
 
 /******************************
