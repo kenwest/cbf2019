@@ -865,23 +865,23 @@ div.video-filter video {
 @media (min-width: 992px) {
   .episode-content-tab .episode-pills {
     float: left;
-    width: 33.33333333%;
+    width: 41.66666667%;
   }
 }
 @media (min-width: 992px) {
   .episode-content-tab .episode-pills {
-    left: 66.66666667%;
+    left: 58.33333333%;
   }
 }
 @media (min-width: 1200px) {
   .episode-content-tab .episode-pills {
     float: left;
-    width: 25%;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 1200px) {
   .episode-content-tab .episode-pills {
-    left: 75%;
+    left: 66.66666667%;
   }
 }
 .episode-content-tab .tab-content {
@@ -895,23 +895,17 @@ div.video-filter video {
 @media (min-width: 992px) {
   .episode-content-tab .tab-content {
     float: left;
-    width: 66.66666667%;
+    width: 58.33333333%;
   }
 }
 @media (min-width: 992px) {
   .episode-content-tab .tab-content {
+    right: 41.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .episode-content-tab .tab-content {
     right: 33.33333333%;
-  }
-}
-@media (min-width: 1200px) {
-  .episode-content-tab .tab-content {
-    float: left;
-    width: 75%;
-  }
-}
-@media (min-width: 1200px) {
-  .episode-content-tab .tab-content {
-    right: 25%;
   }
 }
 @media (min-width: 992px) {
