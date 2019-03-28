@@ -149,6 +149,23 @@
             .  '">'
             .  $tabSettings['label']
             .  '</a></li>';
+
+          $tabFieldContent = '';
+          if ($tabKey == 'field_order_url') {
+            $orderUrlillustrations = [
+              'field_highlight_video',
+              'field_highlight',
+            ];
+            foreach ($orderUrlillustrations as $illustration) {
+              if (!empty($content[$illustration])) {
+                $tabFieldContent .= render($content[$illustration]);
+                hide($content[$illustration]);
+                break;
+              }
+            }
+          }
+          $tabFieldContent .= render($content[$tabKey]);
+
           $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' active in' : '';
           $tabPaneContent
             .= '<div class="tab-pane fade'
@@ -156,7 +173,7 @@
             .  '" id="tab-'
             .  $tabKey
             .  '">'
-            .  render($content[$tabKey])
+            .  $tabFieldContent
             .  '</div>';
           hide($content[$tabKey]);
         }
