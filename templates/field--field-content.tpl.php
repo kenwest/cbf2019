@@ -76,7 +76,7 @@
             $modifiedOutput
           );
           $modifiedOutput = preg_replace(
-            '!<a [^>]+jplayer-node-[0-9]+-field-content-[0-9]+_item_[0-9]+[^>]+>!i',
+            '!<a [^>]+jplayer-node-\d+-field-content-\d+_item_\d+[^>]+>!i',
             '<i class="fal fa-file-audio"></i>'
             . '$0',
             $modifiedOutput
