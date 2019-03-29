@@ -150,8 +150,8 @@
             .  $tabSettings['label']
             .  '</a></li>';
 
-          $tabFieldContent = '';
           if ($tabKey == 'field_order_url') {
+            $tabFieldContent = '';
             $orderUrlillustrations = [
               'field_highlight_video',
               'field_highlight',
@@ -163,8 +163,15 @@
                 break;
               }
             }
+            $tabFieldContent .= preg_replace(
+              '!<a !i',
+              '$0class="btn btn-mod btn-border btn-medium btn-round uppercase" ',
+              render($content[$tabKey])
+            );
           }
-          $tabFieldContent .= render($content[$tabKey]);
+          else {
+            $tabFieldContent = render($content[$tabKey]);
+          }
 
           $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' active in' : '';
           $tabPaneContent
