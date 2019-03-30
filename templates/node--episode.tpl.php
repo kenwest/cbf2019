@@ -189,6 +189,7 @@
       hide($content['field_subtitle']);
       hide($content['field_topic']);
       hide($content['field_topics']);
+      hide($content['field_highlight']);
 
       print '<div class="episode-content-tab clearfix">';
       print   '<div class = "episode-pills">';
