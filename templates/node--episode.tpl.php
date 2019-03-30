@@ -187,6 +187,8 @@
       }
 
       hide($content['field_subtitle']);
+      hide($content['field_topic']);
+      hide($content['field_topics']);
 
       print '<div class="episode-content-tab clearfix">';
       print   '<div class = "episode-pills">';
@@ -197,6 +199,10 @@
       print     '<ul class="nav nav-pills animate">';
       print       $tabContent;
       print     '</ul>';
+      print     '<div class = "episode-tags">';
+      print       render($content['field_topic']);
+      print       render($content['field_topics']);
+      print     '</div>';
       print   '</div>';
       print   '<div class = "tab-content section-text">';
       print     $tabPaneContent;
