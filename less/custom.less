@@ -1240,16 +1240,28 @@ div.video-filter {
         column-count: 2;
       }
     }
-
-    .field-name-field-add-to-calendar,
-    .field-name-field-in-activity,
-    .field-name-field-image,
-    .field-name-field-details {
-      display: none;
-    }
   }
 }
 
+/*******************************
+ * Format field_details in views
+ */
+.views-field-field-details {
+  .tablefield {
+    width: 100%;
+
+    caption {
+      padding-bottom: 1em;
+      text-align: center;
+    }
+
+    th, td {
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
 /*********************************
  * Fix anomalies which might occur
