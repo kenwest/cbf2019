@@ -468,6 +468,22 @@ div.video-filter {
     font-size: @font-size-jplayer-button-small;
     text-align: right;
   }
+
+  .episode-tags {
+    .field {
+      display: inline;
+
+      &:first-child::before {
+        content: 'Tags:\00a0';
+        white-space: pre;
+      }
+
+      &:not(first-child)::before {
+        content: ',\00a0';
+        white-space: pre;
+      }
+    }
+  }
 }
 
 /******************************

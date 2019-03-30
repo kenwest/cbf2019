@@ -1316,6 +1316,17 @@ div.video-filter video {
   font-size: 21px;
   text-align: right;
 }
+.episode-content-tab .episode-tags .field {
+  display: inline;
+}
+.episode-content-tab .episode-tags .field:first-child::before {
+  content: 'Tags:\00a0';
+  white-space: pre;
+}
+.episode-content-tab .episode-tags .field:not(first-child)::before {
+  content: ',\00a0';
+  white-space: pre;
+}
 /******************************
  * Format the contents of views
  */
