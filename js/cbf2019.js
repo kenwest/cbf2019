@@ -58,14 +58,31 @@
         var gmMarkers = [];
         var gmLat;
         var gmLong;
+        var gmBox;
         var gmIcon;
         var gmContent;
 
         $('.marker', this).each(function() {
-          gmLat = $(this).attr("data-lat");
-          gmLong = $(this).attr("data-long");
+          gmLat = parseFloat($(this).attr("data-lat"));
+          gmLong = parseFloat($(this).attr("data-long"));
           gmIcon = $(this).attr("data-icon");
           gmContent = this.innerHTML;
+
+          if (typeof gmBox === 'undefined') {
+            gmBox = {
+              top: gmLat,
+              bottom: gmLat,
+              left: gmLong,
+              right: gmLong
+            };
+          }
+          else {
+            // In Australia gmLat is negative and gmLong is positive
+            if (gmLat > gmBox.top) gmBox.top = gmLat;
+            if (gmLat < gmBox.bottom) gmBox.bottom = gmLat;
+            if (gmLong < gmBox.left) gmBox.left = gmLong;
+            if (gmLong > gmBox.right) gmBox.right = gmLong;
+          }
 
           gmMarkers.push({
             latLng: [gmLat, gmLong],
@@ -85,7 +102,7 @@
           map: {
             options: {
               zoom: gmZoom,
-              center: [gmLat, gmLong],
+              center: [ (gmBox.top + gmBox.bottom)/2, (gmBox.left + gmBox.right)/2 ],
               zoomControl: true,
               zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.SMALL,
@@ -151,7 +168,13 @@
           }
         });
 
-        if (gmMarkers.length > 1) {
+        if (
+          gmMarkers.length > 1
+          && (
+            gmBox.top - gmBox.bottom > 0.01
+            || gmBox.right - gmBox.left > 0.01
+          )
+        ) {
           $(this).gmap3({
             autofit: {}
           });
