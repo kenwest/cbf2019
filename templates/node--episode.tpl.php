@@ -194,7 +194,7 @@
       print   '<div class = "episode-pills">';
       print     '<h3>';
       print       filter_xss(drupal_get_title());
-      print     '</h3 class="uppercase">';
+      print     '</h3>';
       print     render($content['field_subtitle']);
       print     '<ul class="nav nav-pills animate">';
       print       $tabContent;
