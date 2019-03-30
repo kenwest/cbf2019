@@ -192,13 +192,13 @@
       hide($content['field_image']);
 
       // Hide fields displayed in views in this theme - may eventually be removed
+      hide($content['field_highlight']);
       hide($content['field_details']);
 
+      // Display the episode-content-tab
       hide($content['field_subtitle']);
       hide($content['field_topic']);
       hide($content['field_topics']);
-      hide($content['field_highlight']);
-
       print '<div class="episode-content-tab clearfix">';
       print   '<div class = "episode-pills">';
       print     '<h3>';
