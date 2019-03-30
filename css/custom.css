@@ -1395,7 +1395,8 @@ div.video-filter video {
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .container,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .office-view .view-content,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-cbf2019-recent-library .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
@@ -1609,7 +1610,8 @@ div.video-filter video {
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .container,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .office-view .view-content,
-.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-cbf2019-recent-library .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
@@ -1673,7 +1675,8 @@ div.video-filter video {
 .office-view .view-content .container,
 .office-view .view-content .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .office-view .view-content .office-view .view-content,
-.office-view .view-content .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+.office-view .view-content .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.office-view .view-content .view-cbf2019-recent-library .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
@@ -2095,6 +2098,127 @@ div.video-filter video {
     margin-left: 66.66666667%;
   }
 }
+/*
+ * Display the view-cbf2019-recent-library's '4 columns in reverse order.
+ * This makes the most-recent content on the right, and the next page is
+ * actually previous in time.
+ */
+@media (min-width: 768px) {
+  .view-cbf2019-recent-library .col-sm-6:nth-child(3n+1) {
+    left: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .view-cbf2019-recent-library .col-sm-6:nth-child(3n+2) {
+    right: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-recent-library .col-md-3:nth-child(1) {
+    left: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-recent-library .col-md-3:nth-child(2) {
+    left: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-recent-library .col-md-3:nth-child(4) {
+    left: -25%;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-recent-library .col-md-3:nth-child(5) {
+    right: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-recent-library .col-lg-3:nth-child(1) {
+    left: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-recent-library .col-lg-3:nth-child(2) {
+    right: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-recent-library .col-lg-3:nth-child(4) {
+    left: -25%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-recent-library .col-lg-3:nth-child(5) {
+    right: 75%;
+  }
+}
+.view-cbf2019-recent-library .item-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .view-cbf2019-recent-library .item-list {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-recent-library .item-list {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-recent-library .item-list {
+    width: 1170px;
+  }
+}
+.view-cbf2019-recent-library .item-list .container,
+.view-cbf2019-recent-library .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.view-cbf2019-recent-library .item-list .office-view .view-content,
+.view-cbf2019-recent-library .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view-cbf2019-recent-library .item-list .view-cbf2019-recent-library .item-list {
+  /*
+     * Bootstrap containers are not designed to be nested
+     */
+  width: auto;
+  padding-right: initial;
+  padding-left: initial;
+}
+.view-cbf2019-recent-library .item-list .pager {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.view-cbf2019-recent-library .item-list .pager .pager-previous {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  left: 66.66666667%;
+  text-align: right;
+}
+.view-cbf2019-recent-library .item-list .pager .pager-current {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  visibility: hidden;
+}
+.view-cbf2019-recent-library .item-list .pager .pager-next {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  right: 66.66666667%;
+  text-align: left;
+}
 /******************************
  * Format various content types
  */
@@ -2189,15 +2313,19 @@ div.video-filter video {
     column-count: 2;
   }
 }
-.node-type-activity .region-content .field-name-field-add-to-calendar,
-.page-civicrm-event .region-content .field-name-field-add-to-calendar,
-.node-type-activity .region-content .field-name-field-in-activity,
-.page-civicrm-event .region-content .field-name-field-in-activity,
-.node-type-activity .region-content .field-name-field-image,
-.page-civicrm-event .region-content .field-name-field-image,
-.node-type-activity .region-content .field-name-field-details,
-.page-civicrm-event .region-content .field-name-field-details {
-  display: none;
+/*******************************
+ * Format field_details in views
+ */
+.views-field-field-details .tablefield {
+  width: 100%;
+}
+.views-field-field-details .tablefield caption {
+  padding-bottom: 1em;
+  text-align: center;
+}
+.views-field-field-details .tablefield th p:last-child,
+.views-field-field-details .tablefield td p:last-child {
+  margin-bottom: 0;
 }
 /*********************************
  * Fix anomalies which might occur
@@ -2205,7 +2333,8 @@ div.video-filter video {
 .container .container,
 .container .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container .office-view .view-content,
-.container .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
+.container .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.container .view-cbf2019-recent-library .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
