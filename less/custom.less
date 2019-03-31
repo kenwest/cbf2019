@@ -1240,6 +1240,26 @@ div.video-filter {
         column-count: 2;
       }
     }
+
+    .block-views:first-child + .block-views {
+      .make-480-column(6);
+      .make-md-column(4);
+      .make-md-column-push(4);
+    }
+
+    .block-views + .block-views + .block-system {
+      .make-480-column(12);
+      .make-md-column(4);
+      .make-md-column-pull(4);
+
+      @media (min-width: @screen-sm-min) {
+        column-count: 2;
+      }
+
+      @media (min-width: @screen-md-min) {
+        column-count: 1;
+      }
+    }
   }
 }
 
