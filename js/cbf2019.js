@@ -179,11 +179,8 @@
         });
 
         if (
-          gmMarkers.length > 1
-          && (
-            gmBox.top - gmBox.bottom > 0.01
-            || gmBox.right - gmBox.left > 0.01
-          )
+          gmBox.top - gmBox.bottom > 0.01
+          || gmBox.right - gmBox.left > 0.01
         ) {
           $(this).gmap3({
             autofit: {}
