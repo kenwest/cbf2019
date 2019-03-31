@@ -1767,7 +1767,7 @@ div.video-filter video {
   }
 }
 .map-canvas-view,
-.map-canvas-view-multiple {
+.map-canvas-view-multiple .view-content {
   /*
    * A .map-canvas-view is formatted in the same way as
    * Rhythm formats the #map-canvas element.

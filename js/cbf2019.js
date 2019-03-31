@@ -53,7 +53,14 @@
         });
       });
 
-      $('.map-canvas-view-multiple', context).each(function() {
+      if (context instanceof jQuery && context.hasClass('map-canvas-view-multiple')) {
+        mapSearchPattern = '.view-content';
+      }
+      else {
+        mapSearchPattern = '.map-canvas-view-multiple .view-content';
+      }
+
+      $(mapSearchPattern, context).each(function() {
         var gmZoom = $(this).data('zoom') ? $(this).data('zoom') : 14;
         var gmMarkers = [];
         var gmLat;
