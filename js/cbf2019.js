@@ -166,7 +166,10 @@
                   $(this).gmap3({
                     infowindow: {
                       anchor: marker,
-                      options:{content: context.data}
+                      options: {
+                        content: context.data,
+                        pixelOffset: new google.maps.Size(0, 30)
+                      }
                     }
                   });
                 }
