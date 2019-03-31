@@ -142,9 +142,9 @@
               ]
             },
             events:{
-              click: function(){
+              click: function() {
                 var infowindow = $(this).gmap3({get:{name:"infowindow"}});
-                if (infowindow){
+                if (infowindow) {
                   infowindow.close();
                 }
               }
@@ -152,11 +152,11 @@
           },
           marker: {
             values: gmMarkers,
-            options:{
+            options: {
               draggable: false
             },
             events: {
-              click: function(marker, event, context){
+              click: function(marker, event, context) {
                 var map = $(this).gmap3("get"),
                   infowindow = $(this).gmap3({get:{name:"infowindow"}});
                 if (infowindow) {
@@ -165,7 +165,7 @@
                 } else {
                   $(this).gmap3({
                     infowindow: {
-                      anchor:marker,
+                      anchor: marker,
                       options:{content: context.data}
                     }
                   });
