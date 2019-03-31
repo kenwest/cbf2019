@@ -1121,51 +1121,12 @@ div.video-filter {
 }
 
 /*
- * Display the view-cbf2019-recent-library's '4 columns in reverse order.
+ * Views tagged as 'right-to-left' have their content in reverse order.
  * This makes the most-recent content on the right, and the next page is
- * actually previous in time.
+ * actually previous in time. Set up the pager to switch the previous/next
+ * buttons. The .pager-current is hidden for aesthetic reasons.
  */
-.view-cbf2019-recent-library {
-  .col-sm-6:nth-child(3n+1) {
-    .make-sm-column-push(6);
-  }
-
-  .col-sm-6:nth-child(3n+2) {
-    .make-sm-column-pull(6);
-  }
-
-  .col-md-3:nth-child(1) {
-    .make-md-column-push(9);
-  }
-
-  .col-md-3:nth-child(2) {
-    .make-md-column-push(3);
-  }
-
-  .col-md-3:nth-child(4) {
-    .make-md-column-push(-3);
-  }
-
-  .col-md-3:nth-child(5) {
-    .make-md-column-pull(9);
-  }
-
-  .col-lg-3:nth-child(1) {
-    .make-lg-column-push(9);
-  }
-
-  .col-lg-3:nth-child(2) {
-    .make-lg-column-pull(3);
-  }
-
-  .col-lg-3:nth-child(4) {
-    .make-lg-column-push(-3);
-  }
-
-  .col-lg-3:nth-child(5) {
-    .make-lg-column-pull(9);
-  }
-
+.view.right-to-left {
   .item-list {
     .container();
 
@@ -1291,7 +1252,7 @@ div.video-filter {
   .container-view-content .view-content .views-bootstrap-grid-plugin-style,
   .office-view .view-content,
   .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
-  .view-cbf2019-recent-library .item-list {
+  .view.right-to-left .item-list {
     /*
      * Bootstrap containers are not designed to be nested
      */
