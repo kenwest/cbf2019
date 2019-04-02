@@ -1142,6 +1142,11 @@ div.video-filter {
         &.views-submit-button {
           .make-md-column-offset(6);
           .make-lg-column-offset(0);
+
+          input {
+            // Set top margin to height of LABEL element other widgets have
+            margin-top: @line-height-computed + 5px;
+          }
         }
       }
     }
