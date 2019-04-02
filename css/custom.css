@@ -1396,7 +1396,7 @@ div.video-filter video {
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .office-view .view-content,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-cbf2019-recent-library .item-list {
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
@@ -1611,7 +1611,7 @@ div.video-filter video {
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .office-view .view-content,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
-.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-cbf2019-recent-library .item-list {
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
@@ -1676,7 +1676,7 @@ div.video-filter video {
 .office-view .view-content .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .office-view .view-content .office-view .view-content,
 .office-view .view-content .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
-.office-view .view-content .view-cbf2019-recent-library .item-list {
+.office-view .view-content .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
@@ -2099,86 +2099,35 @@ div.video-filter video {
   }
 }
 /*
- * Display the view-cbf2019-recent-library's '4 columns in reverse order.
- * This makes the most-recent content on the right, and the next page is
- * actually previous in time.
+ * Set up the pager to switch the previous/next buttons.
+ * The .pager-current is hidden for aesthetic reasons.
  */
-@media (min-width: 768px) {
-  .view-cbf2019-recent-library .col-sm-6:nth-child(3n+1) {
-    left: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .view-cbf2019-recent-library .col-sm-6:nth-child(3n+2) {
-    right: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .view-cbf2019-recent-library .col-md-3:nth-child(1) {
-    left: 75%;
-  }
-}
-@media (min-width: 992px) {
-  .view-cbf2019-recent-library .col-md-3:nth-child(2) {
-    left: 25%;
-  }
-}
-@media (min-width: 992px) {
-  .view-cbf2019-recent-library .col-md-3:nth-child(4) {
-    left: -25%;
-  }
-}
-@media (min-width: 992px) {
-  .view-cbf2019-recent-library .col-md-3:nth-child(5) {
-    right: 75%;
-  }
-}
-@media (min-width: 1200px) {
-  .view-cbf2019-recent-library .col-lg-3:nth-child(1) {
-    left: 75%;
-  }
-}
-@media (min-width: 1200px) {
-  .view-cbf2019-recent-library .col-lg-3:nth-child(2) {
-    right: 25%;
-  }
-}
-@media (min-width: 1200px) {
-  .view-cbf2019-recent-library .col-lg-3:nth-child(4) {
-    left: -25%;
-  }
-}
-@media (min-width: 1200px) {
-  .view-cbf2019-recent-library .col-lg-3:nth-child(5) {
-    right: 75%;
-  }
-}
-.view-cbf2019-recent-library .item-list {
+.view.right-to-left .item-list {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  .view-cbf2019-recent-library .item-list {
+  .view.right-to-left .item-list {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .view-cbf2019-recent-library .item-list {
+  .view.right-to-left .item-list {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .view-cbf2019-recent-library .item-list {
+  .view.right-to-left .item-list {
     width: 1170px;
   }
 }
-.view-cbf2019-recent-library .item-list .container,
-.view-cbf2019-recent-library .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
-.view-cbf2019-recent-library .item-list .office-view .view-content,
-.view-cbf2019-recent-library .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
-.view-cbf2019-recent-library .item-list .view-cbf2019-recent-library .item-list {
+.view.right-to-left .item-list .container,
+.view.right-to-left .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.view.right-to-left .item-list .office-view .view-content,
+.view.right-to-left .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view.right-to-left .item-list .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
@@ -2186,11 +2135,11 @@ div.video-filter video {
   padding-right: initial;
   padding-left: initial;
 }
-.view-cbf2019-recent-library .item-list .pager {
+.view.right-to-left .item-list .pager {
   margin-right: -15px;
   margin-left: -15px;
 }
-.view-cbf2019-recent-library .item-list .pager .pager-previous {
+.view.right-to-left .item-list .pager .pager-previous {
   position: relative;
   float: left;
   width: 33.33333333%;
@@ -2200,7 +2149,7 @@ div.video-filter video {
   left: 66.66666667%;
   text-align: right;
 }
-.view-cbf2019-recent-library .item-list .pager .pager-current {
+.view.right-to-left .item-list .pager .pager-current {
   position: relative;
   float: left;
   width: 33.33333333%;
@@ -2209,7 +2158,7 @@ div.video-filter video {
   padding-left: 15px;
   visibility: hidden;
 }
-.view-cbf2019-recent-library .item-list .pager .pager-next {
+.view.right-to-left .item-list .pager .pager-next {
   position: relative;
   float: left;
   width: 33.33333333%;
@@ -2400,7 +2349,7 @@ div.video-filter video {
 .container .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container .office-view .view-content,
 .container .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
-.container .view-cbf2019-recent-library .item-list {
+.container .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
      */
