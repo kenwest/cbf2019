@@ -2164,25 +2164,18 @@ div.video-filter video {
     width: 100%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 992px) {
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
     margin-left: 50%;
   }
 }
-@media (min-width: 768px) {
-  .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
-    margin-left: 33.33333333%;
-  }
-}
-@media (min-width: 992px) {
-  .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
-    margin-left: 75%;
-  }
-}
 @media (min-width: 1200px) {
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
-    margin-left: 16.66666667%;
+    margin-left: 0%;
   }
+}
+.view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button input {
+  margin-top: 27px;
 }
 /*
  * Set up the pager to switch the previous/next buttons.
