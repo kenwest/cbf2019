@@ -27,53 +27,101 @@
 <div id="views-bootstrap-grid-<?php print $id ?>" class="<?php print $classes ?>">
 
   <?php
-    $i = 0;
+    $cells = [];
     foreach ($items as $row) {
       foreach ($row['content'] as $column) {
-        switch ($i++ % 4) {
-          case 0:
-            $htmlBefore =
-              '<div class="row">
-                 <div class="col-xs-12 col-md-6 col-md-push-6">
-                   <div class="row">
-                     <div class="col-xs-12 col-sm-6 col-sm-push-6">';
-            $htmlAfter = '</div>';
-            break;
-
-          case 1:
-            $htmlBefore = '<div class="col-xs-12 col-sm-6 col-sm-pull-6">';
-            $htmlAfter = '</div></div></div>';
-            break;
-
-          case 2:
-            $htmlBefore =
-              '<div class="col-xs-12 col-md-6 col-md-pull-6">
-                 <div class="row">
-                   <div class="col-xs-12 col-sm-6 col-sm-push-6">';
-            $htmlAfter = '</div>';
-            break;
-
-          case 3:
-            $htmlBefore = '<div class="col-xs-12 col-sm-6 col-sm-pull-6">';
-            $htmlAfter = '</div></div></div></div>';
-            break;    
-        }
-        print $htmlBefore;
-        print $column['content'];
-        print $htmlAfter;
+        $cells[] = $column['content'];
       }
     }
-    switch ($i % 4) {
+
+    switch (count($cells)) {
       case 0:
         break;
 
       case 1:
-      case 3:
-        print '</div></div></div>';
+        print '<div class="row">
+                 <div class="col-xs-12 col-sm-6 col-md-3">' .
+                   $cells[0] .
+                '</div>
+               </div>';
         break;
 
       case 2:
-        print '</div>';
+        print '<div class="row">
+                 <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-3 col-md-push-3">' .
+                   $cells[0] .
+                '</div>
+                 <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-3 col-md-pull-3">' .
+                   $cells[1] .
+                '</div>
+               </div>';
+        break;
+
+      case 3:
+        print '<div class="row">
+                 <div class="col-xs-12 col-md-6 col-md-push-3">
+                   <div class="row">
+                     <div class="col-xs-12 col-sm-6 col-sm-push-6">' .
+                       $cells[0] .
+                    '</div>
+                     <div class="col-xs-12 col-sm-6 col-sm-pull-6">' .
+                       $cells[1] .
+                     '</div>
+                   </div>
+                 </div>
+                 <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-3 col-md-push-0 col-md-pull-6">' .
+                   $cells[2] .
+                 '</div>
+               </div>';
+        break;
+
+      default:
+        foreach ($cells as $i => $cell) {
+          switch ($i % 4) {
+            case 0:
+              $htmlBefore =
+              '<div class="row">
+                 <div class="col-xs-12 col-md-6 col-md-push-6">
+                   <div class="row">
+                     <div class="col-xs-12 col-sm-6 col-sm-push-6">';
+              $htmlAfter = '</div>';
+              break;
+
+            case 1:
+              $htmlBefore = '<div class="col-xs-12 col-sm-6 col-sm-pull-6">';
+              $htmlAfter = '</div></div></div>';
+              break;
+
+            case 2:
+              $htmlBefore =
+              '<div class="col-xs-12 col-md-6 col-md-pull-6">
+                 <div class="row">
+                   <div class="col-xs-12 col-sm-6 col-sm-push-6">';
+              $htmlAfter = '</div>';
+              break;
+
+            case 3:
+              $htmlBefore = '<div class="col-xs-12 col-sm-6 col-sm-pull-6">';
+              $htmlAfter = '</div></div></div></div>';
+              break;
+          }
+          print $htmlBefore;
+          print $cell;
+          print $htmlAfter;
+        }
+        switch (count($cells) % 4) {
+          case 0:
+            break;
+
+          case 1:
+          case 3:
+            print '</div></div></div>';
+            break;
+
+          case 2:
+            print '</div>';
+            break;
+        }
         break;
     }
   ?>
