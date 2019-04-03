@@ -742,10 +742,15 @@ div.video-filter {
   .view-content {
     /*
      * .bg-gray-view-content applies .bg-gray to .view-content only
-     * and adds vertical padding
+     * and adds vertical padding.
+     *
+     * .view-content .views-field:last-child has a bottom margin of 2*1.3em
+     * so we don't need as much bottom padding. Add negative top margin to
+     * offset the padding.
      */
-    background-color: #f4f4f4;
-    padding: 4*1.3em 0;
+    background-color: @slate-10;
+    padding: 4*1.3em 0 2*1.3em;
+    margin-top: -4*1.3em;
   }
 }
 
