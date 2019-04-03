@@ -712,6 +712,7 @@ body.html a {
   font-family: 'Rubik', arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+  color: #495365;
 }
 body.html strong {
   font-weight: 400;
@@ -1255,7 +1256,7 @@ div.video-filter video {
   display: block;
 }
 .episode-content-tab div.jp-interface ul.jp-controls a {
-  color: #697891;
+  color: #495365;
   background-image: none;
   text-indent: 0;
   position: relative;
@@ -1466,6 +1467,7 @@ div.video-filter video {
 }
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link a {
   font-weight: 400;
+  color: #495365;
 }
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all {
   /*
@@ -1649,7 +1651,7 @@ div.video-filter video {
      * Format a ".more-link a" in the same way as a .section-more
      */
   margin-top: 7px;
-  color: #999;
+  color: #495365;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.4em;
