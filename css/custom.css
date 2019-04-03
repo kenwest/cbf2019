@@ -706,6 +706,7 @@ body.html {
   font-family: 'Rubik', arial, sans-serif;
   font-style: normal;
   font-weight: 300;
+  color: #697891;
 }
 body.html a {
   font-family: 'Rubik', arial, sans-serif;
@@ -719,6 +720,25 @@ body.html .font-alt,
 body.html form ul.token-input-list,
 body.html div.token-input-dropdown {
   font-family: 'Rubik', arial, sans-serif;
+}
+body.html .section-text,
+body.html blockquote {
+  color: #697891;
+}
+.city-blue {
+  color: #1c9cd6;
+}
+.midnight-blue {
+  color: #0f2e38;
+}
+.slate {
+  color: #697891;
+}
+.sea-foam {
+  color: #a3c7c7;
+}
+.cardinal {
+  color: #cf2e4f;
 }
 /**********************************************
  * Overcome Bootstrap formatting of h1, .h1 etc
@@ -806,7 +826,7 @@ h6,
  * Format the Title header
  */
 .bg-dark-alfa-50 {
-  text-shadow: 0 0 40px #a4d7ef;
+  text-shadow: 0 0 40px #77c4e6;
 }
 .bg-dark-alfa-50::before {
   /*
@@ -1267,7 +1287,7 @@ div.video-filter video {
 }
 .episode-content-tab div.jp-seek-bar,
 .episode-content-tab div.jp-volume-bar {
-  background: #a5aebd;
+  background: #c3c9d3;
   cursor: pointer;
 }
 .episode-content-tab div.jp-seek-bar {
@@ -1573,10 +1593,15 @@ div.video-filter video {
 .bg-gray-view-content .view-content {
   /*
      * .bg-gray-view-content applies .bg-gray to .view-content only
-     * and adds vertical padding
+     * and adds vertical padding.
+     *
+     * .view-content .views-field:last-child has a bottom margin of 2*1.3em
+     * so we don't need as much bottom padding. Add negative top margin to
+     * offset the padding.
      */
-  background-color: #f4f4f4;
-  padding: 5.2em 0;
+  background-color: #f0f2f4;
+  padding: 5.2em 0 2.6em;
+  margin-top: -5.2em;
 }
 .container-view-content .view-content {
   /*
@@ -1907,7 +1932,7 @@ div.video-filter video {
 .portrait-image-placeholder {
   position: relative;
   padding-bottom: 121.66666667%;
-  background-color: #c3c9d3;
+  background-color: #f0f2f4;
   text-align: center;
 }
 .portrait-image-placeholder .i,
@@ -1916,7 +1941,7 @@ div.video-filter video {
   top: 5%;
   max-width: 90%;
   left: 5%;
-  color: #8793a7;
+  color: #a5aebd;
   font-size: 280px;
 }
 .view.venue {
