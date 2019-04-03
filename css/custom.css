@@ -1904,6 +1904,21 @@ div.video-filter video {
   -o-background-size: cover;
   background-size: cover;
 }
+.portrait-image-placeholder {
+  position: relative;
+  padding-bottom: 121.66666667%;
+  background-color: #c3c9d3;
+  text-align: center;
+}
+.portrait-image-placeholder .i,
+.portrait-image-placeholder .svg-inline--fa {
+  position: absolute;
+  top: 5%;
+  max-width: 90%;
+  left: 5%;
+  color: #8793a7;
+  font-size: 280px;
+}
 .view.venue {
   text-transform: uppercase;
   font-weight: 500;
