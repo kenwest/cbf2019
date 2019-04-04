@@ -100,19 +100,19 @@
      */
     $tabFields = [
       'field_order_url' => [
-        'label' => 'Order hard copy',
+        'label' => '<i class="fal fa-fw fa-book"></i> Order hard copy',
         'weight' => 4,
       ],
       'field_attachment' => [
-        'label' => 'Download PDF',
+        'label' => '<i class="fal fa-fw fa-file-pdf"></i> Download PDF',
         'weight' => 3,
       ],
       'field_video' => [
-        'label' => 'Play video',
+        'label' => '<i class="fal fa-fw fa-video"></i> Play video',
         'weight' => 1,
       ],
       'field_content' => [
-        'label' => 'Play audio',
+        'label' => '<i class="fal fa-fw fa-microphone"></i> Play audio',
         'weight' => 2,
       ],
     ];
