@@ -1559,6 +1559,9 @@ div.video-filter video {
   margin-bottom: 0;
   font-size: 28px;
 }
+.view-content .views-field-field-logo {
+  max-height: 88px;
+}
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
   /*
