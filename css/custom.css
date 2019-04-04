@@ -1529,7 +1529,8 @@ div.video-filter video {
 }
 .view-content .views-field-title,
 .view-content .views-field-field-title,
-.view-content .views-field-name {
+.view-content .views-field-name,
+.view-content .views-field-field-details .tablefield th {
   /*
      * Generic title formatting
      */
@@ -1543,7 +1544,8 @@ div.video-filter video {
 }
 .view-content .views-field-title a,
 .view-content .views-field-field-title a,
-.view-content .views-field-name a {
+.view-content .views-field-name a,
+.view-content .views-field-field-details .tablefield th a {
   font-family: 'Rubik', arial, sans-serif;
   font-weight: 400;
 }
@@ -1604,8 +1606,13 @@ div.video-filter video {
 }
 .views-bootstrap-grid-plugin-style .views-field-title,
 .item-carousel-4-view .views-field-title,
+.view-content .views-field-field-details .views-field-title,
 .views-bootstrap-grid-plugin-style .views-field-field-title,
-.item-carousel-4-view .views-field-field-title {
+.item-carousel-4-view .views-field-field-title,
+.view-content .views-field-field-details .views-field-field-title,
+.views-bootstrap-grid-plugin-style .tablefield th,
+.item-carousel-4-view .tablefield th,
+.view-content .views-field-field-details .tablefield th {
   /*
      * Reduce the size of titles in views which display multiple items
      */
@@ -2488,11 +2495,46 @@ div.video-filter video {
  * Format field_details in views
  */
 .views-field-field-details .tablefield {
-  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .views-field-field-details .tablefield caption {
-  padding-bottom: 1em;
+  font-weight: 300 !important;
+  font-family: 'Rubik', arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-bottom: 2em;
+  margin-bottom: 22px;
   text-align: center;
+  font-size: 18px;
+  color: #1c9cd6;
+}
+.views-field-field-details .tablefield caption .more-link a,
+.views-field-field-details .tablefield caption .section-more {
+  /*
+     * Pad the top of a '.more-link a' and a '.section-more' by 7px
+     * when inside a .h4. This aligns the bottom of the 'more' link
+     * and the h4 next to it (18px h4 - 11px link = 7px)
+     */
+  padding-top: 7px;
+}
+.views-field-field-details .tablefield caption a {
+  font-family: 'Rubik', arial, sans-serif;
+  font-weight: 300;
+}
+.views-field-field-details .tablefield tr {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.views-field-field-details .tablefield th {
+  padding-bottom: 1.3em;
+}
+.views-field-field-details .tablefield th,
+.views-field-field-details .tablefield td {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .views-field-field-details .tablefield th p:last-child,
 .views-field-field-details .tablefield td p:last-child {

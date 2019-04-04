@@ -660,7 +660,8 @@ div.video-filter {
 
   .views-field-title,
   .views-field-field-title,
-  .views-field-name {
+  .views-field-name,
+  .views-field-field-details .tablefield th {
     /*
      * Generic title formatting
      */
@@ -759,9 +760,11 @@ div.video-filter {
 }
 
 .views-bootstrap-grid-plugin-style,
-.item-carousel-4-view {
+.item-carousel-4-view,
+.view-content .views-field-field-details {
   .views-field-title,
-  .views-field-field-title {
+  .views-field-field-title,
+  .tablefield th {
     /*
      * Reduce the size of titles in views which display multiple items
      */
@@ -1364,14 +1367,35 @@ div.video-filter {
  */
 .views-field-field-details {
   .tablefield {
-    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
     caption {
-      padding-bottom: 1em;
+      // Emulate .view-header-and-more containing only a .view-header
+      .h4;
+      .font-alt(300);
+
+      padding-bottom: 2em; // P element
+      margin-bottom: @line-height-computed; // .view-header-and-more
       text-align: center;
+      font-size: 18px;
+      color: @city-blue;
+    }
+
+    tr {
+      margin-left: floor(@grid-gutter-width/2); // Simulate a Bootstrap row
+      margin-right: floor(@grid-gutter-width/2);
+    }
+
+    th {
+      padding-bottom: 1.3em; // .views-field-title margin not effective so pad instead
     }
 
     th, td {
+      padding-left: floor(@grid-gutter-width/2); // Simulate a Bootstrap column
+      padding-right: floor(@grid-gutter-width/2);
+
       p:last-child {
         margin-bottom: 0;
       }
