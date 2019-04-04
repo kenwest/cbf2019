@@ -2289,6 +2289,9 @@ div.video-filter video {
 .block.without-bottom-margin {
   margin-bottom: 0;
 }
+.block.without-bottom-margin .office-view .google-map {
+  margin-top: 110px;
+}
 .front .block.block-system,
 .page-home .block.block-system {
   display: none;
