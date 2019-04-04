@@ -1235,11 +1235,10 @@ div.video-filter {
  * Block formatting
  */
 .block {
-  margin-bottom: 5*@line-height-computed; // Vertical spacing between blocks ...
+  margin-bottom: 5*@line-height-computed; // Vertical spacing between blocks
 
-  &.bottom-block {
-    margin-top: -5*@line-height-computed; // ... except the last ...
-    margin-bottom: 0;                     // ... which sits at the bottom of the page
+  &.without-bottom-margin {
+    margin-bottom: 0;
   }
 }
 

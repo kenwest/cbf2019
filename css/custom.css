@@ -2286,8 +2286,7 @@ div.video-filter video {
 .block {
   margin-bottom: 110px;
 }
-.block.bottom-block {
-  margin-top: -110px;
+.block.without-bottom-margin {
   margin-bottom: 0;
 }
 .front .block.block-system,
