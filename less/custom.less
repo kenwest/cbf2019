@@ -526,9 +526,9 @@ div.video-filter {
 
 .view-header-and-more {
  /*
-  * and 60px below to match Janelle's spec.
+  * Put a line-height margin under .view-header-and-more row
   */
-  margin-bottom: 60px;
+  margin-bottom: @line-height-computed;
 }
 
 .view-filters {
@@ -542,8 +542,8 @@ div.video-filter {
    * Undo the margin-bottom of .view-header-and-more using a
    * margin-top and add another margin-bottom. 
    */
-  margin-top: -60px;
-  margin-bottom: 60px;
+  margin-top: -2*@line-height-computed;
+  margin-bottom: 2*@line-height-computed;
 
   /*
    * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
@@ -616,10 +616,10 @@ div.video-filter {
     /*
      * Generic field formatting
      */
-    margin-bottom: 1.3em;
+    margin-bottom: @line-height-computed;
 
     &:last-child {
-      margin-bottom: 2*1.3em;
+      margin-bottom: 2*@line-height-computed;
     }
   }
 
@@ -740,12 +740,11 @@ div.video-filter {
      * .bg-gray-view-content applies .bg-gray to .view-content only
      * and adds vertical padding.
      *
-     * .view-content .views-field:last-child has a bottom margin of 2*1.3em
-     * so we don't need as much bottom padding. Add negative top margin to
-     * offset the padding.
+     * .view-content .views-field:last-child has a bottom margin of
+     * 2*@line-height-computed so we don't need as much bottom padding.
      */
     background-color: @slate-10;
-    padding: 4*1.3em 0 2*1.3em;
+    padding: 3*@line-height-computed 0 @line-height-computed;
   }
 }
 
