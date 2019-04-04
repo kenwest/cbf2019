@@ -1339,6 +1339,7 @@ div.video-filter video {
 }
 .episode-content-tab .episode-tags .field {
   display: inline;
+  font-style: italic;
 }
 .episode-content-tab .episode-tags .field:first-child::before {
   content: 'Tags:\00a0';
