@@ -969,7 +969,8 @@ div.video-filter video {
 }
 .episode-content-tab h3,
 .episode-content-tab ul,
-.episode-content-tab .field {
+.episode-content-tab .field,
+.episode-content-tab .episode-tags {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
 }
