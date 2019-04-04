@@ -2324,10 +2324,15 @@ div.video-filter video {
 .block {
   margin-bottom: 110px;
 }
+.block.with-bottom-border {
+  padding-bottom: 44px;
+  border-bottom: 1px solid #a5aebd;
+  margin-bottom: 66px;
+}
 .block.without-bottom-margin {
   margin-bottom: 0;
 }
-.block.without-bottom-margin .office-view .google-map {
+.block .office-view .google-map {
   margin-top: 110px;
 }
 .front .block.block-system,
