@@ -119,11 +119,13 @@
 
     $tabActive = [
       'tab' => '',
-      'weight' => 100
+      'weight' => 100,
+      'count' => 0,
     ];
 
     foreach ($tabFields as $tabKey => $tabSettings) {
       if (isset($content[$tabKey])) {
+        $tabActive['count']++;
         if ($tabSettings['weight'] < $tabActive['weight']) {
           $tabActive['tab'] = $tabKey;
           $tabActive['weight'] = $tabSettings['weight'];
@@ -131,7 +133,7 @@
       }
     }
 
-    if (!empty($tabActive['tab'])) {
+    if ($tabActive['count'] > 0) {
       $tabContent = '';
       $tabPaneContent = '';
 
@@ -205,9 +207,11 @@
       print       filter_xss(drupal_get_title());
       print     '</h3>';
       print     render($content['field_subtitle']);
-      print     '<ul class="nav nav-pills animate">';
-      print       $tabContent;
-      print     '</ul>';
+      if ($tabActive['count'] > 1) {
+        print   '<ul class="nav nav-pills animate">';
+        print     $tabContent;
+        print   '</ul>';
+      }
       print     '<div class = "episode-tags">';
       print       render($content['field_topic']);
       print       render($content['field_topics']);
