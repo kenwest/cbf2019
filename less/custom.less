@@ -210,14 +210,47 @@ div.video-filter {
     padding-bottom: 0px;
   }
 
-  @media (min-width: @screen-md-min) {
-    .nav-pills {
+  .nav-pills {
+    text-transform: uppercase;
+
+    > li {
+      > a {
+        border-radius: 2px; // Emulate .btn-mod.btn-round
+        line-height: 2*@font-size-base; // Make room for icon
+
+        i,
+        svg.svg-inline--fa {
+          float: left;
+          font-size: 2*@font-size-base;
+        }
+      }
+
+      > a:hover,
+      > a:focus {
+        background-color: @slate-10;
+      }
+    }
+
+    li.active {
+      > a,
+      > a:hover,
+      > a:focus {
+        color: white;
+        background-color: @city-blue;
+      }
+    }
+
+    @media (min-width: @screen-md-min) {
       border-bottom-width: 0px;
 
       > li {
         display: block;
         float: none;
         width: 100%;
+      }
+
+      > li + li {
+        margin-left: 0;
       }
     }
   }
