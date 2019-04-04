@@ -1286,6 +1286,12 @@ div.video-filter {
     margin-bottom: 3*@line-height-computed;
   }
 
+  &.border-sandwich-above + &.border-sandwich-below {
+    margin-top: -3*@line-height-computed;
+    border-top: 1px solid @slate-60;
+    padding-top: 3*@line-height-computed;
+  }
+
   &.without-bottom-margin {
     margin-bottom: 0;
   }

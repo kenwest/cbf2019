@@ -2329,6 +2329,11 @@ div.video-filter video {
   border-bottom: 1px solid #a5aebd;
   margin-bottom: 66px;
 }
+.block.border-sandwich-above + .block.border-sandwich-below {
+  margin-top: -66px;
+  border-top: 1px solid #a5aebd;
+  padding-top: 66px;
+}
 .block.without-bottom-margin {
   margin-bottom: 0;
 }
