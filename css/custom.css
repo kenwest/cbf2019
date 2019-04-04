@@ -1360,11 +1360,9 @@ div.video-filter video {
 }
 .view-header-and-more {
   /*
-  * Put 140px margin above the .view-header-and-more row
-  * and 60px below to match Janelle's spec.
+  * Put a line-height margin under .view-header-and-more row
   */
-  margin-top: 140px;
-  margin-bottom: 60px;
+  margin-bottom: 22px;
 }
 .view-filters {
   /*
@@ -1376,14 +1374,11 @@ div.video-filter video {
    * Undo the margin-bottom of .view-header-and-more using a
    * margin-top and add another margin-bottom. 
    */
-  margin-top: -60px;
-  margin-bottom: 60px;
+  margin-top: -44px;
+  margin-bottom: 44px;
   /*
    * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
    */
-}
-.view-filters:first-child {
-  margin-top: 140px;
 }
 .view-filters .views-exposed-form .views-exposed-widget {
   float: none;
@@ -1496,17 +1491,14 @@ div.video-filter video {
     margin-left: 16.66666667%;
   }
 }
-.view-content {
-  margin-bottom: 2.6em;
-}
 .view-content .views-field {
   /*
      * Generic field formatting
      */
-  margin-bottom: 1.3em;
+  margin-bottom: 22px;
 }
 .view-content .views-field:last-child {
-  margin-bottom: 2.6em;
+  margin-bottom: 44px;
 }
 .view-content .views-field-title,
 .view-content .views-field-field-title,
@@ -1597,13 +1589,11 @@ div.video-filter video {
      * .bg-gray-view-content applies .bg-gray to .view-content only
      * and adds vertical padding.
      *
-     * .view-content .views-field:last-child has a bottom margin of 2*1.3em
-     * so we don't need as much bottom padding. Add negative top margin to
-     * offset the padding.
+     * .view-content .views-field:last-child has a bottom margin of
+     * 2*@line-height-computed so we don't need as much bottom padding.
      */
   background-color: #f0f2f4;
-  padding: 5.2em 0 2.6em;
-  margin-top: -5.2em;
+  padding: 66px 0 22px;
 }
 .container-view-content .view-content {
   /*
@@ -2289,6 +2279,20 @@ div.video-filter video {
   padding-left: 15px;
   right: 66.66666667%;
   text-align: left;
+}
+/******************
+ * Block formatting
+ */
+.block {
+  margin-bottom: 110px;
+}
+.block.bottom-block {
+  margin-top: -110px;
+  margin-bottom: 0;
+}
+.front .block.block-system,
+.page-home .block.block-system {
+  display: none;
 }
 /******************************
  * Format various content types
