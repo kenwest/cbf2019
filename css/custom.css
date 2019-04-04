@@ -1713,6 +1713,7 @@ div.video-filter video {
   padding-right: 15px;
   padding-left: 15px;
   word-break: break-word;
+  min-height: 88px;
 }
 @media (min-width: 992px) {
   .office-view .views-row .views-field {
