@@ -2403,8 +2403,7 @@ div.video-filter video {
 .block .office-view .google-map {
   margin-top: 110px;
 }
-.front .block.block-system,
-.page-home .block.block-system {
+.front .block.block-system {
   display: none;
 }
 .block .footer-social-links a:before {
