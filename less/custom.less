@@ -1094,6 +1094,36 @@ div.video-filter {
       font-size: 280px;
     }
   }
+}
+
+.landscape-image-placeholder {
+  position: relative;
+  padding-bottom: 100%*368/653;
+  background-color: @slate-10;
+  text-align: center;
+
+  .i,
+  .svg-inline--fa {
+    position: absolute;
+    top: 5%;
+    max-width: 100%*(368/653)*(360/438);
+    left: 100%*(1-(368/653)*(360/438))/2;
+    color: @slate-60;
+
+    // Mobile
+      font-size: 151px;
+    @media (min-width: @screen-xs-min) {
+      font-size: 235px;
+    }
+    @media (min-width: @screen-sm-min) {
+      font-size: 380px;
+    }
+    @media (min-width: @screen-md-min) {
+      font-size: 286px;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 344px;
+    }
   }
 }
 
