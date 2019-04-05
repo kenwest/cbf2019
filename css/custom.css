@@ -1575,7 +1575,7 @@ div.video-filter video {
   /*
          * The Previous and Next buttons on the OWL carousel are a mid grey
          */
-  background-color: #ccc;
+  background-color: #a5aebd;
 }
 .view-content .owl-carousel .owl-item .views-field-field-title-image,
 .view-content .owl-carousel .owl-item .views-field-field-highlight {
@@ -1599,7 +1599,7 @@ div.video-filter video {
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: #f4f4f4;
+  background-color: #f0f2f4;
 }
 .view-content .owl-carousel .owl-item .views-field-field-title-image .field-content img,
 .view-content .owl-carousel .owl-item .views-field-field-highlight .field-content img {
@@ -1831,7 +1831,7 @@ div.video-filter video {
    */
   height: 410px;
   position: relative;
-  background-color: #111 !important;
+  background-color: #697891 !important;
   z-index: 1;
 }
 /*
@@ -1974,6 +1974,69 @@ div.video-filter video {
   left: 5%;
   color: #a5aebd;
   font-size: 280px;
+}
+@media (min-width: 480px) {
+  .portrait-image-placeholder .i,
+  .portrait-image-placeholder .svg-inline--fa {
+    font-size: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .portrait-image-placeholder .i,
+  .portrait-image-placeholder .svg-inline--fa {
+    font-size: 368px;
+  }
+}
+@media (min-width: 992px) {
+  .portrait-image-placeholder .i,
+  .portrait-image-placeholder .svg-inline--fa {
+    font-size: 310px;
+  }
+}
+@media (min-width: 1200px) {
+  .portrait-image-placeholder .i,
+  .portrait-image-placeholder .svg-inline--fa {
+    font-size: 280px;
+  }
+}
+.landscape-image-placeholder {
+  position: relative;
+  padding-bottom: 56.35528331%;
+  background-color: #f0f2f4;
+  text-align: center;
+}
+.landscape-image-placeholder .i,
+.landscape-image-placeholder .svg-inline--fa {
+  position: absolute;
+  top: 5%;
+  max-width: 46.31941094%;
+  left: 26.84029453%;
+  color: #a5aebd;
+  font-size: 151px;
+}
+@media (min-width: 480px) {
+  .landscape-image-placeholder .i,
+  .landscape-image-placeholder .svg-inline--fa {
+    font-size: 235px;
+  }
+}
+@media (min-width: 768px) {
+  .landscape-image-placeholder .i,
+  .landscape-image-placeholder .svg-inline--fa {
+    font-size: 380px;
+  }
+}
+@media (min-width: 992px) {
+  .landscape-image-placeholder .i,
+  .landscape-image-placeholder .svg-inline--fa {
+    font-size: 286px;
+  }
+}
+@media (min-width: 1200px) {
+  .landscape-image-placeholder .i,
+  .landscape-image-placeholder .svg-inline--fa {
+    font-size: 344px;
+  }
 }
 .view.venue {
   text-transform: uppercase;
