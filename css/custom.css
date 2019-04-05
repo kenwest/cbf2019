@@ -1559,8 +1559,7 @@ div.video-filter video {
   margin-bottom: 0;
   font-size: 28px;
 }
-.view-content .views-field-field-logo .i,
-.view-content .views-field-field-logo .svg-inline--fa {
+.view-content .views-field-field-logo object {
   max-height: 88px;
 }
 .view-content .owl-carousel .views-field-field-in-activity,
