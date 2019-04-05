@@ -2567,6 +2567,10 @@ div.video-filter video {
     column-count: 1;
   }
 }
+.node-type-episode .content {
+  border-top: 1px solid #a5aebd;
+  padding-top: 44px;
+}
 /*******************************
  * Format field_details in views
  */
