@@ -1078,7 +1078,22 @@ div.video-filter {
     max-width: 90%;
     left: (100%-90%)/2;
     color: @slate-60;
-    font-size: 280px;
+
+    // Mobile
+      font-size: 280px;
+    @media (min-width: @screen-xs-min) {
+      font-size: 450px;
+    }
+    @media (min-width: @screen-sm-min) {
+      font-size: 368px;
+    }
+    @media (min-width: @screen-md-min) {
+      font-size: 310px;
+    }
+    @media (min-width: @screen-lg-min) {
+      font-size: 280px;
+    }
+  }
   }
 }
 
