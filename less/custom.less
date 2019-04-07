@@ -596,11 +596,20 @@ div.video-filter {
       > .form-item {
         .make-row();
 
+        @media (min-width: @screen-lg-min) {
+          text-align: justify;
+
+          &::after {
+            content: ' ';
+            width: 100%;
+            display: inline-block;
+          }
+        }
+
         > .form-type-bef-link {
           .make-xs-column(6);
           .make-480-column(4);
           .make-sm-column(3);
-          .make-lg-column(1);
 
           /*
            * Simulate a h5
@@ -618,6 +627,23 @@ div.video-filter {
             color: @link-color;
           }
 
+          @media (min-width: @screen-lg-min) {
+	        display: inline-block;
+            float: none;
+            width: auto;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:first-child {
+              padding-left: floor(@grid-gutter-width/2);
+            }
+
+            &:last-child {
+              padding-right: floor(@grid-gutter-width/2);
+            }
+          }
+
+
           &.form-item-edit-field-office-tid-all {
             /*
              * Don't display the All/Any option for the Office taxonomy
@@ -629,6 +655,19 @@ div.video-filter {
                * On large displays, centre the 8 Offices by adding 2 columns to the grid
                */
               .make-lg-column-offset(2);
+
+              @media (min-width: @screen-lg-min) {
+                padding-left: floor(@grid-gutter-width/2); // Like ::first-child
+              }
+            }
+          }
+
+          &.form-item-edit-taxonomy-vocabulary-1-tid-1,
+          &.form-item-edit-field-office-tid-1383 {
+            @media (min-width: @screen-lg-min) {
+              &:last-child {
+                margin-right: 100%*(2/12);
+              }
             }
           }
 

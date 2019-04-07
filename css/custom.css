@@ -1451,6 +1451,16 @@ div.video-filter video {
   margin-right: -15px;
   margin-left: -15px;
 }
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item {
+    text-align: justify;
+  }
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item::after {
+    content: ' ';
+    width: 100%;
+    display: inline-block;
+  }
+}
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
   float: left;
   width: 50%;
@@ -1481,15 +1491,24 @@ div.video-filter video {
     width: 25%;
   }
 }
-@media (min-width: 1200px) {
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
-    float: left;
-    width: 8.33333333%;
-  }
-}
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link a {
   font-weight: 400;
   color: #495365;
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link {
+    display: inline-block;
+    float: none;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
+    padding-left: 15px;
+  }
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link:last-child {
+    padding-right: 15px;
+  }
 }
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all {
   /*
@@ -1505,6 +1524,17 @@ div.video-filter video {
 @media (min-width: 1200px) {
   .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all + .form-type-bef-link {
     margin-left: 16.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all + .form-type-bef-link {
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-taxonomy-vocabulary-1-tid-1:last-child,
+  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-1383:last-child {
+    margin-right: 16.66666667%;
   }
 }
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-taxonomy-vocabulary-1-tid-all {
