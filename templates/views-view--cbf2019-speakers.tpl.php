@@ -29,5 +29,6 @@
 
 if (count($view->result) > 1) {
   $header = str_replace('Speaker', 'Speakers', $header);
+  $header = str_replace('Author', 'Authors', $header);
 }
 include 'views-view.tpl.php';
