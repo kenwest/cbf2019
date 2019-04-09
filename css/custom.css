@@ -1439,6 +1439,7 @@ div.video-filter video {
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .office-view .view-content,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view.view-cbf2019-blog .item-list,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
@@ -1695,6 +1696,7 @@ div.video-filter video {
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .office-view .view-content,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view.view-cbf2019-blog .item-list,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
@@ -1760,6 +1762,7 @@ div.video-filter video {
 .office-view .view-content .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .office-view .view-content .office-view .view-content,
 .office-view .view-content .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.office-view .view-content .view.view-cbf2019-blog .item-list,
 .office-view .view-content .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
@@ -2261,10 +2264,12 @@ div.video-filter video {
     margin-left: 66.66666667%;
   }
 }
+.view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets,
 .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets {
   margin-right: -15px;
   margin-left: -15px;
 }
+.view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
   float: left;
   width: 100%;
@@ -2274,29 +2279,34 @@ div.video-filter video {
   padding-left: 15px;
 }
 @media (min-width: 480px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
     float: left;
     width: 25%;
   }
 }
 @media (min-width: 1200px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
     float: left;
     width: 16.66666667%;
   }
 }
+.view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title,
 .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title {
   position: relative;
   min-height: 1px;
@@ -2304,27 +2314,151 @@ div.video-filter video {
   padding-left: 15px;
 }
 @media (min-width: 480px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title,
   .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-title {
     float: left;
     width: 100%;
+  }
+}
+.view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button input,
+.view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button input {
+  margin-top: 27px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+1) {
+    left: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+1) {
+    left: 66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+2) {
+    right: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+2) {
+    right: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+2) {
+    left: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+4) {
+    left: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+4) {
+    left: -66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+7) {
+    right: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+7) {
+    right: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+7) {
+    left: 66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+9) {
+    left: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+9) {
+    left: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+10) {
+    right: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .col-md-4:nth-child(13n+10) {
+    right: 66.66666667%;
+  }
+}
+@media (min-width: 480px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
+    margin-left: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
+    margin-left: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
+    margin-left: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
+    margin-left: 83.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .view.views-1-row.view-cbf2019-blog .col-md-4:nth-child(13n+1) {
+    left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .view.views-1-row.view-cbf2019-blog .col-md-4:nth-child(13n+1) {
+    left: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .view.views-2-rows.view-cbf2019-blog .col-md-4:nth-child(13n+1) {
+    left: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view.views-2-rows.view-cbf2019-blog .col-md-4:nth-child(13n+1) {
+    left: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .view.views-2-rows.view-cbf2019-blog .col-md-4:nth-child(13n+2) {
+    left: -33.33333333%;
   }
 }
 @media (min-width: 992px) {
@@ -2337,14 +2471,11 @@ div.video-filter video {
     margin-left: 0%;
   }
 }
-.view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button input {
-  margin-top: 27px;
-  width: 100%;
-}
 /*
  * Set up the pager to switch the previous/next buttons.
  * The .pager-current is hidden for aesthetic reasons.
  */
+.view.view-cbf2019-blog .item-list,
 .view.right-to-left .item-list {
   padding-right: 15px;
   padding-left: 15px;
@@ -2352,24 +2483,34 @@ div.video-filter video {
   margin-left: auto;
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-blog .item-list,
   .view.right-to-left .item-list {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
+  .view.view-cbf2019-blog .item-list,
   .view.right-to-left .item-list {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
+  .view.view-cbf2019-blog .item-list,
   .view.right-to-left .item-list {
     width: 1170px;
   }
 }
+.view.view-cbf2019-blog .item-list .container,
 .view.right-to-left .item-list .container,
+.view.view-cbf2019-blog .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .view.right-to-left .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.view.view-cbf2019-blog .item-list .office-view .view-content,
 .view.right-to-left .item-list .office-view .view-content,
+.view.view-cbf2019-blog .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
 .view.right-to-left .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view.view-cbf2019-blog .item-list .view.view-cbf2019-blog .item-list,
+.view.right-to-left .item-list .view.view-cbf2019-blog .item-list,
+.view.view-cbf2019-blog .item-list .view.right-to-left .item-list,
 .view.right-to-left .item-list .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
@@ -2378,10 +2519,12 @@ div.video-filter video {
   padding-right: initial;
   padding-left: initial;
 }
+.view.view-cbf2019-blog .item-list .pager,
 .view.right-to-left .item-list .pager {
   margin-right: -15px;
   margin-left: -15px;
 }
+.view.view-cbf2019-blog .item-list .pager .pager-previous,
 .view.right-to-left .item-list .pager .pager-previous {
   position: relative;
   float: left;
@@ -2392,6 +2535,7 @@ div.video-filter video {
   left: 66.66666667%;
   text-align: right;
 }
+.view.view-cbf2019-blog .item-list .pager .pager-current,
 .view.right-to-left .item-list .pager .pager-current {
   position: relative;
   float: left;
@@ -2401,6 +2545,7 @@ div.video-filter video {
   padding-left: 15px;
   visibility: hidden;
 }
+.view.view-cbf2019-blog .item-list .pager .pager-next,
 .view.right-to-left .item-list .pager .pager-next {
   position: relative;
   float: left;
@@ -2664,6 +2809,7 @@ div.video-filter video {
 .container .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container .office-view .view-content,
 .container .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.container .view.view-cbf2019-blog .item-list,
 .container .view.right-to-left .item-list {
   /*
      * Bootstrap containers are not designed to be nested
