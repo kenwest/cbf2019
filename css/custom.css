@@ -827,14 +827,18 @@ h6,
  * Format the Title header
  */
 .bg-dark-alfa-50 {
-  text-shadow: 0 0 40px #77c4e6;
+  text-shadow: 0 0 40px #49b0de;
 }
 .bg-dark-alfa-50::before {
   /*
      * When displayed over a white background, this background colour gives the theme's
-     * 'City blue 60%' which is rgb(164, 215, 239)
+     * 'City blue 80%' which is rgb(73, 176, 222)
      */
-  background: rgba(104, 189, 228, 0.6);
+  background: rgba(28, 157, 214, 0.8);
+}
+.hs-line-14,
+.hs-line-11 {
+  letter-spacing: 0.4em;
 }
 /*************************
  * Format SVG images
@@ -2082,6 +2086,14 @@ div.video-filter video {
   margin-left: -15px;
   margin-bottom: 0;
 }
+.view.venue .views-field:before,
+.view.venue .views-field:after {
+  display: table;
+  content: " ";
+}
+.view.venue .views-field:after {
+  clear: both;
+}
 .view.venue .views-field:last-child {
   margin-bottom: 0;
 }
@@ -2231,6 +2243,34 @@ div.video-filter video {
 }
 .view.venue .view.event-price h3:first-child .Select {
   padding-top: 0;
+}
+.view.view-cbf2019-staff-slider .owl-prev,
+.view.view-cbf2019-staff-slider .owl-next {
+  top: 50%;
+}
+@media (min-width: 480px) {
+  .view.view-cbf2019-staff-slider .owl-prev,
+  .view.view-cbf2019-staff-slider .owl-next {
+    top: 35%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-staff-slider .owl-prev,
+  .view.view-cbf2019-staff-slider .owl-next {
+    top: 128px;
+  }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-staff-slider .owl-prev,
+  .view.view-cbf2019-staff-slider .owl-next {
+    top: 172px;
+  }
+}
+@media (min-width: 1200px) {
+  .view.view-cbf2019-staff-slider .owl-prev,
+  .view.view-cbf2019-staff-slider .owl-next {
+    top: 155px;
+  }
 }
 .view.view-cbf2019-event-registration .views-row {
   margin-right: -15px;
