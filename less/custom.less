@@ -1278,6 +1278,26 @@ div.video-filter {
   }
 }
 
+.view.view-cbf2019-staff-slider {
+  .owl-prev,
+  .owl-next {
+    // Mobile
+      top: 50%; // The buttons are hidden on mobile so this doesn't really matter
+    @media (min-width: @screen-xs-min) {
+      top: 35%;
+    }
+    @media (min-width: @screen-sm-min) {
+      top: 128px;
+    }
+    @media (min-width: @screen-md-min) {
+      top: 172px;
+    }
+    @media (min-width: @screen-lg-min) {
+      top: 155px;
+    }
+  }
+}
+
 .view.view-cbf2019-event-registration {
   .views-row {
     .make-row();
