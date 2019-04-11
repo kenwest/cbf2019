@@ -46,7 +46,7 @@
 </div>
 <?php
   $fid = 0;
-  if (isset($view->result)) {
+  if (!empty($view->result)) {
     $result = reset($view->result);
     $imageFieldsByPreference = [
       'field_field_title_image',
