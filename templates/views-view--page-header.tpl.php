@@ -51,11 +51,17 @@
     $imageFieldsByPreference = [
       'field_field_title_image',
       'field_field_title_image_1',
+      'views_field_view_view',
     ];
     foreach ($imageFieldsByPreference as $imageField) {
       if (!empty($result->$imageField)) {
-        $image = reset($result->$imageField);
-        $fid = $image['raw']['fid'];
+        if (is_string($result->$imageField)) {
+          $fid = intval(preg_replace('/\s+/', '', strip_tags($result->$imageField)));
+        }
+        else {
+          $image = reset($result->$imageField);
+          $fid = $image['raw']['fid'];
+        }
         break;
       }
     }
