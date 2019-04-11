@@ -1352,33 +1352,6 @@ div.video-filter {
 }
 
 .view.view-cbf2019-blog {
-  .col-md-4:nth-child(13n+1) {
-    .make-sm-column-push(6);
-    .make-md-column-push(8);
-  }
-  .col-md-4:nth-child(13n+2) {
-    .make-sm-column-pull(6);
-    .make-md-column-pull(0);
-    .make-md-column-push(0);
-  }
-  .col-md-4:nth-child(13n+4) {
-    .make-sm-column-push(6);
-    .make-md-column-push(-8);
-  }
-  .col-md-4:nth-child(13n+7) {
-    .make-sm-column-pull(6);
-    .make-md-column-pull(0);
-    .make-md-column-push(8);
-  }
-  .col-md-4:nth-child(13n+9) {
-    .make-sm-column-push(6);
-    .make-md-column-push(0);
-  }
-  .col-md-4:nth-child(13n+10) {
-    .make-sm-column-pull(6);
-    .make-md-column-pull(8);
-  }
-
   .view-filters .views-exposed-form {
 	.views-exposed-widgets {
       .views-exposed-widget {
@@ -1390,23 +1363,6 @@ div.video-filter {
         }
       }
     }
-  }
-}
-
-.view.views-1-row.view-cbf2019-blog {
-  .col-md-4:nth-child(13n+1) {
-    .make-sm-column-push(0);
-    .make-md-column-push(0);
-  }
-}
-
-.view.views-2-rows.view-cbf2019-blog {
-  .col-md-4:nth-child(13n+1) {
-    .make-sm-column-push(6);
-    .make-md-column-push(4);
-  }
-  .col-md-4:nth-child(13n+2) {
-    .make-md-column-push(-4);
   }
 }
 
@@ -1429,7 +1385,7 @@ div.video-filter {
  */
 
 .view.view-cbf2019-blog,
-.view.right-to-left {
+.view.view-cbf2019-recent-library {
   .item-list {
     .container();
 
@@ -1438,9 +1394,8 @@ div.video-filter {
 
       .pager-previous {
         .make-xs-column(4);
-        .make-xs-column-push(8);
 
-        text-align: right;
+        text-align: left;
       }
 
       .pager-current {
@@ -1451,9 +1406,8 @@ div.video-filter {
 
       .pager-next {
         .make-xs-column(4);
-        .make-xs-column-pull(8);
 
-        text-align: left;
+        text-align: right;
       }
     }
   }
@@ -1622,6 +1576,13 @@ div.video-filter {
   }
 }
 
+/*****************************
+ * Format the content of forms
+ */
+.form .form-item textarea {
+  text-transform: none !important; // Override the uppercase setting
+}
+
 /*********************************
  * Fix anomalies which might occur
  */
@@ -1631,7 +1592,7 @@ div.video-filter {
   .office-view .view-content,
   .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
   .view.view-cbf2019-blog .item-list,
-  .view.right-to-left .item-list {
+  .view.view-cbf2019-recent-library .item-list {
     /*
      * Bootstrap containers are not designed to be nested
      */
