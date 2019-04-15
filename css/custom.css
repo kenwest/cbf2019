@@ -933,6 +933,9 @@ div.video-filter video {
     right: 33.33333333%;
   }
 }
+.episode-content-tab .tab-content .overlaid-image .embed-responsive-16by9 {
+  background: #c3c9d3;
+}
 .episode-content-tab .tab-content .tab-pane .field {
   text-align: left;
   pointer-events: all;
