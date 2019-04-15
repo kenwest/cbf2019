@@ -356,7 +356,7 @@ div.video-filter {
 
         padding-left: 0;
         padding-right: 0;
-        border-width: 0 floor(@grid-gutter-width/2);
+        border-width: 0 @grid-gutter-half-width;
         border-style: solid;
         border-color: white;
 
@@ -641,11 +641,11 @@ div.video-filter {
             padding-right: 0;
 
             &:first-child {
-              padding-left: floor(@grid-gutter-width/2);
+              padding-left: @grid-gutter-half-width;
             }
 
             &:last-child {
-              padding-right: floor(@grid-gutter-width/2);
+              padding-right: @grid-gutter-half-width;
             }
           }
 
@@ -663,7 +663,7 @@ div.video-filter {
               .make-lg-column-offset(2);
 
               @media (min-width: @screen-lg-min) {
-                padding-left: floor(@grid-gutter-width/2); // Like ::first-child
+                padding-left: @grid-gutter-half-width; // Like ::first-child
               }
             }
           }
@@ -1601,8 +1601,8 @@ div.video-filter {
     }
 
     tr {
-      margin-left: floor(@grid-gutter-width/2); // Simulate a Bootstrap row
-      margin-right: floor(@grid-gutter-width/2);
+      margin-left: @grid-gutter-half-width; // Simulate a Bootstrap row
+      margin-right: @grid-gutter-half-width;
     }
 
     th {
@@ -1610,8 +1610,8 @@ div.video-filter {
     }
 
     th, td {
-      padding-left: floor(@grid-gutter-width/2); // Simulate a Bootstrap column
-      padding-right: floor(@grid-gutter-width/2);
+      padding-left: @grid-gutter-half-width; // Simulate a Bootstrap column
+      padding-right: @grid-gutter-half-width;
 
       p:last-child {
         margin-bottom: 0;
