@@ -214,6 +214,41 @@ div.video-filter {
 
     padding-top: 0;
     padding-bottom: 0px;
+
+    .tab-pane {
+      .field {
+        text-align: left;
+        pointer-events: all;
+      }
+
+      .field-name-field-order-url,
+      .field-name-field-attachment,
+      .field-name-field-content {
+        padding: 0 @grid-gutter-width
+      }
+    }
+
+    .field-name-field-order-url {
+      font-size: 0; // Prevents extra space between .btn (inline-block)
+
+      .btn {
+        margin-right: @grid-gutter-half-width;
+        margin-bottom: @line-height-computed;
+      }
+    }
+
+    .field-name-field-video {
+      font-size: 0; // Prevents space between .video-filter-field (inline-block)
+
+      .video-filter-field {
+        display: inline-block;
+        width: 50%;
+      }
+
+      .video-filter-field:only-child {
+        width: 100%;
+      }
+    }
   }
 
   .nav-pills {
@@ -271,6 +306,12 @@ div.video-filter {
   .episode-tags {
     margin-top: 0 !important;
     margin-bottom: 30px !important;
+  }
+
+  .image-overlay .field {
+    @media (max-width: (@screen-md-min - 1)) {
+      margin-bottom: 0 !important;
+    }
   }
 
   .field-name-field-attachment,
