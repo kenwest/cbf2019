@@ -155,8 +155,8 @@
           if ($tabKey == 'field_order_url') {
             $tabFieldContent = '';
             $orderUrlillustrations = [
-              'field_highlight_video',
-              'field_highlight',
+//              'field_highlight_video',
+//              'field_highlight',
             ];
             foreach ($orderUrlillustrations as $illustration) {
               if (!empty($content[$illustration])) {
@@ -177,7 +177,7 @@
 
           $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' active in' : '';
           $tabPaneContent
-            .= '<div class="tab-pane fade'
+            .= '<div class="image-overlay tab-pane fade'
             .  $tabActiveClass
             .  '" id="tab-'
             .  $tabKey
@@ -222,6 +222,9 @@
       print     '</div>';
       print   '</div>';
       print   '<div class = "tab-content section-text">';
+      print     '<div class = "overlaid-image">';
+      print       render($content['field_highlight']);
+      print     '</div>';
       print     $tabPaneContent;
       print   '</div>';
       print '</div>';

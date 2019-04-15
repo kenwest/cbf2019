@@ -1060,52 +1060,53 @@ div.video-filter {
  * Here is a pattern for creating an image that is permanently
  * overlaid with other content.
  */
-.views-field.image-plus-fixed-overlay {
-  .field-content {
-    position: relative;
-    overflow: hidden;
+.views-field.image-plus-fixed-overlay .field-content {
+  overflow: hidden;
+}
 
-    .overlaid-image {
-      img{
-        width: 100%;
-      }
+.views-field.image-plus-fixed-overlay .field-content,
+.episode-content-tab .tab-content {
+  position: relative;
 
-      &:after{
-        content: " ";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(255,255,255, .75);
-        z-index: 1;
-      }
-    }
-
-    .image-overlay {
-      opacity: 1;
+  .overlaid-image {
+    img{
       width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      padding: 20px 23px;
-      font-size: 14px;
-      font-weight: 300;
-      color: #777;
-      text-align: center;
-      z-index: 2;
-      pointer-events: none;
-
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      transform: translateY(-50%);
-
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
     }
+
+    &:after{
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(255,255,255, .75);
+      z-index: 1;
+    }
+  }
+
+  .image-overlay {
+    opacity: 1;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: @line-height-computed @grid-gutter-half-width;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
