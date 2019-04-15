@@ -194,7 +194,6 @@
       hide($content['field_image']);
 
       // Hide fields displayed in views in this theme - may eventually be removed
-      hide($content['field_highlight']);
       hide($content['field_details']);
       hide($content['field_speakers']);
 
@@ -223,7 +222,12 @@
       print   '</div>';
       print   '<div class = "tab-content section-text">';
       print     '<div class = "overlaid-image">';
-      print       render($content['field_highlight']);
+      if (!empty($content['field_highlight'])) {
+        print     render($content['field_highlight']);
+      }
+      else {
+        print     '<div class="embed-responsive-16by9"></div>';
+      }
       print     '</div>';
       print     $tabPaneContent;
       print   '</div>';
