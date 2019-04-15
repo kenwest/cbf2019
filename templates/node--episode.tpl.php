@@ -199,6 +199,7 @@
       hide($content['field_speakers']);
 
       // Display the episode-content-tab
+      $content['field_episode_date']['#label_display'] = 'hidden';
       hide($content['field_episode_date']);
       hide($content['field_subtitle']);
       hide($content['field_topic']);
