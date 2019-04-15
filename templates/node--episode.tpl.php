@@ -196,6 +196,7 @@
       // Hide fields displayed in views in this theme - may eventually be removed
       hide($content['field_highlight']);
       hide($content['field_details']);
+      hide($content['field_speakers']);
 
       // Display the episode-content-tab
       hide($content['field_subtitle']);
