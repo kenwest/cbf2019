@@ -290,7 +290,7 @@ div.video-filter {
   @font-size-jplayer-button-large: floor(@font-size-base * 3);
   @font-size-jplayer-button-small: floor(@font-size-base * 1.5);
   @gray-jplayer-color:             @slate;
-  @gray-jplayer-background:        @slate-40;
+  @gray-jplayer-background:        @city-blue-20;
 
   div.jp-audio {
     width: auto;
@@ -358,7 +358,8 @@ div.video-filter {
         padding-right: 0;
         border-width: 0 @grid-gutter-half-width;
         border-style: solid;
-        border-color: white;
+        border-color: transparent;
+        background: transparent;
 
         top: 27px;
         left: unset;
@@ -411,15 +412,14 @@ div.video-filter {
       }
 
       div.jp-volume-bar {
-        .make-480-column(3);
-        .make-sm-column(3);
-        .make-lg-column(2);
+        .make-480-column(2);
+        .make-sm-column(2);
+        .make-lg-column(1);
 
+        margin-left: @grid-gutter-half-width;
+        margin-right: @grid-gutter-half-width;
         padding-left: 0;
         padding-right: 0;
-        border-width: 0 floor(@grid-gutter-width/2);
-        border-style: solid;
-        border-color: white;
 
         top: 32px;
         left: unset;
@@ -504,24 +504,22 @@ div.video-filter {
     display: none;
   }
 
-  div.jp-volume-bar {
-    // Mobile:
-      visibility: hidden;
+  div.jp-playlist-comment {
+    @media (max-width: (@screen-sm-min - 1)) {
       display: none !important;
-    @media (min-width: @screen-xs-min) {
-      visibility: visible;
-      display: block !important;
+    }
+  }
+
+  div.jp-volume-bar {
+    @media (max-width: (@screen-xs-min - 1)) {
+      display: none !important;
     }
   }
 
   a.jp-mute,
   a.jp-unmute {
-    // Mobile:
-      visibility: hidden;
-      display: none;
-    @media (min-width: @screen-xs-min) {
-      visibility: visible;
-      display: inline;
+    @media (max-width: (@screen-xs-min - 1)) {
+      display: none !important;
     }
   }
 
