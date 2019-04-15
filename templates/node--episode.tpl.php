@@ -226,7 +226,7 @@
         print     render($content['field_highlight']);
       }
       else {
-        print     '<div class="embed-responsive-16by9"></div>';
+        print     '<div class="field embed-responsive-16by9"></div>';
       }
       print     '</div>';
       print     $tabPaneContent;
