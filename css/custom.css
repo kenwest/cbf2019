@@ -933,6 +933,32 @@ div.video-filter video {
     right: 33.33333333%;
   }
 }
+.episode-content-tab .tab-content .tab-pane .field {
+  text-align: left;
+  pointer-events: all;
+}
+.episode-content-tab .tab-content .tab-pane .field-name-field-order-url,
+.episode-content-tab .tab-content .tab-pane .field-name-field-attachment,
+.episode-content-tab .tab-content .tab-pane .field-name-field-content {
+  padding: 0 30px;
+}
+.episode-content-tab .tab-content .field-name-field-order-url {
+  font-size: 0;
+}
+.episode-content-tab .tab-content .field-name-field-order-url .btn {
+  margin-right: 15px;
+  margin-bottom: 22px;
+}
+.episode-content-tab .tab-content .field-name-field-video {
+  font-size: 0;
+}
+.episode-content-tab .tab-content .field-name-field-video .video-filter-field {
+  display: inline-block;
+  width: 50%;
+}
+.episode-content-tab .tab-content .field-name-field-video .video-filter-field:only-child {
+  width: 100%;
+}
 .episode-content-tab .nav-pills {
   text-transform: uppercase;
 }
@@ -977,6 +1003,11 @@ div.video-filter video {
 .episode-content-tab .episode-tags {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
+}
+@media (max-width: 991px) {
+  .episode-content-tab .image-overlay .field {
+    margin-bottom: 0 !important;
+  }
 }
 .episode-content-tab .field-name-field-attachment .field-item + .field-item,
 .episode-content-tab .field-name-field-content .jp-playlist .field-item + .field-item,
@@ -1068,7 +1099,8 @@ div.video-filter video {
   padding-right: 0;
   border-width: 0 15px;
   border-style: solid;
-  border-color: white;
+  border-color: transparent;
+  background: transparent;
   top: 27px;
   left: unset;
   height: 15px;
@@ -1242,11 +1274,10 @@ div.video-filter video {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   padding-left: 0;
   padding-right: 0;
-  border-width: 0 15px;
-  border-style: solid;
-  border-color: white;
   top: 32px;
   left: unset;
   height: 5px;
@@ -1256,19 +1287,19 @@ div.video-filter video {
 @media (min-width: 480px) {
   .episode-content-tab div.jp-audio div.jp-type-playlist div.jp-volume-bar {
     float: left;
-    width: 25%;
+    width: 16.66666667%;
   }
 }
 @media (min-width: 768px) {
   .episode-content-tab div.jp-audio div.jp-type-playlist div.jp-volume-bar {
     float: left;
-    width: 25%;
+    width: 16.66666667%;
   }
 }
 @media (min-width: 1200px) {
   .episode-content-tab div.jp-audio div.jp-type-playlist div.jp-volume-bar {
     float: left;
-    width: 16.66666667%;
+    width: 8.33333333%;
   }
 }
 .episode-content-tab div.jp-interface {
@@ -1318,7 +1349,7 @@ div.video-filter video {
 }
 .episode-content-tab div.jp-seek-bar,
 .episode-content-tab div.jp-volume-bar {
-  background: #c3c9d3;
+  background: #d2ebf7;
   cursor: pointer;
 }
 .episode-content-tab div.jp-seek-bar {
@@ -1336,26 +1367,20 @@ div.video-filter video {
 .episode-content-tab a.jp-stop {
   display: none;
 }
-.episode-content-tab div.jp-volume-bar {
-  visibility: hidden;
-  display: none !important;
-}
-@media (min-width: 480px) {
-  .episode-content-tab div.jp-volume-bar {
-    visibility: visible;
-    display: block !important;
+@media (max-width: 767px) {
+  .episode-content-tab div.jp-playlist-comment {
+    display: none !important;
   }
 }
-.episode-content-tab a.jp-mute,
-.episode-content-tab a.jp-unmute {
-  visibility: hidden;
-  display: none;
+@media (max-width: 479px) {
+  .episode-content-tab div.jp-volume-bar {
+    display: none !important;
+  }
 }
-@media (min-width: 480px) {
+@media (max-width: 479px) {
   .episode-content-tab a.jp-mute,
   .episode-content-tab a.jp-unmute {
-    visibility: visible;
-    display: inline;
+    display: none !important;
   }
 }
 .episode-content-tab a.jp-play,
@@ -1904,7 +1929,7 @@ div.video-filter video {
   position: absolute;
   top: 50%;
   left: 0;
-  padding: 20px 23px 55px;
+  padding: 22px 15px 44px;
   font-size: 14px;
   font-weight: 300;
   color: #777;
@@ -1958,13 +1983,18 @@ div.video-filter video {
  * overlaid with other content.
  */
 .views-field.image-plus-fixed-overlay .field-content {
-  position: relative;
   overflow: hidden;
 }
-.views-field.image-plus-fixed-overlay .field-content .overlaid-image img {
+.views-field.image-plus-fixed-overlay .field-content,
+.episode-content-tab .tab-content {
+  position: relative;
+}
+.views-field.image-plus-fixed-overlay .field-content .overlaid-image img,
+.episode-content-tab .tab-content .overlaid-image img {
   width: 100%;
 }
-.views-field.image-plus-fixed-overlay .field-content .overlaid-image:after {
+.views-field.image-plus-fixed-overlay .field-content .overlaid-image:after,
+.episode-content-tab .tab-content .overlaid-image:after {
   content: " ";
   display: block;
   width: 100%;
@@ -1975,13 +2005,14 @@ div.video-filter video {
   background: rgba(255, 255, 255, 0.75);
   z-index: 1;
 }
-.views-field.image-plus-fixed-overlay .field-content .image-overlay {
+.views-field.image-plus-fixed-overlay .field-content .image-overlay,
+.episode-content-tab .tab-content .image-overlay {
   opacity: 1;
   width: 100%;
   position: absolute;
   top: 50%;
   left: 0;
-  padding: 20px 23px;
+  padding: 22px 15px;
   font-size: 14px;
   font-weight: 300;
   color: #777;
