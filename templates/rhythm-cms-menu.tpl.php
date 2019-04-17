@@ -6,6 +6,7 @@
       <div class="nav-logo-wrap local-scroll">
         <a href="<?php print url('<front>'); ?>" class="logo">
           <?php
+            $isPlusSite = cbf_is_plus_site();
             if (
               $is_front
               || $_SERVER['REQUEST_URI'] == '/home'
@@ -13,6 +14,9 @@
               || strpos($_SERVER['REQUEST_URI'], '/home?') === 0
             ) {
               $logo = str_replace('logo', 'logo-white', $logo);
+            }
+            if ($isPlusSite) {
+              $logo = str_replace('logo', 'plus-logo', $logo);
             }
           ?>
           <object data="<?php print $logo; ?>" type="image/svg+xml">
