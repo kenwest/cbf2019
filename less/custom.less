@@ -167,6 +167,52 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 }
 
+.mobile-nav {
+  // Reproduce Rhythm formatting for .mobile-nav .fa
+  text-align: center;
+
+  i,
+  .svg-inline--fa {
+    // Reproduce Rhythm formatting for .mobile-nav .fa
+    height: 100%;
+    vertical-align: middle;
+    font-size: 21px;
+  }
+
+  &.small-height {
+    line-height: 55px !important; // Copy formatting of .small-height .inner-nav ul li a
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  }
+}
+
+.white .mobile-nav {
+  i,
+  .svg-inline--fa {
+    // Reproduce Rhythm formatting for .white .mobile-nav .fa
+    color: @slate;
+  }
+}
+
+.mobile-on .mn-has-sub {
+  > i,
+  > .svg-inline--fa {
+    // Reproduce Rhythm formatting for ..mobile-on .mn-has-sub > .fa
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    font-size: 14px;
+    line-height: 16px;
+    top: 50%;
+    right: 10px;
+    margin-top: -8px;
+    text-align: center;
+  }
+}
+
 .hs-line-14,
 .hs-line-11 {
   letter-spacing: 0.4em;
@@ -808,6 +854,11 @@ div.video-filter {
          * The Previous and Next buttons on the OWL carousel are a mid grey
          */
         background-color: @slate-60;
+      }
+
+      i,
+      .svg-inline--fa {
+        position: relative; // Reproduce Rhythm style for .owl-prev .fa and .owl-next .fa
       }
     }
 
