@@ -836,6 +836,59 @@ h6,
      */
   background: rgba(28, 157, 214, 0.8);
 }
+.mobile-nav {
+  text-align: center;
+}
+.mobile-nav i,
+.mobile-nav .svg-inline--fa {
+  height: 100%;
+  vertical-align: middle;
+  font-size: 21px;
+}
+.mobile-nav.small-height {
+  line-height: 55px !important;
+  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+}
+.white .mobile-nav i,
+.white .mobile-nav .svg-inline--fa {
+  color: #697891;
+}
+.mobile-on .mn-has-sub > i,
+.mobile-on .mn-has-sub > .svg-inline--fa {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  font-size: 14px;
+  line-height: 16px;
+  top: 50%;
+  right: 10px;
+  margin-top: -8px;
+  text-align: center;
+}
+.domain-reaching-city .main-nav .full-wrapper {
+  margin-right: 0;
+}
+.domain-reaching-city .main-nav .give-menu-item {
+  padding: 0 40px;
+  background-color: #1c9cd6;
+}
+.domain-reaching-city .main-nav .give-menu-item a {
+  color: white;
+}
+.domain-reaching-city .bg-dark-alfa-50 {
+  text-shadow: 0 0 40px #8793a7;
+}
+.domain-reaching-city .bg-dark-alfa-50::before {
+  /*
+       * When displayed over a white background, this background colour gives the theme's
+       * 'Slate 80%' which is rgb(135, 148, 167)
+       */
+  background: rgba(107, 125, 145, 0.8);
+}
 .hs-line-14,
 .hs-line-11 {
   letter-spacing: 0.4em;
@@ -1638,6 +1691,12 @@ div.video-filter video {
          * The Previous and Next buttons on the OWL carousel are a mid grey
          */
   background-color: #a5aebd;
+}
+.view-content .owl-carousel .owl-prev i,
+.view-content .owl-carousel .owl-next i,
+.view-content .owl-carousel .owl-prev .svg-inline--fa,
+.view-content .owl-carousel .owl-next .svg-inline--fa {
+  position: relative;
 }
 .view-content .owl-carousel .owl-item .views-field-field-title-image,
 .view-content .owl-carousel .owl-item .views-field-field-highlight {
