@@ -63,6 +63,11 @@
             </ul>
           </li>
         <?php endif; ?>
+        <?php if($isPlusSite): ?>
+          <li class="give-menu-item">
+            <a href="/donate" style="height: 75px; line-height: 75px;">Give</a>
+          </li>
+        <?php endif; ?>
         <?php if(isset($cart) && $cart && module_exists('commerce_cart')): ?>
           <li>
             <a href="<?php print url('cart'); ?>" style="height: 75px; line-height: 75px;"><i class="fal fa-shopping-cart"></i> <?php print t('Cart') . '(' . _rhythm_cart_count() . ')'; ?></a>
