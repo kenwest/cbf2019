@@ -8,8 +8,9 @@
           <?php
             if (
               $is_front
-                || $_SERVER['REQUEST_URI'] == '/home'
-                || strpos($_SERVER['REQUEST_URI'], '/home?') === 0
+              || $_SERVER['REQUEST_URI'] == '/home'
+              || $_SERVER['REQUEST_URI'] == '/home/'
+              || strpos($_SERVER['REQUEST_URI'], '/home?') === 0
             ) {
               $logo = str_replace('logo.svg', 'logo-white.svg', $logo);
             }
