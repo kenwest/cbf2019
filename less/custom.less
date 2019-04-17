@@ -213,6 +213,35 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 }
 
+.domain-reaching-city {
+  .main-nav {
+    .full-wrapper {
+      margin-right: 0; // Place Give item at far right
+    }
+
+    .give-menu-item {
+      padding: 0 40px; // Matches other menu items when mobile-on
+      background-color: @city-blue;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .bg-dark-alfa-50 {
+    text-shadow: 0 0 40px @slate-80;
+
+    &::before {
+      /*
+       * When displayed over a white background, this background colour gives the theme's
+       * 'Slate 80%' which is rgb(135, 148, 167)
+       */
+      background: rgba(107, 125, 145, 0.8);
+    }
+  }
+}
+
 .hs-line-14,
 .hs-line-11 {
   letter-spacing: 0.4em;
