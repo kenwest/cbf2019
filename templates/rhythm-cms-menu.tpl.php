@@ -12,7 +12,7 @@
               || $_SERVER['REQUEST_URI'] == '/home/'
               || strpos($_SERVER['REQUEST_URI'], '/home?') === 0
             ) {
-              $logo = str_replace('logo.svg', 'logo-white.svg', $logo);
+              $logo = str_replace('logo', 'logo-white', $logo);
             }
           ?>
           <object data="<?php print $logo; ?>" type="image/svg+xml">
