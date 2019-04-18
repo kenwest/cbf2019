@@ -113,25 +113,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 }
 
-.main-nav.mobile-on {
-  .inner-nav {
-    ul.clearlist ul.default-menu {
-      /*
-       * Unfloat the menu when the mobile menu is showing
-       */
-      float: none;
-
-      li {
-        /*
-         * Set the menu text at the same level as Search bar text
-         */
-        height: initial;
-        line-height: initial;
-      }
-    }
-  }
-}
-
 .main-nav.small-height {
   .inner-nav {
     ul.clearlist ul.default-menu {
@@ -147,6 +128,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+      }
+    }
+  }
+}
+
+.main-nav.mobile-on {
+  .inner-nav {
+    ul.clearlist ul.default-menu {
+      /*
+       * Unfloat the menu when the mobile menu is showing
+       */
+      float: none;
+
+      li {
+        /*
+         * Set the menu text at the same level as Search bar text
+         */
+        height: initial;
+        line-height: initial;
       }
     }
   }
