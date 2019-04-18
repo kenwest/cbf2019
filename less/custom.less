@@ -1752,6 +1752,88 @@ div.video-filter {
   text-transform: none !important; // Override the uppercase setting
 }
 
+.webform-client-form-3743 {
+  // Contact Us form
+  .make-row();
+
+  fieldset {
+    .make-xs-column(12);
+    .make-sm-column(6);
+
+    .webform-component-select {
+	  .make-row();
+
+      label {
+        .make-xs-column(6);
+
+        margin-right: auto;
+        margin-bottom: 20px;
+        height: 37px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: 12px;
+        border-left: 15px solid transparent;
+        padding-top: 8px;
+        color: #777;
+        letter-spacing: 1px;
+        font-weight: 400;
+      }
+
+      > .form-group {
+        .make-xs-column(6);
+
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  fieldset + .form-group {
+    label {
+      .make-xs-column(6);
+      .make-sm-column(3);
+
+      .form-required {
+        display: none;
+      }
+    }
+
+    > .form-group {
+      .make-xs-column(6);
+      .make-sm-column(3);
+    }
+  }
+
+  .form-actions {
+    .make-xs-column(12);
+    .make-sm-column(6);
+    .make-md-column(3);
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .form-item {
+    position: relative;
+
+    .form-textarea {
+      height: 142px;
+    }
+
+    .required-span {
+      position: absolute;
+      right: 15px;
+      top: 6px;
+    }
+
+    &.webform-component-select {
+      .required-span {
+        right: 30px;
+      }
+    }
+  }
+}
+
 /*********************************
  * Fix anomalies which might occur
  */
