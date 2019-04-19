@@ -2925,17 +2925,6 @@ div.video-filter video {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  height: 37px;
-  padding-left: 13px;
-  padding-right: 13px;
-  font-size: 12px;
-  border-left: 15px solid transparent;
-  padding-top: 8px;
-  color: #777;
-  letter-spacing: 1px;
-  font-weight: 400;
 }
 .webform-client-form-3743 fieldset .webform-component-select > .form-group,
 .webform-client-form-3755 fieldset .webform-component-select > .form-group {
@@ -2945,7 +2934,6 @@ div.video-filter video {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 20px;
 }
 .webform-client-form-3743 fieldset + .form-group label,
 .webform-client-form-3755 fieldset + .form-group label {
@@ -2982,6 +2970,22 @@ div.video-filter video {
     float: left;
     width: 25%;
   }
+}
+.webform-client-form-3743 .webform-component-select label,
+.webform-client-form-3755 .webform-component-select label {
+  margin-right: auto;
+  margin-bottom: 20px;
+  height: 37px;
+  font-size: 12px;
+  border-left: 15px solid transparent;
+  padding-top: 8px;
+  color: #777;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.webform-client-form-3743 .webform-component-select > .form-group,
+.webform-client-form-3755 .webform-component-select > .form-group {
+  margin-bottom: 20px;
 }
 .webform-client-form-3743 .form-actions,
 .webform-client-form-3755 .form-actions {
