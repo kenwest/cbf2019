@@ -1748,8 +1748,24 @@ div.video-filter {
 /*****************************
  * Format the content of forms
  */
-.form .form-item textarea {
-  text-transform: none !important; // Override the uppercase setting
+
+.form .form-item {
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="date"],
+  input[type="color"],
+  select,
+  textarea,
+  label {
+    text-transform: none !important; // Override the uppercase setting
+    color: @slate;
+    line-height: @line-height-computed;
+  }
 }
 
 .webform-client-form-3743,
@@ -1798,7 +1814,6 @@ div.video-filter {
       font-size: 12px;
       border-left: @grid-gutter-half-width solid transparent;
       padding-top: 8px;
-      color: #777;
       letter-spacing: 1px;
       font-weight: 400;
     }
