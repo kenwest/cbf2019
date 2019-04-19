@@ -2888,8 +2888,21 @@ div.video-filter video {
 /*****************************
  * Format the content of forms
  */
-.form .form-item textarea {
+.form .form-item input[type="text"],
+.form .form-item input[type="email"],
+.form .form-item input[type="number"],
+.form .form-item input[type="url"],
+.form .form-item input[type="search"],
+.form .form-item input[type="tel"],
+.form .form-item input[type="password"],
+.form .form-item input[type="date"],
+.form .form-item input[type="color"],
+.form .form-item select,
+.form .form-item textarea,
+.form .form-item label {
   text-transform: none !important;
+  color: #697891;
+  line-height: 22px;
 }
 .webform-client-form-3743,
 .webform-client-form-3755 {
@@ -2979,7 +2992,6 @@ div.video-filter video {
   font-size: 12px;
   border-left: 15px solid transparent;
   padding-top: 8px;
-  color: #777;
   letter-spacing: 1px;
   font-weight: 400;
 }
@@ -3003,11 +3015,23 @@ div.video-filter video {
     width: 50%;
   }
 }
+@media (min-width: 768px) {
+  .webform-client-form-3743 .form-actions,
+  .webform-client-form-3755 .form-actions {
+    margin-left: 50%;
+  }
+}
 @media (min-width: 992px) {
   .webform-client-form-3743 .form-actions,
   .webform-client-form-3755 .form-actions {
     float: left;
     width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .webform-client-form-3743 .form-actions,
+  .webform-client-form-3755 .form-actions {
+    margin-left: 75%;
   }
 }
 .webform-client-form-3743 .form-actions input,
@@ -3020,7 +3044,7 @@ div.video-filter video {
 }
 .webform-client-form-3743 .form-item .form-textarea,
 .webform-client-form-3755 .form-item .form-textarea {
-  height: 142px;
+  height: 199px;
 }
 .webform-client-form-3743 .form-item .required-span,
 .webform-client-form-3755 .form-item .required-span {
