@@ -1777,35 +1777,32 @@ div.video-filter {
 
   fieldset {
     .make-xs-column(12);
-    .make-sm-column(6);
+    .make-480-column(8);
+    .make-sm-column(5);
+    .make-lg-column(4);
 
     .webform-component-select {
 	  .make-row();
 
       label {
-        .make-xs-column(6);
+        .make-xs-column(5);
       }
 
       > .form-group {
-        .make-xs-column(6);
+        .make-xs-column(7);
       }
     }
   }
 
-  fieldset + .form-group {
-    label {
-      .make-xs-column(6);
-      .make-sm-column(3);
+  fieldset:nth-child(odd) {
+    .make-480-column-offset(2);
+    .make-sm-column-offset(1);
+    .make-lg-column-offset(2);
+  }
 
-      .form-required {
-        display: none;
-      }
-    }
-
-    > .form-group {
-      .make-xs-column(6);
-      .make-sm-column(3);
-    }
+  fieldset:nth-child(even) {
+    .make-480-column-offset(2);
+    .make-sm-column-offset(0);
   }
 
   .webform-component-select {
@@ -1827,10 +1824,11 @@ div.video-filter {
 
   .form-actions {
     .make-xs-column(12);
-    .make-sm-column(6);
+    .make-480-column(8);
+    .make-480-column-offset(2);
+    .make-sm-column(5);
     .make-sm-column-offset(6);
-    .make-md-column(3);
-    .make-md-column-offset(9);
+    .make-lg-column(4);
 
     input {
       width: 100%;
@@ -1842,6 +1840,10 @@ div.video-filter {
 
     .form-textarea {
       height: 199px;
+    }
+
+    .form-required {
+      display: none;
     }
 
     .required-span {
