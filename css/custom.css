@@ -1679,16 +1679,16 @@ div.video-filter video {
   max-height: 88px;
 }
 .view-content .views-field-field-logo .image-overlay object {
-  max-height: 66px;
+  max-height: 33px;
 }
 @media (min-width: 768px) {
   .view-content .views-field-field-logo .image-overlay object {
-    max-height: 110px;
+    max-height: 55px;
   }
 }
 @media (min-width: 992px) {
   .view-content .views-field-field-logo .image-overlay object {
-    max-height: 66px;
+    max-height: 33px;
   }
 }
 .view-content .owl-carousel .views-field-field-in-activity,
