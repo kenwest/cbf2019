@@ -3383,6 +3383,12 @@ div.video-filter video {
 .page-node-3768 .node-webform > .content .webform-client-form .webform-component-select > .form-group {
   margin-bottom: 20px;
 }
+/********************
+ * CiviCRM formatting
+ */
+.crm-container .crm-section .label {
+  color: #697891;
+}
 /*********************************
  * Fix anomalies which might occur
  */
