@@ -1676,7 +1676,20 @@ div.video-filter video {
   font-size: 28px;
 }
 .view-content .views-field-field-logo object {
-  max-height: 36px;
+  max-height: 88px;
+}
+.view-content .views-field-field-logo .image-overlay object {
+  max-height: 66px;
+}
+@media (min-width: 768px) {
+  .view-content .views-field-field-logo .image-overlay object {
+    max-height: 110px;
+  }
+}
+@media (min-width: 992px) {
+  .view-content .views-field-field-logo .image-overlay object {
+    max-height: 66px;
+  }
 }
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
