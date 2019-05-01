@@ -66,10 +66,10 @@ function cbf2019_pager_link($variables) {
     }
   }
   $replace_titles = array(
-    t('« first') => '<i class="fal fa-angle-double-left"></i>',
-    t('‹ previous') => '<i class="fal fa-angle-left"></i>',
-    t('next ›') => '<i class="fal fa-angle-right"></i>',
-    t('last »') => '<i class="fal fa-angle-double-right"></i>',
+    t('« first') => '<i class="fal fa-angle-double-left"></i> First',
+    t('‹ previous') => '<i class="fal fa-angle-left"></i> Previous',
+    t('next ›') => 'Next <i class="fal fa-angle-right"></i>',
+    t('last »') => 'Last <i class="fal fa-angle-double-right"></i>',
   );
   $text = isset($replace_titles[$text]) ? $replace_titles[$text] : check_plain($text);
 
