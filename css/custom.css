@@ -2623,7 +2623,9 @@ div.video-filter video {
 .view.view-cbf2019-recent-library .item-list .pager {
   margin-right: -15px;
   margin-left: -15px;
-  font-size: 3em;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 .view.view-cbf2019-blog .item-list .pager .pager-previous,
 .view.view-cbf2019-recent-library .item-list .pager .pager-previous {
