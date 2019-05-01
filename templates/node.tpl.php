@@ -102,6 +102,12 @@
     // Hide fields displayed in views in this theme - may eventually be removed
     hide($content['field_highlight']);
     hide($content['field_details']);
+    hide($content['field_speakers']);
+
+    // If there is $typeSpecific material, display it
+    if (!empty($typeSpecific)) {
+      print $typeSpecific;
+    }
   ?>
 
   <div class="content"<?php print $content_attributes; ?>>
@@ -113,7 +119,11 @@
     ?>
   </div>
 
-  <?php print render($content['links']); ?>
+  <?php
+    if (empty($suppressLinks)) {
+      print render($content['links']);
+    }
+  ?>
 
   <?php print render($content['comments']); ?>
 
