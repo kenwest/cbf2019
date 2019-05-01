@@ -924,6 +924,20 @@ div.video-filter video {
   height: 100%;
   border: 0;
 }
+/******************************
+ * Format blog-specific content
+ */
+.blog-specific-content h3 {
+  text-transform: uppercase;
+}
+.blog-specific-content h3,
+.blog-specific-content .field {
+  margin-top: 0 !important;
+  margin-bottom: 30px !important;
+}
+.blog-specific-content .embed-responsive-16by9 {
+  background: #c3c9d3;
+}
 /*********************************
  * Format the .episode-content-tab
  */
@@ -2609,6 +2623,7 @@ div.video-filter video {
 .view.view-cbf2019-recent-library .item-list .pager {
   margin-right: -15px;
   margin-left: -15px;
+  font-size: 3em;
 }
 .view.view-cbf2019-blog .item-list .pager .pager-previous,
 .view.view-cbf2019-recent-library .item-list .pager .pager-previous {
