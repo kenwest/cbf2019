@@ -76,176 +76,138 @@
  *
  * @ingroup themeable
  */
-?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
+/*
+ * Render field_order_url, field_attachment, field_video, and field_content
+ * as a set of tabs.
+ */
+$tabFields = [
+  'field_order_url' => [
+    'label' => '<i class="fal fa-fw fa-book"></i> &nbsp;Order hard copy',
+    'weight' => 4,
+  ],
+  'field_attachment' => [
+    'label' => '<i class="fal fa-fw fa-file-pdf"></i> &nbsp;Download PDF',
+    'weight' => 3,
+  ],
+  'field_video' => [
+    'label' => '<i class="fal fa-fw fa-video"></i> &nbsp;Play video',
+    'weight' => 1,
+  ],
+  'field_content' => [
+    'label' => '<i class="fal fa-fw fa-microphone"></i> &nbsp;Play audio',
+    'weight' => 2,
+  ],
+];
 
-  <?php print render($title_prefix); ?>
-  <?php if ($teaser): ?>
-    <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
+$tabActive = [
+  'tab' => '',
+  'weight' => 100,
+  'count' => 0,
+];
 
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
-  <?php
-    /*
-     * Render field_order_url, field_attachment, field_video, and field_content
-     * as a set of tabs.
-     */
-    $tabFields = [
-      'field_order_url' => [
-        'label' => '<i class="fal fa-fw fa-book"></i> &nbsp;Order hard copy',
-        'weight' => 4,
-      ],
-      'field_attachment' => [
-        'label' => '<i class="fal fa-fw fa-file-pdf"></i> &nbsp;Download PDF',
-        'weight' => 3,
-      ],
-      'field_video' => [
-        'label' => '<i class="fal fa-fw fa-video"></i> &nbsp;Play video',
-        'weight' => 1,
-      ],
-      'field_content' => [
-        'label' => '<i class="fal fa-fw fa-microphone"></i> &nbsp;Play audio',
-        'weight' => 2,
-      ],
-    ];
-
-    $tabActive = [
-      'tab' => '',
-      'weight' => 100,
-      'count' => 0,
-    ];
-
-    foreach ($tabFields as $tabKey => $tabSettings) {
-      if (isset($content[$tabKey])) {
-        $tabActive['count']++;
-        if ($tabSettings['weight'] < $tabActive['weight']) {
-          $tabActive['tab'] = $tabKey;
-          $tabActive['weight'] = $tabSettings['weight'];
-        }
-      }
+foreach ($tabFields as $tabKey => $tabSettings) {
+  if (isset($content[$tabKey])) {
+    $tabActive['count']++;
+    if ($tabSettings['weight'] < $tabActive['weight']) {
+      $tabActive['tab'] = $tabKey;
+      $tabActive['weight'] = $tabSettings['weight'];
     }
+  }
+}
 
-    if ($tabActive['count'] > 0) {
-      $tabContent = '';
-      $tabPaneContent = '';
+if ($tabActive['count'] > 0) {
+  $tabContent = '';
+  $tabPaneContent = '';
 
-      foreach ($tabFields as $tabKey => $tabSettings) {
-        if (isset($content[$tabKey])) {
-          $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' class = "active"' : '';
-          $tabExpanded = ($tabActive['tab'] == $tabKey) ? 'true' : 'false';
-          $tabContent
-            .= '<li'
-            .  $tabActiveClass
-            .  '><a data-toggle="tab" href="#tab-'
-            .  $tabKey
-            .  '" aria-expanded="'
-            .  $tabExpanded
-            .  '">'
-            .  $tabSettings['label']
-            .  '</a></li>';
-
-          if ($tabKey == 'field_order_url') {
-            $tabFieldContent = '';
-            $orderUrlillustrations = [
-//              'field_highlight_video',
-//              'field_highlight',
-            ];
-            foreach ($orderUrlillustrations as $illustration) {
-              if (!empty($content[$illustration])) {
-                $tabFieldContent .= render($content[$illustration]);
-                hide($content[$illustration]);
-                break;
-              }
-            }
-            $tabFieldContent .= preg_replace(
-              '!<a !i',
-              '$0class="btn btn-mod btn-border btn-medium btn-round uppercase" ',
-              render($content[$tabKey])
-            );
+  foreach ($tabFields as $tabKey => $tabSettings) {
+    if (isset($content[$tabKey])) {
+      $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' class = "active"' : '';
+      $tabExpanded = ($tabActive['tab'] == $tabKey) ? 'true' : 'false';
+      $tabContent
+        .= '<li'
+        .  $tabActiveClass
+        .  '><a data-toggle="tab" href="#tab-'
+        .  $tabKey
+        .  '" aria-expanded="'
+        .  $tabExpanded
+        .  '">'
+        .  $tabSettings['label']
+        .  '</a></li>';
+      if ($tabKey == 'field_order_url') {
+        $tabFieldContent = '';
+        $orderUrlillustrations = [
+//          'field_highlight_video',
+//          'field_highlight',
+        ];
+        foreach ($orderUrlillustrations as $illustration) {
+          if (!empty($content[$illustration])) {
+            $tabFieldContent .= render($content[$illustration]);
+            hide($content[$illustration]);
+            break;
           }
-          else {
-            $tabFieldContent = render($content[$tabKey]);
-          }
-
-          $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' active in' : '';
-          $tabPaneContent
-            .= '<div class="image-overlay tab-pane fade'
-            .  $tabActiveClass
-            .  '" id="tab-'
-            .  $tabKey
-            .  '">'
-            .  $tabFieldContent
-            .  '</div>';
-          hide($content[$tabKey]);
         }
-      }
-
-      // Hide fields not used in this theme - may eventually be removed
-      hide($content['field_add_to_calendar']);
-      hide($content['field_in_activity']);
-      hide($content['field_image']);
-
-      // Hide fields displayed in views in this theme - may eventually be removed
-      hide($content['field_details']);
-      hide($content['field_speakers']);
-
-      // Display the episode-content-tab
-      $content['field_episode_date']['#label_display'] = 'hidden';
-      hide($content['field_episode_date']);
-      hide($content['field_subtitle']);
-      hide($content['field_topic']);
-      hide($content['field_topics']);
-      print '<div class="episode-content-tab clearfix">';
-      print   '<div class = "episode-pills">';
-      print     '<h3>';
-      print       filter_xss(drupal_get_title());
-      print     '</h3>';
-      print     render($content['field_episode_date']);
-      print     render($content['field_subtitle']);
-      if ($tabActive['count'] > 1) {
-        print   '<ul class="nav nav-pills animate">';
-        print     $tabContent;
-        print   '</ul>';
-      }
-      print     '<div class = "episode-tags">';
-      print       render($content['field_topic']);
-      print       render($content['field_topics']);
-      print     '</div>';
-      print   '</div>';
-      print   '<div class = "tab-content section-text">';
-      print     '<div class = "overlaid-image">';
-      if (!empty($content['field_highlight'])) {
-        print     render($content['field_highlight']);
+        $tabFieldContent .= preg_replace(
+          '!<a !i',
+          '$0class="btn btn-mod btn-border btn-medium btn-round uppercase" ',
+          render($content[$tabKey])
+        );
       }
       else {
-        print     '<div class="field embed-responsive-16by9"></div>';
+        $tabFieldContent = render($content[$tabKey]);
       }
-      print     '</div>';
-      print     $tabPaneContent;
-      print   '</div>';
-      print '</div>';
+
+      $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' active in' : '';
+      $tabPaneContent
+        .= '<div class="image-overlay tab-pane fade'
+        .  $tabActiveClass
+        .  '" id="tab-'
+        .  $tabKey
+        .  '">'
+        .  $tabFieldContent
+        .  '</div>';
+      hide($content[$tabKey]);
     }
-  ?>
+  }
 
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
-  </div>
+  // Hide fields that will be displayed in the episode-content-tab
+  $content['field_episode_date']['#label_display'] = 'hidden';
+  hide($content['field_episode_date']);
+  hide($content['field_subtitle']);
+  hide($content['field_topic']);
+  hide($content['field_topics']);
 
-  <?php print render($content['links']); ?>
+  // Display the episode-content-tab
+  $typeSpecific = '';
+  $typeSpecific .= '<div class="episode-content-tab clearfix">';
+  $typeSpecific .=   '<div class = "episode-pills">';
+  $typeSpecific .=     '<h3>';
+  $typeSpecific .=       filter_xss(drupal_get_title());
+  $typeSpecific .=     '</h3>';
+  $typeSpecific .=     render($content['field_episode_date']);
+  $typeSpecific .=     render($content['field_subtitle']);
+  if ($tabActive['count'] > 1) {
+    $typeSpecific .=   '<ul class="nav nav-pills animate">';
+    $typeSpecific .=     $tabContent;
+    $typeSpecific .=   '</ul>';
+  }
+  $typeSpecific .=     '<div class = "episode-tags">';
+  $typeSpecific .=       render($content['field_topic']);
+  $typeSpecific .=       render($content['field_topics']);
+  $typeSpecific .=     '</div>';
+  $typeSpecific .=   '</div>';
+  $typeSpecific .=   '<div class = "tab-content section-text">';
+  $typeSpecific .=     '<div class = "overlaid-image">';
+  if (!empty($content['field_highlight'])) {
+    $typeSpecific .=     render($content['field_highlight']);
+  }
+  else {
+    $typeSpecific .=     '<div class="field embed-responsive-16by9"></div>';
+  }
+  $typeSpecific .=     '</div>';
+  $typeSpecific .=     $tabPaneContent;
+  $typeSpecific .=   '</div>';
+  $typeSpecific .= '</div>';
+}
 
-  <?php print render($content['comments']); ?>
-
-</div>
+include 'node.tpl.php';
