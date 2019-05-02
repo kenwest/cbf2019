@@ -76,3 +76,70 @@ function cbf2019_pager_link($variables) {
   $attributes['href'] = url($_GET['q'], array('query' => $query));
   return '<a' . drupal_attributes($attributes) . '>' . $text . '</a>';
 }
+
+/*
+ * An implementation of theme_breadcrumb().
+ *
+ * Put a link to the front page on every non-front page.
+ * Add links to the top-level menu item pages
+ *  - civicrm_event => Events
+ *  - activity => Activities
+ *  - episode => Resources
+ *  - blog => Blog
+ */
+function cbf2019_breadcrumb($variables) {
+  static $cbf2019breadcrumb = false;
+
+  if ($cbf2019breadcrumb !== false) {
+    return $cbf2019breadcrumb;
+  }
+
+  $crumbs = [];
+  if (!drupal_is_front_page()) {
+    $crumbs[] = ['Home', '/'];
+
+    $event = menu_get_object('civicrm_entity_loader');
+    if (!empty($event) && $event->entityType() == 'civicrm_event') {
+      $crumbs[] = ['Events', '/whats-on'];
+    }
+    else {
+      $node = menu_get_object();
+      if (!empty($node)) {
+        switch ($node->type) {
+          case 'activity':
+            $crumbs[] = ['Activities', '/whats-on'];
+            break;
+          case 'episode':
+            $crumbs[] = ['Resources', '/library'];
+            break;
+          case 'blog':
+            $crumbs[] = ['Blog', '/articles'];
+            break;
+        }
+      }
+    }
+  }
+
+  $breadcrumb = [];
+  foreach ($crumbs as $crumb) {
+    if (empty($crumb[1])) {
+      $item = $crumb[0];
+    }
+    else {
+      $item = '<a href="' . $crumb[1] . '">' . $crumb[0] . '</a>';
+    }
+    $breadcrumb[] = '<span class="crumb">' . $item . '</span>';
+  }
+
+  if (empty($breadcrumb)) {
+    $cbf2019breadcrumb = '';
+  }
+  else {
+    $cbf2019breadcrumb
+      = '<div class="mod-breadcrumbs align-right">' .
+          implode(' / ', $breadcrumb) .
+        '</div>';
+  }
+
+  return $cbf2019breadcrumb;
+}
