@@ -2040,8 +2040,192 @@ div.video-filter {
 /********************
  * CiviCRM formatting
  */
-.crm-container .crm-section .label {
-  color: @slate;
+.page-civicrm-event-register,
+.page-civicrm-contribute-transact {
+  .block-system {
+    .make-row();
+
+    .crm-container {
+      .make-xs-column(12);
+      .make-480-column(10);
+      .make-480-column-offset(1);
+      .make-md-column(8);
+      .make-md-column-offset(2);
+      .make-lg-column(6);
+      .make-lg-column-offset(3);
+
+      .crm-section {
+        .make-row();
+
+        margin-bottom: @line-height-computed !important; // Override 0
+
+        .crm-section {
+          margin-left: 0;  // If nesting .crm-section DIVs don't duplicate
+          margin-right: 0; // row etc margins
+          margin-bottom: 0;
+        }
+
+        .label,
+        .content,
+        .required,
+        select {
+          color: @slate;
+        }
+
+        .label,
+        .content {
+          padding-top: 0 !important; // Override 6px top and bottom
+          padding-bottom: 0;
+          line-height: @line-height-computed !important;
+          font-size: @font-size-base !important;
+        }
+
+        input:only-child {
+          width: 100%;
+        }
+
+        input[type="radio"],
+        input[type="radio"] {
+          margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select,
+        .select2-choice,
+        .select2-arrow {
+          border-radius: 2px;
+          border-color: rgba(0, 0, 0, 0.1);
+          background-image: none;
+          font-size: @font-size-base !important;
+
+          &:hover {
+            border-color: rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        .select2-choice > .select2-chosen {
+          font-size: @font-size-base !important;
+        }
+
+        .select2-arrow {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-left-width: 0;
+          background-color: white;
+        }
+
+        .label {
+          .make-xs-column(4);
+
+          font-weight: 400; // Override 'bold'
+        }
+
+        input.crm-form-radio + label,
+        input.crm-form-checkbox + label {
+          margin-right: 7px;
+        }
+
+        .content {
+          .make-xs-column(8);
+
+          margin-left: 0; // Override 19%
+
+          label {
+            font-weight: unset; // Prevent label elements in .content being made 'bold' (400)
+          }
+        }
+
+        .content:first-child,
+        &.credit_card_type-section .content {
+          .make-xs-column-offset(4);
+        }
+      }
+
+      .crm-section {
+        padding: 0;
+
+        .label {
+          min-height: 1.8em;
+          margin: 6px 0 0; // 6px = 1px border + 5px padding in .content
+
+          label {
+            vertical-align: middle;
+            margin-bottom: 0;
+          }
+        }
+
+        .content {
+          .crm-frozen-field,
+          &.calc-value {
+            min-height: 1.8em;
+            display: block;
+            margin: 6px 0 0; // 6px = 1px border + 5px padding in normal .content
+          }
+        }
+      }
+
+      .crm-section.helprow-post {
+        margin-top: 5px - @line-height-computed; // 5px space below previous .crm-section
+
+        .content {
+          margin-bottom: @line-height-computed;
+        }
+      }
+
+      .help {
+        margin-bottom: @line-height-computed;
+        background-color: @sea-foam-40;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: @slate;
+        font-size: @font-size-base;
+      }
+
+      fieldset {
+        &.crm-group,
+        &.crm-profile,
+        &.billing_mode-group {
+          .make-row();
+
+          margin-top: 0;
+          margin-bottom: @line-height-computed;
+
+          .crm-section {
+            margin-left: 0;  // If nesting .crm-section in fieldset don't duplicate
+            margin-right: 0; // row etc margins
+            margin-bottom: 0;
+          }
+        }
+
+        legend {
+          margin-bottom: @line-height-computed;
+          padding: 0 4px 0 0;
+          color: @slate;
+          font-family: 'Rubik', arial, sans-serif !important; // Override CiviCRM fonts
+          font-weight: 400; // Prevent legend elements being made bold
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .select2-drop {
+    border-color:  @slate-40;
+  }
+
+  .select2-drop-active {
+    border-color:  @city-blue;
+  }
+
+  .select2-results {
+    color: @slate;
+
+    .select2-highlighted {
+      color: white;
+      background: @city-blue;
+    }
+  }
 }
 
 /*********************************
