@@ -893,6 +893,12 @@ h6,
 .hs-line-11 {
   letter-spacing: 0.4em;
 }
+.mod-breadcrumbs .crumb a {
+  color: white;
+}
+.mod-breadcrumbs .crumb a:hover {
+  text-decoration: underline;
+}
 /*************************
  * Format SVG images
  */
