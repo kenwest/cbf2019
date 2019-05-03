@@ -3691,12 +3691,24 @@ div.video-filter video {
 }
 .page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button,
 .page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button {
+  display: block;
+  margin: 0;
+}
+.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button i,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button i {
+  display: none;
+}
+.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input {
   float: left;
   width: 50%;
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   display: inline-block;
   text-align: center;
   padding: 8px 37px;
@@ -3707,27 +3719,16 @@ div.video-filter video {
   border-radius: 2px;
 }
 @media (min-width: 768px) {
-  .page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button,
-  .page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button {
+  .page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input,
+  .page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input {
     float: left;
     width: 33.33333333%;
   }
 }
-.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button:hover {
+.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input:hover,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input:hover {
   color: rgba(255, 255, 255, 0.85);
   background-color: rgba(0, 0, 0, 0.7);
-}
-.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button i,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button i {
-  display: none;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input {
-  padding: 0;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 .page-civicrm-event-register .select2-drop,
 .page-civicrm-contribute-transact .select2-drop {
