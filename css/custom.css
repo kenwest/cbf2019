@@ -3628,13 +3628,30 @@ div.video-filter video {
 .page-civicrm-contribute-transact .block-system .crm-container .crm-section.helprow-post .content {
   margin-bottom: 22px;
 }
+.page-civicrm-event-register .block-system .crm-container .description,
+.page-civicrm-contribute-transact .block-system .crm-container .description {
+  font-weight: 300;
+}
+.page-civicrm-event-register .block-system .crm-container .messages,
+.page-civicrm-contribute-transact .block-system .crm-container .messages {
+  margin-bottom: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
 .page-civicrm-event-register .block-system .crm-container .help,
 .page-civicrm-contribute-transact .block-system .crm-container .help {
-  margin-bottom: 22px;
   background-color: #dae9e9;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   color: #697891;
-  font-size: 14px;
+}
+.page-civicrm-event-register .block-system .crm-container .status,
+.page-civicrm-contribute-transact .block-system .crm-container .status {
+  background-color: #e8f5fb;
+  color: #697891;
+}
+.page-civicrm-event-register .block-system .crm-container .crm-error,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-error {
+  background-color: #faeaed;
+  color: #cf2e4f;
 }
 .page-civicrm-event-register .block-system .crm-container fieldset.crm-group,
 .page-civicrm-contribute-transact .block-system .crm-container fieldset.crm-group,
@@ -3665,6 +3682,52 @@ div.video-filter video {
   font-family: 'Rubik', arial, sans-serif !important;
   font-weight: 400;
   text-transform: uppercase;
+}
+.page-civicrm-event-register .block-system .crm-container a,
+.page-civicrm-contribute-transact .block-system .crm-container a,
+.page-civicrm-event-register .block-system .crm-container a:link,
+.page-civicrm-contribute-transact .block-system .crm-container a:link {
+  color: #495365;
+}
+.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 37px;
+  height: 37px;
+  background-color: rgba(34, 34, 34, 0.9);
+  background-image: none;
+  border: 2px solid transparent;
+  border-radius: 2px;
+}
+@media (min-width: 768px) {
+  .page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button,
+  .page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button:hover,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button:hover {
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button i,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button i {
+  display: none;
+}
+.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input,
+.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input {
+  padding: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .page-civicrm-event-register .select2-drop,
 .page-civicrm-contribute-transact .select2-drop {
