@@ -2230,6 +2230,39 @@ div.video-filter {
         color: @link-color;
       }
 
+      .crm-submit-buttons {
+        .crm-button {
+          display: block;
+          margin: 0;
+
+          i {
+            display: none;
+          }
+
+          input {
+            .make-xs-column(6);
+            .make-sm-column(4);
+
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            display: inline-block;
+            text-align: center;
+            padding: 8px 37px;
+            height: 37px;
+            background-color: rgba(34, 34, 34, 0.9);
+            background-image: none;
+            border: 2px solid transparent;
+            border-radius: 2px;
+
+            &:hover {
+              color: rgba(255, 255, 255, 0.85);
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+          }
+        }
+      }
     }
   }
 
