@@ -3426,13 +3426,12 @@ div.video-filter video {
 /********************
  * CiviCRM formatting
  */
-.page-civicrm-event-register .block-system,
-.page-civicrm-contribute-transact .block-system {
+.block-system #crm-container.crm-container {
   margin-right: -15px;
   margin-left: -15px;
 }
-.page-civicrm-event-register .block-system .crm-container,
-.page-civicrm-contribute-transact .block-system .crm-container {
+.block-system #crm-container.crm-container #crm-main-content-wrapper,
+.block-system #crm-container.crm-container #civicrm-footer {
   float: left;
   width: 100%;
   position: relative;
@@ -3441,241 +3440,297 @@ div.video-filter video {
   padding-left: 15px;
 }
 @media (min-width: 480px) {
-  .page-civicrm-event-register .block-system .crm-container,
-  .page-civicrm-contribute-transact .block-system .crm-container {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper,
+  .block-system #crm-container.crm-container #civicrm-footer {
     float: left;
     width: 83.33333333%;
   }
 }
 @media (min-width: 480px) {
-  .page-civicrm-event-register .block-system .crm-container,
-  .page-civicrm-contribute-transact .block-system .crm-container {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper,
+  .block-system #crm-container.crm-container #civicrm-footer {
     margin-left: 8.33333333%;
   }
 }
 @media (min-width: 992px) {
-  .page-civicrm-event-register .block-system .crm-container,
-  .page-civicrm-contribute-transact .block-system .crm-container {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper,
+  .block-system #crm-container.crm-container #civicrm-footer {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
-  .page-civicrm-event-register .block-system .crm-container,
-  .page-civicrm-contribute-transact .block-system .crm-container {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper,
+  .block-system #crm-container.crm-container #civicrm-footer {
     margin-left: 16.66666667%;
   }
 }
 @media (min-width: 1200px) {
-  .page-civicrm-event-register .block-system .crm-container,
-  .page-civicrm-contribute-transact .block-system .crm-container {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper,
+  .block-system #crm-container.crm-container #civicrm-footer {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .page-civicrm-event-register .block-system .crm-container,
-  .page-civicrm-contribute-transact .block-system .crm-container {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper,
+  .block-system #crm-container.crm-container #civicrm-footer {
     margin-left: 25%;
   }
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section {
   margin-right: -15px;
   margin-left: -15px;
-  margin-bottom: 22px !important;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section .crm-section,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .crm-section {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section {
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section .label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .label,
-.page-civicrm-event-register .block-system .crm-container .crm-section .content,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .content,
-.page-civicrm-event-register .block-system .crm-container .crm-section .required,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .required,
-.page-civicrm-event-register .block-system .crm-container .crm-section select,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section select {
-  color: #697891;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section .label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .label,
-.page-civicrm-event-register .block-system .crm-container .crm-section .content,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .content {
-  padding-top: 0 !important;
-  padding-bottom: 0;
-  line-height: 22px !important;
-  font-size: 14px !important;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section input:only-child,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input:only-child {
-  width: 100%;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="radio"],
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="radio"],
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="radio"],
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="radio"] {
-  margin-top: 10px;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="text"],
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="text"],
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="password"],
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="password"],
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="email"],
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="email"],
-.page-civicrm-event-register .block-system .crm-container .crm-section select,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section select,
-.page-civicrm-event-register .block-system .crm-container .crm-section .select2-choice,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .select2-choice,
-.page-civicrm-event-register .block-system .crm-container .crm-section .select2-arrow,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .select2-arrow {
-  border-radius: 2px;
-  border-color: rgba(0, 0, 0, 0.1);
-  background-image: none;
-  font-size: 14px !important;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="text"]:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="text"]:hover,
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="password"]:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="password"]:hover,
-.page-civicrm-event-register .block-system .crm-container .crm-section input[type="email"]:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input[type="email"]:hover,
-.page-civicrm-event-register .block-system .crm-container .crm-section select:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section select:hover,
-.page-civicrm-event-register .block-system .crm-container .crm-section .select2-choice:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .select2-choice:hover,
-.page-civicrm-event-register .block-system .crm-container .crm-section .select2-arrow:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .select2-arrow:hover {
-  border-color: rgba(0, 0, 0, 0.2);
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section .select2-choice > .select2-chosen,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .select2-choice > .select2-chosen {
-  font-size: 14px !important;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section .select2-arrow,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .select2-arrow {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-left-width: 0;
-  background-color: white;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section .label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .label {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label {
   position: relative;
   float: left;
   width: 33.33333333%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  font-weight: 400;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section input.crm-form-radio + label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input.crm-form-radio + label,
-.page-civicrm-event-register .block-system .crm-container .crm-section input.crm-form-checkbox + label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section input.crm-form-checkbox + label {
-  margin-right: 7px;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section .content,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .content {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content {
   position: relative;
   float: left;
   width: 66.66666667%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: 0;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section .content label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .content label {
-  font-weight: unset;
-}
-.page-civicrm-event-register .block-system .crm-container .crm-section .content:first-child,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .content:first-child,
-.page-civicrm-event-register .block-system .crm-container .crm-section.credit_card_type-section .content,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section.credit_card_type-section .content {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content:first-child,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .clear + .content,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.credit_card_type-section .content {
   margin-left: 33.33333333%;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > p {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper {
+  line-height: 22px !important;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section {
+  margin-bottom: 22px !important;
   padding: 0;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section .label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .label {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section {
+  margin-bottom: 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .required,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section select {
+  color: #697891;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+  line-height: 22px !important;
+  font-size: 14px !important;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label {
   min-height: 1.8em;
   margin: 6px 0 0;
+  font-weight: 400;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section .label label,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .label label {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label label {
   vertical-align: middle;
   margin-bottom: 0;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section .content .crm-frozen-field,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .content .crm-frozen-field,
-.page-civicrm-event-register .block-system .crm-container .crm-section .content.calc-value,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section .content.calc-value {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content {
+  margin-left: 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content label {
+  font-weight: unset;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content .crm-frozen-field,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content.calc-value {
   min-height: 1.8em;
   display: block;
   margin: 6px 0 0;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section.helprow-post,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section.helprow-post {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child {
+  width: 90%;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="radio"],
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="checkbox"] {
+  margin-top: 5px;
+  line-height: 22px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="text"],
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="password"],
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="email"],
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section select,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-choice,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-arrow {
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-image: none;
+  font-size: 14px !important;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="text"]:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="password"]:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="email"]:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section select:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-choice:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-arrow:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-choice > .select2-chosen {
+  font-size: 14px !important;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-arrow {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 0;
+  background-color: white;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input.crm-form-radio + label,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input.crm-form-checkbox + label {
+  margin-right: 7px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button {
+  margin: 0;
+  background: transparent;
+  border-width: 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button span {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  background-color: rgba(34, 34, 34, 0.9);
+  font-size: 12px;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.42857143;
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button span:hover {
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.helprow-post {
   margin-top: -17px;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-section.helprow-post .content,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-section.helprow-post .content {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.helprow-post .content {
   margin-bottom: 22px;
 }
-.page-civicrm-event-register .block-system .crm-container .description,
-.page-civicrm-contribute-transact .block-system .crm-container .description {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .display-block {
+  margin-top: 22px;
+  margin-bottom: 44px;
+  margin-left: 33.33333333%;
+  padding-left: 15px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .header-dark {
+  margin-top: -5px;
+  margin-bottom: 22px;
+  padding: 0;
+  border-top: 1px solid #c3c9d3;
+  background-color: white;
+  font-weight: 400;
+  color: #697891;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .description {
   font-weight: 300;
 }
-.page-civicrm-event-register .block-system .crm-container .messages,
-.page-civicrm-contribute-transact .block-system .crm-container .messages {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .bold {
+  font-weight: 400;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .messages {
   margin-bottom: 22px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 14px;
 }
-.page-civicrm-event-register .block-system .crm-container .help,
-.page-civicrm-contribute-transact .block-system .crm-container .help {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .help {
   background-color: #dae9e9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: #697891;
+  font-size: 14px;
 }
-.page-civicrm-event-register .block-system .crm-container .status,
-.page-civicrm-contribute-transact .block-system .crm-container .status {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .help p,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .help > div {
+  margin: 5px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .help p p,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .help > div p {
+  margin: 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .status {
   background-color: #e8f5fb;
   color: #697891;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-error,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-error {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-error {
   background-color: #faeaed;
   color: #cf2e4f;
 }
-.page-civicrm-event-register .block-system .crm-container fieldset.crm-group,
-.page-civicrm-contribute-transact .block-system .crm-container fieldset.crm-group,
-.page-civicrm-event-register .block-system .crm-container fieldset.crm-profile,
-.page-civicrm-contribute-transact .block-system .crm-container fieldset.crm-profile,
-.page-civicrm-event-register .block-system .crm-container fieldset.billing_mode-group,
-.page-civicrm-contribute-transact .block-system .crm-container fieldset.billing_mode-group {
-  margin-right: -15px;
-  margin-left: -15px;
+.block-system #crm-container.crm-container #crm-main-content-wrapper .error {
+  color: #cf2e4f;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper fieldset {
+  border-top-color: #c3c9d3;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper fieldset.crm-group,
+.block-system #crm-container.crm-container #crm-main-content-wrapper fieldset.crm-profile,
+.block-system #crm-container.crm-container #crm-main-content-wrapper fieldset.billing_mode-group {
   margin-top: 0;
   margin-bottom: 22px;
 }
-.page-civicrm-event-register .block-system .crm-container fieldset.crm-group .crm-section,
-.page-civicrm-contribute-transact .block-system .crm-container fieldset.crm-group .crm-section,
-.page-civicrm-event-register .block-system .crm-container fieldset.crm-profile .crm-section,
-.page-civicrm-contribute-transact .block-system .crm-container fieldset.crm-profile .crm-section,
-.page-civicrm-event-register .block-system .crm-container fieldset.billing_mode-group .crm-section,
-.page-civicrm-contribute-transact .block-system .crm-container fieldset.billing_mode-group .crm-section {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-.page-civicrm-event-register .block-system .crm-container fieldset legend,
-.page-civicrm-contribute-transact .block-system .crm-container fieldset legend {
+.block-system #crm-container.crm-container #crm-main-content-wrapper fieldset legend {
   margin-bottom: 22px;
   padding: 0 4px 0 0;
   color: #697891;
@@ -3683,67 +3738,70 @@ div.video-filter video {
   font-weight: 400;
   text-transform: uppercase;
 }
-.page-civicrm-event-register .block-system .crm-container a,
-.page-civicrm-contribute-transact .block-system .crm-container a,
-.page-civicrm-event-register .block-system .crm-container a:link,
-.page-civicrm-contribute-transact .block-system .crm-container a:link {
+.block-system #crm-container.crm-container #crm-main-content-wrapper a,
+.block-system #crm-container.crm-container #crm-main-content-wrapper a:link {
   color: #495365;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button {
-  display: block;
-  margin: 0;
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons {
+  width: auto !important;
+  margin-top: 44px;
+  margin-bottom: 44px;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button i,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button i {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
+  margin: 0;
+  background: transparent;
+  border-width: 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button i {
   display: none;
 }
-.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input {
-  float: left;
-  width: 50%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button input {
   display: inline-block;
-  text-align: center;
-  padding: 8px 37px;
-  height: 37px;
-  background-color: rgba(34, 34, 34, 0.9);
-  background-image: none;
+  box-sizing: border-box;
+  width: 100%;
   border: 2px solid transparent;
   border-radius: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: unset;
+  padding-right: unset;
+  color: white;
+  background-color: rgba(34, 34, 34, 0.9);
+  font-size: 12px;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.42857143;
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
 }
-@media (min-width: 768px) {
-  .page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input,
-  .page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.page-civicrm-event-register .block-system .crm-container .crm-submit-buttons .crm-button input:hover,
-.page-civicrm-contribute-transact .block-system .crm-container .crm-submit-buttons .crm-button input:hover {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button input:hover {
   color: rgba(255, 255, 255, 0.85);
   background-color: rgba(0, 0, 0, 0.7);
 }
-.page-civicrm-event-register .select2-drop,
-.page-civicrm-contribute-transact .select2-drop {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button.crm-button-type-back input {
+  color: #151515;
+  background-color: transparent;
+  border-color: #151515;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button.crm-button-type-back input:hover {
+  color: white;
+  background-color: black;
+}
+.block-system #crm-container.crm-container .select2-drop {
   border-color: #c3c9d3;
 }
-.page-civicrm-event-register .select2-drop-active,
-.page-civicrm-contribute-transact .select2-drop-active {
+.block-system #crm-container.crm-container .select2-drop-active {
   border-color: #1c9cd6;
 }
-.page-civicrm-event-register .select2-results,
-.page-civicrm-contribute-transact .select2-results {
+.block-system #crm-container.crm-container .select2-results {
   color: #697891;
 }
-.page-civicrm-event-register .select2-results .select2-highlighted,
-.page-civicrm-contribute-transact .select2-results .select2-highlighted {
+.block-system #crm-container.crm-container .select2-results .select2-highlighted {
   color: white;
   background: #1c9cd6;
 }

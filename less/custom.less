@@ -2040,12 +2040,12 @@ div.video-filter {
 /********************
  * CiviCRM formatting
  */
-.page-civicrm-event-register,
-.page-civicrm-contribute-transact {
-  .block-system {
+.block-system {
+  #crm-container.crm-container {
     .make-row();
 
-    .crm-container {
+    #crm-main-content-wrapper,
+    #civicrm-footer {
       .make-xs-column(12);
       .make-480-column(10);
       .make-480-column-offset(1);
@@ -2053,16 +2053,64 @@ div.video-filter {
       .make-md-column-offset(2);
       .make-lg-column(6);
       .make-lg-column-offset(3);
+    }
 
+    #crm-main-content-wrapper {
       .crm-section {
         .make-row();
-
-        margin-bottom: @line-height-computed !important; // Override 0
 
         .crm-section {
           margin-left: 0;  // If nesting .crm-section DIVs don't duplicate
           margin-right: 0; // row etc margins
-          margin-bottom: 0;
+        }
+
+        .label {
+          .make-xs-column(4);
+        }
+
+        .content {
+          .make-xs-column(8);
+        }
+
+        .content:first-child,
+        .clear + .content,
+        &.credit_card_type-section .content {
+          .make-xs-column-offset(4);
+        }
+
+        > p {
+          .make-xs-column(12);
+        }
+
+        > a.button {
+          .make-xs-column(6);
+          .make-sm-column(4);
+        }
+      }
+
+      .crm-submit-buttons {
+        .make-row();
+
+        .crm-button {
+          .make-xs-column(6);
+          .make-sm-column(4);
+        }
+      }
+    }
+  }
+}
+
+.block-system {
+  #crm-container.crm-container {
+    #crm-main-content-wrapper {
+      line-height: @line-height-computed !important;
+
+      .crm-section {
+        margin-bottom: @line-height-computed !important; // Override 0
+        padding: 0;
+
+        .crm-section {
+          margin-bottom: 0; // Restor 0 if nesting crm-section DIVs
         }
 
         .label,
@@ -2080,13 +2128,40 @@ div.video-filter {
           font-size: @font-size-base !important;
         }
 
+        .label {
+          min-height: 1.8em;
+          margin: 6px 0 0; // 6px = 1px border + 5px padding in .content
+          font-weight: 400; // Override 'bold'
+
+          label {
+            vertical-align: middle;
+            margin-bottom: 0;
+          }
+        }
+
+        .content {
+          margin-left: 0; // Override 19%
+
+          label {
+            font-weight: unset; // Prevent label elements in .content being made 'bold' (400)
+          }
+
+          .crm-frozen-field,
+          &.calc-value {
+            min-height: 1.8em;
+            display: block;
+            margin: 6px 0 0; // 6px = 1px border + 5px padding in normal .content
+          }
+        }
+
         input:only-child {
-          width: 100%;
+          width: 90%;
         }
 
         input[type="radio"],
-        input[type="radio"] {
-          margin-top: 10px;
+        input[type="checkbox"] {
+          margin-top: 5px;
+          line-height: @line-height-computed;
         }
 
         input[type="text"],
@@ -2116,52 +2191,43 @@ div.video-filter {
           background-color: white;
         }
 
-        .label {
-          .make-xs-column(4);
-
-          font-weight: 400; // Override 'bold'
-        }
-
         input.crm-form-radio + label,
         input.crm-form-checkbox + label {
           margin-right: 7px;
         }
 
-        .content {
-          .make-xs-column(8);
+        > a.button {
+          margin: 0;
+          background: transparent;
+          border-width: 0;
 
-          margin-left: 0; // Override 19%
+          span {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100%;
+            border: 2px solid transparent;
+            border-radius: 2px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: white;
+            background-color: rgba(34, 34, 34, 0.9);
+            font-size: 12px;
+            text-align: center;
+            text-shadow: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.42857143;
 
-          label {
-            font-weight: unset; // Prevent label elements in .content being made 'bold' (400)
-          }
-        }
+            -webkit-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            -moz-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            -o-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            -ms-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
 
-        .content:first-child,
-        &.credit_card_type-section .content {
-          .make-xs-column-offset(4);
-        }
-      }
-
-      .crm-section {
-        padding: 0;
-
-        .label {
-          min-height: 1.8em;
-          margin: 6px 0 0; // 6px = 1px border + 5px padding in .content
-
-          label {
-            vertical-align: middle;
-            margin-bottom: 0;
-          }
-        }
-
-        .content {
-          .crm-frozen-field,
-          &.calc-value {
-            min-height: 1.8em;
-            display: block;
-            margin: 6px 0 0; // 6px = 1px border + 5px padding in normal .content
+            &:hover {
+              color: rgba(255, 255, 255, 0.85);
+              background-color: rgba(0, 0, 0, 0.7);
+            }
           }
         }
       }
@@ -2174,8 +2240,31 @@ div.video-filter {
         }
       }
 
+      .display-block {
+        margin-top: @line-height-computed;
+        margin-bottom: 2*@line-height-computed;
+        margin-left: 100%/3; // Simulate 'row col-xs-offset-8'
+        padding-left: @grid-gutter-half-width; // Simulate 'row col-xs-8'
+      }
+
+      .header-dark {
+        margin-top: -5px; // So .header-dark border obscures fieldset border
+        margin-bottom: @line-height-computed;
+        padding: 0;
+        border-top: 1px solid @slate-40;
+        background-color: white;
+        font-weight: 400;
+        color: @slate;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
       .description {
         font-weight: 300;
+      }
+
+      .bold {
+        font-weight: 400;
       }
 
       .messages {
@@ -2186,7 +2275,18 @@ div.video-filter {
 
       .help {
         background-color: @sea-foam-40;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         color: @slate;
+        font-size: @font-size-base;
+
+        p,
+        > div {
+          margin: 5px;
+
+          p {
+            margin: 0;
+          }
+        }
       }
 
       .status {
@@ -2199,20 +2299,18 @@ div.video-filter {
         color: @cardinal;
       }
 
+      .error {
+        color: @cardinal;
+      }
+
       fieldset {
+        border-top-color: @slate-40;
+
         &.crm-group,
         &.crm-profile,
         &.billing_mode-group {
-          .make-row();
-
           margin-top: 0;
           margin-bottom: @line-height-computed;
-
-          .crm-section {
-            margin-left: 0;  // If nesting .crm-section in fieldset don't duplicate
-            margin-right: 0; // row etc margins
-            margin-bottom: 0;
-          }
         }
 
         legend {
@@ -2231,55 +2329,79 @@ div.video-filter {
       }
 
       .crm-submit-buttons {
+        width: auto !important;
+        margin-top: 2*@line-height-computed;
+        margin-bottom: 2*@line-height-computed;
+
         .crm-button {
-          display: block;
           margin: 0;
+          background: transparent;
+          border-width: 0;
 
           i {
             display: none;
           }
 
           input {
-            .make-xs-column(6);
-            .make-sm-column(4);
-
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-
             display: inline-block;
-            text-align: center;
-            padding: 8px 37px;
-            height: 37px;
-            background-color: rgba(34, 34, 34, 0.9);
-            background-image: none;
+            box-sizing: border-box;
+            width: 100%;
             border: 2px solid transparent;
             border-radius: 2px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: unset;
+            padding-right: unset;
+            color: white;
+            background-color: rgba(34, 34, 34, 0.9);
+            font-size: 12px;
+            text-align: center;
+            text-shadow: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.42857143;
+
+            -webkit-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            -moz-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            -o-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            -ms-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+            transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
 
             &:hover {
               color: rgba(255, 255, 255, 0.85);
               background-color: rgba(0, 0, 0, 0.7);
             }
           }
+
+          &.crm-button-type-back input {
+            color: #151515;
+            background-color: transparent;
+            border-color: rgb(21, 21, 21);
+
+            &:hover {
+              color: white;
+              background-color: black;
+            }
+          }
         }
       }
     }
-  }
 
-  .select2-drop {
-    border-color:  @slate-40;
-  }
+    .select2-drop {
+      border-color:  @slate-40;
+    }
 
-  .select2-drop-active {
-    border-color:  @city-blue;
-  }
+    .select2-drop-active {
+      border-color:  @city-blue;
+    }
 
-  .select2-results {
-    color: @slate;
+    .select2-results {
+      color: @slate;
 
-    .select2-highlighted {
-      color: white;
-      background: @city-blue;
+      .select2-highlighted {
+        color: white;
+        background: @city-blue;
+      }
     }
   }
 }
