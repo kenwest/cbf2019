@@ -2418,6 +2418,46 @@ div.video-filter {
       }
     }
 
+    .progress.payment {
+      height: unset;
+      margin-bottom: 2*@line-height-computed;
+      border: 1px solid @slate-40;
+      border-radius: 2px;
+      box-shadow: none;
+
+      .progress-bar {
+        width: 100%/3;
+        padding: @line-height-half 0;
+        border: 0px;
+        box-shadow: none;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .past {
+        color: @slate-80;
+        background: @slate-20;
+        letter-spacing: initial;
+      }
+
+      .present {
+        color: white;
+        background: @city-blue;
+        font-weight: 400;
+      }
+
+      .future {
+        color: @midnight-blue;
+        background: white;
+      }
+
+      .progress-bar.future + .progress-bar.future {
+        border-left: 1px solid @slate-40;
+      }
+    }
+
     #civicrm-footer {
       border-width: 0;
     }
