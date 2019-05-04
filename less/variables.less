@@ -1,10 +1,10 @@
 @font-size-base:             14px;
 @line-height-base:           1.6;
-@line-height-computed:       floor((@font-size-base * @line-height-base)); // 22px
+@line-height-computed:       floor(@font-size-base * @line-height-base); // 22px
 
 @grid-columns:               12;
 @grid-gutter-width:          30px;
-@grid-gutter-half-width:     floor(@grid-gutter-width/2);
+@grid-gutter-half-width:     floor(@grid-gutter-width/2); // 15px
 @grid-float-breakpoint:      768px;
 
 @city-blue:                  rgb(28, 156, 214);
