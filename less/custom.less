@@ -2055,60 +2055,71 @@ div.video-filter {
       .make-lg-column-offset(3);
     }
 
-    #crm-main-content-wrapper {
-      .crm-section {
-        .make-row();
+    .crm-block {
+      .make-row();
 
-        .crm-section {
-          margin-left: 0;  // If nesting .crm-section DIVs don't duplicate
-          margin-right: 0; // row etc margins
-        }
-
-        .label {
-          .make-xs-column(4);
-        }
-
-        .content {
-          .make-xs-column(8);
-        }
-
-        .content:first-child,
-        .clear + .content,
-        &.credit_card_type-section .content {
-          .make-xs-column-offset(4);
-        }
-
-        > p {
-          .make-xs-column(12);
-        }
-
-        > a.button {
-          .make-xs-column(6);
-          .make-sm-column(4);
-        }
+      fieldset > legend,
+      .header-dark,
+      .crm-profile-view-title,
+      .progress-outer,
+      .crm-section > p,
+      .action-link {
+        .make-xs-column(12);
       }
 
-      .crm-submit-buttons {
-        .make-row();
+      .crm-group > table {
+        margin-left: @grid-gutter-half-width;
+        margin-right: @grid-gutter-half-width;
+      }
 
-        .crm-button {
-          .make-xs-column(6);
-          .make-sm-column(4);
-        }
+      .label {
+        .make-xs-column(4);
+      }
 
-        /*
-         * Some CiviCRM forms put the back button before the next button.
-         * These 2 rules switch them to make the interface consistent.
-         */
-        .crm-button-type-back:nth-child(1):nth-last-child(2) {
-          .make-xs-column-push(6);
-          .make-sm-column-push(4);
-        }
+      .content,
+      .helprow-post,
+      .display-block {
+        .make-xs-column-offset(0);
+        .make-xs-column(8);
+      }
 
-        .crm-button-type-next:nth-child(2):nth-last-child(1) {
-          .make-xs-column-pull(6);
-          .make-sm-column-pull(4);
-        }
+      .content:first-child,
+      .clear + .content,
+      .credit_card_type-section .content,
+      .helprow-post,
+      .display-block {
+        .make-xs-column-offset(4);
+      }
+
+      .helprow-post .content {
+        .make-xs-column(12);
+        .make-xs-column-offset(0);
+      }
+
+      .crm-section > a.button {
+        .make-xs-column(6);
+        .make-sm-column(4);
+      }
+    }
+
+    .crm-submit-buttons {
+      .crm-button {
+        .make-xs-column(6);
+        .make-sm-column(4);
+      }
+
+      /*
+       * Some CiviCRM forms put the back button before the next button.
+       * These 2 rules switch them to make the interface consistent.
+       */
+      .crm-button-type-back:nth-child(1):nth-last-child(2) {
+        .make-xs-column-push(6);
+        .make-sm-column-push(4);
+      }
+
+      .crm-button-type-next:nth-child(2):nth-last-child(1) {
+        .make-xs-column-pull(6);
+        .make-sm-column-pull(4);
       }
     }
   }
@@ -2154,8 +2165,6 @@ div.video-filter {
         }
 
         .content {
-          margin-left: 0; // Override 19%
-
           label {
             font-weight: unset; // Prevent label elements in .content being made 'bold' (400)
           }
@@ -2175,7 +2184,8 @@ div.video-filter {
           margin-top: 0;  // 6px = 1px border + 5px padding in .content
         }
 
-        input:only-child {
+        input:only-child,
+        textarea:only-child {
           width: 90%;
         }
 
@@ -2277,14 +2287,14 @@ div.video-filter {
       .display-block {
         margin-top: @line-height-computed;
         margin-bottom: 2*@line-height-computed;
-        margin-left: 100%/3; // Simulate 'row col-xs-offset-8'
-        padding-left: @grid-gutter-half-width; // Simulate 'row col-xs-8'
       }
 
+      fieldset > legend,
       .header-dark {
         margin-top: -5px; // So .header-dark border obscures fieldset border
         margin-bottom: @line-height-computed;
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
         border-top: 1px solid @slate-40;
         background-color: white;
         font-weight: 400;
@@ -2306,7 +2316,11 @@ div.video-filter {
         float: none !important; // CiviCRM's .right is different to Bootstrap's
       }
 
+      .help,
       .messages {
+        clear: both; // Simulate ".row .col-xs-12"
+        margin-left: @grid-gutter-half-width; // Simulate ".row .col-xs-12"
+        margin-right: @grid-gutter-half-width; // Simulate ".row .col-xs-12"
         margin-bottom: @line-height-computed;
         border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: @font-size-base;
@@ -2314,10 +2328,7 @@ div.video-filter {
 
       .help {
         background-color: @sea-foam-40;
-        border: 1px solid rgba(0, 0, 0, 0.1);
         color: @slate;
-        font-size: @font-size-base;
-        margin-bottom: @line-height-computed;
 
         p,
         > div {
@@ -2363,7 +2374,8 @@ div.video-filter {
       }
 
       fieldset {
-        border-top-color: @slate-40;
+	    clear: both;
+        border-top-width: 0;
 
         &.crm-group,
         &.crm-profile,
@@ -2373,12 +2385,7 @@ div.video-filter {
         }
 
         legend {
-          margin-bottom: @line-height-computed;
-          padding: 0 4px 0 0;
-          color: @slate;
           font-family: 'Rubik', arial, sans-serif !important; // Override CiviCRM fonts
-          font-weight: 400; // Prevent legend elements being made bold
-          text-transform: uppercase;
         }
       }
 

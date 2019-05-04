@@ -3478,36 +3478,16 @@ div.video-filter video {
     margin-left: 25%;
   }
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section {
+.block-system #crm-container.crm-container .crm-block {
   margin-right: -15px;
   margin-left: -15px;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section {
-  margin-left: 0;
-  margin-right: 0;
-}
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label {
-  position: relative;
-  float: left;
-  width: 33.33333333%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content {
-  position: relative;
-  float: left;
-  width: 66.66666667%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content:first-child,
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .clear + .content,
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.credit_card_type-section .content {
-  margin-left: 33.33333333%;
-}
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > p {
+.block-system #crm-container.crm-container .crm-block fieldset > legend,
+.block-system #crm-container.crm-container .crm-block .header-dark,
+.block-system #crm-container.crm-container .crm-block .crm-profile-view-title,
+.block-system #crm-container.crm-container .crm-block .progress-outer,
+.block-system #crm-container.crm-container .crm-block .crm-section > p,
+.block-system #crm-container.crm-container .crm-block .action-link {
   position: relative;
   float: left;
   width: 100%;
@@ -3515,7 +3495,46 @@ div.video-filter video {
   padding-right: 15px;
   padding-left: 15px;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button {
+.block-system #crm-container.crm-container .crm-block .crm-group > table {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.block-system #crm-container.crm-container .crm-block .label {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.block-system #crm-container.crm-container .crm-block .content,
+.block-system #crm-container.crm-container .crm-block .helprow-post,
+.block-system #crm-container.crm-container .crm-block .display-block {
+  margin-left: 0%;
+  position: relative;
+  float: left;
+  width: 66.66666667%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.block-system #crm-container.crm-container .crm-block .content:first-child,
+.block-system #crm-container.crm-container .crm-block .clear + .content,
+.block-system #crm-container.crm-container .crm-block .credit_card_type-section .content,
+.block-system #crm-container.crm-container .crm-block .helprow-post,
+.block-system #crm-container.crm-container .crm-block .display-block {
+  margin-left: 33.33333333%;
+}
+.block-system #crm-container.crm-container .crm-block .helprow-post .content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 0%;
+}
+.block-system #crm-container.crm-container .crm-block .crm-section > a.button {
   float: left;
   width: 50%;
   position: relative;
@@ -3524,20 +3543,18 @@ div.video-filter video {
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button {
+  .block-system #crm-container.crm-container .crm-block .crm-section > a.button {
     float: left;
     width: 33.33333333%;
   }
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons {
-  margin-right: -15px;
-  margin-left: -15px;
+.block-system #crm-container.crm-container .crm-submit-buttons {
   /*
-         * Some CiviCRM forms put the back button before the next button.
-         * These 2 rules switch them to make the interface consistent.
-         */
+       * Some CiviCRM forms put the back button before the next button.
+       * These 2 rules switch them to make the interface consistent.
+       */
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button {
   float: left;
   width: 50%;
   position: relative;
@@ -3546,24 +3563,24 @@ div.video-filter video {
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button {
     float: left;
     width: 33.33333333%;
   }
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
   left: 50%;
 }
 @media (min-width: 768px) {
-  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
     left: 33.33333333%;
   }
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
   right: 50%;
 }
 @media (min-width: 768px) {
-  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
     right: 33.33333333%;
   }
 }
@@ -3599,9 +3616,6 @@ div.video-filter video {
   vertical-align: middle;
   margin-bottom: 0;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content {
-  margin-left: 0;
-}
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content label {
   font-weight: unset;
 }
@@ -3616,7 +3630,8 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input#installments {
   margin-top: 0;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section textarea:only-child {
   width: 90%;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="radio"],
@@ -3706,13 +3721,13 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .display-block {
   margin-top: 22px;
   margin-bottom: 44px;
-  margin-left: 33.33333333%;
-  padding-left: 15px;
 }
+.block-system #crm-container.crm-container #crm-main-content-wrapper fieldset > legend,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .header-dark {
   margin-top: -5px;
   margin-bottom: 22px;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   border-top: 1px solid #c3c9d3;
   background-color: white;
   font-weight: 400;
@@ -3730,17 +3745,18 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .right {
   float: none !important;
 }
+.block-system #crm-container.crm-container #crm-main-content-wrapper .help,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .messages {
+  clear: both;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 22px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 14px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help {
   background-color: #dae9e9;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   color: #697891;
-  font-size: 14px;
-  margin-bottom: 22px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help p,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help > div {
@@ -3778,7 +3794,8 @@ div.video-filter video {
   color: #cf2e4f;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset {
-  border-top-color: #c3c9d3;
+  clear: both;
+  border-top-width: 0;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset.crm-group,
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset.crm-profile,
@@ -3787,12 +3804,7 @@ div.video-filter video {
   margin-bottom: 22px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset legend {
-  margin-bottom: 22px;
-  padding: 0 4px 0 0;
-  color: #697891;
   font-family: 'Rubik', arial, sans-serif !important;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper a,
 .block-system #crm-container.crm-container #crm-main-content-wrapper a:link {
