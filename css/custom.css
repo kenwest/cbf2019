@@ -3532,6 +3532,10 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons {
   margin-right: -15px;
   margin-left: -15px;
+  /*
+         * Some CiviCRM forms put the back button before the next button.
+         * These 2 rules switch them to make the interface consistent.
+         */
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
   float: left;
@@ -3545,6 +3549,22 @@ div.video-filter video {
   .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
     float: left;
     width: 33.33333333%;
+  }
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
+  left: 50%;
+}
+@media (min-width: 768px) {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
+    left: 33.33333333%;
+  }
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
+  right: 50%;
+}
+@media (min-width: 768px) {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
+    right: 33.33333333%;
   }
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper {
@@ -3572,7 +3592,7 @@ div.video-filter video {
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label {
   min-height: 1.8em;
-  margin: 6px 0 0;
+  margin: 0;
   font-weight: 400;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label label {
@@ -3589,14 +3609,18 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content.calc-value {
   min-height: 1.8em;
   display: block;
-  margin: 6px 0 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input {
+  margin-top: -6px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input#installments {
+  margin-top: 0;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child {
   width: 90%;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="radio"],
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="checkbox"] {
-  margin-top: 5px;
   line-height: 22px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="text"],
@@ -3618,6 +3642,10 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-arrow:hover {
   border-color: rgba(0, 0, 0, 0.2);
 }
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section label + input.crm-form-radio,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section label + input.crm-form-checkbox {
+  margin-left: 7px;
+}
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-choice > .select2-chosen {
   font-size: 14px !important;
 }
@@ -3626,10 +3654,6 @@ div.video-filter video {
   border-bottom-left-radius: 0;
   border-left-width: 0;
   background-color: white;
-}
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input.crm-form-radio + label,
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input.crm-form-checkbox + label {
-  margin-right: 7px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section > a.button {
   margin: 0;
@@ -3668,6 +3692,17 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.helprow-post .content {
   margin-bottom: 22px;
 }
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-profile-view-title {
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .iCal_links-section {
+  display: none;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-socialnetwork {
+  margin-left: 0;
+  margin-right: 0;
+}
 .block-system #crm-container.crm-container #crm-main-content-wrapper .display-block {
   margin-top: 22px;
   margin-bottom: 44px;
@@ -3686,10 +3721,14 @@ div.video-filter video {
   text-transform: uppercase;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .description {
+  font-size: 14px;
   font-weight: 300;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .bold {
   font-weight: 400;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .right {
+  float: none !important;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .messages {
   margin-bottom: 22px;
@@ -3701,6 +3740,7 @@ div.video-filter video {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #697891;
   font-size: 14px;
+  margin-bottom: 22px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help p,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help > div {
@@ -3709,6 +3749,22 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help p p,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help > div p {
   margin: 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper table {
+  font-size: 14px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper table tr.columnheader {
+  background-color: #f0f2f4;
+  color: #697891;
+  border-width: 0;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper table th {
+  background-color: transparent;
+  border-width: 0px;
+  color: #697891;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .status {
   background-color: #e8f5fb;
@@ -3804,6 +3860,43 @@ div.video-filter video {
 .block-system #crm-container.crm-container .select2-results .select2-highlighted {
   color: white;
   background: #1c9cd6;
+}
+.block-system #crm-container.crm-container .progress.payment {
+  height: unset;
+  margin-bottom: 44px;
+  border: 1px solid #c3c9d3;
+  border-radius: 2px;
+  box-shadow: none;
+}
+.block-system #crm-container.crm-container .progress.payment .progress-bar {
+  width: 33.33333333%;
+  padding: 11px 0;
+  border: 0px;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.block-system #crm-container.crm-container .progress.payment .past {
+  color: #8793a7;
+  background: #e1e4e9;
+  letter-spacing: initial;
+}
+.block-system #crm-container.crm-container .progress.payment .present {
+  color: white;
+  background: #1c9cd6;
+  font-weight: 400;
+}
+.block-system #crm-container.crm-container .progress.payment .future {
+  color: #0f2e38;
+  background: white;
+}
+.block-system #crm-container.crm-container .progress.payment .progress-bar.future + .progress-bar.future {
+  border-left: 1px solid #c3c9d3;
+}
+.block-system #crm-container.crm-container #civicrm-footer {
+  border-width: 0;
 }
 /*********************************
  * Fix anomalies which might occur
