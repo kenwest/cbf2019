@@ -2144,7 +2144,7 @@ div.video-filter {
 
         .label {
           min-height: 1.8em;
-          margin: 6px 0 0; // 6px = 1px border + 5px padding in .content
+          margin: 0;
           font-weight: 400; // Override 'bold'
 
           label {
@@ -2164,8 +2164,15 @@ div.video-filter {
           &.calc-value {
             min-height: 1.8em;
             display: block;
-            margin: 6px 0 0; // 6px = 1px border + 5px padding in normal .content
           }
+        }
+
+        input {
+          margin-top: -6px;  // 6px = 1px border + 5px padding in .content
+        }
+
+        input#installments {
+          margin-top: 0;  // 6px = 1px border + 5px padding in .content
         }
 
         input:only-child {
@@ -2174,7 +2181,6 @@ div.video-filter {
 
         input[type="radio"],
         input[type="checkbox"] {
-          margin-top: 5px;
           line-height: @line-height-computed;
         }
 
