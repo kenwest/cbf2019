@@ -3630,9 +3630,21 @@ div.video-filter video {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input#installments {
   margin-top: 0;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child {
+  width: 93%;
+}
+@media (min-width: 480px) {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child {
+    width: 96%;
+  }
+}
+@media (min-width: 768px) {
+  .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input:only-child {
+    width: 97%;
+  }
+}
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section textarea:only-child {
-  width: 90%;
+  width: 100%;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="radio"],
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="checkbox"] {
