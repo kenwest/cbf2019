@@ -1523,6 +1523,9 @@ div.video-filter video {
      * If using Better Exposed Forms to format filters as links, then use the Bootstrap grid
      */
 }
+.view-filters .views-exposed-form .views-exposed-widget label {
+  font-weight: 400;
+}
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links {
   padding-right: 15px;
   padding-left: 15px;
@@ -2944,6 +2947,7 @@ div.video-filter video {
   color: #697891;
   line-height: 22px;
 }
+.webform-client-form-2972,
 .webform-client-form-3755,
 .webform-client-form-3756,
 .webform-client-form-3757,
@@ -2951,6 +2955,7 @@ div.video-filter video {
   margin-right: -15px;
   margin-left: -15px;
 }
+.webform-client-form-2972 fieldset,
 .webform-client-form-3755 fieldset,
 .webform-client-form-3756 fieldset,
 .webform-client-form-3757 fieldset,
@@ -2963,6 +2968,7 @@ div.video-filter video {
   padding-left: 15px;
 }
 @media (min-width: 480px) {
+  .webform-client-form-2972 fieldset,
   .webform-client-form-3755 fieldset,
   .webform-client-form-3756 fieldset,
   .webform-client-form-3757 fieldset,
@@ -2972,6 +2978,7 @@ div.video-filter video {
   }
 }
 @media (min-width: 768px) {
+  .webform-client-form-2972 fieldset,
   .webform-client-form-3755 fieldset,
   .webform-client-form-3756 fieldset,
   .webform-client-form-3757 fieldset,
@@ -2981,6 +2988,7 @@ div.video-filter video {
   }
 }
 @media (min-width: 1200px) {
+  .webform-client-form-2972 fieldset,
   .webform-client-form-3755 fieldset,
   .webform-client-form-3756 fieldset,
   .webform-client-form-3757 fieldset,
@@ -2989,6 +2997,7 @@ div.video-filter video {
     width: 33.33333333%;
   }
 }
+.webform-client-form-2972 fieldset .webform-component-select,
 .webform-client-form-3755 fieldset .webform-component-select,
 .webform-client-form-3756 fieldset .webform-component-select,
 .webform-client-form-3757 fieldset .webform-component-select,
@@ -2996,6 +3005,7 @@ div.video-filter video {
   margin-right: -15px;
   margin-left: -15px;
 }
+.webform-client-form-2972 fieldset .webform-component-select label,
 .webform-client-form-3755 fieldset .webform-component-select label,
 .webform-client-form-3756 fieldset .webform-component-select label,
 .webform-client-form-3757 fieldset .webform-component-select label,
@@ -3007,6 +3017,7 @@ div.video-filter video {
   padding-right: 15px;
   padding-left: 15px;
 }
+.webform-client-form-2972 fieldset .webform-component-select > .form-group,
 .webform-client-form-3755 fieldset .webform-component-select > .form-group,
 .webform-client-form-3756 fieldset .webform-component-select > .form-group,
 .webform-client-form-3757 fieldset .webform-component-select > .form-group,
@@ -3019,6 +3030,7 @@ div.video-filter video {
   padding-left: 15px;
 }
 @media (min-width: 480px) {
+  .webform-client-form-2972 fieldset:nth-child(odd),
   .webform-client-form-3755 fieldset:nth-child(odd),
   .webform-client-form-3756 fieldset:nth-child(odd),
   .webform-client-form-3757 fieldset:nth-child(odd),
@@ -3027,6 +3039,7 @@ div.video-filter video {
   }
 }
 @media (min-width: 768px) {
+  .webform-client-form-2972 fieldset:nth-child(odd),
   .webform-client-form-3755 fieldset:nth-child(odd),
   .webform-client-form-3756 fieldset:nth-child(odd),
   .webform-client-form-3757 fieldset:nth-child(odd),
@@ -3035,6 +3048,7 @@ div.video-filter video {
   }
 }
 @media (min-width: 1200px) {
+  .webform-client-form-2972 fieldset:nth-child(odd),
   .webform-client-form-3755 fieldset:nth-child(odd),
   .webform-client-form-3756 fieldset:nth-child(odd),
   .webform-client-form-3757 fieldset:nth-child(odd),
@@ -3043,6 +3057,7 @@ div.video-filter video {
   }
 }
 @media (min-width: 480px) {
+  .webform-client-form-2972 fieldset:nth-child(even),
   .webform-client-form-3755 fieldset:nth-child(even),
   .webform-client-form-3756 fieldset:nth-child(even),
   .webform-client-form-3757 fieldset:nth-child(even),
@@ -3051,6 +3066,7 @@ div.video-filter video {
   }
 }
 @media (min-width: 768px) {
+  .webform-client-form-2972 fieldset:nth-child(even),
   .webform-client-form-3755 fieldset:nth-child(even),
   .webform-client-form-3756 fieldset:nth-child(even),
   .webform-client-form-3757 fieldset:nth-child(even),
@@ -3058,12 +3074,81 @@ div.video-filter video {
     margin-left: 0%;
   }
 }
+.webform-client-form-2972 .form-actions,
+.webform-client-form-3755 .form-actions,
+.webform-client-form-3756 .form-actions,
+.webform-client-form-3757 .form-actions,
+.webform-client-form-3758 .form-actions {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .webform-client-form-2972 .form-actions,
+  .webform-client-form-3755 .form-actions,
+  .webform-client-form-3756 .form-actions,
+  .webform-client-form-3757 .form-actions,
+  .webform-client-form-3758 .form-actions {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 480px) {
+  .webform-client-form-2972 .form-actions,
+  .webform-client-form-3755 .form-actions,
+  .webform-client-form-3756 .form-actions,
+  .webform-client-form-3757 .form-actions,
+  .webform-client-form-3758 .form-actions {
+    margin-left: 16.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .webform-client-form-2972 .form-actions,
+  .webform-client-form-3755 .form-actions,
+  .webform-client-form-3756 .form-actions,
+  .webform-client-form-3757 .form-actions,
+  .webform-client-form-3758 .form-actions {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .webform-client-form-2972 .form-actions,
+  .webform-client-form-3755 .form-actions,
+  .webform-client-form-3756 .form-actions,
+  .webform-client-form-3757 .form-actions,
+  .webform-client-form-3758 .form-actions {
+    margin-left: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .webform-client-form-2972 .form-actions,
+  .webform-client-form-3755 .form-actions,
+  .webform-client-form-3756 .form-actions,
+  .webform-client-form-3757 .form-actions,
+  .webform-client-form-3758 .form-actions {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.webform-client-form-2972 .form-actions input,
+.webform-client-form-3755 .form-actions input,
+.webform-client-form-3756 .form-actions input,
+.webform-client-form-3757 .form-actions input,
+.webform-client-form-3758 .form-actions input {
+  width: 100%;
+}
+.webform-client-form-2972 .webform-component-select,
 .webform-client-form-3755 .webform-component-select,
 .webform-client-form-3756 .webform-component-select,
 .webform-client-form-3757 .webform-component-select,
 .webform-client-form-3758 .webform-component-select {
   margin-bottom: 0 !important;
 }
+.webform-client-form-2972 .webform-component-select label,
 .webform-client-form-3755 .webform-component-select label,
 .webform-client-form-3756 .webform-component-select label,
 .webform-client-form-3757 .webform-component-select label,
@@ -3077,90 +3162,35 @@ div.video-filter video {
   letter-spacing: 1px;
   font-weight: 400;
 }
+.webform-client-form-2972 .webform-component-select > .form-group,
 .webform-client-form-3755 .webform-component-select > .form-group,
 .webform-client-form-3756 .webform-component-select > .form-group,
 .webform-client-form-3757 .webform-component-select > .form-group,
 .webform-client-form-3758 .webform-component-select > .form-group {
   margin-bottom: 20px;
 }
-.webform-client-form-3755 .form-actions,
-.webform-client-form-3756 .form-actions,
-.webform-client-form-3757 .form-actions,
-.webform-client-form-3758 .form-actions {
-  float: left;
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 480px) {
-  .webform-client-form-3755 .form-actions,
-  .webform-client-form-3756 .form-actions,
-  .webform-client-form-3757 .form-actions,
-  .webform-client-form-3758 .form-actions {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-@media (min-width: 480px) {
-  .webform-client-form-3755 .form-actions,
-  .webform-client-form-3756 .form-actions,
-  .webform-client-form-3757 .form-actions,
-  .webform-client-form-3758 .form-actions {
-    margin-left: 16.66666667%;
-  }
-}
-@media (min-width: 768px) {
-  .webform-client-form-3755 .form-actions,
-  .webform-client-form-3756 .form-actions,
-  .webform-client-form-3757 .form-actions,
-  .webform-client-form-3758 .form-actions {
-    float: left;
-    width: 41.66666667%;
-  }
-}
-@media (min-width: 768px) {
-  .webform-client-form-3755 .form-actions,
-  .webform-client-form-3756 .form-actions,
-  .webform-client-form-3757 .form-actions,
-  .webform-client-form-3758 .form-actions {
-    margin-left: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  .webform-client-form-3755 .form-actions,
-  .webform-client-form-3756 .form-actions,
-  .webform-client-form-3757 .form-actions,
-  .webform-client-form-3758 .form-actions {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.webform-client-form-3755 .form-actions input,
-.webform-client-form-3756 .form-actions input,
-.webform-client-form-3757 .form-actions input,
-.webform-client-form-3758 .form-actions input {
-  width: 100%;
-}
+.webform-client-form-2972 .form-item,
 .webform-client-form-3755 .form-item,
 .webform-client-form-3756 .form-item,
 .webform-client-form-3757 .form-item,
 .webform-client-form-3758 .form-item {
   position: relative;
 }
+.webform-client-form-2972 .form-item .form-textarea,
 .webform-client-form-3755 .form-item .form-textarea,
 .webform-client-form-3756 .form-item .form-textarea,
 .webform-client-form-3757 .form-item .form-textarea,
 .webform-client-form-3758 .form-item .form-textarea {
   height: 199px;
 }
+.webform-client-form-2972 .form-item .form-required,
 .webform-client-form-3755 .form-item .form-required,
 .webform-client-form-3756 .form-item .form-required,
 .webform-client-form-3757 .form-item .form-required,
 .webform-client-form-3758 .form-item .form-required {
   display: none;
 }
+.webform-client-form-2972 .form-item .required-span,
 .webform-client-form-3755 .form-item .required-span,
 .webform-client-form-3756 .form-item .required-span,
 .webform-client-form-3757 .form-item .required-span,
@@ -3169,11 +3199,68 @@ div.video-filter video {
   right: 15px;
   top: 6px;
 }
+.webform-client-form-2972 .form-item.webform-component-select .required-span,
 .webform-client-form-3755 .form-item.webform-component-select .required-span,
 .webform-client-form-3756 .form-item.webform-component-select .required-span,
 .webform-client-form-3757 .form-item.webform-component-select .required-span,
 .webform-client-form-3758 .form-item.webform-component-select .required-span {
   right: 30px;
+}
+@media (min-width: 768px) {
+  .webform-client-form-2972 fieldset:nth-child(3) {
+    margin-left: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .webform-client-form-2972 fieldset:nth-child(odd) {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .webform-client-form-2972 .form-actions {
+    margin-left: 66.66666667%;
+  }
+}
+.webform-client-form-2972 fieldset .form-item ul.token-input-list,
+.webform-client-form-2972 legend {
+  border: 0;
+  border-bottom: 1px solid #e1e4e9;
+  max-width: auto;
+  color: #697891;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.webform-client-form-2972 fieldset .form-item ul.token-input-list li.token-input-token,
+.webform-client-form-2972 legend li.token-input-token {
+  margin: 0;
+  padding: 0;
+  color: #697891;
+  background-color: white;
+  font-weight: 400;
+}
+.webform-client-form-2972 .form-control[disabled],
+.webform-client-form-2972 .form-control[readonly],
+.webform-client-form-2972 fieldset[disabled] .form-control {
+  cursor: default;
+  background-color: white;
+  border-color: transparent;
+  font-size: 14px !important;
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.webform-client-form-2972 .form-control[disabled]::placeholder,
+.webform-client-form-2972 .form-control[readonly]::placeholder,
+.webform-client-form-2972 fieldset[disabled] .form-control::placeholder,
+.webform-client-form-2972 .form-control[disabled]:-ms-input-placeholder,
+.webform-client-form-2972 .form-control[readonly]:-ms-input-placeholder,
+.webform-client-form-2972 fieldset[disabled] .form-control:-ms-input-placeholder,
+.webform-client-form-2972 .form-control[disabled]::-ms-input-placeholder,
+.webform-client-form-2972 .form-control[readonly]::-ms-input-placeholder,
+.webform-client-form-2972 fieldset[disabled] .form-control::-ms-input-placeholder {
+  color: white;
 }
 .page-node-3759 .node-webform > .content,
 .page-node-3768 .node-webform > .content {

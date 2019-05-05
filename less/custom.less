@@ -1824,6 +1824,7 @@ div.video-filter {
   }
 }
 
+.webform-client-form-2972,
 .webform-client-form-3755,
 .webform-client-form-3756,
 .webform-client-form-3757,
@@ -1914,6 +1915,59 @@ div.video-filter {
       .required-span {
         right: 30px;
       }
+    }
+  }
+}
+
+.webform-client-form-2972 {
+  fieldset:nth-child(3) {
+    .make-sm-column-offset(6); // Important this is before the following rule
+  }
+
+  fieldset:nth-child(odd) {
+    .make-lg-column-offset(0); // Important this is after the previous rule
+  }
+
+  .form-actions {
+    .make-lg-column-offset(8);
+  }
+
+  fieldset .form-item ul.token-input-list,
+  legend {
+    border: 0;
+    border-bottom: 1px solid @slate-20;
+    max-width: auto;
+    color: @slate;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    li.token-input-token {
+      margin: 0;
+      padding: 0;
+      color: @slate;
+      background-color: white;
+      font-weight: 400;
+    }
+  }
+
+  .form-control[disabled],
+  .form-control[readonly],
+  fieldset[disabled] .form-control {
+    cursor: default;
+    background-color: white;
+    border-color: transparent;
+    font-size: @font-size-base !important;
+
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+
+    &::placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder {
+      color: white;
     }
   }
 }
