@@ -3249,9 +3249,7 @@ div.video-filter video {
   background-color: white;
   font-weight: 400;
 }
-.webform-client-form-2972 .form-control[disabled],
-.webform-client-form-2972 .form-control[readonly],
-.webform-client-form-2972 fieldset[disabled] .form-control {
+.webform-client-form-2972 .form-control[readonly] {
   cursor: default;
   background-color: white;
   border-color: transparent;
@@ -3261,14 +3259,8 @@ div.video-filter video {
   -ms-user-select: all;
   user-select: all;
 }
-.webform-client-form-2972 .form-control[readonly]::placeholder {
-  color: #e1e4e9;
-}
-.webform-client-form-2972 .form-control[readonly]:-ms-input-placeholder {
-  color: #e1e4e9;
-}
-.webform-client-form-2972 .form-control[readonly]::-ms-input-placeholder {
-  color: #e1e4e9;
+.webform-client-form-2972 .form-control[readonly][value=""] {
+  display: none;
 }
 .page-node-3759 .node-webform > .content,
 .page-node-3768 .node-webform > .content {
