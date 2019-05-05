@@ -1977,11 +1977,19 @@ div.video-filter {
     -webkit-user-select: all;
     -ms-user-select: all;
     user-select: all;
+  }
 
-    &::placeholder,
-    &:-ms-input-placeholder,
+  .form-control[readonly] {
+    &::placeholder {
+      color: @slate-20;
+    }
+
+    &:-ms-input-placeholder {
+      color: @slate-20;
+    }
+
     &::-ms-input-placeholder {
-      color: white;
+      color: @slate-20;
     }
   }
 }
