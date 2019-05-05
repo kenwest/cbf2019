@@ -903,6 +903,16 @@ h6,
 .mod-breadcrumbs .crumb a:hover {
   text-decoration: underline;
 }
+/**************************************************************************
+ * Lighten .bg-dark-alfa-70 and make testimonial visible on this background
+ */
+.bg-dark-alfa-70:before {
+  background: rgba(51, 51, 51, 0.7);
+}
+.bg-dark-alfa-70 .testimonial,
+.bg-dark-alfa-70 .testimonial-author {
+  color: white;
+}
 /*************************
  * Format SVG images
  */
