@@ -294,6 +294,42 @@ div.video-filter {
   clear: both;
 }
 
+/****************************************
+ * Styles accessible from the HTML editor
+ */
+body.html {
+  // Emulate 'btn btn-medium btn-mod btn-round'
+  .link-button {
+    a {
+      display: inline-block;
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      border-radius: 2px;
+      padding: 8px 37px;
+      color: white;
+      background-color: rgba(34, 34, 34, 0.9);
+      font-size: 12px;
+      text-align: center;
+      text-shadow: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 1.42857143;
+
+      -webkit-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+      -moz-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+      -o-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+      -ms-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+      transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 /******************************
  * Format blog-specific content
  */
