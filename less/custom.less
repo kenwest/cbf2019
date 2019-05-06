@@ -1183,6 +1183,20 @@ body.html {
 }
 
 /*
+ * Here is a pattern for creating a separator between views fields that
+ * are rewritten and need a vertical separator between them. The first is
+ * rewritten with a half separator after it, and the second with a half
+ * separator before it. Two half-separators make a full separator.
+ */
+.field-rewrite-half-separator {
+  display: inline;
+
+  + .field-rewrite-half-separator::before {
+    content: "|";
+  }
+}
+
+/*
  * Here is a pattern for creating an image that is overlaid
  * with other content when hovered over or touched. This is
  * copied from Rhythm's .team-item.
