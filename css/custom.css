@@ -944,7 +944,8 @@ div.video-filter video {
   height: 100%;
   border: 0;
 }
-/*
+/****************************************
+ * Styles accessible from the HTML editor
  */
 body.html .link-button a {
   display: inline-block;
