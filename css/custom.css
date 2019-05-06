@@ -3344,6 +3344,9 @@ body.html .link-button a:hover {
 .webform-client-form-2972 .form-control[readonly][value=""] {
   display: none;
 }
+.webform-client-form-2972 .form-control[readonly]:not([value]) {
+  display: none;
+}
 .page-node-3759 .node-webform > .content,
 .page-node-3768 .node-webform > .content {
   margin-right: -15px;

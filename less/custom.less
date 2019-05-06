@@ -2068,6 +2068,10 @@ body.html {
   .form-control[readonly][value=""] {
     display: none;
   }
+
+  .form-control[readonly]:not([value]) {
+    display: none;
+  }
 }
 
 .page-node-3759 .node-webform > .content,
