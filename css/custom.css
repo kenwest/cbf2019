@@ -827,10 +827,12 @@ h6,
 /*************************
  * Format the Title header
  */
-.bg-dark-alfa-50 {
+.bg-dark-alfa-50,
+.domain-reaching-city .bg-dark-alfa-50.promote-main-site {
   text-shadow: 0 0 40px #49b0de;
 }
-.bg-dark-alfa-50::before {
+.bg-dark-alfa-50::before,
+.domain-reaching-city .bg-dark-alfa-50.promote-main-site::before {
   /*
      * When displayed over a white background, this background colour gives the theme's
      * 'City blue 80%' which is rgb(73, 176, 222)
