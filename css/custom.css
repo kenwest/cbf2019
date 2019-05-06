@@ -2192,28 +2192,49 @@ body.html .link-button a:hover {
   max-width: 90%;
   left: 5%;
   color: #a5aebd;
+}
+.portrait-image-placeholder i {
+  font-size: 266px;
+}
+@media (min-width: 480px) {
+  .portrait-image-placeholder i {
+    font-size: 432px;
+  }
+}
+@media (min-width: 768px) {
+  .portrait-image-placeholder i {
+    font-size: 340px;
+  }
+}
+@media (min-width: 992px) {
+  .portrait-image-placeholder i {
+    font-size: 291px;
+  }
+}
+@media (min-width: 1200px) {
+  .portrait-image-placeholder i {
+    font-size: 262px;
+  }
+}
+.portrait-image-placeholder .svg-inline--fa {
   font-size: 280px;
 }
 @media (min-width: 480px) {
-  .portrait-image-placeholder i,
   .portrait-image-placeholder .svg-inline--fa {
     font-size: 450px;
   }
 }
 @media (min-width: 768px) {
-  .portrait-image-placeholder i,
   .portrait-image-placeholder .svg-inline--fa {
     font-size: 368px;
   }
 }
 @media (min-width: 992px) {
-  .portrait-image-placeholder i,
   .portrait-image-placeholder .svg-inline--fa {
     font-size: 310px;
   }
 }
 @media (min-width: 1200px) {
-  .portrait-image-placeholder i,
   .portrait-image-placeholder .svg-inline--fa {
     font-size: 280px;
   }
@@ -2231,28 +2252,49 @@ body.html .link-button a:hover {
   max-width: 46.31941094%;
   left: 26.84029453%;
   color: #a5aebd;
+}
+.landscape-image-placeholder i {
+  font-size: 147px;
+}
+@media (min-width: 480px) {
+  .landscape-image-placeholder i {
+    font-size: 227px;
+  }
+}
+@media (min-width: 768px) {
+  .landscape-image-placeholder i {
+    font-size: 365px;
+  }
+}
+@media (min-width: 992px) {
+  .landscape-image-placeholder i {
+    font-size: 271px;
+  }
+}
+@media (min-width: 1200px) {
+  .landscape-image-placeholder i {
+    font-size: 330px;
+  }
+}
+.landscape-image-placeholder .svg-inline--fa {
   font-size: 151px;
 }
 @media (min-width: 480px) {
-  .landscape-image-placeholder i,
   .landscape-image-placeholder .svg-inline--fa {
     font-size: 235px;
   }
 }
 @media (min-width: 768px) {
-  .landscape-image-placeholder i,
   .landscape-image-placeholder .svg-inline--fa {
     font-size: 380px;
   }
 }
 @media (min-width: 992px) {
-  .landscape-image-placeholder i,
   .landscape-image-placeholder .svg-inline--fa {
     font-size: 286px;
   }
 }
 @media (min-width: 1200px) {
-  .landscape-image-placeholder i,
   .landscape-image-placeholder .svg-inline--fa {
     font-size: 344px;
   }
