@@ -714,6 +714,9 @@ body.html a {
   font-weight: 400;
   color: #495365;
 }
+body.html a.btn-mod {
+  color: white;
+}
 body.html b,
 body.html strong {
   font-weight: 400;
