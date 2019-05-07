@@ -717,8 +717,14 @@ body.html a {
 body.html a.btn-mod {
   color: white;
 }
+body.html a.btn-mod:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
 body.html a.btn-mod.btn-border {
   color: #151515;
+}
+body.html a.btn-mod.btn-border:hover {
+  color: white;
 }
 body.html b,
 body.html strong {
