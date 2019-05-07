@@ -1743,6 +1743,7 @@ body.html .link-button a:hover {
      * and float right.
      */
   float: right;
+  margin-top: -11px;
   margin-bottom: 0;
   font-size: 28px;
 }
