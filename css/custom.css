@@ -739,6 +739,9 @@ body.html .section-text,
 body.html blockquote {
   color: #697891;
 }
+body.html .bg-gray {
+  background-color: #f0f2f4;
+}
 .city-blue {
   color: #1c9cd6;
 }
