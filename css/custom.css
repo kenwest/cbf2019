@@ -847,6 +847,7 @@ h6,
 }
 .mobile-nav i,
 .mobile-nav .svg-inline--fa {
+  display: inline;
   height: 100%;
   vertical-align: middle;
   font-size: 21px;
