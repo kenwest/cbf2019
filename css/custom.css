@@ -726,6 +726,12 @@ body.html a.btn-mod.btn-border {
 body.html a.btn-mod.btn-border:hover {
   color: white;
 }
+body.html a.btn-mod.btn-w {
+  color: #111;
+}
+body.html a.btn-mod.btn-w:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
 body.html b,
 body.html strong {
   font-weight: 400;
