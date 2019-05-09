@@ -712,25 +712,9 @@ body.html a {
   font-family: 'Rubik', arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+body.html a:not(.btn) {
   color: #495365;
-}
-body.html a.btn-mod {
-  color: white;
-}
-body.html a.btn-mod:hover {
-  color: rgba(255, 255, 255, 0.85);
-}
-body.html a.btn-mod.btn-border {
-  color: #151515;
-}
-body.html a.btn-mod.btn-border:hover {
-  color: white;
-}
-body.html a.btn-mod.btn-w {
-  color: #111;
-}
-body.html a.btn-mod.btn-w:hover {
-  color: rgba(255, 255, 255, 0.85);
 }
 body.html b,
 body.html strong {
