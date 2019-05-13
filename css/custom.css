@@ -1788,6 +1788,14 @@ body.html .link-button a:hover {
 .view-content .owl-carousel .owl-next .svg-inline--fa {
   position: relative;
 }
+.view-content .owl-carousel .owl-page span {
+  background: white;
+  border: 1px solid black;
+}
+.view-content .owl-carousel .owl-page.active span {
+  background: black;
+  border: 1px solid white;
+}
 .view-content .owl-carousel .owl-item .views-field-field-title-image,
 .view-content .owl-carousel .owl-item .views-field-field-highlight {
   /*
