@@ -1788,6 +1788,9 @@ body.html .link-button a:hover {
 .view-content .owl-carousel .owl-next .svg-inline--fa {
   position: relative;
 }
+.view-content .owl-carousel .owl-pagination {
+  bottom: 11px;
+}
 .view-content .owl-carousel .owl-page span {
   background: white;
   border: 1px solid black;
