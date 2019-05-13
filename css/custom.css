@@ -1793,10 +1793,10 @@ body.html .link-button a:hover {
 }
 .view-content .owl-carousel .owl-page span {
   background: white;
-  border: 1px solid black;
+  border: 1px solid #697891;
 }
 .view-content .owl-carousel .owl-page.active span {
-  background: black;
+  background: #697891;
   border: 1px solid white;
 }
 .view-content .owl-carousel .owl-item .views-field-field-title-image,
