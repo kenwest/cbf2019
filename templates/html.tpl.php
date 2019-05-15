@@ -9,6 +9,16 @@
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
   <meta name=viewport content="width=device-width, initial-scale=1">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/cbf2019/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/sites/all/themes/cbf2019/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/sites/all/themes/cbf2019/favicon-16x16.png">
+  <link rel="manifest" href="/sites/all/themes/cbf2019/site.webmanifest">
+  <link rel="mask-icon" href="/sites/all/themes/cbf2019/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/sites/all/themes/cbf2019/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="/sites/all/themes/cbf2019/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
   <?php print $styles; ?>
   <?php if (stripos($_SERVER['HTTP_HOST'], "nikadevs") !== FALSE && module_exists('nikadevs_dev')) include DRUPAL_ROOT . '/' . drupal_get_path('module', 'nikadevs_dev') . '/g_analytics/rhythm.js'; ?>
 </head>
