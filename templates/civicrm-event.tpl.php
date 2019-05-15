@@ -42,6 +42,10 @@
           '#access' => true,
           '#label_hidden' => true,
         ],
+        'field_attachment' => [
+          '#access' => true,
+          '#label_hidden' => true,
+        ],
         'field_staff_contact' => [
           '#access' => true,
         ],
