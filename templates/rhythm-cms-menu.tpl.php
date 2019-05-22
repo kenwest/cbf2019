@@ -35,7 +35,7 @@
     <!-- Main Menu -->
     <div class="inner-nav desktop-nav">
       <ul class="clearlist">
-        <?php if(module_exists('tb_megamenu')) {
+        <?php if (module_exists('tb_megamenu')) {
             print theme('tb_megamenu', array('menu_name' => $menu));
           }
           else {
@@ -43,10 +43,10 @@
             print drupal_render($main_menu_tree);
           }
         ?>
-        <?php if(isset($search) && $search || $language || isset($cart) && $cart) : ?>
+        <?php if (isset($search) && $search || $language || isset($cart) && $cart) : ?>
           <li><a style="height: 75px; line-height: 75px;">&nbsp;</a></li>
         <?php endif; ?>
-        <?php if(isset($search) && $search && module_exists('search')): ?>
+        <?php if (isset($search) && $search && module_exists('search')): ?>
           <li class="search-dropdown-list">
             <a href="#" class="mn-has-sub" style="height: 75px; line-height: 75px;"><i class="fal fa-search"></i> <?php print t('Search'); ?></a>
             <ul class="mn-sub" style="display: none;">
@@ -68,12 +68,12 @@
             <a href="/donate" style="height: 75px; line-height: 75px;">Give</a>
           </li>
         <?php endif; ?>
-        <?php if(isset($cart) && $cart && module_exists('commerce_cart')): ?>
+        <?php if (isset($cart) && $cart && module_exists('commerce_cart')): ?>
           <li>
             <a href="<?php print url('cart'); ?>" style="height: 75px; line-height: 75px;"><i class="fal fa-shopping-cart"></i> <?php print t('Cart') . '(' . _rhythm_cart_count() . ')'; ?></a>
           </li>
         <?php endif; ?>
-        <?php if($language && module_exists('locale') && drupal_multilingual()):
+        <?php if ($language && module_exists('locale') && drupal_multilingual()):
           global $language;
         ?>
           <li>
