@@ -878,14 +878,19 @@ h6,
   margin-top: -8px;
   text-align: center;
 }
-.domain-reaching-city .main-nav .full-wrapper {
+/*
+ * Formatting of the .give-menu-item Give button in the .main-nav.
+ * Ideally this appears only on .domain-reaching-city but appears
+ * on all domains until we inform our contacts.
+ */
+body.html .main-nav .full-wrapper {
   margin-right: 0;
 }
-.domain-reaching-city .main-nav .give-menu-item {
+body.html .main-nav .give-menu-item {
   padding: 0 40px;
   background-color: #1c9cd6;
 }
-.domain-reaching-city .main-nav .give-menu-item a {
+body.html .main-nav .give-menu-item a {
   color: white;
 }
 .domain-reaching-city .bg-dark-alfa-50 {

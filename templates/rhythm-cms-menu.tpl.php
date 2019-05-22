@@ -63,7 +63,7 @@
             </ul>
           </li>
         <?php endif; ?>
-        <?php if($isPlusSite): ?>
+        <?php if (true || $isPlusSite): ?>
           <li class="give-menu-item">
             <a href="/donate" style="height: 75px; line-height: 75px;">Give</a>
           </li>
