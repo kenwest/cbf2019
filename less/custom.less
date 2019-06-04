@@ -1883,6 +1883,12 @@ body.html {
         column-count: 1;
       }
     }
+
+    .block-system {
+      .field + .field {
+        margin-top: 2em; // Format the space between the fields to be like that between P elements
+      }
+    }
   }
 }
 
@@ -1899,6 +1905,10 @@ body.html {
 
     @media (min-width: @screen-md-min) {
       column-count: 3;
+    }
+
+    .field + .field {
+      margin-top: 2em; // Format the space between the fields to be like that between P elements
     }
   }
 }
