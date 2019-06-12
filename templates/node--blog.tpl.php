@@ -79,6 +79,7 @@
 
 // Hide fields that will be displayed in the $typeSpecific variable
 $content['field_episode_date']['#label_display'] = 'hidden';
+hide($content['field_in_activity']);
 hide($content['field_episode_date']);
 hide($content['field_subtitle']);
 
@@ -92,6 +93,7 @@ $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-
 $typeSpecific .=     '<h3>';
 $typeSpecific .=       filter_xss(drupal_get_title());
 $typeSpecific .=     '</h3>';
+$typeSpecific .=     render($content['field_in_activity']);
 $typeSpecific .=     render($content['field_episode_date']);
 $typeSpecific .=     render($content['field_subtitle']);
 $typeSpecific .=   '</div>';

@@ -172,6 +172,7 @@ if ($tabActive['count'] > 0) {
 
   // Hide fields that will be displayed in the episode-content-tab
   $content['field_episode_date']['#label_display'] = 'hidden';
+  hide($content['field_in_activity']);
   hide($content['field_episode_date']);
   hide($content['field_subtitle']);
   hide($content['field_topic']);
@@ -184,6 +185,7 @@ if ($tabActive['count'] > 0) {
   $typeSpecific .=     '<h3>';
   $typeSpecific .=       filter_xss(drupal_get_title());
   $typeSpecific .=     '</h3>';
+  $typeSpecific .=     render($content['field_in_activity']);
   $typeSpecific .=     render($content['field_episode_date']);
   $typeSpecific .=     render($content['field_subtitle']);
   if ($tabActive['count'] > 1) {
