@@ -14,14 +14,14 @@ function cbf2019_preprocess_html(&$variables) {
   );
 }
 
-/*
+/**
  * An implementation of theme_entity_property()
  */
 function cbf2019_entity_property($variables) {
   return cbf_entity_property($variables);
 }
 
-/*
+/**
  * An implementation of theme_pager_link()
  *
  * It's a copy of rhythm_pager_link() but ...
@@ -77,7 +77,7 @@ function cbf2019_pager_link($variables) {
   return '<a' . drupal_attributes($attributes) . '>' . $text . '</a>';
 }
 
-/*
+/**
  * An implementation of theme_breadcrumb().
  *
  * Put a link to the front page on every non-front page.
