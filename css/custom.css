@@ -917,6 +917,36 @@ body.html .main-nav .give-menu-item a {
   text-decoration: underline;
 }
 /*********
+ * Alerts
+ */
+body.html .alert {
+  margin-bottom: 44px;
+  border-width: 0;
+  padding: 22px 15px 22px 60px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 400;
+  color: white;
+  background-color: #1c9cd6;
+}
+body.html .alert.success {
+  color: #0f2e38;
+  background-color: #a3c7c7;
+}
+body.html .alert.error {
+  color: white;
+  background-color: #cf2e4f;
+}
+body.html .alert i,
+body.html .alert svg.svg-inline--fa {
+  float: left;
+  font-size: 28px;
+  margin: 0px 15px 22px -45px;
+}
+body.html .alert p:last-child {
+  margin-bottom: 0;
+}
+/*********
  * Colours
  */
 .alt-features-icon {

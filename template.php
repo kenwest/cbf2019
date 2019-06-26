@@ -143,3 +143,48 @@ function cbf2019_breadcrumb($variables) {
 
   return $cbf2019breadcrumb;
 }
+
+/**
+ * An implementation of theme_status_messages()
+ *
+ * Changes the Rhythm function to use FontAwesome 5 icons
+ */
+function cbf2019_status_messages($variables) {
+  $display = $variables['display'];
+  $output = '<div class = "row"><div class = "col-md-8 col-md-offset-2">';
+
+  $status_heading = array(
+    'status' => t('Status message'),
+    'error' => t('Error message'),
+    'warning' => t('Warning message'),
+  );
+  $types = array(
+    'status' => 'success',
+    'error' => 'error',
+    'warning' => 'notice',
+  );
+  $icons = array(
+    'status' => 'fal fa-check-circle',
+    'error' => 'fal fa-times-circle',
+    'warning' => 'fal fa-exclamation-triangle',
+  );
+
+  foreach (drupal_get_messages($display) as $type => $messages) {
+    $output .= "<div class=\"alert " . $types[$type] . "\">\n<i class=\"" . $icons[$type] . "\"></i>";
+    if (!empty($status_heading[$type])) {
+      $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
+    }
+    if (count($messages) > 1) {
+      foreach ($messages as $message) {
+        $output .= '<p>' . $message . "</p>\n";
+      }
+    }
+    else {
+      $output .= $messages[0];
+    }
+    $output .= "</div>\n";
+  }
+  $output .= '</div></div>';
+
+  return $output;
+}

@@ -281,6 +281,46 @@ body.html {
 }
 
 /*********
+ * Alerts
+ */
+
+body.html {
+  .alert {
+    margin-bottom: 2*@line-height-computed;
+    border-width: 0;
+    padding: @line-height-computed @grid-gutter-half-width @line-height-computed 4*@grid-gutter-half-width;
+
+    font-size: @font-size-base;
+    text-transform: none;
+    font-weight: 400;
+
+    color: white;
+    background-color: #1c9cd6;
+
+    &.success {
+      color: #0f2e38;
+      background-color: #a3c7c7;
+    }
+
+    &.error {
+      color: white;
+      background-color: #cf2e4f;
+    }
+
+    i,
+    svg.svg-inline--fa {
+      float: left;
+      font-size: 2*@font-size-base;
+      margin: 0px @grid-gutter-half-width @line-height-computed -3*@grid-gutter-half-width;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*********
  * Colours
  */
 
