@@ -47,7 +47,8 @@ body.html {
   }
 }
 
-.city-blue {
+.city-blue,
+.primary-colour {
   color: @city-blue;
 }
 
@@ -63,7 +64,8 @@ body.html {
   color: @sea-foam;
 }
 
-.cardinal {
+.cardinal,
+.domain-thirdspace .primary-colour {
   color: @cardinal;
 }
 
@@ -822,6 +824,16 @@ body.html {
   }
 }
 
+.domain-thirdspace .episode-content-tab .nav-pills {
+  li.active {
+    > a,
+    > a:hover,
+    > a:focus {
+      background-color: @cardinal;
+    }
+  }
+}
+
 /******************************
  * Format the contents of views
  */
@@ -1239,6 +1251,10 @@ body.html {
   .view-footer {
     clear: both;
   }
+}
+
+.domain-thirdspace .office-view .views-row .views-field.view-icon {
+  color: @cardinal;
 }
 
 .item-carousel-4-view {
@@ -2004,6 +2020,10 @@ body.html {
       }
     }
   }
+}
+
+.domain-thirdspace .views-field-field-details .tablefield caption {
+  color: @cardinal;
 }
 
 /*****************************

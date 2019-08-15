@@ -732,7 +732,8 @@ body.html blockquote {
 body.html .bg-gray {
   background-color: #f0f2f4;
 }
-.city-blue {
+.city-blue,
+.primary-colour {
   color: #1c9cd6;
 }
 .midnight-blue {
@@ -744,7 +745,8 @@ body.html .bg-gray {
 .sea-foam {
   color: #a3c7c7;
 }
-.cardinal {
+.cardinal,
+.domain-thirdspace .primary-colour {
   color: #cf2e4f;
 }
 /**********************************************
@@ -1568,6 +1570,11 @@ body.html .link-button a:hover {
   content: ',\00a0';
   white-space: pre;
 }
+.domain-thirdspace .episode-content-tab .nav-pills li.active > a,
+.domain-thirdspace .episode-content-tab .nav-pills li.active > a:hover,
+.domain-thirdspace .episode-content-tab .nav-pills li.active > a:focus {
+  background-color: #cf2e4f;
+}
 /******************************
  * Format the contents of views
  */
@@ -2053,6 +2060,9 @@ body.html .link-button a:hover {
 }
 .office-view .view-footer {
   clear: both;
+}
+.domain-thirdspace .office-view .views-row .views-field.view-icon {
+  color: #cf2e4f;
 }
 .item-carousel-4-view .slide-wrapper {
   margin-right: -15px;
@@ -3090,6 +3100,9 @@ body.html .link-button a:hover {
 .views-field-field-details .tablefield th p:last-child,
 .views-field-field-details .tablefield td p:last-child {
   margin-bottom: 0;
+}
+.domain-thirdspace .views-field-field-details .tablefield caption {
+  color: #cf2e4f;
 }
 /*****************************
  * Format the content of forms
