@@ -166,7 +166,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  * Format the Title header
  */
 .bg-dark-alfa-50,
-.domain-reaching-city .bg-dark-alfa-50.promote-main-site {
+.domain-reaching-city .bg-dark-alfa-50.promote-main-site,
+.domain-plus .bg-dark-alfa-50.promote-main-site {
   text-shadow: 0 0 40px @city-blue-80;
 
   &::before {
@@ -229,8 +230,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /*
  * Formatting of the .give-menu-item Give button in the .main-nav.
- * Ideally this appears only on .domain-reaching-city but appears
- * on all domains until we inform our contacts.
+ * Ideally this appears only on .domain-plus but appears on all
+ * domains until we inform our contacts.
  */
 body.html {
   .main-nav {
@@ -253,7 +254,8 @@ body.html.domain-thirdspace .main-nav .give-menu-item {
   background-color: @cardinal;
 }
 
-.domain-reaching-city {
+.domain-reaching-city,
+.domain-plus {
   .bg-dark-alfa-50 {
     text-shadow: 0 0 40px @slate-80;
 

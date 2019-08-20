@@ -835,11 +835,13 @@ h6,
  * Format the Title header
  */
 .bg-dark-alfa-50,
-.domain-reaching-city .bg-dark-alfa-50.promote-main-site {
+.domain-reaching-city .bg-dark-alfa-50.promote-main-site,
+.domain-plus .bg-dark-alfa-50.promote-main-site {
   text-shadow: 0 0 40px #49b0de;
 }
 .bg-dark-alfa-50::before,
-.domain-reaching-city .bg-dark-alfa-50.promote-main-site::before {
+.domain-reaching-city .bg-dark-alfa-50.promote-main-site::before,
+.domain-plus .bg-dark-alfa-50.promote-main-site::before {
   /*
      * When displayed over a white background, this background colour gives the theme's
      * 'City blue 80%' which is rgb(73, 176, 222)
@@ -882,8 +884,8 @@ h6,
 }
 /*
  * Formatting of the .give-menu-item Give button in the .main-nav.
- * Ideally this appears only on .domain-reaching-city but appears
- * on all domains until we inform our contacts.
+ * Ideally this appears only on .domain-plus but appears on all
+ * domains until we inform our contacts.
  */
 body.html .main-nav .full-wrapper {
   margin-right: 0;
@@ -898,10 +900,12 @@ body.html .main-nav .give-menu-item a {
 body.html.domain-thirdspace .main-nav .give-menu-item {
   background-color: #cf2e4f;
 }
-.domain-reaching-city .bg-dark-alfa-50 {
+.domain-reaching-city .bg-dark-alfa-50,
+.domain-plus .bg-dark-alfa-50 {
   text-shadow: 0 0 40px #8793a7;
 }
-.domain-reaching-city .bg-dark-alfa-50::before {
+.domain-reaching-city .bg-dark-alfa-50::before,
+.domain-plus .bg-dark-alfa-50::before {
   /*
        * When displayed over a white background, this background colour gives the theme's
        * 'Slate 80%' which is rgb(135, 148, 167)
