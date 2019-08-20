@@ -895,6 +895,9 @@ body.html .main-nav .give-menu-item {
 body.html .main-nav .give-menu-item a {
   color: white;
 }
+body.html.domain-thirdspace .main-nav .give-menu-item {
+  background-color: #cf2e4f;
+}
 .domain-reaching-city .bg-dark-alfa-50 {
   text-shadow: 0 0 40px #8793a7;
 }
