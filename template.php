@@ -12,6 +12,9 @@ function cbf2019_preprocess_html(&$variables) {
     drupal_get_path('theme', 'cbf2019') . '/css/custom.css',
     array('group' => CSS_THEME)
   );
+  drupal_add_js(
+    '//developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js',
+    array('type' => 'external', 'scope' => 'footer'));
 }
 
 /**
