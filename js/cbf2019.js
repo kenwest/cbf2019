@@ -77,7 +77,20 @@
           gmLat = parseFloat($(this).attr("data-lat"));
           gmLong = parseFloat($(this).attr("data-long"));
           gmIcon = $(this).attr("data-icon");
-          gmContent = this.innerHTML;
+          gmContent = [];
+
+          $('.marker-item', this).each(function () {
+            for (let i = 0; i < this.classList.length; i++) {
+              var gmClassName = this.classList.item(i);
+              if (gmClassName != 'marker-item') {
+                break;
+              }
+            }
+            gmContent.push({
+              css: gmClassName,
+              content: this.innerHTML
+            });
+          });
 
           var addMarker = true;
 
@@ -85,7 +98,30 @@
             var latLng = gmMarkers[i].getPosition();
             if (Math.abs(latLng.lat() - gmLat) <= 0.0002 && Math.abs(latLng.lng() - gmLong) <= 0.0002) {
               addMarker = false;
-              gmMarkers[i].data = gmMarkers[i].data.concat(gmContent);
+              var gmActivity = null;
+              var gmAddress = null;
+              for (let j = 0; j < gmMarkers[i].data.length; j++) {
+                if (gmMarkers[i].data[j].css == 'marker-activity') {
+                  gmActivity = gmMarkers[i].data[j];
+                }
+                if (gmMarkers[i].data[j].css == 'marker-address') {
+                  gmAddress = gmMarkers[i].data.splice(j--,1);
+                }
+              }
+              for (let j = 0; j < gmContent.length; j++) {
+                if (gmContent[j].css == 'marker-activity'
+                    && gmActivity !== null
+                    && gmActivity.content == gmContent[j].content) {
+                  continue;
+                }
+                if (gmContent[j].css == 'marker-address') {
+                  gmAddress = null;
+                }
+                gmMarkers[i].data.push(gmContent[j]);
+              }
+              if (gmAddress !== null) {
+                gmMarkers[i].data.push(gmAddress);
+              }
               break;
             }
           }
@@ -110,6 +146,14 @@
 
         if (gmMarkers.length == 0) {
           return;
+        }
+
+        for (let i = 0; i < gmMarkers.length; i++) {
+          var s = '<div class = "marker-content">';
+          for (let j = 0; j < gmMarkers[i].data.length; j++) {
+            s = s.concat('<div class = "marker-item ', gmMarkers[i].data[j].css, '">', gmMarkers[i].data[j].content, '</div>');
+          }
+          gmMarkers[i].data = s.concat('</div>');
         }
 
         var gmMap = new google.maps.Map(
