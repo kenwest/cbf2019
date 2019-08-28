@@ -2113,6 +2113,18 @@ body.html .link-button a:hover {
   background-color: #697891 !important;
   z-index: 1;
 }
+.map-canvas-view .marker-activity,
+.map-canvas-view-multiple .view-content .marker-activity,
+.map-canvas-view .marker-title,
+.map-canvas-view-multiple .view-content .marker-title {
+  font-weight: 400;
+}
+.map-canvas-view .marker-name,
+.map-canvas-view-multiple .view-content .marker-name,
+.map-canvas-view .marker-summary,
+.map-canvas-view-multiple .view-content .marker-summary {
+  font-style: italic;
+}
 /*
  * Here is a pattern for creating a separator between views fields that
  * are rewritten and need a vertical separator between them. The first is
