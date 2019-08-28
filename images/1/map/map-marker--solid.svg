@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 614.40003 614.40015"
+   viewBox="0 0 735.00001 735.00001"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="map-marker--solid.svg"
-   width="614.40002"
-   height="614.40015"
+   width="735"
+   height="735"
    inkscape:export-filename="/var/www/test/sites/all/themes/cbf2019/images/1/map/map-marker--solid.png"
    inkscape:export-xdpi="7.3200002"
    inkscape:export-ydpi="7.3200002">
@@ -78,8 +78,8 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="0.4609375"
-     inkscape:cx="-230.8339"
-     inkscape:cy="307.20013"
+     inkscape:cx="305.66956"
+     inkscape:cy="-161.41011"
      inkscape:window-x="1407"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -88,20 +88,16 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0" />
-  <g
-     id="g4164"
-     transform="translate(76.800003,2.0703123e-7)">
-    <path
-       inkscape:connector-curvature="0"
-       style="fill:#a3c7c7;fill-opacity:1;filter:url(#filter4138)"
-       id="path4"
-       d="M 210.668,552.87001 C 65.370002,342.23101 38.400002,320.61301 38.400002,243.20001 38.400002,137.16101 124.361,51.200012 230.4,51.200012 c 106.039,0 192,85.960998 192,191.999998 0,77.413 -26.97,99.031 -172.268,309.67 -9.535,13.774 -29.93,13.773 -39.464,0 z" />
-    <rect
-       y="6.1035156e-05"
-       x="-76.800003"
-       height="614.40002"
-       width="614.40002"
-       id="rect4162"
-       style="fill:none;fill-opacity:1;stroke:none;stroke-opacity:1" />
-  </g>
+  <path
+     d="m 347.76799,673.46987 c -145.298,-210.63899 -172.268,-232.25699 -172.268,-309.66999 0,-106.03901 85.961,-192.00001 192,-192.00001 106.039,0 192,85.961 192,192.00001 0,77.413 -26.97,99.031 -172.268,309.66999 -9.535,13.774 -29.93,13.773 -39.464,0 z"
+     id="path4"
+     style="fill:#0f2e38;fill-opacity:1;filter:url(#filter4138)"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="fill:#000000;fill-opacity:0;stroke:none;stroke-opacity:1"
+     id="rect4143"
+     width="735"
+     height="735"
+     x="0"
+     y="0" />
 </svg>
