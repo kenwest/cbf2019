@@ -1,0 +1,4 @@
+Subdirectories:
+1/ for domain 'cbf'
+4/ for domain 'plus'
+6/ for domain 'thirdspace'
