@@ -157,10 +157,17 @@
           gmMap,
           gmMarkers,
           {
-            imagePath: '//developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
-            gridSize: 20
+            imagePath: '/sites/all/themes/cbf2019/images/1/map/m',
+            gridSize: 20,
+            maxZoom: 15,
           }
         );
+        gmMarkerClusterer.setStyles([{
+          url: '/sites/all/themes/cbf2019/images/1/map/cluster.png',
+          width: 60,
+          height: 60,
+          textColor: 'white'
+        }]);
 
         if (
           gmBounds.getNorthEast().lat() - gmBounds.getSouthWest().lat() > 0.01
