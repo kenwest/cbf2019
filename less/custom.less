@@ -1297,6 +1297,18 @@ body.html {
   .marker-summary {
     font-style: italic;
   }
+
+  .marker-separator + .marker-item,
+  .marker-address + .marker-item {
+    margin-top: 7px;
+    border-top: 1px solid @slate-20;
+    padding-top: 7px;
+
+    &.marker-name,
+    &.marker-address {
+      border-top-color: transparent;
+    }
+  }
 }
 
 /*

@@ -2125,6 +2125,24 @@ body.html .link-button a:hover {
 .map-canvas-view-multiple .view-content .marker-summary {
   font-style: italic;
 }
+.map-canvas-view .marker-separator + .marker-item,
+.map-canvas-view-multiple .view-content .marker-separator + .marker-item,
+.map-canvas-view .marker-address + .marker-item,
+.map-canvas-view-multiple .view-content .marker-address + .marker-item {
+  margin-top: 7px;
+  border-top: 1px solid #e1e4e9;
+  padding-top: 7px;
+}
+.map-canvas-view .marker-separator + .marker-item.marker-name,
+.map-canvas-view-multiple .view-content .marker-separator + .marker-item.marker-name,
+.map-canvas-view .marker-address + .marker-item.marker-name,
+.map-canvas-view-multiple .view-content .marker-address + .marker-item.marker-name,
+.map-canvas-view .marker-separator + .marker-item.marker-address,
+.map-canvas-view-multiple .view-content .marker-separator + .marker-item.marker-address,
+.map-canvas-view .marker-address + .marker-item.marker-address,
+.map-canvas-view-multiple .view-content .marker-address + .marker-item.marker-address {
+  border-top-color: transparent;
+}
 /*
  * Here is a pattern for creating a separator between views fields that
  * are rewritten and need a vertical separator between them. The first is
