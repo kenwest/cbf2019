@@ -99,13 +99,17 @@
             if (Math.abs(latLng.lat() - gmLat) <= 0.0002 && Math.abs(latLng.lng() - gmLong) <= 0.0002) {
               addMarker = false;
               var gmActivity = null;
+              var gmName = null;
               var gmAddress = null;
               for (let j = 0; j < gmMarkers[i].data.length; j++) {
                 if (gmMarkers[i].data[j].css == 'marker-activity') {
                   gmActivity = gmMarkers[i].data[j];
                 }
+                if (gmMarkers[i].data[j].css == 'marker-name') {
+                  gmName = gmMarkers[i].data.splice(j--, 1);
+                }
                 if (gmMarkers[i].data[j].css == 'marker-address') {
-                  gmAddress = gmMarkers[i].data.splice(j--,1);
+                  gmAddress = gmMarkers[i].data.splice(j--, 1);
                 }
               }
               for (let j = 0; j < gmContent.length; j++) {
@@ -114,10 +118,18 @@
                     && gmActivity.content == gmContent[j].content) {
                   continue;
                 }
+                if (gmContent[j].css == 'marker-name') {
+                  gmName = gmContent[j];
+                  continue;
+                }
                 if (gmContent[j].css == 'marker-address') {
-                  gmAddress = null;
+                  gmAddress = gmContent[j];
+                  continue;
                 }
                 gmMarkers[i].data.push(gmContent[j]);
+              }
+              if (gmName !== null) {
+                gmMarkers[i].data.push(gmName);
               }
               if (gmAddress !== null) {
                 gmMarkers[i].data.push(gmAddress);
