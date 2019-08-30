@@ -25,21 +25,17 @@ Marker
 
 Marker Cluster
 
-1.  Start with the SVG for icon map-marker from the FontAwesome Pro desktop version
-2.  This icons's dimensions will be in the ratio of 3:4.
-3.  Edit the SVG using Inkscape
-4.  Set the fill colour of the icon
+1.  Create an SVG using Inkscape
+2.  Create a circle
+4.  Set the fill colour of the circle
      - rgba(15, 46, 56, 255)
-5.  Add a drop shadow to the white map-marker layer
+5.  Add a drop shadow to the circle
      - Blur radius = 20
      - Horizontal offset = 20
      - Vertical offset = 20
      - Shadow type = Outer
-6.  Add a transparent square.
-     - It's height is in the ratio 6:5 of the height of the icon
-7.  Align the square and the icon so they are centred on the bottom
 8.  Resize the page to content
 9.  Save
 10. Export to PNG
-     - cluster.png is 60x60 pixels
+     - cluster.png is 37x37 pixels
 

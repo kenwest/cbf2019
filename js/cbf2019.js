@@ -220,8 +220,8 @@
         );
         gmMarkerClusterer.setStyles([{
           url: '/sites/all/themes/cbf2019/images/1/map/cluster.png',
-          width: 60,
-          height: 60,
+          width: 37,
+          height: 37,
           textColor: 'white'
         }]);
 
