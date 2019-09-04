@@ -73,7 +73,7 @@
 
   <?php if ($exposed): ?>
     <div class="view-filters">
-      <?php print $exposed; ?>
+      <?php print preg_replace('!(<a) ([^>]*href=)!i', '$1 rel="nofollow" $2', $exposed); ?>
     </div>
   <?php endif; ?>
   
@@ -96,7 +96,7 @@
   <?php endif; ?>
 
   <?php if ($pager): ?>
-    <?php print $pager; ?>
+    <?php print preg_replace('!(<a) ([^>]*href=)!i', '$1 rel="nofollow" $2', $pager); ?>
   <?php endif; ?>
 
   <?php if ($attachment_after): ?>
