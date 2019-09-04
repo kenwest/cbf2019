@@ -34,6 +34,14 @@
 
     <?php print $page_top; ?>
     <?php
+      if (drupal_is_front_page()) {
+        /*
+         * On drupal_is_front_page() views may refer to the home page using variable 'site_frontpage'.
+         * Remove this as it confuses SEO.
+         */
+        $site_frontpage = variable_get('site_frontpage', 'node');
+        $page = preg_replace('!( href="https://[a-z.]+/)' . $site_frontpage . '(["?])!i', '$1$2', $page);
+      }
       $fragments = preg_split('|(</?script[^>]*>)|i', $page, -1, PREG_SPLIT_DELIM_CAPTURE);
       for ($i = 0; $i < count($fragments); $i += 4) {
         print $fragments[$i];
