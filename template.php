@@ -175,7 +175,7 @@ function cbf2019_status_messages($variables) {
   foreach (drupal_get_messages($display) as $type => $messages) {
     $output .= "<div class=\"alert " . $types[$type] . "\">\n<i class=\"" . $icons[$type] . "\"></i>";
     if (!empty($status_heading[$type])) {
-      $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
+      $output .= '<div class="element-invisible">' . $status_heading[$type] . "</div>\n";
     }
     if (count($messages) > 1) {
       foreach ($messages as $message) {
@@ -188,6 +188,28 @@ function cbf2019_status_messages($variables) {
     $output .= "</div>\n";
   }
   $output .= '</div></div>';
+
+  return $output;
+}
+
+/**
+ * Overrides theme_menu_local_tasks().
+ */
+function cbf2019_menu_local_tasks(array $variables) {
+  $output = '';
+
+  if (!empty($variables['primary'])) {
+    $variables['primary']['#prefix'] = '<div class="element-invisible">' . t('Primary tabs') . '</div>';
+    $variables['primary']['#prefix'] .= '<div class = "align-center mb-40 mb-xxs-30"><ul class="nav nav-tabs tpl-minimal-tabs">';
+    $variables['primary']['#suffix'] = '</ul></div>';
+    $output .= drupal_render($variables['primary']);
+  }
+  if (!empty($variables['secondary'])) {
+    $variables['secondary']['#prefix'] = '<div class="element-invisible">' . t('Secondary tabs') . '</div>';
+    $variables['secondary']['#prefix'] .= '<div class = "align-center mb-40 mb-xxs-30"><ul class="nav nav-tabs tpl-minimal-tabs">';
+    $variables['secondary']['#suffix'] = '</ul></div>';
+    $output .= drupal_render($variables['secondary']);
+  }
 
   return $output;
 }
