@@ -47,6 +47,7 @@
 </div>
 <?php
   $fid = 0;
+  $h2 = '';
   if (!empty($view->result)) {
     $result = reset($view->result);
     $imageFieldsByPreference = [
@@ -66,6 +67,22 @@
         break;
       }
     }
+    $h2FieldsByPreference = [
+      'field_field_subtitle',
+      'civicrm_event_summary',
+    ];
+    foreach ($h2FieldsByPreference as $h2Field) {
+      if (!empty($result->$h2Field)) {
+        if (is_string($result->$h2Field)) {
+          $h2 = $result->$h2Field;
+        }
+        else {
+          $h2 = reset($result->$h2Field);
+          $h2 = $h2['rendered']['#markup'];
+        }
+        break;
+      }
+    }
   }
   print rhythm_shortcodes_shortcode_header(
     [
@@ -79,4 +96,7 @@
     ],
     ''
   );
+  if (!empty($h2)) {
+    print '<h2 class="element-invisible">' . $h2 . '</h2>';
+  }
 ?>
