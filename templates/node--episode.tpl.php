@@ -182,9 +182,9 @@ if ($tabActive['count'] > 0) {
   $typeSpecific = '';
   $typeSpecific .= '<div class="episode-content-tab clearfix">';
   $typeSpecific .=   '<div class = "episode-pills">';
-  $typeSpecific .=     '<h3>';
+  $typeSpecific .=     '<p class="h3">';
   $typeSpecific .=       filter_xss(drupal_get_title());
-  $typeSpecific .=     '</h3>';
+  $typeSpecific .=     '</p>';
   $typeSpecific .=     render($content['field_in_activity']);
   $typeSpecific .=     render($content['field_episode_date']);
   $typeSpecific .=     render($content['field_subtitle']);

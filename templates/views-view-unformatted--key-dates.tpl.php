@@ -38,7 +38,7 @@
 ?>
 
 <?php if (!empty($title)): ?>
-  <h3><?php print $title; ?></h3>
+  <p class="h3"><?php print $title; ?></p>
 <?php endif; ?>
 
 <?php

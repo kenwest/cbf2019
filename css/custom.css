@@ -1030,10 +1030,10 @@ body.html .link-button a:hover {
 /******************************
  * Format blog-specific content
  */
-.blog-specific-content h3 {
+.blog-specific-content .h3 {
   text-transform: uppercase;
 }
-.blog-specific-content h3,
+.blog-specific-content .h3,
 .blog-specific-content .field {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
@@ -1167,10 +1167,10 @@ body.html .link-button a:hover {
     margin-left: 0;
   }
 }
-.episode-content-tab h3 {
+.episode-content-tab .h3 {
   text-transform: uppercase;
 }
-.episode-content-tab h3,
+.episode-content-tab .h3,
 .episode-content-tab ul,
 .episode-content-tab .field,
 .episode-content-tab .episode-tags {
@@ -2489,7 +2489,7 @@ body.html .link-button a:hover {
   }
 }
 .view.venue .view.event-price .views-row,
-.view.venue .view.event-price h3 {
+.view.venue .view.event-price .h3 {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -2567,18 +2567,18 @@ body.html .link-button a:hover {
   width: auto;
   border-top: 0;
 }
-.view.venue .view.event-price h3 {
+.view.venue .view.event-price .h3 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.6;
 }
-.view.venue .view.event-price h3 .Radio,
-.view.venue .view.event-price h3 .CheckBox,
-.view.venue .view.event-price h3 .Text {
+.view.venue .view.event-price .h3 .Radio,
+.view.venue .view.event-price .h3 .CheckBox,
+.view.venue .view.event-price .h3 .Text {
   display: none;
 }
-.view.venue .view.event-price h3 .Select {
+.view.venue .view.event-price .h3 .Select {
   position: relative;
   float: left;
   width: 100%;
@@ -2587,7 +2587,7 @@ body.html .link-button a:hover {
   padding-left: 15px;
   padding-top: 22px;
 }
-.view.venue .view.event-price h3:first-child .Select {
+.view.venue .view.event-price .h3:first-child .Select {
   padding-top: 0;
 }
 .view.view-cbf2019-staff-slider .owl-prev,

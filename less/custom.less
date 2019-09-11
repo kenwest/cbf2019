@@ -406,11 +406,11 @@ body.html {
  * Format blog-specific content
  */
 .blog-specific-content {
-  h3 {
+  .h3 {
     text-transform: uppercase;
   }
 
-  h3,
+  .h3,
   .field {
     margin-top: 0 !important;
     margin-bottom: 30px !important;
@@ -533,11 +533,11 @@ body.html {
     }
   }
 
-  h3 {
+  .h3 {
     text-transform: uppercase;
   }
 
-  h3,
+  .h3,
   ul,
   .field,
   .episode-tags {
@@ -1628,7 +1628,7 @@ body.html {
   .view.event-price {
 
     .views-row,
-    h3 {
+    .h3 {
       .make-row();
     }
 
@@ -1672,7 +1672,7 @@ body.html {
       border-top: 0;
     }
 
-    h3 {
+    .h3 {
       margin-top: 0;
       margin-bottom: 0;
       font-size: @font-size-base;
@@ -1689,11 +1689,11 @@ body.html {
 
         padding-top: @line-height-computed;
       }
-    }
 
-    h3:first-child {
-	  .Select {
-        padding-top: 0;
+      &:first-child {
+	    .Select {
+          padding-top: 0;
+        }
       }
     }
   }
