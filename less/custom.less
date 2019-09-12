@@ -475,15 +475,21 @@ body.html {
     }
 
     .field-name-field-video {
-      font-size: 0; // Prevents space between .video-filter-field (inline-block)
+      /*
+       * Prevent space between .video-filter-field (inline-block)
+       * Ideally the font-size would be zero, but a .video-filter-field is 50%
+       * of a width which might be an odd number. We need to force the odd-numbered
+       * videos to wrap. We do this by using a non-zero font-size.
+       */
+      font-size: 0.5px;
 
       .video-filter-field {
         display: inline-block;
         width: 50%;
-      }
 
-      .video-filter-field:only-child {
-        width: 100%;
+        &:only-child {
+          width: 100%;
+        }
       }
     }
   }
