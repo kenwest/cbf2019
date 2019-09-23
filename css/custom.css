@@ -3789,8 +3789,8 @@ body.html .link-button a:hover {
   margin-bottom: 22px !important;
   padding: 0;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section {
-  margin-bottom: 0;
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section:last-child {
+  margin-bottom: 0 !important;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content,
