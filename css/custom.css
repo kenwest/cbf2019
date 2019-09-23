@@ -3685,7 +3685,8 @@ body.html .link-button a:hover {
 .block-system #crm-container.crm-container .crm-block .crm-profile-view-title,
 .block-system #crm-container.crm-container .crm-block .progress-outer,
 .block-system #crm-container.crm-container .crm-block .crm-section > p,
-.block-system #crm-container.crm-container .crm-block .action-link {
+.block-system #crm-container.crm-container .crm-block .action-link,
+.block-system #crm-container.crm-container .crm-block .event_summary-section {
   position: relative;
   float: left;
   width: 100%;
@@ -3746,13 +3747,20 @@ body.html .link-button a:hover {
     width: 33.33333333%;
   }
 }
-.block-system #crm-container.crm-container .crm-submit-buttons {
+.block-system #crm-container.crm-container .crm-submit-buttons,
+.block-system #crm-container.crm-container .crm-actionlinks-top,
+.block-system #crm-container.crm-container .crm-actionlinks-bottom {
   /*
        * Some CiviCRM forms put the back button before the next button.
        * These 2 rules switch them to make the interface consistent.
        */
 }
-.block-system #crm-container.crm-container .crm-submit-buttons .crm-button {
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button,
+.block-system #crm-container.crm-container .crm-actionlinks-top .crm-button,
+.block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button,
+.block-system #crm-container.crm-container .crm-submit-buttons .action-link,
+.block-system #crm-container.crm-container .crm-actionlinks-top .action-link,
+.block-system #crm-container.crm-container .crm-actionlinks-bottom .action-link {
   float: left;
   width: 50%;
   position: relative;
@@ -3761,24 +3769,37 @@ body.html .link-button a:hover {
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button,
+  .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button,
+  .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button,
+  .block-system #crm-container.crm-container .crm-submit-buttons .action-link,
+  .block-system #crm-container.crm-container .crm-actionlinks-top .action-link,
+  .block-system #crm-container.crm-container .crm-actionlinks-bottom .action-link {
     float: left;
     width: 33.33333333%;
   }
 }
-.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2),
+.block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-back:nth-child(1):nth-last-child(2),
+.block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-back:nth-child(1):nth-last-child(2) {
   left: 50%;
 }
 @media (min-width: 768px) {
-  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2) {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(1):nth-last-child(2),
+  .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-back:nth-child(1):nth-last-child(2),
+  .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-back:nth-child(1):nth-last-child(2) {
     left: 33.33333333%;
   }
 }
-.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1),
+.block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-next:nth-child(2):nth-last-child(1),
+.block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-next:nth-child(2):nth-last-child(1) {
   right: 50%;
 }
 @media (min-width: 768px) {
-  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1) {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(2):nth-last-child(1),
+  .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-next:nth-child(2):nth-last-child(1),
+  .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-next:nth-child(2):nth-last-child(1) {
     right: 33.33333333%;
   }
 }
@@ -3787,7 +3808,6 @@ body.html .link-button a:hover {
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section {
   margin-bottom: 22px !important;
-  padding: 0;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section:last-child {
   margin-bottom: 0 !important;
@@ -4021,23 +4041,54 @@ body.html .link-button a:hover {
 .block-system #crm-container.crm-container #crm-main-content-wrapper a:link {
   color: #495365;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom {
   width: auto !important;
-  margin-top: 44px;
-  margin-bottom: 44px;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link {
   margin: 0;
   background: transparent;
   border-width: 0;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button i {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link {
+  margin-top: 44px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link {
+  margin-bottom: 44px;
+}
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button i,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button i,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button i,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link i,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link i,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link i {
   display: none;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button input {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button a.button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button a.button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button a.button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link a.button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link a.button,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link a.button {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
+  margin: 0;
   border: 2px solid transparent;
   border-radius: 2px;
   padding-top: 8px;
@@ -4046,6 +4097,7 @@ body.html .link-button a:hover {
   padding-right: initial;
   color: white;
   background-color: rgba(34, 34, 34, 0.9);
+  background-image: none;
   font-size: 12px;
   text-align: center;
   text-shadow: none;
@@ -4058,16 +4110,37 @@ body.html .link-button a:hover {
   -ms-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button input:hover {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button a.button:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button a.button:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button a.button:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link a.button:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link a.button:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link a.button:hover {
   color: rgba(255, 255, 255, 0.85);
   background-color: rgba(0, 0, 0, 0.7);
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button.crm-button-type-back input {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button.crm-button-type-back input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button.crm-button-type-back input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button.crm-button-type-back input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link.crm-button-type-back input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link.crm-button-type-back input,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link.crm-button-type-back input {
   color: #151515;
   background-color: transparent;
   border-color: #151515;
 }
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button.crm-button-type-back input:hover {
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button.crm-button-type-back input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button.crm-button-type-back input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .crm-button.crm-button-type-back input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .action-link.crm-button-type-back input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link.crm-button-type-back input:hover,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link.crm-button-type-back input:hover {
   color: white;
   background-color: black;
 }

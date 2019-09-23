@@ -2382,7 +2382,8 @@ body.html {
       .crm-profile-view-title,
       .progress-outer,
       .crm-section > p,
-      .action-link {
+      .action-link,
+      .event_summary-section {
         .make-xs-column(12);
       }
 
@@ -2421,8 +2422,12 @@ body.html {
       }
     }
 
-    .crm-submit-buttons {
-      .crm-button {
+    .crm-submit-buttons,
+    .crm-actionlinks-top,
+    .crm-actionlinks-bottom {
+
+      .crm-button,
+      .action-link {
         .make-xs-column(6);
         .make-sm-column(4);
       }
@@ -2451,7 +2456,6 @@ body.html {
 
       .crm-section {
         margin-bottom: @line-height-computed !important; // Override 0
-        padding: 0;
 
         .crm-section:last-child {
           margin-bottom: 0 !important; // Restore 0 if nesting crm-section DIVs
@@ -2724,24 +2728,45 @@ body.html {
         color: @link-color;
       }
 
-      .crm-submit-buttons {
+      .crm-submit-buttons,
+      .crm-actionlinks-top,
+      .crm-actionlinks-bottom {
         width: auto !important;
-        margin-top: 2*@line-height-computed;
-        margin-bottom: 2*@line-height-computed;
 
-        .crm-button {
+        .crm-button,
+        .action-link {
           margin: 0;
           background: transparent;
           border-width: 0;
+        }
+      }
 
+      .crm-submit-buttons,
+      .crm-actionlinks-bottom .action-link {
+        margin-top: 2*@line-height-computed;
+      }
+
+      .crm-submit-buttons,
+      .crm-actionlinks-top .action-link,
+      .crm-actionlinks-bottom .action-link {
+        margin-bottom: 2*@line-height-computed;
+      }
+
+      .crm-submit-buttons,
+      .crm-actionlinks-top,
+      .crm-actionlinks-bottom {
+        .crm-button,
+        .action-link {
           i {
             display: none;
           }
 
-          input {
+          input,
+          a.button {
             display: inline-block;
             box-sizing: border-box;
             width: 100%;
+            margin: 0;
             border: 2px solid transparent;
             border-radius: 2px;
             padding-top: 8px;
@@ -2750,6 +2775,7 @@ body.html {
             padding-right: initial;
             color: white;
             background-color: rgba(34, 34, 34, 0.9);
+            background-image: none;
             font-size: 12px;
             text-align: center;
             text-shadow: none;
