@@ -96,10 +96,11 @@
   <?php
     // Hide fields not used in this theme - may eventually be removed
     hide($content['field_add_to_calendar']);
-    hide($content['field_in_activity']);
     hide($content['field_image']);
 
-    // Hide fields displayed in views in this theme - may eventually be removed
+    // Hide fields that are either displayed in views or are hidden by default
+    // (and displayed via content-type specific templates)
+    hide($content['field_in_activity']);
     hide($content['field_highlight']);
     hide($content['field_details']);
     hide($content['field_speakers']);

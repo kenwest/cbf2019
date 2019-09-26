@@ -77,7 +77,7 @@
  * @ingroup themeable
  */
 
-// Hide fields displayed in views in this theme - may eventually be removed
+// Hide fields displayed in views in this theme
 hide($content['field_subtitle']);
 
 include 'node.tpl.php';
