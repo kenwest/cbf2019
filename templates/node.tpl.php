@@ -102,6 +102,7 @@
     // (and displayed via content-type specific templates)
     hide($content['field_in_activity']);
     hide($content['field_highlight']);
+    hide($content['field_highlight_video']);
     hide($content['field_details']);
     hide($content['field_speakers']);
 
