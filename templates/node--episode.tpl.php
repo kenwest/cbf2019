@@ -135,19 +135,7 @@ if ($tabActive['count'] > 0) {
         .  $tabSettings['label']
         .  '</a></li>';
       if ($tabKey == 'field_order_url') {
-        $tabFieldContent = '';
-        $orderUrlillustrations = [
-//          'field_highlight_video',
-//          'field_highlight',
-        ];
-        foreach ($orderUrlillustrations as $illustration) {
-          if (!empty($content[$illustration])) {
-            $tabFieldContent .= render($content[$illustration]);
-            hide($content[$illustration]);
-            break;
-          }
-        }
-        $tabFieldContent .= preg_replace(
+        $tabFieldContent = preg_replace(
           '!<a !i',
           '$0class="btn btn-mod btn-border btn-medium btn-round uppercase" ',
           render($content[$tabKey])
