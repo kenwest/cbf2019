@@ -49,6 +49,9 @@
         'field_staff_contact' => [
           '#access' => true,
         ],
+        'field_addthis' => [
+          '#access' => true,
+        ],
       ];
       foreach ($propertyList as $propertyName => $propertySettings) {
         foreach ($propertySettings as $propertyKey => $propertyValue) {
