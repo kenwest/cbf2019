@@ -2887,6 +2887,84 @@ body.html .link-button a:hover {
   padding-left: 15px;
   text-align: right;
 }
+.view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
+  .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
+  .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
+    margin-left: 41.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
+  .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
+  .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
+    margin-left: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
+  .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
+  .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
+    margin-left: 58.33333333%;
+  }
+}
+.view-cbf2019-third-space-categories .row.view-header-and-more {
+  margin-right: -3px;
+  margin-left: -3px;
+  margin-bottom: 0;
+}
+.view-cbf2019-third-space-categories .row.view-header-and-more .view-header p {
+  margin: 0 0 3px 0;
+  color: white;
+}
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row {
+  margin-right: -3px;
+  margin-left: -3px;
+}
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .col-xs-4 {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .col-xs-4 .views-field-tid {
+  color: #0f2e38;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 48px;
+  margin: 0;
+}
 /******************
  * Block formatting
  */

@@ -1871,6 +1871,51 @@ body.html {
   }
 }
 
+.view-cbf2019-third-space-categories {
+  .view-header-and-more .col-xs-12,
+  .views-bootstrap-grid-plugin-style {
+    .make-xs-column(10);
+    .make-xs-column-offset(1);
+    .make-sm-column(6);
+    .make-sm-column-offset(5);
+    .make-md-column(5);
+    .make-md-column-offset(6);
+    .make-lg-column(4);
+    .make-lg-column-offset(7);
+  }
+
+  .row.view-header-and-more {
+    .make-row(@thirdspace-grid-gutter-width);
+
+    margin-bottom: 0;
+
+    .view-header p {
+      margin: 0 0 @thirdspace-grid-gutter-half-width 0;
+      color: white;
+    }
+  }
+
+  .views-bootstrap-grid-plugin-style {
+    .row {
+      .make-row(@thirdspace-grid-gutter-width);
+
+      .col-xs-4 {
+        .make-xs-column(4, @thirdspace-grid-gutter-width);
+
+        padding-top: @thirdspace-grid-gutter-half-width;
+        padding-bottom: @thirdspace-grid-gutter-half-width;
+
+        .views-field-tid {
+          color: @midnight-blue;
+          background-color: rgba(255,255,255,.7);
+          font-size: 48px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
 
 /******************
  * Block formatting
