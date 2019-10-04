@@ -994,6 +994,64 @@ body.html {
       }
     }
   }
+
+  .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value {
+    .bef-select-as-links {
+      > .form-item {
+        @media (min-width: @screen-md-min) {
+          text-align: justify;
+
+          &::after {
+            content: ' ';
+            width: 100%;
+            display: inline-block;
+          }
+        }
+
+        > .form-type-bef-link {
+          .make-480-column(3);
+
+          @media (min-width: @screen-md-min) {
+	        display: inline-block;
+            float: none;
+            width: auto;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:first-child {
+              padding-left: @grid-gutter-half-width;
+            }
+
+            &:last-child {
+              padding-right: @grid-gutter-half-width;
+            }
+          }
+
+          &.form-item-edit-field-resource-type-value-all {
+            /*
+             * On larger displays, centre the Resource Types
+             * by 'prefixing' 4 columns to the grid
+             * (so 4 + 1 (All) + 3 (Types) + 4 = 12)
+             */
+            .make-md-column-offset(4);
+          }
+
+          &.form-item-edit-field-resource-type-value-3 {
+            /*
+             * On larger displays, centre the Resource Types
+             * by 'suffixing' 4 columns to the grid
+             * (so 4 + 1 (All) + 3 (Types) + 4 = 12)
+             */
+            @media (min-width: @screen-md-min) {
+              &:last-child {
+                margin-right: 100%*(4/12);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .view-content {

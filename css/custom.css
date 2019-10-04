@@ -1779,6 +1779,67 @@ body.html .link-button a:hover {
     margin-right: 16.66666667%;
   }
 }
+@media (min-width: 992px) {
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item {
+    text-align: justify;
+  }
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item::after {
+    content: ' ';
+    width: 100%;
+    display: inline-block;
+  }
+}
+.view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link {
+    display: inline-block;
+    float: none;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
+    padding-left: 15px;
+  }
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link:last-child {
+    padding-right: 15px;
+  }
+}
+.view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-resource-type-value-all {
+  /*
+             * On larger displays, centre the Resource Types
+             * by 'prefixing' 4 columns to the grid
+             * (so 4 + 1 (All) + 3 (Types) + 4 = 12)
+             */
+}
+@media (min-width: 992px) {
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-resource-type-value-all {
+    margin-left: 33.33333333%;
+  }
+}
+.view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-resource-type-value-3 {
+  /*
+             * On larger displays, centre the Resource Types
+             * by 'suffixing' 4 columns to the grid
+             * (so 4 + 1 (All) + 3 (Types) + 4 = 12)
+             */
+}
+@media (min-width: 992px) {
+  .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-resource-type-value-3:last-child {
+    margin-right: 33.33333333%;
+  }
+}
 .view-content .views-field {
   /*
      * Generic field formatting
