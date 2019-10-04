@@ -1898,34 +1898,37 @@ body.html {
  * The .pager-current is hidden for aesthetic reasons.
  */
 
-.view.view-cbf2019-blog,
-.view.view-cbf2019-recent-library {
-  .item-list {
-    .container();
+.view {
+  &.view-cbf2019-third-space-category,
+  &.view-cbf2019-blog,
+  &.view-cbf2019-recent-library {
+    .item-list {
+      .container();
 
-    .pager {
-      .make-row();
+      .pager {
+        .make-row();
 
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
 
-      .pager-previous {
-        .make-xs-column(4);
+        .pager-previous {
+          .make-xs-column(4);
 
-        text-align: left;
-      }
+          text-align: left;
+        }
 
-      .pager-current {
-        .make-xs-column(4);
+        .pager-current {
+          .make-xs-column(4);
 
-        visibility: hidden;
-      }
+          visibility: hidden;
+        }
 
-      .pager-next {
-        .make-xs-column(4);
+        .pager-next {
+          .make-xs-column(4);
 
-        text-align: right;
+          text-align: right;
+        }
       }
     }
   }
