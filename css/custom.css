@@ -2239,6 +2239,7 @@ body.html .link-button a:hover {
  * copied from Rhythm's .team-item.
  */
 .views-field.image-plus-hover-overlay .field-content {
+  display: block;
   position: relative;
   overflow: hidden;
 }
@@ -2248,11 +2249,11 @@ body.html .link-button a:hover {
 .views-field.image-plus-hover-overlay .field-content .overlaid-image:after {
   content: " ";
   display: block;
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   background: transparent;
   z-index: 1;
   -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
@@ -2325,6 +2326,7 @@ body.html .link-button a:hover {
 }
 .views-field.image-plus-fixed-overlay .field-content,
 .episode-content-tab .tab-content {
+  display: block;
   position: relative;
 }
 .views-field.image-plus-fixed-overlay .field-content .overlaid-image img,
@@ -2335,11 +2337,11 @@ body.html .link-button a:hover {
 .episode-content-tab .tab-content .overlaid-image:after {
   content: " ";
   display: block;
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   background: rgba(255, 255, 255, 0.75);
   z-index: 1;
 }
@@ -2866,6 +2868,7 @@ body.html .link-button a:hover {
  * Set up the pager to switch the previous/next buttons.
  * The .pager-current is hidden for aesthetic reasons.
  */
+.view.view-cbf2019-third-space-category .item-list,
 .view.view-cbf2019-blog .item-list,
 .view.view-cbf2019-recent-library .item-list {
   padding-right: 15px;
@@ -2874,33 +2877,42 @@ body.html .link-button a:hover {
   margin-left: auto;
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-third-space-category .item-list,
   .view.view-cbf2019-blog .item-list,
   .view.view-cbf2019-recent-library .item-list {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
+  .view.view-cbf2019-third-space-category .item-list,
   .view.view-cbf2019-blog .item-list,
   .view.view-cbf2019-recent-library .item-list {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
+  .view.view-cbf2019-third-space-category .item-list,
   .view.view-cbf2019-blog .item-list,
   .view.view-cbf2019-recent-library .item-list {
     width: 1170px;
   }
 }
+.view.view-cbf2019-third-space-category .item-list .container,
 .view.view-cbf2019-blog .item-list .container,
 .view.view-cbf2019-recent-library .item-list .container,
+.view.view-cbf2019-third-space-category .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .view.view-cbf2019-blog .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .view.view-cbf2019-recent-library .item-list .container-view-content .view-content .views-bootstrap-grid-plugin-style,
+.view.view-cbf2019-third-space-category .item-list .office-view .view-content,
 .view.view-cbf2019-blog .item-list .office-view .view-content,
 .view.view-cbf2019-recent-library .item-list .office-view .view-content,
+.view.view-cbf2019-third-space-category .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
 .view.view-cbf2019-blog .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
 .view.view-cbf2019-recent-library .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view.view-cbf2019-third-space-category .item-list .view.view-cbf2019-blog .item-list,
 .view.view-cbf2019-blog .item-list .view.view-cbf2019-blog .item-list,
 .view.view-cbf2019-recent-library .item-list .view.view-cbf2019-blog .item-list,
+.view.view-cbf2019-third-space-category .item-list .view.view-cbf2019-recent-library .item-list,
 .view.view-cbf2019-blog .item-list .view.view-cbf2019-recent-library .item-list,
 .view.view-cbf2019-recent-library .item-list .view.view-cbf2019-recent-library .item-list {
   /*
@@ -2910,6 +2922,7 @@ body.html .link-button a:hover {
   padding-right: initial;
   padding-left: initial;
 }
+.view.view-cbf2019-third-space-category .item-list .pager,
 .view.view-cbf2019-blog .item-list .pager,
 .view.view-cbf2019-recent-library .item-list .pager {
   margin-right: -15px;
@@ -2918,6 +2931,7 @@ body.html .link-button a:hover {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+.view.view-cbf2019-third-space-category .item-list .pager .pager-previous,
 .view.view-cbf2019-blog .item-list .pager .pager-previous,
 .view.view-cbf2019-recent-library .item-list .pager .pager-previous {
   position: relative;
@@ -2928,6 +2942,7 @@ body.html .link-button a:hover {
   padding-left: 15px;
   text-align: left;
 }
+.view.view-cbf2019-third-space-category .item-list .pager .pager-current,
 .view.view-cbf2019-blog .item-list .pager .pager-current,
 .view.view-cbf2019-recent-library .item-list .pager .pager-current {
   position: relative;
@@ -2938,6 +2953,7 @@ body.html .link-button a:hover {
   padding-left: 15px;
   visibility: hidden;
 }
+.view.view-cbf2019-third-space-category .item-list .pager .pager-next,
 .view.view-cbf2019-blog .item-list .pager .pager-next,
 .view.view-cbf2019-recent-library .item-list .pager .pager-next {
   position: relative;
@@ -3025,6 +3041,33 @@ body.html .link-button a:hover {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 48px;
   margin: 0;
+}
+.view-cbf2019-third-space-category .view-content .col-xs-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .view-cbf2019-third-space-category .view-content .col-xs-12 {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .view-cbf2019-third-space-category .view-content .col-xs-12 {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .overlaid-image::after {
+  background: rgba(0, 0, 0, 0.5);
+}
+.view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .image-overlay {
+  color: white;
+}
+.view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .image-overlay .views-field:last-child {
+  margin-bottom: 0;
 }
 /******************
  * Block formatting
