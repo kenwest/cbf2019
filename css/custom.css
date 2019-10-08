@@ -3042,29 +3042,15 @@ body.html .link-button a:hover {
   font-size: 48px;
   margin: 0;
 }
-.view-cbf2019-third-space-category .view-content .col-xs-12 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 480px) {
-  .view-cbf2019-third-space-category .view-content .col-xs-12 {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .view-cbf2019-third-space-category .view-content .col-xs-12 {
-    float: left;
-    width: 33.33333333%;
-  }
-}
 .view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .overlaid-image::after {
   background: rgba(0, 0, 0, 0.5);
 }
 .view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .image-overlay {
   color: white;
+}
+.view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .image-overlay .views-field-field-resource-type {
+  float: none;
+  margin-top: 0;
 }
 .view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .image-overlay .views-field:last-child {
   margin-bottom: 0;
