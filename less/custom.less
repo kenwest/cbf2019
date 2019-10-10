@@ -1649,44 +1649,42 @@ body.html {
   }
 }
 
-.view.venue {
+.view.event-details {
+  > .view-content {
+    > .views-row {
+	  > .views-field {
+        .make-row();
+        .clearfix();
 
-  text-transform: uppercase;
-  font-weight: 500;
+        > .views-label {
+          .make-xs-column(3);
+          .make-480-column(4);
+          .make-sm-column(3);
 
-  .view-content {
-    margin-bottom: 0;
-  }
+          border-top: 1px solid #888;
+        }
 
-  .views-field {
-    .make-row();
-    .clearfix();
+        > .field-content {
+          .make-xs-column(9);
+          .make-480-column(8);
+          .make-sm-column(9);
 
-    margin-bottom: 0;
-
-    &:last-child {
-      margin-bottom: 0;
-
-      .field-content {
-        padding-bottom: 1.6em;
+          border-top: 1px solid #888;
+        }
       }
     }
   }
 
-  .views-label {
-    .make-xs-column(3);
-    .make-480-column(4);
-    .make-sm-column(3);
+  padding-bottom: 1.6em;
+  text-transform: uppercase;
+  font-weight: 500;
 
-    border-top: 1px solid #888;
-  }
+  .views-field {
+    margin-bottom: 0;
 
-  .field-content {
-    .make-xs-column(9);
-    .make-480-column(8);
-    .make-sm-column(9);
-
-    border-top: 1px solid #888;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .view.event-price {
@@ -1697,7 +1695,6 @@ body.html {
     }
 
     .views-field {
-      .unmake-row();
       .make-xs-column(7);
       .make-sm-column(8);
       .make-md-column(7);
@@ -1715,25 +1712,6 @@ body.html {
 
         text-align: right;
       }
-
-      &:last-child {
-
-        .field-content {
-          padding-bottom: 0;
-        }
-      }
-    }
-
-    .views-label {
-      .unmake-column();
-
-      border-top: 0;
-    }
-
-    .field-content {
-      .unmake-column();
-
-      border-top: 0;
     }
 
     .h3 {
