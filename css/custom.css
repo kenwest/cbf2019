@@ -4345,6 +4345,7 @@ body.html .link-button a:hover {
 .block-system #crm-container.crm-container .select2-results .select2-highlighted {
   color: white;
   background: #1c9cd6;
+  font-weight: 500;
 }
 .block-system #crm-container.crm-container .progress.payment {
   height: auto;
