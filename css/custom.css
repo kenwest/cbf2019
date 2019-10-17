@@ -4333,20 +4333,6 @@ body.html .link-button a:hover {
   color: white;
   background-color: black;
 }
-.block-system #crm-container.crm-container .select2-drop {
-  border-color: #c3c9d3;
-}
-.block-system #crm-container.crm-container .select2-drop-active {
-  border-color: #1c9cd6;
-}
-.block-system #crm-container.crm-container .select2-results {
-  color: #697891;
-}
-.block-system #crm-container.crm-container .select2-results .select2-highlighted {
-  color: white;
-  background: #1c9cd6;
-  font-weight: 500;
-}
 .block-system #crm-container.crm-container .progress.payment {
   height: auto;
   margin-bottom: 44px;
@@ -4383,6 +4369,20 @@ body.html .link-button a:hover {
 }
 .block-system #crm-container.crm-container #civicrm-footer {
   border-width: 0;
+}
+body.html .crm-container .select2-drop {
+  border-color: #c3c9d3;
+}
+body.html .crm-container .select2-drop-active {
+  border-color: #1c9cd6;
+}
+body.html .crm-container .select2-results {
+  color: #697891;
+}
+body.html .crm-container .select2-results .select2-highlighted {
+  color: white;
+  background: #1c9cd6;
+  font-weight: 500;
 }
 /*********************************
  * Fix anomalies which might occur
