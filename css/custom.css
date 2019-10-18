@@ -912,6 +912,12 @@ body.html.domain-thirdspace .main-nav .give-menu-item {
        */
   background: rgba(107, 125, 145, 0.8);
 }
+.domain-thirdspace .bg-dark-alfa-50 {
+  text-shadow: 0 0 40px #697891;
+}
+.domain-thirdspace .bg-dark-alfa-50::before {
+  background: transparent;
+}
 .hs-line-14,
 .hs-line-11 {
   letter-spacing: 0.4em;
