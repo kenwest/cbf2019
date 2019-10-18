@@ -3017,10 +3017,32 @@ body.html .link-button a:hover {
   min-height: 1px;
   padding-right: 3px;
   padding-left: 3px;
+}
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .col-xs-6 {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .col-sm-3 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+@media (min-width: 768px) {
+  .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .col-sm-3 {
+    float: left;
+    width: 25%;
+  }
+}
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .third-space-category {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .col-xs-4 .views-field-tid {
+.view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style .row .third-space-category .views-field-tid {
   color: #0f2e38;
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 48px;
