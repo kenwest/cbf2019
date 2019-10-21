@@ -2493,23 +2493,29 @@ body.html .link-button a:hover {
     font-size: 344px;
   }
 }
+.view.venue,
 .view.event-details {
   padding-bottom: 1.6em;
   text-transform: uppercase;
   font-weight: 500;
 }
+.view.venue > .view-content > .views-row > .views-field,
 .view.event-details > .view-content > .views-row > .views-field {
   margin-right: -15px;
   margin-left: -15px;
 }
+.view.venue > .view-content > .views-row > .views-field:before,
 .view.event-details > .view-content > .views-row > .views-field:before,
+.view.venue > .view-content > .views-row > .views-field:after,
 .view.event-details > .view-content > .views-row > .views-field:after {
   display: table;
   content: " ";
 }
+.view.venue > .view-content > .views-row > .views-field:after,
 .view.event-details > .view-content > .views-row > .views-field:after {
   clear: both;
 }
+.view.venue > .view-content > .views-row > .views-field > .views-label,
 .view.event-details > .view-content > .views-row > .views-field > .views-label {
   float: left;
   width: 25%;
@@ -2520,17 +2526,20 @@ body.html .link-button a:hover {
   border-top: 1px solid #888;
 }
 @media (min-width: 480px) {
+  .view.venue > .view-content > .views-row > .views-field > .views-label,
   .view.event-details > .view-content > .views-row > .views-field > .views-label {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 768px) {
+  .view.venue > .view-content > .views-row > .views-field > .views-label,
   .view.event-details > .view-content > .views-row > .views-field > .views-label {
     float: left;
     width: 25%;
   }
 }
+.view.venue > .view-content > .views-row > .views-field > .field-content,
 .view.event-details > .view-content > .views-row > .views-field > .field-content {
   float: left;
   width: 75%;
@@ -2541,28 +2550,35 @@ body.html .link-button a:hover {
   border-top: 1px solid #888;
 }
 @media (min-width: 480px) {
+  .view.venue > .view-content > .views-row > .views-field > .field-content,
   .view.event-details > .view-content > .views-row > .views-field > .field-content {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 768px) {
+  .view.venue > .view-content > .views-row > .views-field > .field-content,
   .view.event-details > .view-content > .views-row > .views-field > .field-content {
     float: left;
     width: 75%;
   }
 }
+.view.venue .views-field,
 .view.event-details .views-field {
   margin-bottom: 0;
 }
+.view.venue .views-field:last-child,
 .view.event-details .views-field:last-child {
   margin-bottom: 0;
 }
+.view.venue .view.event-price .views-row,
 .view.event-details .view.event-price .views-row,
+.view.venue .view.event-price .h3,
 .view.event-details .view.event-price .h3 {
   margin-right: -15px;
   margin-left: -15px;
 }
+.view.venue .view.event-price .views-field,
 .view.event-details .view.event-price .views-field {
   float: left;
   width: 58.33333333%;
@@ -2573,23 +2589,27 @@ body.html .link-button a:hover {
   padding-right: 3px;
 }
 @media (min-width: 768px) {
+  .view.venue .view.event-price .views-field,
   .view.event-details .view.event-price .views-field {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
+  .view.venue .view.event-price .views-field,
   .view.event-details .view.event-price .views-field {
     float: left;
     width: 58.33333333%;
   }
 }
 @media (min-width: 1200px) {
+  .view.venue .view.event-price .views-field,
   .view.event-details .view.event-price .views-field {
     float: left;
     width: 66.66666667%;
   }
 }
+.view.venue .view.event-price .views-field.views-field-amount,
 .view.event-details .view.event-price .views-field.views-field-amount {
   float: left;
   width: 41.66666667%;
@@ -2601,34 +2621,42 @@ body.html .link-button a:hover {
   text-align: right;
 }
 @media (min-width: 768px) {
+  .view.venue .view.event-price .views-field.views-field-amount,
   .view.event-details .view.event-price .views-field.views-field-amount {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
+  .view.venue .view.event-price .views-field.views-field-amount,
   .view.event-details .view.event-price .views-field.views-field-amount {
     float: left;
     width: 41.66666667%;
   }
 }
 @media (min-width: 1200px) {
+  .view.venue .view.event-price .views-field.views-field-amount,
   .view.event-details .view.event-price .views-field.views-field-amount {
     float: left;
     width: 33.33333333%;
   }
 }
+.view.venue .view.event-price .h3,
 .view.event-details .view.event-price .h3 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.6;
 }
+.view.venue .view.event-price .h3 .Radio,
 .view.event-details .view.event-price .h3 .Radio,
+.view.venue .view.event-price .h3 .CheckBox,
 .view.event-details .view.event-price .h3 .CheckBox,
+.view.venue .view.event-price .h3 .Text,
 .view.event-details .view.event-price .h3 .Text {
   display: none;
 }
+.view.venue .view.event-price .h3 .Select,
 .view.event-details .view.event-price .h3 .Select {
   position: relative;
   float: left;
@@ -2638,6 +2666,7 @@ body.html .link-button a:hover {
   padding-left: 15px;
   padding-top: 22px;
 }
+.view.venue .view.event-price .h3:first-child .Select,
 .view.event-details .view.event-price .h3:first-child .Select {
   padding-top: 0;
 }
