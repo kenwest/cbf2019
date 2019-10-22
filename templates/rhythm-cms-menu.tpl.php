@@ -6,7 +6,6 @@
       <div class="nav-logo-wrap local-scroll">
         <a href="<?php print url('<front>'); ?>" class="logo">
           <?php
-            $domainId = domain_get_domain()[domain_id];
             if (
               $is_front
               || $_SERVER['REQUEST_URI'] == '/home'
@@ -60,6 +59,7 @@
             </ul>
           </li>
         <?php endif; ?>
+        <?php $domainId = domain_get_domain()[domain_id]; ?>
         <?php if ($domainId != '6'): ?>
           <li class="give-menu-item">
             <a href="/donate" style="height: 75px; line-height: 75px;">Give</a>
