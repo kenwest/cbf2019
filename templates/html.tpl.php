@@ -17,7 +17,8 @@
   <link rel="shortcut icon" href="/sites/all/themes/cbf2019/favicon.ico">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-config" content="/sites/all/themes/cbf2019/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#1c9cd6">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1c9cd6">
 
   <?php print $styles; ?>
   <?php if (stripos($_SERVER['HTTP_HOST'], "nikadevs") !== FALSE && module_exists('nikadevs_dev')) include DRUPAL_ROOT . '/' . drupal_get_path('module', 'nikadevs_dev') . '/g_analytics/rhythm.js'; ?>
