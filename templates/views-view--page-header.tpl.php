@@ -30,10 +30,23 @@
 
 <div id="sticky-wrapper" class="sticky-wrapper" style="height: 75px;">
   <?php
-    $isPlusSite = cbf_is_plus_site();
+    switch ($domainId = domain_get_domain()[domain_id]){
+      case '4':
+        $mainMenuName = 'menu-cbf-2019-plus-menu';
+        break;
+
+      case '6':
+        $mainMenuName = 'menu-third-space-main-menu';
+        break;
+
+      default:
+        $mainMenuName = 'menu-cbf-2019-main-menu';
+        break;
+    }
+
     print rhythm_shortcodes_shortcode_menu(
       [
-        'menu' => $isPlusSite ? 'menu-cbf-2019-plus-menu' : 'menu-cbf-2019-main-menu',
+        'menu' => $mainMenuName,
         /* 'fid' => Use the theme logo by default */
         'type' => 'white',
         'transparent' => false,

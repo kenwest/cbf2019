@@ -6,7 +6,7 @@
       <div class="nav-logo-wrap local-scroll">
         <a href="<?php print url('<front>'); ?>" class="logo">
           <?php
-            $isPlusSite = cbf_is_plus_site();
+            $domainId = domain_get_domain()[domain_id];
             if (
               $is_front
               || $_SERVER['REQUEST_URI'] == '/home'
@@ -15,7 +15,7 @@
             ) {
               $logo = str_replace('logo', 'logo-white', $logo);
             }
-            if ($isPlusSite) {
+            if ($domainId == '4') {
               $logo = str_replace('logo', 'plus-logo', $logo);
             }
           ?>
@@ -63,7 +63,7 @@
             </ul>
           </li>
         <?php endif; ?>
-        <?php if (true || $isPlusSite): ?>
+        <?php if ($domainId != '6'): ?>
           <li class="give-menu-item">
             <a href="/donate" style="height: 75px; line-height: 75px;">Give</a>
           </li>

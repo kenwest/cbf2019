@@ -9,6 +9,8 @@
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
   <meta name=viewport content="width=device-width, initial-scale=1">
 
+  <?php $domainId = domain_get_domain()[domain_id]; ?>
+
   <link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/cbf2019/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/sites/all/themes/cbf2019/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/sites/all/themes/cbf2019/favicon-16x16.png">
