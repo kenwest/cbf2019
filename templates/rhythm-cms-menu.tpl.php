@@ -15,9 +15,6 @@
             ) {
               $logo = str_replace('logo', 'logo-white', $logo);
             }
-            if ($domainId == '4') {
-              $logo = str_replace('logo', 'plus-logo', $logo);
-            }
           ?>
           <object data="<?php print $logo; ?>" type="image/svg+xml">
             <img
