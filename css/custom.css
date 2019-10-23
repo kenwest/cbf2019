@@ -2977,6 +2977,12 @@ body.html .link-button a:hover {
   padding-left: 15px;
   text-align: right;
 }
+.view-cbf2019-domain .view-content .views-field:last-child {
+  margin-bottom: 0;
+}
+.view-cbf2019-domain .view-content .footer-logo {
+  margin: 0px 20px;
+}
 .view-cbf2019-third-space-categories .view-header-and-more .col-xs-12,
 .view-cbf2019-third-space-categories .views-bootstrap-grid-plugin-style {
   float: left;
