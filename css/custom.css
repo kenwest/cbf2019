@@ -3041,10 +3041,6 @@ body.html .link-button a:hover {
   top: 24%;
   left: 58%;
 }
-.view-cbf2019-third-space-categories .view-content .views-field-tid a.third-space-category-1542 {
-  top: 24%;
-  left: 25%;
-}
 .view-cbf2019-third-space-categories .view-content .views-field-tid a.third-space-category-1543 {
   top: 68%;
   left: 15%;
@@ -3068,6 +3064,10 @@ body.html .link-button a:hover {
 .view-cbf2019-third-space-categories .view-content .views-field-tid a.third-space-category-1548 {
   top: 68%;
   left: 30%;
+}
+.view-cbf2019-third-space-categories .view-content .views-field-tid a.third-space-category-1565 {
+  top: 24%;
+  left: 25%;
 }
 .view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .overlaid-image::after {
   background: rgba(0, 0, 0, 0.5);
