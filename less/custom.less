@@ -1936,54 +1936,85 @@ body.html {
 }
 
 .view-cbf2019-third-space-categories {
-  .view-header-and-more .col-xs-12,
-  .views-bootstrap-grid-plugin-style {
-    .make-xs-column(10);
-    .make-xs-column-offset(1);
-    .make-sm-column(6);
-    .make-sm-column-offset(5);
-    .make-md-column(5);
-    .make-md-column-offset(6);
-    .make-lg-column(4);
-    .make-lg-column-offset(7);
-  }
+  .view-content {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 3*@grid-gutter-width;
 
-  .row.view-header-and-more {
-    .make-row(@thirdspace-grid-gutter-width);
+    &:after {
+     .embed-responsive;
+     .embed-responsive-16by9;
 
-    margin-bottom: 0;
-
-    .view-header p {
-      margin: 0 0 @thirdspace-grid-gutter-half-width 0;
-      color: white;
+      content: " ";
+      display: block;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      background-image: url('/sites/default/files/images/content/2019/floorplan.jpg');
+      background-size: cover;
+      opacity: 0.75;
     }
-  }
 
-  .views-bootstrap-grid-plugin-style {
-    .row {
-      .make-row(@thirdspace-grid-gutter-width);
+    .views-field-tid {
+      margin: 0;
 
-      .col-xs-4 {
-        .make-xs-column(4, @thirdspace-grid-gutter-width);
-      }
+      a {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        z-index: 2;
+        padding: 5px;
+        color: white;
+        background-color: @cardinal;
+        font-size: 48px;
+        line-height: 62px;
 
-      .col-xs-6 {
-        .make-xs-column(6, @thirdspace-grid-gutter-width);
-      }
+        &.third-space-category-1540 { // Entertainment
+          top: 68%;
+          left: 50%;
+        }
 
-      .col-sm-3 {
-        .make-sm-column(3, @thirdspace-grid-gutter-width);
-      }
+        &.third-space-category-1541 { // Bible and prayer
+          top: 24%;
+          left: 58%;
+        }
 
-      .third-space-category {
-        padding-top: @thirdspace-grid-gutter-half-width;
-        padding-bottom: @thirdspace-grid-gutter-half-width;
+        &.third-space-category-1542 { // Food
+          top: 24%;
+          left: 25%;
+        }
 
-        .views-field-tid {
-          color: @midnight-blue;
-          background-color: rgba(255,255,255,.7);
-          font-size: 48px;
-          margin: 0;
+        &.third-space-category-1543 { // Study
+          top: 68%;
+          left: 15%;
+        }
+
+        &.third-space-category-1544 { // Environment
+          top: 24%;
+          left: 78%;
+        }
+
+        &.third-space-category-1545 { // Sport
+          top: 24%;
+          left: 9%;
+        }
+
+        &.third-space-category-1546 { // Politics and culture
+          top: 24%;
+          left: 41%;
+        }
+
+        &.third-space-category-1547 { // Relationships
+          top: 68%;
+          left: 78%;
+        }
+
+        &.third-space-category-1548 { // Health and wellbeing
+          top: 68%;
+          left: 30%;
         }
       }
     }
