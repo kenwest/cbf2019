@@ -3037,11 +3037,18 @@ body.html .link-button a:hover {
   top: 20%;
   left: 10%;
   z-index: 2;
-  padding: 10px;
   color: white;
   background-color: #cf2e4f;
-  font-size: 32px;
-  line-height: 41px;
+  padding: 8px;
+  font-size: 30px;
+  line-height: 39px;
+}
+@media (min-width: 1200px) {
+  .view-cbf2019-third-space-categories .view-content .views-field-tid a {
+    padding: 10px;
+    font-size: 32px;
+    line-height: 41px;
+  }
 }
 .view-cbf2019-third-space-categories .view-content .views-field-tid a.third-space-category-1540 {
   top: 70%;

@@ -1977,11 +1977,18 @@ body.html {
         top: 20%;
         left: 10%;
         z-index: 2;
-        padding: 10px;
         color: white;
         background-color: @cardinal;
-        font-size: 32px;
-        line-height: 41px;
+
+        // Mobile:
+          padding: 8px;
+          font-size: 30px;
+          line-height: 39px;
+        @media (min-width: @screen-lg-min) {
+          padding: 10px;
+          font-size: 32px;
+          line-height: 41px;
+        }
 
         &.third-space-category-1540 { // Entertainment
           top: 70%;
