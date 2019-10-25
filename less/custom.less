@@ -1948,7 +1948,10 @@ body.html {
     overflow: hidden;
 
     // Mobile:
+      margin: 0 1*@grid-gutter-width;
+    @media (min-width: @screen-md-min) {
       margin: 0 2*@grid-gutter-width;
+    }
     @media (min-width: @screen-lg-min) {
       margin: 0 3*@grid-gutter-width;
     }
@@ -1981,9 +1984,14 @@ body.html {
         background-color: @cardinal;
 
         // Mobile:
+          padding: 6px;
+          font-size: 25px;
+          line-height: 34px;
+        @media (min-width: @screen-md-min) {
           padding: 8px;
           font-size: 30px;
           line-height: 39px;
+        }
         @media (min-width: @screen-lg-min) {
           padding: 10px;
           font-size: 32px;
@@ -1996,8 +2004,12 @@ body.html {
         }
 
         &.third-space-category-1541 { // Bible and prayer
-          top: 28%;
-          left: 58%;
+          // Mobile:
+            top: 26%;
+            left: 58%;
+          @media (min-width: @screen-md-min) {
+            top: 28%;
+          }
         }
 
         &.third-space-category-1543 { // Study
@@ -2006,18 +2018,30 @@ body.html {
         }
 
         &.third-space-category-1544 { // Environment
-          top: 28%;
-          left: 78%;
+          // Mobile:
+            top: 26%;
+            left: 78%;
+          @media (min-width: @screen-md-min) {
+            top: 28%;
+          }
         }
 
         &.third-space-category-1545 { // Sport
-          top: 28%;
-          left: 9%;
+          // Mobile:
+            top: 26%;
+            left: 9%;
+          @media (min-width: @screen-md-min) {
+            top: 28%;
+          }
         }
 
         &.third-space-category-1546 { // Politics and culture
-          top: 28%;
-          left: 41%;
+          // Mobile:
+            top: 26%;
+            left: 41%;
+          @media (min-width: @screen-md-min) {
+            top: 28%;
+          }
         }
 
         &.third-space-category-1547 { // Relationships
@@ -2031,8 +2055,12 @@ body.html {
         }
 
         &.third-space-category-1565 { // Food
-          top: 28%;
-          left: 25%;
+          // Mobile:
+            top: 26%;
+            left: 25%;
+          @media (min-width: @screen-md-min) {
+            top: 28%;
+          }
         }
       }
     }
