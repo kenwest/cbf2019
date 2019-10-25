@@ -1946,7 +1946,12 @@ body.html {
     display: block;
     position: relative;
     overflow: hidden;
-    margin: 0 3*@grid-gutter-width;
+
+    // Mobile:
+      margin: 0 2*@grid-gutter-width;
+    @media (min-width: @screen-lg-min) {
+      margin: 0 3*@grid-gutter-width;
+    }
 
     &:after {
      .embed-responsive;
@@ -1961,7 +1966,7 @@ body.html {
       z-index: 1;
       background-image: url('/sites/default/files/images/content/2019/floorplan.jpg');
       background-size: cover;
-      opacity: 0.75;
+      opacity: 0.64;
     }
 
     .views-field-tid {
