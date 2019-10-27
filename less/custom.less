@@ -1946,14 +1946,18 @@ body.html {
     display: block;
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
 
     // Mobile:
-      margin: 0 1*@grid-gutter-width;
+      max-width: 260px;
+    @media (min-width: @screen-sm-min) {
+      max-width: 560px;
+    }
     @media (min-width: @screen-md-min) {
-      margin: 0 2*@grid-gutter-width;
+      max-width: 760px;
     }
     @media (min-width: @screen-lg-min) {
-      margin: 0 3*@grid-gutter-width;
+      max-width: 960px;
     }
 
     &:after {
