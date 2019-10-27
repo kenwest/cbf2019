@@ -1967,9 +1967,16 @@ body.html {
       bottom: 0;
       right: 0;
       z-index: 1;
-      background-image: url('/sites/default/files/images/content/2019/floorplan.jpg');
       background-size: cover;
       opacity: 0.64;
+
+      // Mobile:
+        background-image: url('/sites/all/themes/cbf2019/images/6/floorplan-portrait.jpg');
+        padding-bottom: 100%*(1200/558); // Dimensions of portrait floorplan
+      @media (min-width: @screen-sm-min) {
+        background-image: url('/sites/all/themes/cbf2019/images/6/floorplan-landscape.jpg');
+        padding-bottom: 100%*(558/1200); // Dimensions of landscape floorplan
+      }
     }
 
     .views-field-tid {
