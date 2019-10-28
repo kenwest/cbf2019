@@ -2992,7 +2992,7 @@ body.html .link-button a:hover {
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 44px auto;
   max-width: 260px;
 }
 @media (min-width: 768px) {
