@@ -2993,7 +2993,7 @@ body.html .link-button a:hover {
   position: relative;
   overflow: hidden;
   margin: 44px auto;
-  max-width: 260px;
+  max-width: 200px;
 }
 @media (min-width: 768px) {
   .view-cbf2019-third-space-categories .view-content {
