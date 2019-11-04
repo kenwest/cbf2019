@@ -3446,6 +3446,29 @@ body.html .link-button a:hover {
     max-width: 58.33333333%;
   }
 }
+.node-type-blog .content .field-name-body div.video-filter {
+  width: 100%;
+  margin: 0 0 22px 0;
+}
+@media (min-width: 768px) {
+  .node-type-blog .content .field-name-body div.video-filter {
+    float: right;
+    width: 50%;
+    padding-bottom: 28.125%;
+    margin: 0 0 22px 15px;
+  }
+}
+@media (min-width: 992px) {
+  .node-type-blog .content .field-name-body div.video-filter {
+    width: 58.33333333%;
+    padding-bottom: 32.8125%;
+  }
+}
+@media (min-width: 768px) {
+  .node-type-blog .content .field-name-body div.video-filter iframe.video-filter {
+    margin-left: 15px;
+  }
+}
 .node .content + div h4.blog-page-title {
   margin-top: 44px;
 }

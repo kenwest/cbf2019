@@ -2320,6 +2320,27 @@ body.html {
           max-width: (7/12)*100%;
         }
       }
+
+      div.video-filter {
+        // Mobile:
+          width: 100%;
+          margin: 0 0 @line-height-computed 0;
+        @media (min-width: @screen-sm-min) {
+          float: right;
+          width: (6/12)*100%;
+          padding-bottom: (9/16)*(6/12)*100%;
+          margin: 0 0 @line-height-computed @grid-gutter-half-width;
+        }
+        @media (min-width: @screen-md-min) {
+          width: (7/12)*100%;
+          padding-bottom: (9/16)*(7/12)*100%;
+        }
+
+        iframe.video-filter {
+          @media (min-width: @screen-sm-min) {
+            margin-left: @grid-gutter-half-width;
+          }
+        }
       }
     }
   }
