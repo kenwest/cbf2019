@@ -2301,22 +2301,25 @@ body.html {
       }
     }
 
-    .field-name-body img {
-      // Mobile:
-        float: none !important;
-        width: 100% !important;
-        height: auto !important;
-        padding: 0 !important;
-        margin: 0 0 @line-height-computed 0 !important;
-      @media (min-width: @screen-sm-min) {
-        float: right !important;
-        width: auto !important;
-        max-width: (6/12)*100%;
-        padding: 0 0 0 @grid-gutter-half-width !important;
-        margin: 0 0 @line-height-computed @grid-gutter-half-width !important;
+    .field-name-body {
+      img {
+        // Mobile:
+          float: none !important;
+          width: 100% !important;
+          height: auto !important;
+          padding: 0 !important;
+          margin: 0 0 @line-height-computed 0 !important;
+        @media (min-width: @screen-sm-min) {
+          float: right !important;
+          width: auto !important;
+          max-width: (6/12)*100%;
+          padding: 0 0 0 @grid-gutter-half-width !important;
+          margin: 0 0 @line-height-computed @grid-gutter-half-width !important;
+        }
+        @media (min-width: @screen-md-min) {
+          max-width: (7/12)*100%;
+        }
       }
-      @media (min-width: @screen-md-min) {
-        max-width: (7/12)*100%;
       }
     }
   }
