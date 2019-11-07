@@ -736,18 +736,35 @@ body.html .bg-gray {
 .primary-colour {
   color: #1c9cd6;
 }
+.city-blue-background,
+.primary-colour-background {
+  background-color: #1c9cd6;
+}
 .midnight-blue {
   color: #0f2e38;
+}
+.midnight-blue-background {
+  background-color: #0f2e38;
 }
 .slate {
   color: #697891;
 }
+.slate-background {
+  background-color: #697891;
+}
 .sea-foam {
   color: #a3c7c7;
+}
+.sea-foam-background {
+  background-color: #a3c7c7;
 }
 .cardinal,
 .domain-thirdspace .primary-colour {
   color: #cf2e4f;
+}
+.cardinal-background,
+.domain-thirdspace .primary-colour-background {
+  background-color: #cf2e4f;
 }
 /**********************************************
  * Overcome Bootstrap formatting of h1, .h1 etc
