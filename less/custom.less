@@ -102,23 +102,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  * Format the Navigation
  */
 .main-nav {
-  .nav-logo-wrap .logo {
-    /*
-     * This width gives a reasonable sized logo image and allows enough
-     * room for the logo replacement text
-     */
-    max-width: 210px;
-    /*
-     * Centre the logo image vertically in the .main-nav
-     */
-    line-height: 1em;
+  .nav-logo-wrap {
 
-    /*
-     * Size the logo image
-     */
-    object[type="image/svg+xml"],
-    img {
-      width: 140px;
+    .logo {
+      /*
+       * This width gives a reasonable sized logo image and allows enough
+       * room for the logo replacement text
+       */
+      max-width: 210px;
+      /*
+       * Centre the logo image vertically in the .main-nav
+       */
+      line-height: 1em;
+
+      /*
+       * Size the logo image
+       */
+      object[type="image/svg+xml"],
+      img {
+        width: 140px;
+      }
     }
   }
 
