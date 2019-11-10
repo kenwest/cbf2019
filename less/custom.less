@@ -103,6 +103,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  */
 .main-nav {
   .nav-logo-wrap {
+    margin-left: @grid-gutter-width;
 
     .logo {
       /*
@@ -144,6 +145,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
         transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
       }
+    }
+
+    .search-dropdown-list {
+      margin-right: @grid-gutter-width;
     }
   }
 }
@@ -263,7 +268,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 body.html {
   .main-nav {
     .full-wrapper {
-      margin-right: 0; // Place Give item at far right
+                       // Place Give item at far right
+      margin-left: 0;  // Move margin to .nav-logo-wrap
+      margin-right: 0; // Move margin to .inner-nav .search-dropdown-list
     }
 
     .give-menu-item {
