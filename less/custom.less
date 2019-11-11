@@ -2848,6 +2848,10 @@ body.html {
         .make-sm-column-pull(4);
       }
     }
+
+    .crm-submit-buttons > a.button.cancel[href="/"] {
+      display: none;  // Hide silly Cancel buttons that redirect to the home page
+    }
   }
 }
 

@@ -4217,6 +4217,9 @@ body.html .link-button a:hover {
     right: 33.33333333%;
   }
 }
+.block-system #crm-container.crm-container .crm-submit-buttons > a.button.cancel[href="/"] {
+  display: none;
+}
 .block-system #crm-container.crm-container #crm-main-content-wrapper {
   line-height: 22px !important;
 }
