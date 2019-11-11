@@ -9,7 +9,10 @@
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
   <meta name=viewport content="width=device-width, initial-scale=1">
 
-  <?php $domainId = domain_get_domain()[domain_id]; ?>
+  <?php
+    $domainId = domain_get_domain()[domain_id];
+    $primaryColour = ($domainId == 6) ? "#cf2e4f" : "#1c9cd6";
+  ?>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/favicon-32x32.png">
@@ -19,8 +22,8 @@
   <link rel="shortcut icon" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/favicon.ico">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-config" content="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/browserconfig.xml">
-  <meta name="theme-color" content="#1c9cd6">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#1c9cd6">
+  <meta name="theme-color" content="<?php print $primaryColour; ?>">
+  <meta name="apple-mobile-web-app-status-bar-style" content="<?php print $primaryColour; ?>">
 
   <?php print $styles; ?>
   <?php if (stripos($_SERVER['HTTP_HOST'], "nikadevs") !== FALSE && module_exists('nikadevs_dev')) include DRUPAL_ROOT . '/' . drupal_get_path('module', 'nikadevs_dev') . '/g_analytics/rhythm.js'; ?>
