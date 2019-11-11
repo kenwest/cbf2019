@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/favicon-16x16.png">
   <link rel="manifest" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/site.webmanifest">
   <link rel="mask-icon" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/sites/all/themes/cbf2019/favicon.ico">
+  <link rel="shortcut icon" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/favicon.ico">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-config" content="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/browserconfig.xml">
   <meta name="theme-color" content="#1c9cd6">
