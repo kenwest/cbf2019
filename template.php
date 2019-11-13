@@ -213,3 +213,13 @@ function cbf2019_menu_local_tasks(array $variables) {
 
   return $output;
 }
+
+/**
+ * Overrides theme_menu_tree().
+ *
+ * The Rhythm .default-menu CSS uses !important styling. Let's avoid that
+ * to fix menu styling
+ */
+function cbf2019_menu_tree(&$variables) {
+  return '<ul class = "cbf2019-default-menu">' . $variables['tree'] . '</ul>';
+}
