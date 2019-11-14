@@ -2604,6 +2604,15 @@ body.html .link-button a:hover {
 .view.event-details .views-field:last-child {
   margin-bottom: 0;
 }
+.view.venue .views-field a,
+.view.event-details .views-field a {
+  color: #697891;
+  font-weight: 500;
+}
+.view.venue .views-field p,
+.view.event-details .views-field p {
+  margin: 0;
+}
 .view.venue .view.event-price .views-row,
 .view.event-details .view.event-price .views-row,
 .view.venue .view.event-price .h3,
