@@ -2526,8 +2526,6 @@ body.html .link-button a:hover {
 .view.venue,
 .view.event-details {
   padding-bottom: 1.6em;
-  text-transform: uppercase;
-  font-weight: 500;
 }
 .view.venue > .view-content > .views-row > .views-field,
 .view.event-details > .view-content > .views-row > .views-field {
@@ -2596,6 +2594,11 @@ body.html .link-button a:hover {
 .view.venue .views-field,
 .view.event-details .views-field {
   margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: initial;
+  line-height: inherit;
 }
 .view.venue .views-field:last-child,
 .view.event-details .views-field:last-child {
