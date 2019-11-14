@@ -2703,6 +2703,9 @@ body.html .link-button a:hover {
 .view.event-details .view.event-price .h3:first-child .Select {
   padding-top: 0;
 }
+.view.venue .views-row + .views-row {
+  margin-top: 22px;
+}
 .view.view-cbf2019-staff-slider .owl-prev,
 .view.view-cbf2019-staff-slider .owl-next {
   top: 50%;
