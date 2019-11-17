@@ -6,13 +6,14 @@
         var gmCenterAddress = $(this).attr("data-address");
         var gmMarkerAddress = $(this).attr("data-address");
         var gmZoom = $(this).data('zoom') ? $(this).data('zoom') : 14;
+        var gmIcon = $(this).attr("data-icon");
 
         $(this).gmap3({
           action: "init",
           marker: {
             address: gmMarkerAddress,
             options: {
-              icon: "https://citybibleforum.org/sites/all/themes/cbf2019/images/1/map/marker.png"
+              icon: gmIcon
             }
           },
           map: {
