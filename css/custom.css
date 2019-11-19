@@ -3027,7 +3027,8 @@ body.html .link-button a:hover {
   margin-bottom: 0;
 }
 .view-cbf2019-domain .view-content .footer-logo {
-  margin: 0px 20px;
+  margin: 0px auto;
+  max-width: 200px;
 }
 .view-cbf2019-third-space-categories.view-display-id-block_1 .view-content {
   display: block;
