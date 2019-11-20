@@ -2204,22 +2204,24 @@ body.html {
 .view-cbf2019-third-space-content,
 .view-cbf2019-third-space-category {
   .view-content {
-    .views-field.image-plus-fixed-overlay {
-      .field-content {
-        .overlaid-image::after {
-          background: rgba(0, 0, 0, .5);
-        }
 
-        .image-overlay {
-          color: white;
-
-          .views-field-field-resource-type {
-            float: none;
-            margin-top: 0;
+      &.image-plus-fixed-overlay {
+        .field-content {
+          .overlaid-image::after {
+            background: rgba(0, 0, 0, .5);
           }
 
-          .views-field:last-child {
-            margin-bottom: 0;
+          .image-overlay {
+            color: white;
+
+            .views-field-field-resource-type {
+              float: none;
+              margin-top: 0;
+            }
+
+            .views-field:last-child {
+              margin-bottom: 0;
+            }
           }
         }
       }
