@@ -54,7 +54,7 @@
             </ul>
           </li>
         <?php endif; ?>
-        <?php $domainId = domain_get_domain()[domain_id]; ?>
+        <?php $domainId = domain_get_domain()['domain_id']; ?>
         <?php if ($domainId != '6'): ?>
           <li class="give-menu-item">
             <a href="/donate" style="height: 75px; line-height: 75px;">Give</a>
