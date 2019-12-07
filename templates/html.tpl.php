@@ -10,8 +10,8 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 
   <?php
-    $domainId = domain_get_domain()[domain_id];
-    $primaryColour = ($domainId == 6) ? "#cf2e4f" : "#1c9cd6";
+    $domainId = domain_get_domain()['domain_id'];
+    $primaryColour = ($domainId == 6) ? '#cf2e4f' : '#1c9cd6';
   ?>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/apple-touch-icon.png">
