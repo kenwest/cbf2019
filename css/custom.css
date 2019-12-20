@@ -1632,6 +1632,17 @@ body.html .link-button a:hover {
   margin-bottom: initial;
   float: none;
 }
+.view-header .description {
+  /*
+     * A description inside a .view-header is formatted like normal text but
+     * with larger text. These settings undo the effects of .primary-colour,
+     * .uppercase, .font-alt and .h4.
+     */
+  color: #697891;
+  text-transform: none;
+  letter-spacing: initial;
+  font-size: 16px;
+}
 .view-header-and-more {
   /*
   * Put a line-height margin under .view-header-and-more row

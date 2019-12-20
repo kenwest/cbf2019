@@ -903,6 +903,18 @@ body.html {
    */
   margin-bottom: initial;
   float: none;
+
+  .description {
+    /*
+     * A description inside a .view-header is formatted like normal text but
+     * with larger text. These settings undo the effects of .primary-colour,
+     * .uppercase, .font-alt and .h4.
+     */
+    color: @slate;
+    text-transform: none;
+    letter-spacing: initial;
+    font-size: 16px; // Make the description larger than normal text
+  }
 }
 
 .view-header-and-more {
