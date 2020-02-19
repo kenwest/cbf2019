@@ -101,336 +101,330 @@
       }
     }
 </style>
-<!-- style type="text/css">#ko_singleArticleBlock_4 .links-color a, #ko_singleArticleBlock_4 .links-color a:link, #ko_singleArticleBlock_4 .links-color a:visited, #ko_singleArticleBlock_4 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-     #ko_singleArticleBlock_4 .long-text p{ Margin: 1em 0px } 
-    #ko_textBlock_3 .links-color a, #ko_textBlock_3 .links-color a:link, #ko_textBlock_3 .links-color a:visited, #ko_textBlock_3 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-     #ko_textBlock_3 .long-text p{ Margin: 1em 0px } 
-    #ko_sideArticleBlock_5 .links-color a, #ko_sideArticleBlock_5 .links-color a:link, #ko_sideArticleBlock_5 .links-color a:visited, #ko_sideArticleBlock_5 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-    
-    #ko_sideArticleBlock_6 .links-color a, #ko_sideArticleBlock_6 .links-color a:link, #ko_sideArticleBlock_6 .links-color a:visited, #ko_sideArticleBlock_6 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-    
-    #ko_sideArticleBlock_7 .links-color a, #ko_sideArticleBlock_7 .links-color a:link, #ko_sideArticleBlock_7 .links-color a:visited, #ko_sideArticleBlock_7 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-    
-    #ko_sideArticleBlock_9 .links-color a, #ko_sideArticleBlock_9 .links-color a:link, #ko_sideArticleBlock_9 .links-color a:visited, #ko_sideArticleBlock_9 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-    
-    #ko_sideArticleBlock_10 .links-color a, #ko_sideArticleBlock_10 .links-color a:link, #ko_sideArticleBlock_10 .links-color a:visited, #ko_sideArticleBlock_10 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-    
-    #ko_sideArticleBlock_8 .links-color a, #ko_sideArticleBlock_8 .links-color a:link, #ko_sideArticleBlock_8 .links-color a:visited, #ko_sideArticleBlock_8 .links-color a:hover{
-      color: #495365;
-      color: #495365;
-      text-decoration: underline
-    }
-     #ko_sideArticleBlock_5 .long-text p{ Margin: 1em 0px }  #ko_sideArticleBlock_6 .long-text p{ Margin: 1em 0px }  #ko_sideArticleBlock_7 .long-text p{ Margin: 1em 0px }  #ko_sideArticleBlock_9 .long-text p{ Margin: 1em 0px }  #ko_sideArticleBlock_10 .long-text p{ Margin: 1em 0px }  #ko_sideArticleBlock_8 .long-text p{ Margin: 1em 0px } 
-    #ko_socialBlock_12 .links-color a, #ko_socialBlock_12 .links-color a:link, #ko_socialBlock_12 .links-color a:visited, #ko_socialBlock_12 .links-color a:hover{
-      color: #cccccc;
-      color: #cccccc;
-      text-decoration: underline
-    }
-     #ko_socialBlock_12 .long-text p{ Margin: 1em 0px }
-</style -->
 <center><!-- preheaderBlock -->
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_preheaderBlock_1" style="background-color: #ffffff;" width="100%">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top">
-			<div style="display: none; font-size: 1px; color: #697891; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">&nbsp;</div>
-			<!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top">
+      <div style="display: none; font-size: 1px; color: #697891; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">&nbsp;</div>
+      <!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
 
-			<div class="oldwebkit" style="max-width: 570px;">
-			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-row halfpad" style="border-collapse: separate; border-spacing: 0; padding-left: 9px; padding-right: 9px; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
-				<tbody>
-					<tr>
-						<td align="left" bgcolor="#ffffff" style="font-size: 0; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]-->
-						<div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
-						<table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
-							<tbody>
-								<tr>
-									<td align="left" style="font-weight: normal; text-align: left; font-size: 14px; padding-bottom: 22px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #ffffff;" valign="top" width="100%"><a href="https://thirdspace.org.au" target="_new"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/6/brand/logo.png" style="border: 0px; display: block; width: 200px;" /></a></td>
-								</tr>
-							</tbody>
-						</table>
-						</div>
-						<!--[if (gte mso 9)|(lte ie 8)]>
+      <div class="oldwebkit" style="max-width: 570px;">
+      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-row halfpad" style="border-collapse: separate; border-spacing: 0; padding-left: 9px; padding-right: 9px; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
+        <tbody>
+          <tr>
+            <td align="left" bgcolor="#ffffff" style="font-size: 0; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]-->
+            <div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
+            <table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
+              <tbody>
+                <tr>
+                  <td align="left" style="font-weight: normal; text-align: left; font-size: 14px; padding-bottom: 22px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #ffffff;" valign="top" width="100%"><a href="https://thirdspace.org.au" target="_new"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/6/brand/logo.png" style="border: 0px; display: block; width: 200px;" /></a></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <!--[if (gte mso 9)|(lte ie 8)]>
 </td></tr></table><![endif]--></td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
-		</tr>
-	</tbody>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
+    </tr>
+  </tbody>
 </table>
 <!-- /preheaderBlock -->
 
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_textBlock_1" style="background-color: #ffffff;" width="100%">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
-			<div class="oldwebkit" style="max-width: 570px;">
-			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" style="border-collapse: separate; border-spacing: 18px; padding-left: 0; padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
-				<tbody>
-					<tr>
-						<td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
-						<p style="Margin: 1em 0px;">{contact.email_greeting},</p>
-
-						<p style="Margin: 1em 0px;">You signed up to receive updates on Third Space content. Here are some recent articles posted on the Third Space site.</p>
-
-						<p style="Margin: 1em 0px;">David Robertson<br />
-						Director - Third Space</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
-		</tr>
-	</tbody>
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+      <div class="oldwebkit" style="max-width: 570px;">
+      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" style="border-collapse: separate; border-spacing: 18px; padding-left: 0; padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
+        <tbody>
+          <tr>
+            <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
+            <p style="Margin: 1em 0px;">{contact.email_greeting},</p>
+            <p style="Margin: 1em 0px;">You signed up to receive updates on Third Space content. Here are some recent articles posted on the Third Space site.</p>
+            <p style="Margin: 1em 0px;">David Robertson<br />
+            Director - Third Space</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
+    </tr>
+  </tbody>
 </table>
+
+<?php
+  $promotedDisplayed = false;
+
+  foreach ($themed_rows as $count => $row) {
+    if (empty($row['queue']) || $promotedDisplayed) {
+      continue;
+    }
+    else {
+      $promotedDisplayed = true;
+    }
+?>
 
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_singleArticleBlock_4" style="background-color: #ffffff;" width="100%">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
-			<div class="oldwebkit" style="max-width: 570px;">
-			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" style="border-collapse: separate; border-spacing: 18px; padding-left: 0; padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
-				<tbody>
-					<tr>
-						<td align="left" class="links-color" valign="top" width="100%"><img alt="" border="0" class="mobile-full attribute-width-534" hspace="0" src="https://citybibleforum.org/civicrm/mosaico/img?method=placeholder&amp;params=534%2C267" style="border: 0px; display: block; vertical-align: top; max-width: 534px; width: 100%; height: auto;" vspace="0" width="534" /></td>
-					</tr>
-					<tr>
-						<td>
-						<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-							<tbody>
-								<tr>
-									<td style="font-weight: normal; font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #cf2e4f; text-align: left;"><span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;">Content's Title </span></td>
-								</tr>
-								<tr>
-									<td height="9" style="font-size: 1px; line-height: 1px;">&ensp;</td>
-								</tr>
-								<tr>
-									<td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
-									<p style="Margin: 1em 0px;">Content by-line</p>
-									</td>
-								</tr>
-								<tr>
-									<td height="13" style="font-size: 1px; line-height: 1px;">&ensp;</td>
-								</tr>
-								<tr>
-									<td valign="top">
-									<table align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-full">
-										<tbody>
-											<tr>
-												<td align="center" bgcolor="#ffffff" height="37" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; text-align: center; color: #151515; font-weight: normal; background-color: #ffffff; border-radius: 2px; text-transform: uppercase;" valign="middle" width="auto"><a href="" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new">Button</a></td>
-											</tr>
-										</tbody>
-									</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
-		</tr>
-	</tbody>
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+      <div class="oldwebkit" style="max-width: 570px;">
+      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="18" class="vb-container fullpad" style="border-collapse: separate; border-spacing: 18px; padding-left: 0; padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
+        <tbody>
+          <tr>
+            <td align="left" class="links-color" valign="top" width="100%">
+              <img alt="" border="0" class="mobile-full attribute-width-534" hspace="0" src="<?php if (preg_match('/^.*src=\"([^"]+)\".*$/i', $row['field_highlight'], $matches) === 1) { print str_replace('third_space_grid', 'portfolio_653x368', $matches[1]); } else { print 'https://thirdspace.org.au/civicrm/mosaico/img?method=placeholder&params=534%2C267'; } ?>" style="border: 0px; display: block; vertical-align: top; max-width: 534px; width: 100%; height: auto;" vspace="0" width="534" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td style="font-weight: normal; font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #cf2e4f; text-align: left;">
+                    <span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;"><?php print $row['title']; ?></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="9" style="font-size: 1px; line-height: 1px;">&ensp;</td>
+                </tr>
+                <tr>
+                  <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
+                  <?php if (!empty($row['field_subtitle'])) { ?>
+                    <p style="Margin: 1em 0px;"><em><?php print $row['field_subtitle']; ?></em></p>
+                  <?php } ?>
+                  <?php if (strlen($row['body']) < 200) { ?>
+                    <p style="Margin: 1em 0px;"><?php print $row['body']; ?></p>
+                  <?php } else { ?>
+                    <p style="Margin: 1em 0px;"><?php print substr($row['body'], 0, strrpos(substr($row['body'], 0, 200), ' ')) . ' &hellip;'; ?></p>
+                  <?php } ?>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="13" style="font-size: 1px; line-height: 1px;">&ensp;</td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-full">
+                    <tbody>
+                      <tr>
+                        <?php
+                          if (strpos($row['field_resource_type'], 'fa-video') !== false) {
+                            $buttonLabel = 'Watch';
+                          }
+                          else if (strpos($row['field_resource_type'], 'fa-microphone') !== false) {
+                            $buttonLabel = 'Listen';
+                          }
+                          else {
+                            $buttonLabel = 'Read';
+                          }
+                        ?>
+                        <td align="center" bgcolor="#ffffff" height="37" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; text-align: center; color: #151515; font-weight: normal; background-color: #ffffff; border-radius: 2px; text-transform: uppercase;" valign="middle" width="auto">
+                          <a href="<?php print $row['nid']; ?>" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new"><?php print $buttonLabel; ?></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
+    </tr>
+  </tbody>
 </table>
 
-<?php foreach ($themed_rows as $count => $row): ?>
+<?php
+  }
+
+  foreach ($themed_rows as $count => $row) {
+    if (!empty($row['queue'])) {
+      continue;
+    }
+?>
 
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_sideArticleBlock_<?php print $count; ?>" style="background-color: #ffffff;" width="100%">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
-			<div class="oldwebkit" style="max-width: 570px;">
-			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="9" class="vb-row fullpad" style="border-collapse: separate; border-spacing: 9px; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
-				<tbody>
-					<tr>
-						<td align="center" class="mobile-row" style="font-size: 0;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]-->
-						<div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
-						<table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
-							<tbody>
-								<tr>
-									<td align="left" class="links-color" valign="top" width="100%"><img alt="" border="0" class="mobile-full attribute-width-166" hspace="0" src="<?php if (preg_match('/^.*src=\"([^"]+)\".*$/i', $row['field_highlight'], $matches) === 1) { print $matches[1]; } else { print 'https://citybibleforum.org/civicrm/mosaico/img?method=placeholder&params=258%2C208'; } ?>" style="border: 0px; display: block; vertical-align: top; width: 100%; height: auto; max-width: 258px;" vspace="0" width="258" /></td>
-								</tr>
-							</tbody>
-						</table>
-						</div>
-						<!--[if (gte mso 9)|(lte ie 8)]></td>
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+      <div class="oldwebkit" style="max-width: 570px;">
+      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="9" class="vb-row fullpad" style="border-collapse: separate; border-spacing: 9px; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
+        <tbody>
+          <tr>
+            <td align="center" class="mobile-row" style="font-size: 0;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]-->
+            <div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
+            <table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
+              <tbody>
+                <tr>
+                  <td align="left" class="links-color" valign="top" width="100%">
+                    <img alt="" border="0" class="mobile-full attribute-width-166" hspace="0" src="<?php if (preg_match('/^.*src=\"([^"]+)\".*$/i', $row['field_highlight'], $matches) === 1) { print $matches[1]; } else { print 'https://thirdspace.org.au/civicrm/mosaico/img?method=placeholder&params=258%2C208'; } ?>" style="border: 0px; display: block; vertical-align: top; width: 100%; height: auto; max-width: 258px;" vspace="0" width="258" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <!--[if (gte mso 9)|(lte ie 8)]></td>
 <![endif]--><!--[if (gte mso 9)|(lte ie 8)]>
 <td align="left" valign="top" width="276">
 <![endif]-->
 
-						<div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
-						<table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
-							<tbody>
-								<tr>
-									<td style="font-weight: normal; font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #cf2e4f; text-align: left;"><span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;"><?php print $row['title']; ?></span></td>
-								</tr>
-								<tr>
-									<td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
-									<?php if (!empty($row['field_subtitle'])) { ?>
-									<p style="Margin: 1em 0px;"><em><?php print $row['field_subtitle']; ?></em></p>
-									<?php } ?>
-									<?php if (strlen($row['body']) < 200) { ?>
-									<p style="Margin: 1em 0px;"><?php print $row['body']; ?></p>
-									<?php } else { ?>
-									<p style="Margin: 1em 0px;"><?php print substr($row['body'], 0, strrpos(substr($row['body'], 0, 200), ' ')) . ' &hellip;'; ?></p>
-									<?php } ?>
-									</td>
-								</tr>
-								<tr>
-									<td valign="top">
-									<table align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-full" style="padding-top: 4px;">
-										<tbody>
-											<tr>
-											  <?php
-											  if (strpos($row['field_resource_type'], 'fa-video') !== false) {
-											    $buttonLabel = 'Watch';
-											  }
-											  else if (strpos($row['field_resource_type'], 'fa-microphone') !== false) {
-											    $buttonLabel = 'Listen';
-											  }
-											  else {
-											    $buttonLabel = 'Read';
-											  }
-											  ?>
-												<td align="center" bgcolor="#ffffff" height="37" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; text-align: center; color: #151515; font-weight: normal; background-color: #ffffff; border-radius: 2px; text-transform: uppercase;" valign="middle" width="auto"><a href="<?php print $row['nid']; ?>" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new"><?php print $buttonLabel; ?></a></td>
-											</tr>
-										</tbody>
-									</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						</div>
-						<!--[if (gte mso 9)|(lte ie 8)]></td>
+            <div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
+            <table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
+              <tbody>
+                <tr>
+                  <td style="font-weight: normal; font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #cf2e4f; text-align: left;">
+                    <span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;"><?php print $row['title']; ?></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
+                  <?php if (!empty($row['field_subtitle'])) { ?>
+                    <p style="Margin: 1em 0px;"><em><?php print $row['field_subtitle']; ?></em></p>
+                  <?php } ?>
+                  <?php if (strlen($row['body']) < 200) { ?>
+                    <p style="Margin: 1em 0px;"><?php print $row['body']; ?></p>
+                  <?php } else { ?>
+                    <p style="Margin: 1em 0px;"><?php print substr($row['body'], 0, strrpos(substr($row['body'], 0, 200), ' ')) . ' &hellip;'; ?></p>
+                  <?php } ?>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobile-full" style="padding-top: 4px;">
+                    <tbody>
+                      <tr>
+                        <?php
+                          if (strpos($row['field_resource_type'], 'fa-video') !== false) {
+                            $buttonLabel = 'Watch';
+                          }
+                          else if (strpos($row['field_resource_type'], 'fa-microphone') !== false) {
+                            $buttonLabel = 'Listen';
+                          }
+                          else {
+                            $buttonLabel = 'Read';
+                          }
+                        ?>
+                        <td align="center" bgcolor="#ffffff" height="37" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; text-align: center; color: #151515; font-weight: normal; background-color: #ffffff; border-radius: 2px; text-transform: uppercase;" valign="middle" width="auto">
+                          <a href="<?php print $row['nid']; ?>" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new"><?php print $buttonLabel; ?></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <!--[if (gte mso 9)|(lte ie 8)]></td>
 <![endif]--><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
-		</tr>
-	</tbody>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
+    </tr>
+  </tbody>
 </table>
 
-<?php endforeach; ?>
+<?php
+  }
+?>
 
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_spacerBlock_11" style="background-color: #ffffff;" width="100%">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#ffffff" class="vb-outer" height="24" style="padding-left: 9px; padding-right: 9px; height: 24px; background-color: #ffffff; font-size: 1px; line-height: 1px;" valign="top">&ensp;</td>
-		</tr>
-	</tbody>
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#ffffff" class="vb-outer" height="24" style="padding-left: 9px; padding-right: 9px; height: 24px; background-color: #ffffff; font-size: 1px; line-height: 1px;" valign="top">&ensp;</td>
+    </tr>
+  </tbody>
 </table>
 
 <table bgcolor="#697891" border="0" cellpadding="0" cellspacing="0" id="ko_socialBlock_12" style="background-color: #697891;" width="100%">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#697891" style="background-color: #697891;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
-			<div class="oldwebkit" style="max-width: 570px;">
-			<table align="center" border="0" cellpadding="0" cellspacing="9" class="vb-row fullpad" style="border-collapse: separate; border-spacing: 9px; width: 100%; max-width: 570px;" width="570">
-				<tbody>
-					<tr>
-						<td align="center" style="font-size: 0;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]-->
-						<div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
-						<table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
-							<tbody>
-								<tr>
-									<td align="left" class="long-text links-color mobile-textcenter" style="font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #989898; text-align: left;" valign="middle">
-									<p style="Margin: 1em 0px;"><a href="https://thirdspace.org.au" style="color: #cccccc; color: #cccccc; text-decoration: underline;"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/6/brand/logo-white.png" style="border: 0px; display: block; width: 200px;" /> </a></p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						</div>
-						<!--[if (gte mso 9)|(lte ie 8)]></td>
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#697891" style="background-color: #697891;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+      <div class="oldwebkit" style="max-width: 570px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="9" class="vb-row fullpad" style="border-collapse: separate; border-spacing: 9px; width: 100%; max-width: 570px;" width="570">
+        <tbody>
+          <tr>
+            <td align="center" style="font-size: 0;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]-->
+            <div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
+            <table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
+              <tbody>
+                <tr>
+                  <td align="left" class="long-text links-color mobile-textcenter" style="font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #989898; text-align: left;" valign="middle">
+                  <p style="Margin: 1em 0px;"><a href="https://thirdspace.org.au" style="color: #cccccc; color: #cccccc; text-decoration: underline;"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/6/brand/logo-white.png" style="border: 0px; display: block; width: 200px;" /> </a></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <!--[if (gte mso 9)|(lte ie 8)]></td>
 <td align="left" valign="top" width="276">
 <![endif]-->
 
-						<div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
-						<table align="right" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
-							<tbody>
-								<tr>
-									<td align="right" class="links-color socialLinks mobile-textcenter" style="font-size: 6px;" valign="middle"><span>&ensp;</span> <a href="https://www.facebook.com/ThirdSpace.org.au/" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Facebook" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/facebook_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="https://www.linkedin.com/company/city-bible-forum" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Linkedin" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/linkedin_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="https://www.youtube.com/channel/UCt6UOWsDrMxXUeFb1cSvQSg" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Youtube" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/youtube_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a></td>
-								</tr>
-							</tbody>
-						</table>
-						</div>
-						<!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
-		</tr>
-	</tbody>
+            <div class="mobile-full" style="display: inline-block; max-width: 276px; vertical-align: top; width: 100%;">
+            <table align="right" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
+              <tbody>
+                <tr>
+                  <td align="right" class="links-color socialLinks mobile-textcenter" style="font-size: 6px;" valign="middle"><span>&ensp;</span> <a href="https://www.facebook.com/ThirdSpace.org.au/" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Facebook" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/facebook_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="https://www.linkedin.com/company/city-bible-forum" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Linkedin" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/linkedin_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="https://www.youtube.com/channel/UCt6UOWsDrMxXUeFb1cSvQSg" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Youtube" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/youtube_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
+    </tr>
+  </tbody>
 </table>
 <!-- civimailBlock -->
 
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_civimailBlock_2" style="background-color: #ffffff;" width="100%">
-	<tbody>
-		<tr>
-			<td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
-			<div class="oldwebkit" style="max-width: 570px;">
-			<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" style="border-collapse: separate; border-spacing: 9px; padding-left: 9px; padding-right: 9px; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
-				<tbody>
-					<tr>
-						<td align="center" bgcolor="#ffffff" style="background-color: #ffffff;" valign="top">
-						<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
-							<tbody>
-								<tr>
-									<td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #8793a7;" valign="top">&ensp;<br />
-									&ensp;</td>
-								</tr>
-								<tr>
-									<td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #8793a7;" valign="top">This email was sent to: {contact.display_name}<br />
-									<br />
-									<a href="{action.unsubscribeUrl}" style="color: #697891;" target="_new">Stop</a> receiving emails on this topic<br />
-									or <a href="{action.optOutUrl}" style="color: #697891;" target="_new">never receive</a> bulk emails from us again</td>
-									<td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #8793a7;" valign="top">National office:<br />
-									{domain.address}</td>
-								</tr>
-							</tbody>
-						</table>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
-		</tr>
-	</tbody>
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
+      <div class="oldwebkit" style="max-width: 570px;">
+      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" style="border-collapse: separate; border-spacing: 9px; padding-left: 9px; padding-right: 9px; width: 100%; max-width: 570px; background-color: #ffffff;" width="570">
+        <tbody>
+          <tr>
+            <td align="center" bgcolor="#ffffff" style="background-color: #ffffff;" valign="top">
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+              <tbody>
+                <tr>
+                  <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #8793a7;" valign="top">&ensp;<br />
+                  &ensp;</td>
+                </tr>
+                <tr>
+                  <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #8793a7;" valign="top">This email was sent to: {contact.display_name}<br />
+                  <br />
+                  <a href="{action.unsubscribeUrl}" style="color: #697891;" target="_new">Stop</a> receiving emails on this topic<br />
+                  or <a href="{action.optOutUrl}" style="color: #697891;" target="_new">never receive</a> bulk emails from us again</td>
+                  <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #8793a7;" valign="top">National office:<br />
+                  {domain.address}</td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]--></td>
+    </tr>
+  </tbody>
 </table>
 <!-- /civimailBlock --></center>
