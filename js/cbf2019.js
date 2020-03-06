@@ -261,6 +261,20 @@
           scrollPerPage : true
         });
       });
+
+      $(".item-carousel-3-view", context).each(function() {
+        var autoplay = $(this).closest('.slider-wrapper').data('autoplay')
+
+        $(this).owlCarousel({
+          autoPlay: autoplay ? autoplay : false,
+          items: 3,
+          itemsDesktop: [991, 2],
+          itemsMobile: [480, 1],
+          navigation: true,
+          navigationText: ["<i class='fal fa-angle-left'></i>", "<i class='fal fa-angle-right'></i>"],
+          scrollPerPage : true
+        });
+      });
     }
   }
 })(jQuery);
