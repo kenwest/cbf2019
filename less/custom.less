@@ -1747,25 +1747,38 @@ body.html {
 .view.venue,
 .view.event-details {
   > .view-content {
-    > .views-row {
-	  > .views-field {
-        .make-row();
-        .clearfix();
+    > .views-row > .views-field,
+    .owl-carousel .owl-item .views-field {
+      .make-row();
+      .clearfix();
 
-        > .views-label {
-          .make-xs-column(3);
-          .make-480-column(4);
-          .make-sm-column(3);
+      margin-left: 0;
+      margin-right: 0;
 
-          border-top: 1px solid #888;
-        }
+      > .views-label {
+        .make-xs-column(3);
+        .make-480-column(4);
+        .make-sm-column(3);
 
+        padding-left: 0;
+        border-top: 1px solid #888;
+      }
+
+      > .field-content {
+        .make-xs-column(9);
+        .make-480-column(8);
+        .make-sm-column(9);
+
+        padding-right: 0;
+        border-top: 1px solid #888;
+      }
+
+      &.views-field-taxonomy-vocabulary-1 {
+        > .views-label,
         > .field-content {
-          .make-xs-column(9);
-          .make-480-column(8);
-          .make-sm-column(9);
-
-          border-top: 1px solid #888;
+          border-top-width: 0px;
+          padding-top: @line-height-half;
+          padding-bottom: @line-height-half;
         }
       }
     }
