@@ -12,6 +12,7 @@
  */
 body.html {
   font-family: 'Rubik', arial, sans-serif;
+  font-size: @font-size-base;
   font-style: normal;
   font-weight: 300;
   color: @slate;
@@ -40,6 +41,10 @@ body.html {
   .section-text,
   blockquote {
     color: @slate;
+  }
+
+  .section-text {
+    font-size: (@font-size-base + 1px); // Larger than normal text
   }
 
   .bg-gray {
@@ -253,7 +258,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 18px;
     height: 18px;
     position: absolute;
-    font-size: 14px;
+    font-size: @font-size-base;
     line-height: 16px;
     top: 50%;
     right: 10px;
@@ -913,7 +918,7 @@ body.html {
     color: @slate;
     text-transform: none;
     letter-spacing: initial;
-    font-size: 16px; // Make the description larger than normal text
+    font-size: (@font-size-base + 2px); // Make the description larger than normal text
   }
 }
 
@@ -977,7 +982,7 @@ body.html {
            * Simulate a h5
            */
           text-align: center;
-          font-size: 14px;
+          font-size: @font-size-base;
           text-transform: uppercase;
           letter-spacing: 1px;
           margin-top: 10px;
@@ -1531,7 +1536,7 @@ body.html {
     top: 50%;
     left: 0;
     padding: @line-height-computed @grid-gutter-half-width 2*@line-height-computed;
-    font-size: 14px;
+    font-size: @font-size-base;
     font-weight: 300;
     color: #777;
     text-align: center;
@@ -1627,7 +1632,7 @@ body.html {
     top: 50%;
     left: 0;
     padding: @line-height-computed @grid-gutter-half-width;
-    font-size: 14px;
+    font-size: @font-size-base;
     font-weight: 300;
     color: #777;
     text-align: center;

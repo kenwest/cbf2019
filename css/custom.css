@@ -704,6 +704,7 @@
  */
 body.html {
   font-family: 'Rubik', arial, sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   color: #697891;
@@ -728,6 +729,9 @@ body.html div.token-input-dropdown {
 body.html .section-text,
 body.html blockquote {
   color: #697891;
+}
+body.html .section-text {
+  font-size: 17px;
 }
 body.html .bg-gray {
   background-color: #f0f2f4;
@@ -901,7 +905,7 @@ h6,
   width: 18px;
   height: 18px;
   position: absolute;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   top: 50%;
   right: 10px;
@@ -965,10 +969,10 @@ body.html.domain-thirdspace .main-nav .give-menu-item {
  * Alerts
  */
 body.html .alert {
-  margin-bottom: 44px;
+  margin-bottom: 50px;
   border-width: 0;
-  padding: 22px 15px 22px 60px;
-  font-size: 14px;
+  padding: 25px 15px 25px 60px;
+  font-size: 16px;
   text-transform: none;
   font-weight: 400;
   color: white;
@@ -985,8 +989,8 @@ body.html .alert.error {
 body.html .alert i,
 body.html .alert svg.svg-inline--fa {
   float: left;
-  font-size: 28px;
-  margin: 0px 15px 22px -45px;
+  font-size: 32px;
+  margin: 0px 15px 25px -45px;
 }
 body.html .alert p:last-child {
   margin-bottom: 0;
@@ -1156,7 +1160,7 @@ body.html .link-button a:hover {
 }
 .episode-content-tab .tab-content .field-name-field-order-url .btn {
   margin-right: 15px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .episode-content-tab .tab-content .field-name-field-video {
   /*
@@ -1179,12 +1183,12 @@ body.html .link-button a:hover {
 }
 .episode-content-tab .nav-pills > li > a {
   border-radius: 2px;
-  line-height: 28px;
+  line-height: 32px;
 }
 .episode-content-tab .nav-pills > li > a i,
 .episode-content-tab .nav-pills > li > a svg.svg-inline--fa {
   float: left;
-  font-size: 28px;
+  font-size: 32px;
 }
 .episode-content-tab .nav-pills > li > a:hover,
 .episode-content-tab .nav-pills > li > a:focus {
@@ -1228,7 +1232,7 @@ body.html .link-button a:hover {
 .episode-content-tab .field-name-field-content .jp-playlist .field-item + .field-item,
 .episode-content-tab .field-name-field-attachment li,
 .episode-content-tab .field-name-field-content .jp-playlist li {
-  margin-top: 22px;
+  margin-top: 25px;
 }
 .episode-content-tab .field-name-field-attachment i,
 .episode-content-tab .field-name-field-content .jp-playlist i,
@@ -1598,11 +1602,11 @@ body.html .link-button a:hover {
 }
 .episode-content-tab a.jp-play,
 .episode-content-tab a.jp-pause {
-  font-size: 42px;
+  font-size: 48px;
 }
 .episode-content-tab a.jp-mute,
 .episode-content-tab a.jp-unmute {
-  font-size: 21px;
+  font-size: 24px;
   text-align: right;
 }
 .episode-content-tab .episode-tags .field {
@@ -1641,13 +1645,13 @@ body.html .link-button a:hover {
   color: #697891;
   text-transform: none;
   letter-spacing: initial;
-  font-size: 16px;
+  font-size: 18px;
 }
 .view-header-and-more {
   /*
   * Put a line-height margin under .view-header-and-more row
   */
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .view-filters {
   /*
@@ -1659,8 +1663,8 @@ body.html .link-button a:hover {
    * Undo the margin-bottom of .view-header-and-more using a
    * margin-top and add another margin-bottom. 
    */
-  margin-top: -44px;
-  margin-bottom: 44px;
+  margin-top: -50px;
+  margin-bottom: 50px;
   /*
    * Undo the Rhythm defaults for .view-filters .views-exposed-form .views-exposed-widget
    */
@@ -1734,7 +1738,7 @@ body.html .link-button a:hover {
            * Simulate a h5
            */
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -1891,10 +1895,10 @@ body.html .link-button a:hover {
   /*
      * Generic field formatting
      */
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .view-content .views-field:last-child {
-  margin-bottom: 44px;
+  margin-bottom: 50px;
 }
 .view-content .views-field-title,
 .view-content .views-field-field-title,
@@ -1925,24 +1929,24 @@ body.html .link-button a:hover {
      * and float right.
      */
   float: right;
-  margin-top: -11px;
+  margin-top: -12px;
   margin-bottom: 0;
   font-size: 28px;
 }
 .view-content .views-field-field-logo object {
-  max-height: 88px;
+  max-height: 100px;
 }
 .view-content .views-field-field-logo .image-overlay object {
-  max-height: 33px;
+  max-height: 37.5px;
 }
 @media (min-width: 768px) {
   .view-content .views-field-field-logo .image-overlay object {
-    max-height: 55px;
+    max-height: 62.5px;
   }
 }
 @media (min-width: 992px) {
   .view-content .views-field-field-logo .image-overlay object {
-    max-height: 33px;
+    max-height: 37.5px;
   }
 }
 .view-content .owl-carousel .views-field-field-in-activity,
@@ -1966,7 +1970,7 @@ body.html .link-button a:hover {
   position: relative;
 }
 .view-content .owl-carousel .owl-pagination {
-  bottom: 11px;
+  bottom: 12px;
 }
 .view-content .owl-carousel .owl-page span {
   background: white;
@@ -2030,7 +2034,7 @@ body.html .link-button a:hover {
      * 2*@line-height-computed so we don't need as much bottom padding.
      */
   background-color: #f0f2f4;
-  padding: 66px 0 22px;
+  padding: 75px 0 25px;
 }
 .container-view-content .view-content {
   /*
@@ -2152,7 +2156,7 @@ body.html .link-button a:hover {
   padding-right: 15px;
   padding-left: 15px;
   word-break: break-word;
-  min-height: 88px;
+  min-height: 100px;
 }
 @media (min-width: 992px) {
   .office-view .views-row .views-field {
@@ -2354,8 +2358,8 @@ body.html .link-button a:hover {
   position: absolute;
   top: 50%;
   left: 0;
-  padding: 22px 15px 44px;
-  font-size: 14px;
+  padding: 25px 15px 50px;
+  font-size: 16px;
   font-weight: 300;
   color: #777;
   text-align: center;
@@ -2438,8 +2442,8 @@ body.html .link-button a:hover {
   position: absolute;
   top: 50%;
   left: 0;
-  padding: 22px 15px;
-  font-size: 14px;
+  padding: 25px 15px;
+  font-size: 16px;
   font-weight: 300;
   color: #777;
   text-align: center;
@@ -2674,14 +2678,14 @@ body.html .link-button a:hover {
 .view.venue > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .field-content,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .field-content {
   border-top-width: 0px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .view.venue .views-field,
 .view.event-details .views-field {
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: initial;
   line-height: inherit;
@@ -2773,7 +2777,7 @@ body.html .link-button a:hover {
 .view.event-details .view.event-price .h3 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500 !important;
   line-height: 1.6;
 }
@@ -2793,14 +2797,14 @@ body.html .link-button a:hover {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  padding-top: 22px;
+  padding-top: 25px;
 }
 .view.venue .view.event-price .h3:first-child .Select,
 .view.event-details .view.event-price .h3:first-child .Select {
   padding-top: 0;
 }
 .view.venue .views-row + .views-row {
-  margin-top: 22px;
+  margin-top: 25px;
 }
 .view.view-cbf2019-staff-slider .owl-prev,
 .view.view-cbf2019-staff-slider .owl-next {
@@ -2941,7 +2945,7 @@ body.html .link-button a:hover {
 }
 .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button input,
 .view.view-cbf2019-recent-library .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button input {
-  margin-top: 27px;
+  margin-top: 30px;
   width: 100%;
 }
 @media (min-width: 480px) {
@@ -2979,10 +2983,10 @@ body.html .link-button a:hover {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .view.view-cbf2019-key-dates .view-content .views-row:last-child {
-  margin-bottom: 44px;
+  margin-bottom: 50px;
 }
 .view.view-cbf2019-key-dates .view-content .views-field {
   margin-bottom: 0;
@@ -3003,7 +3007,7 @@ body.html .link-button a:hover {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 300;
   text-transform: none;
@@ -3134,7 +3138,7 @@ body.html .link-button a:hover {
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 44px auto;
+  margin: 50px auto;
   max-width: 200px;
 }
 @media (min-width: 768px) {
@@ -3364,23 +3368,23 @@ body.html .link-button a:hover {
  * Block formatting
  */
 .block {
-  margin-bottom: 110px;
+  margin-bottom: 125px;
 }
 .block.with-bottom-border {
-  padding-bottom: 44px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #a5aebd;
-  margin-bottom: 66px;
+  margin-bottom: 75px;
 }
 .block.border-sandwich-above + .block.border-sandwich-below {
-  margin-top: -66px;
+  margin-top: -75px;
   border-top: 1px solid #a5aebd;
-  padding-top: 66px;
+  padding-top: 75px;
 }
 .block.without-bottom-margin {
   margin-bottom: 0;
 }
 .block .office-view .google-map {
-  margin-top: 110px;
+  margin-top: 125px;
 }
 .front .block.block-system {
   display: none;
@@ -3559,7 +3563,7 @@ body.html .link-button a:hover {
 }
 .node-type-episode .content {
   border-top: 1px solid #a5aebd;
-  padding-top: 44px;
+  padding-top: 50px;
   column-count: 1;
   column-gap: 30px;
 }
@@ -3577,20 +3581,20 @@ body.html .link-button a:hover {
   margin-top: 2em;
 }
 .node-type-blog .blog-specific-content {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .node-type-blog .content .field-name-field-video {
   float: none;
   width: 100%;
   padding: 0;
-  margin: 0 0 22px 0;
+  margin: 0 0 25px 0;
 }
 @media (min-width: 768px) {
   .node-type-blog .content .field-name-field-video {
     float: right;
     width: 50%;
     padding: 0 0 0 15px;
-    margin: 0 0 22px 15px;
+    margin: 0 0 25px 15px;
   }
 }
 @media (min-width: 992px) {
@@ -3603,7 +3607,7 @@ body.html .link-button a:hover {
   width: 100% !important;
   height: auto !important;
   padding: 0 !important;
-  margin: 0 0 22px 0 !important;
+  margin: 0 0 25px 0 !important;
 }
 @media (min-width: 768px) {
   .node-type-blog .content .field-name-body img {
@@ -3611,7 +3615,7 @@ body.html .link-button a:hover {
     width: auto !important;
     max-width: 50%;
     padding: 0 0 0 15px !important;
-    margin: 0 0 22px 15px !important;
+    margin: 0 0 25px 15px !important;
   }
 }
 @media (min-width: 992px) {
@@ -3621,14 +3625,14 @@ body.html .link-button a:hover {
 }
 .node-type-blog .content .field-name-body div.video-filter {
   width: 100%;
-  margin: 0 0 22px 0;
+  margin: 0 0 25px 0;
 }
 @media (min-width: 768px) {
   .node-type-blog .content .field-name-body div.video-filter {
     float: right;
     width: 50%;
     padding-bottom: 28.125%;
-    margin: 0 0 22px 15px;
+    margin: 0 0 25px 15px;
   }
 }
 @media (min-width: 992px) {
@@ -3643,7 +3647,7 @@ body.html .link-button a:hover {
   }
 }
 .node .content + div h4.blog-page-title {
-  margin-top: 44px;
+  margin-top: 50px;
 }
 /*******************************
  * Format field_details in views
@@ -3660,7 +3664,7 @@ body.html .link-button a:hover {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding-bottom: 2em;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   text-align: center;
   font-size: 18px;
   color: #1c9cd6;
@@ -3714,7 +3718,7 @@ body.html .link-button a:hover {
 .form .form-item label {
   text-transform: none !important;
   color: #697891;
-  line-height: 22px;
+  line-height: 25px;
 }
 .webform-client-form {
   margin-right: -15px;
@@ -3900,7 +3904,7 @@ body.html .link-button a:hover {
   cursor: default;
   background-color: white;
   border-color: transparent;
-  font-size: 14px !important;
+  font-size: 16px !important;
   -moz-user-select: all;
   -webkit-user-select: all;
   -ms-user-select: all;
@@ -4346,10 +4350,10 @@ body.html .link-button a:hover {
   display: none;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper {
-  line-height: 22px !important;
+  line-height: 25px !important;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section {
-  margin-bottom: 22px !important;
+  margin-bottom: 25px !important;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section:last-child {
   margin-bottom: 0 !important;
@@ -4364,8 +4368,8 @@ body.html .link-button a:hover {
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content {
   padding-top: 0 !important;
   padding-bottom: 0;
-  line-height: 22px !important;
-  font-size: 14px !important;
+  line-height: 25px !important;
+  font-size: 16px !important;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label {
   min-height: 1.8em;
@@ -4408,7 +4412,7 @@ body.html .link-button a:hover {
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="radio"],
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="checkbox"] {
-  line-height: 22px;
+  line-height: 25px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="text"],
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="password"],
@@ -4419,7 +4423,7 @@ body.html .link-button a:hover {
   border-radius: 2px;
   border-color: rgba(0, 0, 0, 0.1);
   background-image: none;
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="text"]:hover,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section input[type="password"]:hover,
@@ -4434,7 +4438,7 @@ body.html .link-button a:hover {
   margin-left: 7px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-choice > .select2-chosen {
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .select2-arrow {
   border-top-left-radius: 0;
@@ -4475,14 +4479,14 @@ body.html .link-button a:hover {
   text-decoration: none;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.helprow-post {
-  margin-top: -17px;
+  margin-top: -20px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.helprow-post .content {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-profile-view-title {
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .iCal_links-section {
   display: none;
@@ -4492,13 +4496,13 @@ body.html .link-button a:hover {
   margin-right: 0;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .display-block {
-  margin-top: 22px;
-  margin-bottom: 44px;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset > legend,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .header-dark {
   margin-top: -5px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   padding-top: 0;
   padding-bottom: 0;
   border-top: 1px solid #c3c9d3;
@@ -4509,7 +4513,7 @@ body.html .link-button a:hover {
   text-transform: uppercase;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .description {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .bold {
@@ -4523,9 +4527,9 @@ body.html .link-button a:hover {
   clear: both;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+  font-size: 16px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help {
   background-color: #dae9e9;
@@ -4540,7 +4544,7 @@ body.html .link-button a:hover {
   margin: 0;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper table {
-  font-size: 14px;
+  font-size: 16px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper table tr.columnheader {
   background-color: #f0f2f4;
@@ -4551,7 +4555,7 @@ body.html .link-button a:hover {
   background-color: transparent;
   border-width: 0px;
   color: #697891;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   padding: 4px;
 }
@@ -4574,7 +4578,7 @@ body.html .link-button a:hover {
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset.crm-profile,
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset.billing_mode-group {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper fieldset legend {
   font-family: 'Rubik', arial, sans-serif !important;
@@ -4600,12 +4604,12 @@ body.html .link-button a:hover {
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link {
-  margin-top: 44px;
+  margin-top: 50px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .action-link,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom .action-link {
-  margin-bottom: 44px;
+  margin-bottom: 50px;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons .crm-button i,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top .crm-button i,
@@ -4688,14 +4692,14 @@ body.html .link-button a:hover {
 }
 .block-system #crm-container.crm-container .progress.payment {
   height: auto;
-  margin-bottom: 44px;
+  margin-bottom: 50px;
   border: 1px solid #c3c9d3;
   border-radius: 2px;
   box-shadow: none;
 }
 .block-system #crm-container.crm-container .progress.payment .progress-bar {
   width: 33.33333333%;
-  padding: 11px 0;
+  padding: 12px 0;
   border: 0px;
   box-shadow: none;
   font-size: 12px;
