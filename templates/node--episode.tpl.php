@@ -137,6 +137,15 @@ if ($tabActive['count'] > 0) {
 
       $tabFieldContent = render($content[$tabKey]);
       switch ($tabKey) {
+        // Remove commas between videos
+        case 'field_video':
+          $tabFieldContent = preg_replace(
+            '!div>, <div!i',
+            'div><div',
+            $tabFieldContent
+          );
+          break;
+
         case 'field_order_url':
           // Format button
           $tabFieldContent = preg_replace(
