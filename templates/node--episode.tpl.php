@@ -134,15 +134,17 @@ if ($tabActive['count'] > 0) {
         .  '">'
         .  $tabSettings['label']
         .  '</a></li>';
-      if ($tabKey == 'field_order_url') {
-        $tabFieldContent = preg_replace(
-          '!<a !i',
-          '$0class="btn btn-mod btn-border btn-medium btn-round uppercase" ',
-          render($content[$tabKey])
-        );
-      }
-      else {
-        $tabFieldContent = render($content[$tabKey]);
+
+      $tabFieldContent = render($content[$tabKey]);
+      switch ($tabKey) {
+        case 'field_order_url':
+          // Format button
+          $tabFieldContent = preg_replace(
+            '!<a !i',
+            '$0class="btn btn-mod btn-border btn-medium btn-round uppercase" ',
+            $tabFieldContent
+          );
+          break;
       }
 
       $tabActiveClass = ($tabActive['tab'] == $tabKey) ? ' active in' : '';
