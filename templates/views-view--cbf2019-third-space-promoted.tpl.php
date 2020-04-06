@@ -45,7 +45,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-xs-12 white">
-                    <i class="fa fal fa-ambulance" style="font-size: 50px;"></i>
+                    <i class="fal fa-ambulance" style="font-size: 50px;"></i>
                     <h2 class="font-alt uppercase ls-01 hs-line-14" style="margin-top: 20px; margin-bottom: 20px; font-size: 32px; letter-spacing: 0.1em;">
                       Panic room - COVID-19
                     </h2>
