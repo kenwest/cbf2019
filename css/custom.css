@@ -2681,6 +2681,17 @@ body.html .link-button a:hover {
   padding-top: 12px;
   padding-bottom: 12px;
 }
+.view.venue > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-city,
+.view.event-details > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-city,
+.view.venue > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-city,
+.view.event-details > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-city,
+.view.venue > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-time,
+.view.event-details > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-time,
+.view.venue > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-time,
+.view.event-details > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-time {
+  float: left;
+  width: 50%;
+}
 .view.venue .views-field,
 .view.event-details .views-field {
   margin-bottom: 0;
