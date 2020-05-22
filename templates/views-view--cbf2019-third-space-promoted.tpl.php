@@ -31,39 +31,6 @@
 <div class="slider-wrapper" style="text-shadow: 0 0 40px black;" data-autoplay = "8000">
   <div class="fullwidth-slider owl-carousel bg-gray owl-theme" style="opacity: 1; display: block;">
 
-  <?php
-    /*
-     * Add a fixed slider item for the Panic room.
-     */
-  ?>
-
-    <div>
-      <section class="page-section bg-scroll banner-section pt-0 pb-0" style="border-width: 0px; background-image: url('/sites/default/files/images/national/2020/panic-room-slider.jpg');">
-        <div class="js-height-full">
-          <div class = "home-content">
-            <div class="home-text">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12 white">
-                    <i class="fal fa-ambulance" style="font-size: 50px;"></i>
-                    <h2 class="font-alt uppercase ls-01 hs-line-14" style="margin-top: 20px; margin-bottom: 20px; font-size: 32px; letter-spacing: 0.1em;">
-                      Panic room - COVID-19
-                    </h2>
-                    <h3 class="font-alt uppercase" style="margin-top: 20px; margin-bottom: 20px;">
-                      8 to 10 minutes of pure panic to help you through the day
-                    </h3>
-                    <a class="btn btn-mod btn-border-w btn-large btn-round uppercase" style="font-size: 24px;" href="/third-space/category/1636">
-                      Panic!
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
     <?php
       $thirdSpaceTitle = null;
 
