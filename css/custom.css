@@ -2194,6 +2194,9 @@ body.html .link-button a:hover {
   font-family: 'Rubik', arial, sans-serif;
   font-weight: 400;
 }
+.office-view .views-row .views-field.views-field-email .field-content {
+  word-break: keep-all;
+}
 .office-view .view-footer {
   clear: both;
 }
