@@ -26,18 +26,43 @@
 ?>
 <?php
   foreach ($fields as $id => $field) {
+    /*
+     * Separate out multiple instances of the field into separate 'rows' of the
+     * view. This requires that the field can have multiple instances, the field
+     * in the view has its Multiple Field Settings set to 'Display all values in
+     * the same row' and the Display type is 'unordered list'.
+     */
+    $contentSplit = preg_split('!</?li( [^>]*)?>\s*!i', $field->content);
+    if (count($contentSplit) == 1) {
+      $contents = $contentSplit;
+    }
+    else {
+      $contents = [];
+      foreach ($contentSplit as $i => $v) {
+        if ($i % 2 == 1) {
+          $contents[] = '<div class="field-content">' . $v . '</div>';
+        }
+      }
+    }
+
+    foreach ($contents as $content) {
 ?>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-        <?php if (!empty($field->separator)): ?>
-          <?php print $field->separator; ?>
-        <?php endif; ?>
-        <?php print $field->wrapper_prefix; ?>
-        <?php print $field->label_html; ?>
-        <?php print $field->content; ?>
-        <?php print $field->wrapper_suffix; ?>
+        <?php
+          if (!empty($field->separator)) {
+            print $field->separator;
+          }
+          print $field->wrapper_prefix;
+          print $field->label_html;
+          print $content;
+          print $field->wrapper_suffix;
+        ?>
       </div>
     </div>
   </div>
-<?php } ?>
+<?php
+    }
+  }
+?>
