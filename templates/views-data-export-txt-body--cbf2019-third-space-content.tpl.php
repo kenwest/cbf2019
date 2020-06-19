@@ -159,15 +159,18 @@
 </table>
 
 <?php
-  $promotedDisplayed = false;
+  /*
+   * Find and display the first 'promoted' article
+   */
+  $promotedRow = false;
 
-  foreach ($themed_rows as $count => $row) {
-    if (empty($row['queue']) || $promotedDisplayed) {
+  foreach ($themed_rows as $row => $article) {
+    if (empty($article['queue'])) {
+      // Skip the $article is it is not in the 'promoted' queue
       continue;
     }
     else {
-      $promotedDisplayed = true;
-    }
+      $promotedRow = $row;
 ?>
 
 <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_singleArticleBlock_4" style="background-color: #ffffff;" width="100%">
@@ -179,7 +182,7 @@
         <tbody>
           <tr>
             <td align="left" class="links-color" valign="top" width="100%">
-              <img alt="" border="0" class="mobile-full attribute-width-534" hspace="0" src="<?php if (preg_match('/^.*src=\"([^"]+)\".*$/i', $row['field_highlight'], $matches) === 1) { print str_replace('third_space_grid', 'portfolio_653x368', $matches[1]); } else { print 'https://thirdspace.org.au/civicrm/mosaico/img?method=placeholder&params=534%2C267'; } ?>" style="border: 0px; display: block; vertical-align: top; max-width: 534px; width: 100%; height: auto;" vspace="0" width="534" />
+              <img alt="" border="0" class="mobile-full attribute-width-534" hspace="0" src="<?php if (preg_match('/^.*src=\"([^"]+)\".*$/i', $article['field_highlight'], $matches) === 1) { print str_replace('third_space_grid', 'portfolio_653x368', $matches[1]); } else { print 'https://thirdspace.org.au/civicrm/mosaico/img?method=placeholder&params=534%2C267'; } ?>" style="border: 0px; display: block; vertical-align: top; max-width: 534px; width: 100%; height: auto;" vspace="0" width="534" />
             </td>
           </tr>
           <tr>
@@ -188,7 +191,7 @@
               <tbody>
                 <tr>
                   <td style="font-weight: normal; font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #cf2e4f; text-align: left;">
-                    <span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;"><?php print $row['title']; ?></span>
+                    <span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;"><?php print $article['title']; ?></span>
                   </td>
                 </tr>
                 <tr>
@@ -196,13 +199,13 @@
                 </tr>
                 <tr>
                   <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
-                  <?php if (!empty($row['field_subtitle'])) { ?>
-                    <p style="Margin: 1em 0px;"><em><?php print $row['field_subtitle']; ?></em></p>
+                  <?php if (!empty($article['field_subtitle'])) { ?>
+                    <p style="Margin: 1em 0px;"><em><?php print $article['field_subtitle']; ?></em></p>
                   <?php } ?>
-                  <?php if (strlen($row['body']) < 200) { ?>
-                    <p style="Margin: 1em 0px;"><?php print $row['body']; ?></p>
+                  <?php if (strlen($article['body']) < 200) { ?>
+                    <p style="Margin: 1em 0px;"><?php print $article['body']; ?></p>
                   <?php } else { ?>
-                    <p style="Margin: 1em 0px;"><?php print substr($row['body'], 0, strrpos(substr($row['body'], 0, 200), ' ')) . ' &hellip;'; ?></p>
+                    <p style="Margin: 1em 0px;"><?php print substr($article['body'], 0, strrpos(substr($article['body'], 0, 200), ' ')) . ' &hellip;'; ?></p>
                   <?php } ?>
                   </td>
                 </tr>
@@ -215,10 +218,10 @@
                     <tbody>
                       <tr>
                         <?php
-                          if (strpos($row['field_resource_type'], 'fa-video') !== false) {
+                          if (strpos($article['field_resource_type'], 'fa-video') !== false) {
                             $buttonLabel = 'Watch';
                           }
-                          else if (strpos($row['field_resource_type'], 'fa-microphone') !== false) {
+                          else if (strpos($article['field_resource_type'], 'fa-microphone') !== false) {
                             $buttonLabel = 'Listen';
                           }
                           else {
@@ -226,7 +229,7 @@
                           }
                         ?>
                         <td align="center" bgcolor="#ffffff" height="37" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; text-align: center; color: #151515; font-weight: normal; background-color: #ffffff; border-radius: 2px; text-transform: uppercase;" valign="middle" width="auto">
-                          <a href="<?php print $row['nid']; ?>" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new"><?php print $buttonLabel; ?></a>
+                          <a href="<?php print $article['nid']; ?>" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new"><?php print $buttonLabel; ?></a>
                         </td>
                       </tr>
                     </tbody>
@@ -246,15 +249,20 @@
 </table>
 
 <?php
+      break;
+    }
   }
 
-  foreach ($themed_rows as $count => $row) {
-    if (!empty($row['queue'])) {
+  /*
+   * Display all the other articles
+   */
+  foreach ($themed_rows as $row => $article) {
+    if ($promotedRow === $row) {
       continue;
     }
 ?>
 
-<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_sideArticleBlock_<?php print $count; ?>" style="background-color: #ffffff;" width="100%">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="vb-outer" id="ko_sideArticleBlock_<?php print $row; ?>" style="background-color: #ffffff;" width="100%">
   <tbody>
     <tr>
       <td align="center" bgcolor="#ffffff" class="vb-outer" style="padding-left: 9px; padding-right: 9px; background-color: #ffffff;" valign="top"><!--[if (gte mso 9)|(lte ie 8)]><table align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]-->
@@ -268,7 +276,7 @@
               <tbody>
                 <tr>
                   <td align="left" class="links-color" valign="top" width="100%">
-                    <img alt="" border="0" class="mobile-full attribute-width-166" hspace="0" src="<?php if (preg_match('/^.*src=\"([^"]+)\".*$/i', $row['field_highlight'], $matches) === 1) { print $matches[1]; } else { print 'https://thirdspace.org.au/civicrm/mosaico/img?method=placeholder&params=258%2C208'; } ?>" style="border: 0px; display: block; vertical-align: top; width: 100%; height: auto; max-width: 258px;" vspace="0" width="258" />
+                    <img alt="" border="0" class="mobile-full attribute-width-166" hspace="0" src="<?php if (preg_match('/^.*src=\"([^"]+)\".*$/i', $article['field_highlight'], $matches) === 1) { print $matches[1]; } else { print 'https://thirdspace.org.au/civicrm/mosaico/img?method=placeholder&params=258%2C208'; } ?>" style="border: 0px; display: block; vertical-align: top; width: 100%; height: auto; max-width: 258px;" vspace="0" width="258" />
                   </td>
                 </tr>
               </tbody>
@@ -284,18 +292,18 @@
               <tbody>
                 <tr>
                   <td style="font-weight: normal; font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #cf2e4f; text-align: left;">
-                    <span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;"><?php print $row['title']; ?></span>
+                    <span style="color: #cf2e4f; text-transform: uppercase; letter-spacing: 4px;"><?php print $article['title']; ?></span>
                   </td>
                 </tr>
                 <tr>
                   <td align="left" class="long-text links-color" style="text-align: left; font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #697891;">
-                  <?php if (!empty($row['field_subtitle'])) { ?>
-                    <p style="Margin: 1em 0px;"><em><?php print $row['field_subtitle']; ?></em></p>
+                  <?php if (!empty($article['field_subtitle'])) { ?>
+                    <p style="Margin: 1em 0px;"><em><?php print $article['field_subtitle']; ?></em></p>
                   <?php } ?>
-                  <?php if (strlen($row['body']) < 200) { ?>
-                    <p style="Margin: 1em 0px;"><?php print $row['body']; ?></p>
+                  <?php if (strlen($article['body']) < 200) { ?>
+                    <p style="Margin: 1em 0px;"><?php print $article['body']; ?></p>
                   <?php } else { ?>
-                    <p style="Margin: 1em 0px;"><?php print substr($row['body'], 0, strrpos(substr($row['body'], 0, 200), ' ')) . ' &hellip;'; ?></p>
+                    <p style="Margin: 1em 0px;"><?php print substr($article['body'], 0, strrpos(substr($article['body'], 0, 200), ' ')) . ' &hellip;'; ?></p>
                   <?php } ?>
                   </td>
                 </tr>
@@ -305,10 +313,10 @@
                     <tbody>
                       <tr>
                         <?php
-                          if (strpos($row['field_resource_type'], 'fa-video') !== false) {
+                          if (strpos($article['field_resource_type'], 'fa-video') !== false) {
                             $buttonLabel = 'Watch';
                           }
-                          else if (strpos($row['field_resource_type'], 'fa-microphone') !== false) {
+                          else if (strpos($article['field_resource_type'], 'fa-microphone') !== false) {
                             $buttonLabel = 'Listen';
                           }
                           else {
@@ -316,7 +324,7 @@
                           }
                         ?>
                         <td align="center" bgcolor="#ffffff" height="37" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; text-align: center; color: #151515; font-weight: normal; background-color: #ffffff; border-radius: 2px; text-transform: uppercase;" valign="middle" width="auto">
-                          <a href="<?php print $row['nid']; ?>" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new"><?php print $buttonLabel; ?></a>
+                          <a href="<?php print $article['nid']; ?>" style="text-decoration: none; color: #151515; font-weight: normal; padding: 8px 37px; border: 2px solid #151515; letter-spacing: 2px;" target="_new"><?php print $buttonLabel; ?></a>
                         </td>
                       </tr>
                     </tbody>
