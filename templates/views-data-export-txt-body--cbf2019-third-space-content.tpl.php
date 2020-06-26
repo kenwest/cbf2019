@@ -254,11 +254,20 @@
   }
 
   /*
-   * Display all the other articles
+   * Display all the other articles, excluding any articles created more than
+   * N days ago (this exclusion is to prevent promoted content that is too old
+   * from being displayed).
    */
   foreach ($themed_rows as $row => $article) {
     if ($promotedRow === $row) {
       continue;
+    }
+
+    if (!empty($article['created']) && !empty($article['expression'])) {
+      $cutoff = time() - $article['expression'] * 24 * 60 * 60;
+      if ($article['created']  < $cutoff) {
+        continue;
+      }
     }
 ?>
 
