@@ -93,7 +93,7 @@ $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-
 $typeSpecific .=     '<p class="h3">';
 $typeSpecific .=       filter_xss(drupal_get_title());
 $typeSpecific .=     '</p>';
-$typeSpecific .=     render($content['field_in_activity']);
+$typeSpecific .=     views_embed_view('cbf2019_activity_logo', 'block_2');
 $typeSpecific .=     render($content['field_episode_date']);
 $typeSpecific .=     render($content['field_subtitle']);
 $typeSpecific .=   '</div>';

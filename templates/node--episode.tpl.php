@@ -184,7 +184,7 @@ if ($tabActive['count'] > 0) {
   $typeSpecific .=     '<p class="h3">';
   $typeSpecific .=       filter_xss(drupal_get_title());
   $typeSpecific .=     '</p>';
-  $typeSpecific .=     render($content['field_in_activity']);
+  $typeSpecific .=     views_embed_view('cbf2019_activity_logo', 'block_2');
   $typeSpecific .=     render($content['field_episode_date']);
   $typeSpecific .=     render($content['field_subtitle']);
   if ($tabActive['count'] > 1) {

@@ -1949,6 +1949,13 @@ body.html .link-button a:hover {
     max-height: 37.5px;
   }
 }
+.view-content .views-field-field-logo.small-logo {
+  width: 50%;
+  margin-bottom: 25px;
+}
+.view-content .views-field-field-logo.small-logo a {
+  display: block;
+}
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
   /*
