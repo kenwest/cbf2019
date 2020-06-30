@@ -3406,6 +3406,9 @@ body.html .link-button a:hover {
 .block.without-bottom-margin {
   margin-bottom: 0;
 }
+.block.small-gap-to-previous-block {
+  margin-top: -75px;
+}
 .block .office-view .google-map {
   margin-top: 125px;
 }
