@@ -955,6 +955,15 @@ body.html {
     }
 
     /*
+     * Remove the margin under .form-item and put it under .views-exposed-widget
+     * to ensure all widgets have vertical space.
+     */
+    margin-bottom: 20px;
+    .form-item {
+      margin-bottom: 0 !important;
+    }
+
+    /*
      * If using Better Exposed Forms to format filters as links, then use the Bootstrap grid
      */
     .bef-select-as-links {
