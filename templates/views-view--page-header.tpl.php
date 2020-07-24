@@ -72,10 +72,17 @@
       if (!empty($result->$imageField)) {
         if (is_string($result->$imageField)) {
           $fid = intval(preg_replace('/\s+/', '', strip_tags($result->$imageField)));
+          if (!empty($fid)) {
+            $imageFile = file_load($fid);
+            $imageUrl = file_create_url($imageFile->uri);
+            $imageStyleUrl = image_style_url('title', $imageFile->uri);
+          }
         }
         else {
           $image = reset($result->$imageField);
-          $fid = $image['raw']['fid'];
+          $fid = $image['rendered']['#item']['fid'];
+          $imageUrl = file_create_url($image['rendered']['#item']['uri']);
+          $imageStyleUrl = image_style_url($image['rendered']['#image_style'], $image['rendered']['#item']['uri']);
         }
         break;
       }
@@ -97,7 +104,7 @@
       }
     }
   }
-  print rhythm_shortcodes_shortcode_header(
+  $shortCodeHeader = rhythm_shortcodes_shortcode_header(
     [
       'class' => '',
       'size' => 'page-section',
@@ -109,6 +116,13 @@
     ],
     ''
   );
+  if (empty($imageUrl) || empty($imageStyleUrl)) {
+    print $shortCodeHeader;
+  }
+  else {
+    print str_replace($imageUrl, $imageStyleUrl, $shortCodeHeader);
+  }
+
   if (!empty($h2)) {
     print '<h2 class="element-invisible">' . $h2 . '</h2>';
   }
