@@ -46,9 +46,8 @@
           continue;
         }
 
-        $thirdSpaceImage = str_ireplace(
-          'public://',
-          '/sites/default/files/',
+        $thirdSpaceImage = image_style_url(
+          $result->field_field_title_image[0]['rendered']['#image_style'],
           $result->field_field_title_image[0]['rendered']['#item']['uri']);
         $thirdSpaceIcon = $result->field_field_second_title[0]['rendered']['#markup'];
         $thirdSpaceTitle = htmlspecialchars($result->node_title, ENT_QUOTES);
