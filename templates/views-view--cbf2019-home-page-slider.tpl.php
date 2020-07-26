@@ -44,9 +44,8 @@
           continue;
         }
 
-        $sliderImage = str_ireplace(
-          'public://',
-          '/sites/default/files/',
+        $sliderImage = image_style_url(
+          $result->field_field_title_image[0]['rendered']['#image_style'],
           $result->field_field_title_image[0]['rendered']['#item']['uri']);
         $sliderTitle = $result->field_field_title[0]['rendered']['#markup'];
         $sliderSubtitle = $result->field_field_subtitle[0]['rendered']['#markup'];
