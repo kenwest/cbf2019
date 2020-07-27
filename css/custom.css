@@ -3063,24 +3063,57 @@ body.html .link-button a:hover {
     width: 16.66666667%;
   }
 }
-@media (min-width: 480px) {
-  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
-    margin-left: 50%;
+.view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-keys {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-keys {
+    float: left;
+    width: 66.66666667%;
   }
+}
+@media (min-width: 992px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-keys {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-keys {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-widget-filter-keys {
+    margin-left: 16.66666667%;
+  }
+}
+.view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (min-width: 768px) {
   .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
-    margin-left: 66.66666667%;
+    float: left;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
   .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
-    margin-left: 75%;
+    float: left;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 1200px) {
   .view.view-cbf2019-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.views-submit-button {
-    margin-left: 83.33333333%;
+    float: left;
+    width: 16.66666667%;
   }
 }
 .view.view-cbf2019-key-dates .view-content .key-dates-month {
