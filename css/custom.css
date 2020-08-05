@@ -1966,11 +1966,17 @@ body.html .link-button a:hover {
   }
 }
 .view-content .views-field-field-logo.small-logo {
-  width: 50%;
   margin-bottom: 25px;
 }
 .view-content .views-field-field-logo.small-logo a {
   display: block;
+  /*
+         * Size the logo image
+         */
+}
+.view-content .views-field-field-logo.small-logo a object[type="image/svg+xml"],
+.view-content .views-field-field-logo.small-logo a img {
+  max-height: 75px;
 }
 .view-content .owl-carousel .views-field-field-in-activity,
 .view-content .owl-carousel .views-field-city {
@@ -3523,6 +3529,9 @@ body.html .link-button a:hover {
 }
 .block.small-gap-to-previous-block {
   margin-top: -75px;
+}
+.block.small-gap-to-next-block {
+  margin-bottom: 50px;
 }
 .block .office-view .google-map {
   margin-top: 125px;
