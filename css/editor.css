@@ -1,0 +1,32 @@
+@import url('custom.min.css');
+
+.cke_editable,
+.cke_show_borders {
+  font-family: "Rubik",arial,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  color: #697891;
+  line-height: 1.6;
+  padding: 10px;
+  max-width: 640px;
+}
+
+.cke_editable p,
+.cke_show_borders p {
+  margin: 0 0 2em 0;
+}
+
+.cke_show_borders table.cke_show_border,
+.cke_show_borders table.cke_show_border > tr > td,
+.cke_show_borders table.cke_show_border > tr > th,
+.cke_show_borders table.cke_show_border > tbody > tr > td,
+.cke_show_borders table.cke_show_border > tbody > tr > th,
+.cke_show_borders table.cke_show_border > thead > tr > td,
+.cke_show_borders table.cke_show_border > thead > tr > th,
+.cke_show_borders table.cke_show_border > tfoot > tr > td,
+.cke_show_borders table.cke_show_border > tfoot > tr > th {
+  border-color: #cc0 !important;
+  border-style: dashed !important;
+  border-width: 1px 0 !important;
+}
