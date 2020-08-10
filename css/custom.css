@@ -1042,7 +1042,21 @@ div.video-filter video {
 /****************************************
  * Styles accessible from the HTML editor
  */
-body.html .link-button a {
+body.html,
+.cke_editable,
+.cke_show_borders {
+  /*
+   * Rather than having an empty paragraph, format the previous paragraph with a
+   * margin-bottom that is the same as if an empty paragraph was present. This is
+   * a paragraph line-height plus 2 paragraph margin-bottoms (1 + 2 * 1 = 3).
+   */
+  /*
+   * Format paragraphs with left and right aligned images
+   */
+}
+body.html .link-button a,
+.cke_editable .link-button a,
+.cke_show_borders .link-button a {
   display: inline-block;
   box-sizing: border-box;
   border: 2px solid transparent;
@@ -1062,10 +1076,56 @@ body.html .link-button a {
   -ms-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
 }
-body.html .link-button a:hover {
+body.html .link-button a:hover,
+.cke_editable .link-button a:hover,
+.cke_show_borders .link-button a:hover {
   color: rgba(255, 255, 255, 0.85);
   background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
+}
+body.html .paragraph-plus-spacer,
+.cke_editable .paragraph-plus-spacer,
+.cke_show_borders .paragraph-plus-spacer {
+  margin-bottom: 75px;
+}
+body.html .paragraph-image-left,
+.cke_editable .paragraph-image-left,
+.cke_show_borders .paragraph-image-left,
+body.html .paragraph-image-right,
+.cke_editable .paragraph-image-right,
+.cke_show_borders .paragraph-image-right {
+  clear: both;
+}
+body.html .paragraph-image-left img,
+.cke_editable .paragraph-image-left img,
+.cke_show_borders .paragraph-image-left img,
+body.html .paragraph-image-right img,
+.cke_editable .paragraph-image-right img,
+.cke_show_borders .paragraph-image-right img {
+  max-width: 50% !important;
+  height: auto !important;
+}
+body.html .paragraph-image-left + p,
+.cke_editable .paragraph-image-left + p,
+.cke_show_borders .paragraph-image-left + p,
+body.html .paragraph-image-right + p,
+.cke_editable .paragraph-image-right + p,
+.cke_show_borders .paragraph-image-right + p {
+  clear: both;
+}
+body.html .paragraph-image-left img,
+.cke_editable .paragraph-image-left img,
+.cke_show_borders .paragraph-image-left img {
+  float: left !important;
+  margin: 0 15px 25px 0 !important;
+  padding: 0 15px 0 0 !important;
+}
+body.html .paragraph-image-right img,
+.cke_editable .paragraph-image-right img,
+.cke_show_borders .paragraph-image-right img {
+  float: right !important;
+  margin: 0 0 25px 15px !important;
+  padding: 0 0 0 15px !important;
 }
 /******************************
  * Format blog-specific content
