@@ -2634,16 +2634,18 @@ body.html,
  */
 .views-field-field-details {
   .tablefield {
+    width: initial;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: initial;
 
     caption {
       // Emulate .view-header-and-more containing only a .view-header
       .h4;
       .font-alt(300);
 
-      padding-bottom: 2em; // P element
+      padding: 0 0 2em 0; // P element
       margin-bottom: @line-height-computed; // .view-header-and-more
       text-align: center;
       font-size: 18px;
@@ -2660,8 +2662,9 @@ body.html,
     }
 
     th, td {
-      padding-left: @grid-gutter-half-width; // Simulate a Bootstrap column
-      padding-right: @grid-gutter-half-width;
+      border-top: 0;
+      padding: 0 @grid-gutter-half-width; // Simulate a Bootstrap column
+      line-height: inherit;
 
       p:last-child {
         margin-bottom: 0;

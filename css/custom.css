@@ -3863,9 +3863,11 @@ body.html .paragraph-image-right img,
  * Format field_details in views
  */
 .views-field-field-details .tablefield {
+  width: initial;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: initial;
 }
 .views-field-field-details .tablefield caption {
   font-weight: 300 !important;
@@ -3873,7 +3875,7 @@ body.html .paragraph-image-right img,
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding-bottom: 2em;
+  padding: 0 0 2em 0;
   margin-bottom: 25px;
   text-align: center;
   font-size: 18px;
@@ -3901,8 +3903,9 @@ body.html .paragraph-image-right img,
 }
 .views-field-field-details .tablefield th,
 .views-field-field-details .tablefield td {
-  padding-left: 15px;
-  padding-right: 15px;
+  border-top: 0;
+  padding: 0 15px;
+  line-height: inherit;
 }
 .views-field-field-details .tablefield th p:last-child,
 .views-field-field-details .tablefield td p:last-child {
