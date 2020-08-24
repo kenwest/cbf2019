@@ -43,19 +43,17 @@
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php
       $itemCount = count($items);
-      foreach ($items as $delta => $item):
+      foreach ($items as $delta => $item) {
         if ($delta == 0) {
-          print 'Please contact';
+          print 'Please contact ';
         }
         else if ($delta + 1 == $itemCount) {
-          print 'or';
+          print 'or ';
         }
         else {
-          print ',';
+          print ', ';
         }
-    ?>
-    <span class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
-      <?php
+
         $itemOutput = render($item);
         $matches = null;
         $itemModified = preg_replace(
@@ -74,12 +72,10 @@
         else {
           print $itemOutput;
         }
-      ?>
-    </span>
-    <?php
-      endforeach;
+      }
+
       if ($itemCount > 0) {
-        print 'for further information.';
+        print ' for further information.';
       }
     ?>
   </div>
