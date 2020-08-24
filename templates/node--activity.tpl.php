@@ -81,7 +81,7 @@
 hide($content['field_subtitle']);
 
 /*
- * The Staff Slider view overwrites the field_staff_contact.
+ * The Staff Slider view extends the field_staff_contact.
  * If the 'Staff Slider for Activity' display is not empty then insert text
  * that links to that display. This link replaces the markup for the Staff
  * Contact. The link is appended to the Body (Staff Contact follows the Body
@@ -89,10 +89,21 @@ hide($content['field_subtitle']);
  */
 $staffSliderDisplay = views_embed_view('cbf2019_staff_slider', 'block_2');
 if (stripos($staffSliderDisplay, 'cbf2019-staff-slider-view-header') !== false) {
-  $content['body'][0]['#markup'] .= '<p>Please contact <a href="#cbf2019-staff-slider-view-header">our team</a> for further information.</p>';
+  $staffContactText = '';
   if (!empty($content['field_staff_contact'])) {
+    $staffContactOutput = render($content['field_staff_contact']);
+    $staffContacts = [];
+    preg_match('"<a [^>]+>[^<]+</a>"i', $staffContactOutput, $staffContacts);
+    if (!empty($staffContacts)) {
+      $staffContactText = implode(', ', $staffContacts) . ' or one of ';
+    }
     hide($content['field_staff_contact']);
   }
+  $content['body'][0]['#markup']
+    .= '<p>Please contact '
+       . $staffContactText
+       . '<a href="#cbf2019-staff-slider-view-header">our team</a> '
+       .'for further information.</p>';
 }
 
 include 'node.tpl.php';
