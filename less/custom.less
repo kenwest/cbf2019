@@ -1085,34 +1085,30 @@ body.html,
               }
             }
           }
+        }
+      }
+    }
 
-          &.form-item-edit-taxonomy-vocabulary-1-tid-all,
-          &.form-item-edit-field-highlight-location-tid-all,
-          &.form-item-edit-field-topic-tid-all,
-          &.form-item-edit-term-node-tid-depth-all {
-            /*
-             * On large displays, centre the Ministry Centres and Highlight Locations
-             * and Topic by 'prefixing' 2 columns to the grid
-             * (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
-             */
-            .make-lg-column-offset(2);
-          }
+    .form-item-taxonomy-vocabulary-1-tid,
+    .form-item-field-office-tid,
+    .form-item-field-highlight-location-tid,
+    .form-item-field-networks-visibility-tid,
+    .form-item-field-topic-tid,
+    .form-item-term-node-tid-depth {
+      .bef-select-as-links > .form-item > .form-type-bef-link {
+        /*
+         * On large displays, centre the Ministry Centres and visibility
+         * and Topic filters by 'prefixing' 2 columns to the grid
+         * (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
+         */
 
-          &.form-item-edit-taxonomy-vocabulary-1-tid-1,
-          &.form-item-edit-field-highlight-location-tid-1045,
-          &.form-item-edit-field-office-tid-1383,
-          &.form-item-edit-field-topic-tid-762,
-          &.form-item-edit-term-node-tid-depth-762 {
-            /*
-             * On large displays, centre the Ministry Centres and Highlight Locations
-             * and Offices and Topic by 'suffixing' 2 columns to the grid
-             * (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
-             */
-            @media (min-width: @screen-lg-min) {
-              &:last-child {
-                margin-right: 100%*(2/12);
-              }
-            }
+        &:first-child {
+          .make-lg-column-offset(2);
+        }
+
+        &:last-child {
+          @media (min-width: @screen-lg-min) {
+            margin-right: 100%*(2/12);
           }
         }
       }
