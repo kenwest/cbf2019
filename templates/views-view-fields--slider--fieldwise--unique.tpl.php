@@ -47,7 +47,7 @@
 
     foreach ($contents as $content) {
       // Only display this $content if we haven't yet seen it
-      if (cbf_is_views_field_cached($content)) {
+      if (cbf_is_views_content_unique($content)) {
 ?>
   <div class="container">
     <div class="row">
