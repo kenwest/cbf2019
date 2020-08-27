@@ -1868,41 +1868,35 @@ body.html .paragraph-image-right img,
     padding-left: 15px;
   }
 }
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-taxonomy-vocabulary-1-tid-all,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-highlight-location-tid-all,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-topic-tid-all,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-term-node-tid-depth-all {
+.view-filters .views-exposed-form .views-exposed-widget .form-item-taxonomy-vocabulary-1-tid .bef-select-as-links > .form-item > .form-type-bef-link,
+.view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link,
+.view-filters .views-exposed-form .views-exposed-widget .form-item-field-highlight-location-tid .bef-select-as-links > .form-item > .form-type-bef-link,
+.view-filters .views-exposed-form .views-exposed-widget .form-item-field-networks-visibility-tid .bef-select-as-links > .form-item > .form-type-bef-link,
+.view-filters .views-exposed-form .views-exposed-widget .form-item-field-topic-tid .bef-select-as-links > .form-item > .form-type-bef-link,
+.view-filters .views-exposed-form .views-exposed-widget .form-item-term-node-tid-depth .bef-select-as-links > .form-item > .form-type-bef-link {
   /*
-             * On large displays, centre the Ministry Centres and Highlight Locations
-             * and Topic by 'prefixing' 2 columns to the grid
-             * (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
-             */
+         * On large displays, centre the Ministry Centres and visibility
+         * and Topic filters by 'prefixing' 2 columns to the grid
+         * (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
+         */
 }
 @media (min-width: 1200px) {
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-taxonomy-vocabulary-1-tid-all,
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-highlight-location-tid-all,
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-topic-tid-all,
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-term-node-tid-depth-all {
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-taxonomy-vocabulary-1-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-highlight-location-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-networks-visibility-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-topic-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-term-node-tid-depth .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
     margin-left: 16.66666667%;
   }
 }
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-taxonomy-vocabulary-1-tid-1,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-highlight-location-tid-1045,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-1383,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-topic-tid-762,
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-term-node-tid-depth-762 {
-  /*
-             * On large displays, centre the Ministry Centres and Highlight Locations
-             * and Offices and Topic by 'suffixing' 2 columns to the grid
-             * (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
-             */
-}
 @media (min-width: 1200px) {
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-taxonomy-vocabulary-1-tid-1:last-child,
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-highlight-location-tid-1045:last-child,
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-1383:last-child,
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-topic-tid-762:last-child,
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-term-node-tid-depth-762:last-child {
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-taxonomy-vocabulary-1-tid .bef-select-as-links > .form-item > .form-type-bef-link:last-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link:last-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-highlight-location-tid .bef-select-as-links > .form-item > .form-type-bef-link:last-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-networks-visibility-tid .bef-select-as-links > .form-item > .form-type-bef-link:last-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-topic-tid .bef-select-as-links > .form-item > .form-type-bef-link:last-child,
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-term-node-tid-depth .bef-select-as-links > .form-item > .form-type-bef-link:last-child {
     margin-right: 16.66666667%;
   }
 }
@@ -2669,8 +2663,8 @@ body.html .paragraph-image-right img,
     font-size: 344px;
   }
 }
-.view.venue,
-.view.event-details {
+.view.venue > .view-content,
+.view.event-details > .view-content {
   padding-bottom: 1.6em;
 }
 .view.venue > .view-content > .views-row > .views-field,
@@ -3337,6 +3331,12 @@ body.html .paragraph-image-right img,
 .view-cbf2019-domain .view-content .footer-logo {
   margin: 0px auto;
   max-width: 200px;
+}
+.view-cbf2019-national-activity-contents > .view-content > .views-row > .views-field {
+  margin-bottom: 0;
+}
+.view-cbf2019-national-activity-contents > .view-content > .views-row > .views-field .view .view-content {
+  margin-bottom: 1.6em;
 }
 .view-cbf2019-third-space-categories.view-display-id-block_1 .view-content {
   display: block;
