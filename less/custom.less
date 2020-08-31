@@ -1066,25 +1066,6 @@ body.html,
               padding-right: @grid-gutter-half-width;
             }
           }
-
-
-          &.form-item-edit-field-office-tid-all {
-            /*
-             * Don't display the All/Any option for the Office taxonomy
-             */
-            display: none;
-
-            + .form-type-bef-link {
-              /*
-               * On large displays, centre the 8 Offices by adding 2 columns to the grid
-               */
-              .make-lg-column-offset(2);
-
-              @media (min-width: @screen-lg-min) {
-                padding-left: @grid-gutter-half-width; // Like ::first-child
-              }
-            }
-          }
         }
       }
     }
@@ -1109,6 +1090,28 @@ body.html,
         &:last-child {
           @media (min-width: @screen-lg-min) {
             margin-right: 100%*(2/12);
+          }
+        }
+      }
+    }
+
+    .form-item-field-office-tid {
+      .bef-select-as-links > .form-item > .form-type-bef-link {
+        &:first-child {
+          /*
+           * Don't display the All/Any option for the Office taxonomy
+           */
+          display: none;
+
+          + .form-type-bef-link {
+            /*
+             * On large displays, centre the 8 Offices by adding 2 columns to the grid
+             */
+            .make-lg-column-offset(2);
+
+            @media (min-width: @screen-lg-min) {
+              padding-left: @grid-gutter-half-width; // Like ::first-child
+            }
           }
         }
       }

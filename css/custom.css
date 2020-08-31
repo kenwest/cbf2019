@@ -1847,27 +1847,6 @@ body.html .paragraph-image-right img,
     padding-right: 15px;
   }
 }
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all {
-  /*
-             * Don't display the All/Any option for the Office taxonomy
-             */
-  display: none;
-}
-.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all + .form-type-bef-link {
-  /*
-               * On large displays, centre the 8 Offices by adding 2 columns to the grid
-               */
-}
-@media (min-width: 1200px) {
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all + .form-type-bef-link {
-    margin-left: 16.66666667%;
-  }
-}
-@media (min-width: 1200px) {
-  .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links > .form-item > .form-type-bef-link.form-item-edit-field-office-tid-all + .form-type-bef-link {
-    padding-left: 15px;
-  }
-}
 .view-filters .views-exposed-form .views-exposed-widget .form-item-taxonomy-vocabulary-1-tid .bef-select-as-links > .form-item > .form-type-bef-link,
 .view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link,
 .view-filters .views-exposed-form .views-exposed-widget .form-item-field-highlight-location-tid .bef-select-as-links > .form-item > .form-type-bef-link,
@@ -1898,6 +1877,27 @@ body.html .paragraph-image-right img,
   .view-filters .views-exposed-form .views-exposed-widget .form-item-field-topic-tid .bef-select-as-links > .form-item > .form-type-bef-link:last-child,
   .view-filters .views-exposed-form .views-exposed-widget .form-item-term-node-tid-depth .bef-select-as-links > .form-item > .form-type-bef-link:last-child {
     margin-right: 16.66666667%;
+  }
+}
+.view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
+  /*
+           * Don't display the All/Any option for the Office taxonomy
+           */
+  display: none;
+}
+.view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child + .form-type-bef-link {
+  /*
+             * On large displays, centre the 8 Offices by adding 2 columns to the grid
+             */
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child + .form-type-bef-link {
+    margin-left: 16.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-office-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child + .form-type-bef-link {
+    padding-left: 15px;
   }
 }
 @media (min-width: 992px) {
