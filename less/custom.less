@@ -552,7 +552,8 @@ body.html,
     }
 
     .tab-pane {
-      .field {
+      .field,
+      .view-cbf2019-content-videos {
         text-align: left;
         pointer-events: all;
       }
@@ -589,6 +590,40 @@ body.html,
         &:only-child {
           width: 100%;
         }
+      }
+    }
+
+    .view-cbf2019-content-videos {
+      .views-field {
+        width: 75%;
+        margin: 0 auto;
+      }
+
+      .pagination {
+        width: 100%;
+        margin: 10px 0 0;
+
+        .pager li > a {
+          border-radius: 2px;
+          border: 2px solid @slate-60;
+
+          // Mobile
+            padding: 0 1px;
+          @media (min-width: @screen-sm-min) {
+            padding: 5px 14px;
+          }
+        }
+
+        .pager li.pager-current > a {
+          color: white;
+          background-color: @slate;
+          border-color: @slate;
+        }
+      }
+
+      .pager-first,
+      .pager-last {
+        display: none;
       }
     }
   }
@@ -645,9 +680,14 @@ body.html,
   .h3,
   ul,
   .field,
+  .view-cbf2019-content-videos,
   .episode-tags {
     margin-top: 0 !important;
     margin-bottom: 30px !important;
+  }
+
+  .view-cbf2019-content-videos .pagination ul.pager {
+    margin-bottom: 0 !important;
   }
 
   .image-overlay .field {

@@ -1206,7 +1206,8 @@ body.html .paragraph-image-right img,
 .episode-content-tab .tab-content .overlaid-image .embed-responsive-16by9 {
   background: #c3c9d3;
 }
-.episode-content-tab .tab-content .tab-pane .field {
+.episode-content-tab .tab-content .tab-pane .field,
+.episode-content-tab .tab-content .tab-pane .view-cbf2019-content-videos {
   text-align: left;
   pointer-events: all;
 }
@@ -1237,6 +1238,33 @@ body.html .paragraph-image-right img,
 }
 .episode-content-tab .tab-content .field-name-field-video .video-filter-field:only-child {
   width: 100%;
+}
+.episode-content-tab .tab-content .view-cbf2019-content-videos .views-field {
+  width: 75%;
+  margin: 0 auto;
+}
+.episode-content-tab .tab-content .view-cbf2019-content-videos .pagination {
+  width: 100%;
+  margin: 10px 0 0;
+}
+.episode-content-tab .tab-content .view-cbf2019-content-videos .pagination .pager li > a {
+  border-radius: 2px;
+  border: 2px solid #a5aebd;
+  padding: 0 1px;
+}
+@media (min-width: 768px) {
+  .episode-content-tab .tab-content .view-cbf2019-content-videos .pagination .pager li > a {
+    padding: 5px 14px;
+  }
+}
+.episode-content-tab .tab-content .view-cbf2019-content-videos .pagination .pager li.pager-current > a {
+  color: white;
+  background-color: #697891;
+  border-color: #697891;
+}
+.episode-content-tab .tab-content .view-cbf2019-content-videos .pager-first,
+.episode-content-tab .tab-content .view-cbf2019-content-videos .pager-last {
+  display: none;
 }
 .episode-content-tab .nav-pills {
   text-transform: uppercase;
@@ -1279,9 +1307,13 @@ body.html .paragraph-image-right img,
 .episode-content-tab .h3,
 .episode-content-tab ul,
 .episode-content-tab .field,
+.episode-content-tab .view-cbf2019-content-videos,
 .episode-content-tab .episode-tags {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
+}
+.episode-content-tab .view-cbf2019-content-videos .pagination ul.pager {
+  margin-bottom: 0 !important;
 }
 @media (max-width: 991px) {
   .episode-content-tab .image-overlay .field {

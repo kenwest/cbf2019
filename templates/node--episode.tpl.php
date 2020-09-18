@@ -135,15 +135,10 @@ if ($tabActive['count'] > 0) {
         .  $tabSettings['label']
         .  '</a></li>';
 
-      $tabFieldContent = render($content[$tabKey]);
       switch ($tabKey) {
-        // Remove commas between videos
         case 'field_video':
-          $tabFieldContent = preg_replace(
-            '!div>, <div!i',
-            'div><div',
-            $tabFieldContent
-          );
+          // Embed view which displays multiple videos with a pager
+          $tabFieldContent = views_embed_view('cbf2019_content_videos', 'block_1');
           break;
 
         case 'field_order_url':
@@ -151,8 +146,12 @@ if ($tabActive['count'] > 0) {
           $tabFieldContent = preg_replace(
             '!<a !i',
             '$0class="btn btn-mod btn-border btn-medium btn-round uppercase" ',
-            $tabFieldContent
+            render($content[$tabKey])
           );
+          break;
+
+        default:
+          $tabFieldContent = render($content[$tabKey]);
           break;
       }
 
