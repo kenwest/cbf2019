@@ -18,7 +18,14 @@
  *     configured element type.
  * - $row: The raw result object from the query, with all data it fetched.
  */
+
+  $freePrice = 'Free';
+  $labelContent = $fields['label_1']->content ?? '';
+  if (preg_match('/\bFree\b/i', $labelContent)) {
+    $freePrice = '';
+  }
 ?>
+
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
@@ -29,7 +36,7 @@
     <?php
       if ($field->class == 'amount') {
         $modifiedOutput = preg_replace('/\.00/i', '', $field->content);
-        $modifiedOutput = preg_replace('/\$ 0/i', 'Free', $modifiedOutput);
+        $modifiedOutput = preg_replace('/\$ 0/i', $freePrice, $modifiedOutput);
         $modifiedOutput = preg_replace('/\$ /i', '$&thinsp;', $modifiedOutput);
         if (!empty($modifiedOutput)) {
           $field->content = $modifiedOutput;
