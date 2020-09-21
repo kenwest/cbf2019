@@ -542,26 +542,60 @@ body.html,
     .make-md-column-pull(5);
     .make-lg-column-pull(4);
 
+    display: block;
+    position: relative;
     padding-top: 0;
-    padding-bottom: 0px;
+    padding-bottom: 2*@line-height-computed;
 
     .overlaid-image {
+      img{
+        width: 100%;
+      }
+
+      &:after{
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(255,255,255, .75);
+        z-index: 1;
+      }
+
       .embed-responsive-16by9 {
         background: @slate-40;
       }
+    }
+
+    .image-overlay {
+      opacity: 1;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 @grid-gutter-half-width;
+      font-size: @font-size-base;
+      font-weight: 300;
+      text-align: center;
+      z-index: 2;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
     .tab-pane {
       .field,
       .view-cbf2019-content-videos {
         text-align: left;
-        pointer-events: all;
       }
 
       .field-name-field-order-url,
       .field-name-field-attachment,
       .field-name-field-content {
-        padding: 0 @grid-gutter-width
+        padding: @line-height-computed @grid-gutter-width
       }
     }
 
@@ -595,8 +629,7 @@ body.html,
 
     .view-cbf2019-content-videos {
       .views-field {
-        width: 75%;
-        margin: 0 auto;
+        margin: 0;
       }
 
       .pagination {
@@ -1656,7 +1689,6 @@ body.html,
     padding: @line-height-computed @grid-gutter-half-width 2*@line-height-computed;
     font-size: @font-size-base;
     font-weight: 300;
-    color: #777;
     text-align: center;
     z-index: 2;
 
@@ -1720,8 +1752,7 @@ body.html,
   overflow: hidden;
 }
 
-.views-field.image-plus-fixed-overlay .field-content,
-.episode-content-tab .tab-content {
+.views-field.image-plus-fixed-overlay .field-content {
   display: block;
   position: relative;
 
@@ -1752,7 +1783,6 @@ body.html,
     padding: @line-height-computed @grid-gutter-half-width;
     font-size: @font-size-base;
     font-weight: 300;
-    color: #777;
     text-align: center;
     z-index: 2;
     pointer-events: none;
