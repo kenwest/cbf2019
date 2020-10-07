@@ -4510,6 +4510,23 @@ body.html .paragraph-image-right img,
   margin-right: -15px;
   margin-left: -15px;
 }
+.block-system #crm-container.crm-container .crm-block .help,
+.block-system #crm-container.crm-container .crm-block .messages {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  /*
+         * Replace .col-xs-12 padding with a margin so side borders line with
+         * other content. Restore padding from .crm-container .help
+         */
+  clear: both;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 4px;
+}
 .block-system #crm-container.crm-container .crm-block fieldset > legend,
 .block-system #crm-container.crm-container .crm-block .header-dark,
 .block-system #crm-container.crm-container .crm-block .crm-profile-view-title,
@@ -4811,9 +4828,6 @@ body.html .paragraph-image-right img,
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .help,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .messages {
-  clear: both;
-  margin-left: 15px;
-  margin-right: 15px;
   margin-bottom: 25px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 16px;

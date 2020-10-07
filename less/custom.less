@@ -3075,6 +3075,20 @@ body.html,
     .crm-block {
       .make-row();
 
+      .help,
+      .messages {
+        .make-xs-column(12);
+
+        /*
+         * Replace .col-xs-12 padding with a margin so side borders line with
+         * other content. Restore padding from .crm-container .help
+         */
+        clear: both;
+        margin-left: @grid-gutter-half-width;
+        margin-right: @grid-gutter-half-width;
+        padding: 4px;
+      }
+
       fieldset > legend,
       .header-dark,
       .crm-profile-view-title,
@@ -3354,9 +3368,6 @@ body.html,
 
       .help,
       .messages {
-        clear: both; // Simulate ".row .col-xs-12"
-        margin-left: @grid-gutter-half-width; // Simulate ".row .col-xs-12"
-        margin-right: @grid-gutter-half-width; // Simulate ".row .col-xs-12"
         margin-bottom: @line-height-computed;
         border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: @font-size-base;
