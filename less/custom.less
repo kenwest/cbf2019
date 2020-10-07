@@ -3077,16 +3077,13 @@ body.html,
 
       .help,
       .messages {
-        .make-xs-column(12);
-
         /*
-         * Replace .col-xs-12 padding with a margin so side borders line with
-         * other content. Restore padding from .crm-container .help
+         * Simulate .col-xs-12 with padding rather than a margin, and clear
+         * rather than float so side borders align with other content.
          */
         clear: both;
         margin-left: @grid-gutter-half-width;
         margin-right: @grid-gutter-half-width;
-        padding: 4px;
       }
 
       fieldset > legend,

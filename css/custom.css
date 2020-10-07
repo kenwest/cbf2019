@@ -4512,20 +4512,13 @@ body.html .paragraph-image-right img,
 }
 .block-system #crm-container.crm-container .crm-block .help,
 .block-system #crm-container.crm-container .crm-block .messages {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
   /*
-         * Replace .col-xs-12 padding with a margin so side borders line with
-         * other content. Restore padding from .crm-container .help
+         * Simulate .col-xs-12 with padding rather than a margin, and clear
+         * rather than float so side borders align with other content.
          */
   clear: both;
   margin-left: 15px;
   margin-right: 15px;
-  padding: 4px;
 }
 .block-system #crm-container.crm-container .crm-block fieldset > legend,
 .block-system #crm-container.crm-container .crm-block .header-dark,
