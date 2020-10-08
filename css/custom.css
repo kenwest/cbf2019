@@ -4513,7 +4513,7 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-container .crm-block .help,
 .block-system #crm-container.crm-container .crm-block .messages {
   /*
-         * Simulate .col-xs-12 with padding rather than a margin, and clear
+         * Simulate .col-xs-12 with a margin rather than padding, and clear
          * rather than float so side borders align with other content.
          */
   clear: both;
@@ -4787,10 +4787,6 @@ body.html .paragraph-image-right img,
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .iCal_links-section {
   display: none;
-}
-.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-socialnetwork {
-  margin-left: 0;
-  margin-right: 0;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .display-block {
   margin-top: 25px;
