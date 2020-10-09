@@ -4672,6 +4672,7 @@ body.html .paragraph-image-right img,
   min-height: 1.8em;
   margin: 0;
   font-weight: 400;
+  white-space: normal;
 }
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label label {
   vertical-align: middle;
