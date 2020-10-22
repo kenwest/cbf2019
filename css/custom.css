@@ -4776,6 +4776,9 @@ body.html .paragraph-image-right img,
   background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.event_summary-section {
+  font-weight: 400;
+}
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section.helprow-post {
   margin-top: -20px;
 }
