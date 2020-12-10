@@ -3681,6 +3681,17 @@ body.html .paragraph-image-right img,
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
+/*
+ * Other domains need the search block visible on all pages.
+ * This theme only requires it on /search/node/*.
+ * So use CSS to control the display rather than block settings.
+ */
+.block.block-search {
+  display: none;
+}
+.page-search-node .block.block-search {
+  display: block;
+}
 /******************************
  * Format various content types
  */
