@@ -5033,6 +5033,14 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-container #civicrm-footer {
   border-width: 0;
 }
+.block-system #crm-container.crm-public .price-set-row .crm-price-amount-label {
+  color: #697891;
+  font-weight: 500;
+}
+.block-system #crm-container.crm-public .price-set-row .crm-price-amount-amount {
+  color: #697891;
+  font-weight: 400;
+}
 body.html .crm-container .select2-drop {
   border-color: #c3c9d3;
 }
