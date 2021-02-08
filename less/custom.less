@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .main-nav {
   .nav-logo-wrap {
     margin-left: @grid-gutter-width;
+    margin-right: 0;
 
     .logo {
       /*
@@ -138,11 +139,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
        * Float the menu to the left of the Search bar
        */
       float: left;
+      padding: 0;
 
       > li {
         /*
          * Set the menu text at the same level as Search bar text
          */
+        margin-left: 20px;
         height: 75px;
         line-height: 75px;
         -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -154,7 +157,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 
     .search-dropdown-list {
-      margin-right: @grid-gutter-width;
+      margin-right: @grid-gutter-half-width;
     }
   }
 }
@@ -280,7 +283,7 @@ body.html {
     }
 
     .give-menu-item {
-      padding: 0 40px; // Matches other menu items when mobile-on
+      padding: 0 25px; // Matches other menu items when mobile-on
       background-color: @city-blue;
 
       a {
