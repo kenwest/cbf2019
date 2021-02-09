@@ -4900,6 +4900,10 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-container #crm-main-content-wrapper a:link.btn-mod {
   color: white;
 }
+.block-system #crm-container.crm-container #crm-main-content-wrapper .link-button a,
+.block-system #crm-container.crm-container #crm-main-content-wrapper .link-button a:link {
+  color: white;
+}
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-submit-buttons,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-top,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-actionlinks-bottom {
