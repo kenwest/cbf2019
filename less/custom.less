@@ -3182,8 +3182,14 @@ body.html,
       .crm-section {
         margin-bottom: @line-height-computed !important; // Override 0
 
-        .crm-section:last-child {
-          margin-bottom: 0 !important; // Restore 0 if nesting crm-section DIVs
+        .crm-section {
+          &:last-child {
+            margin-bottom: 0 !important; // Restore 0 if nesting crm-section DIVs ...
+          }
+
+          &.section-pricesetTotal {
+            margin-bottom: 2*@line-height-computed !important; // ... except for Price Set Totals
+          }
         }
 
         .label,

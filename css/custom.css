@@ -4670,6 +4670,9 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section:last-child {
   margin-bottom: 0 !important;
 }
+.block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .crm-section.section-pricesetTotal {
+  margin-bottom: 50px !important;
+}
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .label,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .content,
 .block-system #crm-container.crm-container #crm-main-content-wrapper .crm-section .required,
