@@ -134,30 +134,36 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 
   .inner-nav {
-    ul.clearlist ul.cbf2019-default-menu {
-      /*
-       * Float the menu to the left of the Search bar
-       */
-      float: left;
-      padding: 0;
-
+    ul.clearlist {
       > li {
-        /*
-         * Set the menu text at the same level as Search bar text
-         */
-        margin-left: 20px;
-        height: 75px;
-        line-height: 75px;
-        -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-        -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-        -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-        -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-        transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        margin-left: 0; // Override any Bootstrap margins
       }
-    }
 
-    .search-dropdown-list {
-      margin-right: @grid-gutter-half-width;
+	  ul.cbf2019-default-menu {
+        /*
+         * Float the menu to the left of the Search bar
+         */
+        float: left;
+        padding: 0;
+
+        > li {
+          /*
+           * Set the menu text at the same level as Search bar text
+           */
+          margin-left: @main-nav-item-spacing;
+          height: 75px;
+          line-height: 75px;
+          -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+          -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+          -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+          -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+          transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        }
+      }
+
+      .search-dropdown-list {
+        margin: 0 @main-nav-item-spacing;
+      }
     }
   }
 }
