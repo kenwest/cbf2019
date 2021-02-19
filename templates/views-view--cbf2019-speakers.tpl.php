@@ -27,7 +27,13 @@
  * @ingroup views_templates
  */
 
-if (count($view->result) > 1) {
+/*
+ * We need pluralisation of the title if it contains words like
+ * 'Speaker' or 'Author' but there are more than one of them.
+ */
+$needPluralisation = false;
+
+if ($needPluralisation && count($view->result) > 1) {
   $header = str_replace('Speaker', 'Speakers', $header);
   $header = str_replace('Author', 'Authors', $header);
 }
