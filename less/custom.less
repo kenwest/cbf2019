@@ -147,10 +147,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         padding: 0;
 
         > li {
+          // Mobile
+            margin-left: @main-nav-item-spacing;
+          @media (min-width: @screen-lg-min) {
+            margin-left: @main-nav-item-spacing-wide;
+          }
+
           /*
            * Set the menu text at the same level as Search bar text
            */
-          margin-left: @main-nav-item-spacing;
           height: 75px;
           line-height: 75px;
           -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -162,7 +167,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       }
 
       .search-dropdown-list {
-        margin: 0 @main-nav-item-spacing;
+        // Mobile
+          margin: 0 @main-nav-item-spacing;
+        @media (min-width: @screen-lg-min) {
+          margin: 0 @main-nav-item-spacing-wide;
+        }
       }
     }
   }
@@ -289,7 +298,11 @@ body.html {
     }
 
     .give-menu-item {
-      padding: 0 25px; // Matches other menu items when mobile-on
+      // Mobile
+        padding: 0 25px; // Matches other menu items when mobile-on
+      @media (min-width: @screen-lg-min) {
+        padding: 0 floor(25px*@main-nav-wide-multiplier);
+      }
       background-color: @city-blue;
 
       a {

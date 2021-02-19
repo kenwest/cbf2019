@@ -824,10 +824,10 @@ h6,
   padding: 0;
 }
 .main-nav .inner-nav ul.clearlist ul.cbf2019-default-menu > li {
+  margin-left: 20px;
   /*
            * Set the menu text at the same level as Search bar text
            */
-  margin-left: 20px;
   height: 75px;
   line-height: 75px;
   -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
@@ -836,8 +836,18 @@ h6,
   -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
 }
+@media (min-width: 1200px) {
+  .main-nav .inner-nav ul.clearlist ul.cbf2019-default-menu > li {
+    margin-left: 30px;
+  }
+}
 .main-nav .inner-nav ul.clearlist .search-dropdown-list {
   margin: 0 20px;
+}
+@media (min-width: 1200px) {
+  .main-nav .inner-nav ul.clearlist .search-dropdown-list {
+    margin: 0 30px;
+  }
 }
 .main-nav.small-height .inner-nav ul.clearlist ul.cbf2019-default-menu > li {
   /*
@@ -929,6 +939,11 @@ body.html .main-nav .full-wrapper {
 body.html .main-nav .give-menu-item {
   padding: 0 25px;
   background-color: #1c9cd6;
+}
+@media (min-width: 1200px) {
+  body.html .main-nav .give-menu-item {
+    padding: 0 37px;
+  }
 }
 body.html .main-nav .give-menu-item a {
   color: white;
