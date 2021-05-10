@@ -883,12 +883,12 @@ h6,
  */
 .bg-dark-alfa-50,
 .domain-reaching-city .bg-dark-alfa-50.promote-main-site,
-.domain-plus .bg-dark-alfa-50.promote-main-site {
+.domain-christian .bg-dark-alfa-50.promote-main-site {
   text-shadow: 0 0 40px #49b0de;
 }
 .bg-dark-alfa-50::before,
 .domain-reaching-city .bg-dark-alfa-50.promote-main-site::before,
-.domain-plus .bg-dark-alfa-50.promote-main-site::before {
+.domain-christian .bg-dark-alfa-50.promote-main-site::before {
   /*
      * When displayed over a white background, this background colour gives the theme's
      * 'City blue 80%' which is rgb(73, 176, 222)
@@ -957,11 +957,11 @@ body.html.domain-thirdspace .main-nav .give-menu-item {
   background-color: #cf2e4f;
 }
 .domain-reaching-city .bg-dark-alfa-50,
-.domain-plus .bg-dark-alfa-50 {
+.domain-christian .bg-dark-alfa-50 {
   text-shadow: 0 0 40px #8793a7;
 }
 .domain-reaching-city .bg-dark-alfa-50::before,
-.domain-plus .bg-dark-alfa-50::before {
+.domain-christian .bg-dark-alfa-50::before {
   /*
        * When displayed over a white background, this background colour gives the theme's
        * 'Slate 80%' which is rgb(135, 148, 167)
