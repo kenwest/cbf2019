@@ -1,0 +1,41 @@
+Marker
+
+1.  Start with the SVG for icon map-marker-alt from the FontAwesome Pro desktop version
+2.  This icons's dimensions will be in the ratio of 3:4.
+3.  There will be 3 versions - 'cbf', 'plus' and 'thirdspace'
+4.  Edit the SVG using Inkscape
+5.  Set the fill colour of the icon
+     - rgba(28, 156, 214, 255) for 'cbf' and 'plus'
+     - rgba(207, 46, 79, 255) for 'thirdspace'
+6.  The icon has an opaque centre
+     - use the icon for map-marker
+     - set its colour to white
+     - align this layer with the map-marker-alt layer
+7.  Add a drop shadow to the white map-marker layer
+     - raise the white layer
+     - Blur radius = 20
+     - Horizontal offset = 20
+     - Vertical offset = 20
+     - Shadow type = Outer
+     - lower the white layer
+8.  Resize the page to content
+9.  Save
+10. Export to PNG
+     - marker.png is 37x50 pixels
+
+Marker Cluster
+
+1.  Create an SVG using Inkscape
+2.  Create a circle
+4.  Set the fill colour of the circle
+     - rgba(15, 46, 56, 255)
+5.  Add a drop shadow to the circle
+     - Blur radius = 20
+     - Horizontal offset = 20
+     - Vertical offset = 20
+     - Shadow type = Outer
+8.  Resize the page to content
+9.  Save
+10. Export to PNG
+     - cluster.png is 37x37 pixels
+

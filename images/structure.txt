@@ -1,4 +1,11 @@
 Subdirectories:
-1/ for domain 'cbf'
-4/ for domain 'plus'
-6/ for domain 'thirdspace'
+
+  New structure uses the machine name of the domain:
+    general/
+    christian/
+    thirdspace/
+
+  Old structure uses the Domain Id:
+    1/ for domain 'cbf'
+    4/ for domain 'plus'
+    6/ for domain 'thirdspace'
