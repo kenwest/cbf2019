@@ -3466,7 +3466,7 @@ body.html .paragraph-image-right img,
   z-index: 1;
   background-size: cover;
   opacity: 0.64;
-  background-image: url('/sites/all/themes/cbf2019/images/6/floorplan-portrait.jpg');
+  background-image: url('/sites/all/themes/cbf2019/images/thirdspace/floorplan-portrait.jpg');
   padding-bottom: 215.05376344%;
 }
 .view-cbf2019-third-space-categories.view-display-id-block_1 .view-content:after .embed-responsive-item,
@@ -3484,7 +3484,7 @@ body.html .paragraph-image-right img,
 }
 @media (min-width: 768px) {
   .view-cbf2019-third-space-categories.view-display-id-block_1 .view-content:after {
-    background-image: url('/sites/all/themes/cbf2019/images/6/floorplan-landscape.jpg');
+    background-image: url('/sites/all/themes/cbf2019/images/thirdspace/floorplan-landscape.jpg');
     padding-bottom: 46.5%;
   }
 }

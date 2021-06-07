@@ -118,7 +118,7 @@
             <table align="left" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
               <tbody>
                 <tr>
-                  <td align="left" style="font-weight: normal; text-align: left; font-size: 14px; padding-bottom: 22px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #ffffff;" valign="top" width="100%"><a href="https://thirdspace.org.au" target="_new"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/6/brand/logo.png" style="border: 0px; display: block; width: 200px;" /></a></td>
+                  <td align="left" style="font-weight: normal; text-align: left; font-size: 14px; padding-bottom: 22px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #ffffff;" valign="top" width="100%"><a href="https://thirdspace.org.au" target="_new"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/thirdspace/brand/logo.png" style="border: 0px; display: block; width: 200px;" /></a></td>
                 </tr>
               </tbody>
             </table>
@@ -380,7 +380,7 @@
               <tbody>
                 <tr>
                   <td align="left" class="long-text links-color mobile-textcenter" style="font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #989898; text-align: left;" valign="middle">
-                  <p style="Margin: 1em 0px;"><a href="https://thirdspace.org.au" style="color: #cccccc; color: #cccccc; text-decoration: underline;"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/6/brand/logo-white.png" style="border: 0px; display: block; width: 200px;" /> </a></p>
+                  <p style="Margin: 1em 0px;"><a href="https://thirdspace.org.au" style="color: #cccccc; color: #cccccc; text-decoration: underline;"><img alt="Third Space" src="https://thirdspace.org.au/sites/all/themes/cbf2019/images/thirdspace/brand/logo-white.png" style="border: 0px; display: block; width: 200px;" /> </a></p>
                   </td>
                 </tr>
               </tbody>

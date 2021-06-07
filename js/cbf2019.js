@@ -214,13 +214,13 @@
           gmMap,
           gmMarkers,
           {
-            imagePath: '/sites/all/themes/cbf2019/images/1/map/m',
+            imagePath: '/sites/all/themes/cbf2019/images/general/map/m',
             gridSize: 20,
             maxZoom: 15,
           }
         );
         gmMarkerClusterer.setStyles([{
-          url: '/sites/all/themes/cbf2019/images/1/map/cluster.png',
+          url: '/sites/all/themes/cbf2019/images/general/map/cluster.png',
           width: 37,
           height: 37,
           textColor: 'white'
