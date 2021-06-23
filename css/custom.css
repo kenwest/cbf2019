@@ -987,6 +987,20 @@ body.html.domain-thirdspace .main-nav .give-menu-item {
 .mod-breadcrumbs .crumb a:hover {
   text-decoration: underline;
 }
+body.html .local-scroll .scroll-down {
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  bottom: 4px;
+}
+body.html .local-scroll .scroll-down-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  color: white;
+  font-size: 50px;
+  z-index: 5;
+}
 /*********
  * Alerts
  */

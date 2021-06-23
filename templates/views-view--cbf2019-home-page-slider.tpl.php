@@ -115,3 +115,9 @@
 
   </div>
 </div>
+<div class="local-scroll">
+  <a href="#scroll-home-page-slider" class="scroll-down">
+    <i class="fa fa-angle-down scroll-down-icon"></i>
+  </a>
+</div>
+<span id="scroll-home-page-slider"></span>
