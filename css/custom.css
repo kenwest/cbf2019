@@ -987,11 +987,35 @@ body.html.domain-thirdspace .main-nav .give-menu-item {
 .mod-breadcrumbs .crumb a:hover {
   text-decoration: underline;
 }
+body.html {
+  /*
+   * Override the default OWL styling so the .owl-pagination doesn't
+   * sit over the .local-scroll items.
+   */
+}
+@media only screen and (max-width: 480px) {
+  body.html .owl-pagination {
+    bottom: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body.html .owl-pagination {
+    bottom: 25px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body.html .owl-pagination {
+    bottom: 25px;
+  }
+}
+body.html .owl-pagination {
+  bottom: 25px;
+}
 body.html .local-scroll .scroll-down {
   width: 40px;
   height: 40px;
   margin-left: -20px;
-  bottom: 4px;
+  bottom: 0;
 }
 body.html .local-scroll .scroll-down-icon {
   width: 40px;
