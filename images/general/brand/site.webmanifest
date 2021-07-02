@@ -3,17 +3,17 @@
     "short_name": "",
     "icons": [
         {
-            "src": "https://citybibleforum.org/sites/all/themes/cbf2019/images/general/brand/android-chrome-192x192.png",
+            "src": "https://thirdspace.org.au/sites/all/themes/cbf2019/images/general/brand/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://citybibleforum.org/sites/all/themes/cbf2019/images/general/brand/android-chrome-512x512.png",
+            "src": "https://thirdspace.org.au/sites/all/themes/cbf2019/images/general/brand/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#1c9cd6",
+    "theme_color": "#cf2e4f",
     "background_color": "#ffffff",
     "display": "standalone"
 }
