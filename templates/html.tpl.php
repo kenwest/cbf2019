@@ -10,18 +10,18 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 
   <?php
-    $domainId = domain_get_domain()['domain_id'];
-    $primaryColour = ($domainId == 6) ? '#cf2e4f' : '#1c9cd6';
+    $domainName = domain_get_domain()['machine_name'];
+    $primaryColour = ($domainName == 'christian') ? '#1c9cd6' : '#cf2e4f';
   ?>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/favicon-16x16.png">
-  <link rel="manifest" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/site.webmanifest">
-  <link rel="mask-icon" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/cbf2019/images/<?php print $domainName; ?>/brand/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/sites/all/themes/cbf2019/images/<?php print $domainName; ?>/brand/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/sites/all/themes/cbf2019/images/<?php print $domainName; ?>/brand/favicon-16x16.png">
+  <link rel="manifest" href="/sites/all/themes/cbf2019/images/<?php print $domainName; ?>/brand/site.webmanifest">
+  <link rel="mask-icon" href="/sites/all/themes/cbf2019/images/<?php print $domainName; ?>/brand/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/sites/all/themes/cbf2019/images/<?php print $domainName; ?>/brand/favicon.ico">
   <meta name="msapplication-TileColor" content="#000000">
-  <meta name="msapplication-config" content="/sites/all/themes/cbf2019/images/<?php print $domainId; ?>/brand/browserconfig.xml">
+  <meta name="msapplication-config" content="/sites/all/themes/cbf2019/images/<?php print $domainName; ?>/brand/browserconfig.xml">
   <meta name="theme-color" content="<?php print $primaryColour; ?>">
   <meta name="apple-mobile-web-app-status-bar-style" content="<?php print $primaryColour; ?>">
 

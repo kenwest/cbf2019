@@ -54,10 +54,24 @@
             </ul>
           </li>
         <?php endif; ?>
-        <?php $domainId = domain_get_domain()['domain_id']; ?>
-        <?php if ($domainId != '6'): ?>
-          <li class="give-menu-item">
-            <a href="/donate" style="height: 75px; line-height: 75px;">Give</a>
+        <?php
+          $domainName = domain_get_domain()['machine_name'];
+          switch ($domainName) {
+            case 'christian':
+              $extraMenuClass = 'give-menu-item';
+              $extraMenuUrl = '/donate';
+              $extraMenuText = 'Give';
+              break;
+            case 'general':
+              $extraMenuClass = 'call-menu-item';
+              $extraMenuUrl = '/';
+              $extraMenuText = 'Schedule a call';
+              break;
+          }
+        ?>
+        <?php if (isset($extraMenuClass)): ?>
+          <li class="<?php print $extraMenuClass; ?>">
+            <a href="<?php print $extraMenuUrl; ?>" style="height: 75px; line-height: 75px;"><?php print $extraMenuText; ?></a>
           </li>
         <?php endif; ?>
         <?php if (isset($cart) && $cart && module_exists('commerce_cart')): ?>
