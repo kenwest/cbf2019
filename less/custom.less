@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /*
- * Formatting of the .give-menu-item Give button in the .main-nav.
+ * Formatting of the .*-menu-item buttons ('call' and 'give') in the .main-nav.
  */
 body.html {
   .main-nav {
@@ -308,24 +308,26 @@ body.html {
       margin-right: 0; // Move margin to .inner-nav .search-dropdown-list
     }
 
+    .call-menu-item,
     .give-menu-item {
       // Mobile
         padding: 0 25px; // Matches other menu items when mobile-on
       @media (min-width: @screen-lg-min) {
         padding: 0 floor(25px*@main-nav-wide-multiplier);
       }
-      background-color: @cardinal;
 
       a {
         color: white;
       }
     }
-  }
-}
 
-body.html.domain-christian .main-nav {
-  .give-menu-item {
-    background-color: @city-blue;
+    .call-menu-item {
+      background-color: @cardinal;
+    }
+
+    .give-menu-item {
+      background-color: @city-blue;
+    }
   }
 }
 

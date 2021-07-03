@@ -932,7 +932,7 @@ h6,
   text-align: center;
 }
 /*
- * Formatting of the .give-menu-item Give button in the .main-nav.
+ * Formatting of the .*-menu-item buttons ('call' and 'give') in the .main-nav.
  */
 body.html .main-nav {
   -webkit-box-shadow: none;
@@ -943,19 +943,24 @@ body.html .main-nav .full-wrapper {
   margin-left: 0;
   margin-right: 0;
 }
+body.html .main-nav .call-menu-item,
 body.html .main-nav .give-menu-item {
   padding: 0 25px;
-  background-color: #cf2e4f;
 }
 @media (min-width: 1200px) {
+  body.html .main-nav .call-menu-item,
   body.html .main-nav .give-menu-item {
     padding: 0 37px;
   }
 }
+body.html .main-nav .call-menu-item a,
 body.html .main-nav .give-menu-item a {
   color: white;
 }
-body.html.domain-christian .main-nav .give-menu-item {
+body.html .main-nav .call-menu-item {
+  background-color: #cf2e4f;
+}
+body.html .main-nav .give-menu-item {
   background-color: #1c9cd6;
 }
 .hs-line-14,
