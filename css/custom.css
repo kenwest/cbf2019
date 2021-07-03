@@ -736,12 +736,20 @@ body.html .section-text {
 body.html .bg-gray {
   background-color: #f0f2f4;
 }
-.city-blue,
+.cardinal,
 .primary-colour {
+  color: #cf2e4f;
+}
+.cardinal-background,
+.primary-colour-background {
+  background-color: #cf2e4f;
+}
+.city-blue,
+.domain-christian .primary-colour {
   color: #1c9cd6;
 }
 .city-blue-background,
-.primary-colour-background {
+.domain-christian .primary-colour-background {
   background-color: #1c9cd6;
 }
 .midnight-blue {
@@ -761,14 +769,6 @@ body.html .bg-gray {
 }
 .sea-foam-background {
   background-color: #a3c7c7;
-}
-.cardinal,
-.domain-thirdspace .primary-colour {
-  color: #cf2e4f;
-}
-.cardinal-background,
-.domain-thirdspace .primary-colour-background {
-  background-color: #cf2e4f;
 }
 /**********************************************
  * Overcome Bootstrap formatting of h1, .h1 etc
@@ -881,14 +881,16 @@ h6,
 /*************************
  * Format the Title header
  */
-.bg-dark-alfa-50,
-.domain-reaching-city .bg-dark-alfa-50.promote-main-site,
-.domain-christian .bg-dark-alfa-50.promote-main-site {
+.bg-dark-alfa-50 {
+  text-shadow: 0 0 40px #697891;
+}
+.bg-dark-alfa-50::before {
+  background: transparent;
+}
+.domain-christian .bg-dark-alfa-50 {
   text-shadow: 0 0 40px #49b0de;
 }
-.bg-dark-alfa-50::before,
-.domain-reaching-city .bg-dark-alfa-50.promote-main-site::before,
-.domain-christian .bg-dark-alfa-50.promote-main-site::before {
+.domain-christian .bg-dark-alfa-50::before {
   /*
      * When displayed over a white background, this background colour gives the theme's
      * 'City blue 80%' which is rgb(73, 176, 222)
@@ -932,13 +934,18 @@ h6,
 /*
  * Formatting of the .give-menu-item Give button in the .main-nav.
  */
+body.html .main-nav {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 body.html .main-nav .full-wrapper {
   margin-left: 0;
   margin-right: 0;
 }
 body.html .main-nav .give-menu-item {
   padding: 0 25px;
-  background-color: #1c9cd6;
+  background-color: #cf2e4f;
 }
 @media (min-width: 1200px) {
   body.html .main-nav .give-menu-item {
@@ -948,31 +955,8 @@ body.html .main-nav .give-menu-item {
 body.html .main-nav .give-menu-item a {
   color: white;
 }
-body.html.domain-thirdspace .main-nav {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-body.html.domain-thirdspace .main-nav .give-menu-item {
-  background-color: #cf2e4f;
-}
-.domain-reaching-city .bg-dark-alfa-50,
-.domain-christian .bg-dark-alfa-50 {
-  text-shadow: 0 0 40px #8793a7;
-}
-.domain-reaching-city .bg-dark-alfa-50::before,
-.domain-christian .bg-dark-alfa-50::before {
-  /*
-       * When displayed over a white background, this background colour gives the theme's
-       * 'Slate 80%' which is rgb(135, 148, 167)
-       */
-  background: rgba(107, 125, 145, 0.8);
-}
-.domain-thirdspace .bg-dark-alfa-50 {
-  text-shadow: 0 0 40px #697891;
-}
-.domain-thirdspace .bg-dark-alfa-50::before {
-  background: transparent;
+body.html.domain-christian .main-nav .give-menu-item {
+  background-color: #1c9cd6;
 }
 .hs-line-14,
 .hs-line-11 {
@@ -1375,7 +1359,7 @@ body.html .paragraph-image-right img,
 .episode-content-tab .nav-pills li.active > a:hover,
 .episode-content-tab .nav-pills li.active > a:focus {
   color: white;
-  background-color: #1c9cd6;
+  background-color: #cf2e4f;
 }
 @media (min-width: 992px) {
   .episode-content-tab .nav-pills {
@@ -1802,10 +1786,10 @@ body.html .paragraph-image-right img,
   content: ',\00a0';
   white-space: pre;
 }
-.domain-thirdspace .episode-content-tab .nav-pills li.active > a,
-.domain-thirdspace .episode-content-tab .nav-pills li.active > a:hover,
-.domain-thirdspace .episode-content-tab .nav-pills li.active > a:focus {
-  background-color: #cf2e4f;
+.domain-christian .episode-content-tab .nav-pills li.active > a,
+.domain-christian .episode-content-tab .nav-pills li.active > a:hover,
+.domain-christian .episode-content-tab .nav-pills li.active > a:focus {
+  background-color: #1c9cd6;
 }
 /******************************
  * Format the contents of views
@@ -2379,7 +2363,7 @@ body.html .paragraph-image-right img,
   line-height: 1.3em;
   text-align: center;
   margin-bottom: 0;
-  color: #1c9cd6;
+  color: #cf2e4f;
 }
 @media (min-width: 992px) {
   .office-view .views-row .views-field.view-icon {
@@ -2404,8 +2388,8 @@ body.html .paragraph-image-right img,
 .office-view .view-footer {
   clear: both;
 }
-.domain-thirdspace .office-view .views-row .views-field.view-icon {
-  color: #cf2e4f;
+.domain-christian .office-view .views-row .views-field.view-icon {
+  color: #1c9cd6;
 }
 .item-carousel-3-view .owl-wrapper-outer {
   margin-right: -15px;
@@ -4024,7 +4008,7 @@ body.html .paragraph-image-right img,
   margin-bottom: 25px;
   text-align: center;
   font-size: 18px;
-  color: #1c9cd6;
+  color: #cf2e4f;
 }
 .views-field-field-details .tablefield caption .more-link a,
 .views-field-field-details .tablefield caption .section-more {
@@ -4056,8 +4040,8 @@ body.html .paragraph-image-right img,
 .views-field-field-details .tablefield td p:last-child {
   margin-bottom: 0;
 }
-.domain-thirdspace .views-field-field-details .tablefield caption {
-  color: #cf2e4f;
+.domain-christian .views-field-field-details .tablefield caption {
+  color: #1c9cd6;
 }
 /*****************************
  * Format the content of forms
@@ -5090,7 +5074,7 @@ body.html .paragraph-image-right img,
 }
 .block-system #crm-container.crm-container .progress.payment .present {
   color: white;
-  background: #1c9cd6;
+  background: #cf2e4f;
   font-weight: 400;
 }
 .block-system #crm-container.crm-container .progress.payment .future {
@@ -5110,6 +5094,9 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-public .price-set-row .crm-price-amount-amount {
   color: #697891;
   font-weight: 400;
+}
+.domain-christian .block-system #crm-container.crm-container .progress.payment .present {
+  background: #1c9cd6;
 }
 body.html .crm-container .select2-drop {
   border-color: #c3c9d3;
