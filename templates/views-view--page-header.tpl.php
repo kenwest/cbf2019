@@ -30,12 +30,12 @@
 
 <div id="sticky-wrapper" class="sticky-wrapper" style="height: 75px;">
   <?php
-    switch ($domainId = domain_get_domain()['domain_id']){
-      case '4':
+  switch (domain_get_domain()['machine_name']){
+      case 'christian':
         $mainMenuName = 'menu-cbf-2019-plus-menu';
         break;
 
-      case '6':
+      case 'thirdspace':
         $mainMenuName = 'menu-third-space-main-menu';
         break;
 
