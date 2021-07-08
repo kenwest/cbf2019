@@ -64,7 +64,7 @@
               break;
             case 'general':
               $extraMenuClass = 'call-menu-item';
-              $extraMenuUrl = '/';
+              $extraMenuUrl = '/city/webform/bible-reading';
               $extraMenuText = 'Schedule a call';
               break;
           }
