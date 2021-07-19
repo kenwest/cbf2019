@@ -2023,6 +2023,37 @@ body.html .paragraph-image-right img,
     padding-left: 15px;
   }
 }
+.view-filters .views-exposed-form .views-exposed-widget .form-item-field-staff-groups-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
+  /*
+           * As there is an even number of Staff Groups, plus All, make the
+           * All option full-width on smaller displays (and reinstate the
+           * large screen formatting for .form-type-bef-link)
+           */
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-staff-groups-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-staff-groups-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-filters .views-exposed-form .views-exposed-widget .form-item-field-staff-groups-tid .bef-select-as-links > .form-item > .form-type-bef-link:first-child {
+    float: none;
+    width: auto;
+  }
+}
 @media (min-width: 992px) {
   .view-filters .views-exposed-form .views-exposed-widget.views-widget-filter-field_resource_type_value .bef-select-as-links > .form-item {
     text-align: justify;
