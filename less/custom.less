@@ -225,10 +225,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  */
 
 .bg-dark-alfa-50 {
-  text-shadow: 0 0 40px @slate;
+  text-shadow: 0 0 40px @midnight-blue-80;
 
   &::before {
-    background: transparent;
+    /*
+     * When displayed over a white background, this background colour gives the theme's
+     * 'Midnight blue 80%' which is rgb(63, 88, 96)
+     */
+    background: rgba(15, 46, 56, 0.8);
   }
 }
 
@@ -241,6 +245,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
      * 'City blue 80%' which is rgb(73, 176, 222)
      */
     background: rgba(28, 157, 214, 0.8);
+  }
+}
+
+.domain-thirdspace .bg-dark-alfa-50 {
+  text-shadow: 0 0 40px @slate;
+
+  &::before {
+    background: transparent;
   }
 }
 
