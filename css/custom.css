@@ -963,7 +963,7 @@ body.html .main-nav .chat-menu-item {
 body.html .main-nav .give-menu-item {
   background-color: #1c9cd6;
 }
-.domain-christian body.html .main-nav .chat-menu-item {
+body.html.domain-christian .main-nav .chat-menu-item {
   background-color: #1c9cd6;
 }
 .hs-line-14,
