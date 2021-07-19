@@ -943,24 +943,27 @@ body.html .main-nav .full-wrapper {
   margin-left: 0;
   margin-right: 0;
 }
-body.html .main-nav .call-menu-item,
+body.html .main-nav .chat-menu-item,
 body.html .main-nav .give-menu-item {
   padding: 0 25px;
 }
 @media (min-width: 1200px) {
-  body.html .main-nav .call-menu-item,
+  body.html .main-nav .chat-menu-item,
   body.html .main-nav .give-menu-item {
     padding: 0 37px;
   }
 }
-body.html .main-nav .call-menu-item a,
+body.html .main-nav .chat-menu-item a,
 body.html .main-nav .give-menu-item a {
   color: white;
 }
-body.html .main-nav .call-menu-item {
+body.html .main-nav .chat-menu-item {
   background-color: #cf2e4f;
 }
 body.html .main-nav .give-menu-item {
+  background-color: #1c9cd6;
+}
+.domain-christian body.html .main-nav .chat-menu-item {
   background-color: #1c9cd6;
 }
 .hs-line-14,
