@@ -824,7 +824,7 @@ h6,
   padding: 0;
 }
 .main-nav .inner-nav ul.clearlist ul.cbf2019-default-menu > li {
-  margin-left: 20px;
+  margin-left: 14px;
   /*
            * Set the menu text at the same level as Search bar text
            */
@@ -838,15 +838,15 @@ h6,
 }
 @media (min-width: 1200px) {
   .main-nav .inner-nav ul.clearlist ul.cbf2019-default-menu > li {
-    margin-left: 30px;
+    margin-left: 28px;
   }
 }
 .main-nav .inner-nav ul.clearlist .search-dropdown-list {
-  margin: 0 20px;
+  margin: 0 14px;
 }
 @media (min-width: 1200px) {
   .main-nav .inner-nav ul.clearlist .search-dropdown-list {
-    margin: 0 30px;
+    margin: 0 28px;
   }
 }
 .main-nav.small-height .inner-nav ul.clearlist ul.cbf2019-default-menu > li {
@@ -932,7 +932,7 @@ h6,
   text-align: center;
 }
 /*
- * Formatting of the .*-menu-item buttons ('call' and 'give') in the .main-nav.
+ * Formatting of the .*-menu-item buttons ('chat' and 'give') in the .main-nav.
  */
 body.html .main-nav {
   -webkit-box-shadow: none;
@@ -945,12 +945,12 @@ body.html .main-nav .full-wrapper {
 }
 body.html .main-nav .chat-menu-item,
 body.html .main-nav .give-menu-item {
-  padding: 0 25px;
+  padding: 0 14px;
 }
 @media (min-width: 1200px) {
   body.html .main-nav .chat-menu-item,
   body.html .main-nav .give-menu-item {
-    padding: 0 37px;
+    padding: 0 28px;
   }
 }
 body.html .main-nav .chat-menu-item a,

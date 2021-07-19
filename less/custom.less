@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /*
- * Formatting of the .*-menu-item buttons ('call' and 'give') in the .main-nav.
+ * Formatting of the .*-menu-item buttons ('chat' and 'give') in the .main-nav.
  */
 body.html {
   .main-nav {
@@ -311,9 +311,9 @@ body.html {
     .chat-menu-item,
     .give-menu-item {
       // Mobile
-        padding: 0 25px; // Matches other menu items when mobile-on
+        padding: 0 @main-nav-item-spacing; // Matches other menu items when mobile-on
       @media (min-width: @screen-lg-min) {
-        padding: 0 floor(25px*@main-nav-wide-multiplier);
+        padding: 0 @main-nav-item-spacing-wide;
       }
 
       a {
