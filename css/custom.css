@@ -2127,6 +2127,32 @@ body.html .paragraph-image-right img,
     margin-right: 33.33333333%;
   }
 }
+.view .attachment {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.view .attachment .attachment-inner {
+  float: left;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .view .attachment .attachment-inner {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .view .attachment .attachment-inner {
+    margin-left: 16.66666667%;
+  }
+}
 .view-content .views-field {
   /*
      * Generic field formatting
