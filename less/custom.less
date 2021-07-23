@@ -108,7 +108,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  */
 .main-nav {
   .nav-logo-wrap {
-    margin-left: @grid-gutter-width;
+    /*
+     * Allow more room for the menu when the screen is 1025-1200px wide
+     * At 1024px and below, Rhythm hides the menu
+     */
+    // Mobile
+      margin-left: @grid-gutter-width;
+    @media (min-width: 1025px) {
+      margin-left: @grid-gutter-half-width;
+    }
+    @media (min-width: @screen-lg-min) {
+      margin-left: @grid-gutter-width;
+    }
+
     margin-right: 0;
 
     .logo {
@@ -151,6 +163,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
             margin-left: @main-nav-item-spacing;
           @media (min-width: @screen-lg-min) {
             margin-left: @main-nav-item-spacing-wide;
+          }
+
+          &:first-child {
+            margin-left: 0;
           }
 
           /*
