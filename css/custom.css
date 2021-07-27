@@ -736,6 +736,10 @@ body.html .section-text {
 body.html .bg-gray {
   background-color: #f0f2f4;
 }
+body.html .bold-is-bold b,
+body.html .bold-is-bold strong {
+  font-weight: bold;
+}
 .cardinal,
 .primary-colour {
   color: #cf2e4f;
