@@ -52,13 +52,30 @@ body.html {
   }
 }
 
-.city-blue,
+body.html .bold-is-bold {
+  b,
+  strong {
+    font-weight: bold;
+  }
+}
+
+.cardinal,
 .primary-colour {
+  color: @cardinal;
+}
+
+.cardinal-background,
+.primary-colour-background {
+  background-color: @cardinal;
+}
+
+.city-blue,
+.domain-christian .primary-colour {
   color: @city-blue;
 }
 
 .city-blue-background,
-.primary-colour-background {
+.domain-christian .primary-colour-background {
   background-color: @city-blue;
 }
 
@@ -86,16 +103,6 @@ body.html {
   background-color: @sea-foam;
 }
 
-.cardinal,
-.domain-thirdspace .primary-colour {
-  color: @cardinal;
-}
-
-.cardinal-background,
-.domain-thirdspace .primary-colour-background {
-  background-color: @cardinal;
-}
-
 /**********************************************
  * Overcome Bootstrap formatting of h1, .h1 etc
  */
@@ -108,7 +115,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  */
 .main-nav {
   .nav-logo-wrap {
-    margin-left: @grid-gutter-width;
+    /*
+     * Allow more room for the menu when the screen is 1025-1200px wide
+     * At 1024px and below, Rhythm hides the menu
+     */
+    // Mobile
+      margin-left: @grid-gutter-width;
+    @media (min-width: 1025px) {
+      margin-left: @grid-gutter-half-width;
+    }
+    @media (min-width: @screen-lg-min) {
+      margin-left: @grid-gutter-width;
+    }
+
     margin-right: 0;
 
     .logo {
@@ -151,6 +170,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
             margin-left: @main-nav-item-spacing;
           @media (min-width: @screen-lg-min) {
             margin-left: @main-nav-item-spacing-wide;
+          }
+
+          &:first-child {
+            margin-left: 0;
           }
 
           /*
@@ -223,9 +246,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /*************************
  * Format the Title header
  */
-.bg-dark-alfa-50,
-.domain-reaching-city .bg-dark-alfa-50.promote-main-site,
-.domain-christian .bg-dark-alfa-50.promote-main-site {
+
+.bg-dark-alfa-50 {
+  text-shadow: 0 0 40px @midnight-blue-80;
+
+  &::before {
+    /*
+     * When displayed over a white background, this background colour gives the theme's
+     * 'Midnight blue 80%' which is rgb(63, 88, 96)
+     */
+    background: rgba(15, 46, 56, 0.8);
+  }
+}
+
+.domain-christian .bg-dark-alfa-50 {
   text-shadow: 0 0 40px @city-blue-80;
 
   &::before {
@@ -234,6 +268,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
      * 'City blue 80%' which is rgb(73, 176, 222)
      */
     background: rgba(28, 157, 214, 0.8);
+  }
+}
+
+.domain-thirdspace .bg-dark-alfa-50 {
+  text-shadow: 0 0 40px @slate;
+
+  &::before {
+    background: transparent;
   }
 }
 
@@ -287,64 +329,45 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /*
- * Formatting of the .give-menu-item Give button in the .main-nav.
+ * Formatting of the .*-menu-item buttons ('chat' and 'give') in the .main-nav.
  */
 body.html {
   .main-nav {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
     .full-wrapper {
                        // Place Give item at far right
       margin-left: 0;  // Move margin to .nav-logo-wrap
       margin-right: 0; // Move margin to .inner-nav .search-dropdown-list
     }
 
+    .chat-menu-item,
     .give-menu-item {
       // Mobile
-        padding: 0 25px; // Matches other menu items when mobile-on
+        padding: 0 @main-nav-item-spacing; // Matches other menu items when mobile-on
       @media (min-width: @screen-lg-min) {
-        padding: 0 floor(25px*@main-nav-wide-multiplier);
+        padding: 0 @main-nav-item-spacing-wide;
       }
-      background-color: @city-blue;
 
       a {
         color: white;
       }
     }
-  }
-}
 
-body.html.domain-thirdspace .main-nav {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+    .chat-menu-item {
+      background-color: @cardinal;
+    }
 
-  .give-menu-item {
-    background-color: @cardinal;
-  }
-}
-
-.domain-reaching-city,
-.domain-christian {
-  .bg-dark-alfa-50 {
-    text-shadow: 0 0 40px @slate-80;
-
-    &::before {
-      /*
-       * When displayed over a white background, this background colour gives the theme's
-       * 'Slate 80%' which is rgb(135, 148, 167)
-       */
-      background: rgba(107, 125, 145, 0.8);
+    .give-menu-item {
+      background-color: @city-blue;
     }
   }
 }
 
-.domain-thirdspace {
-  .bg-dark-alfa-50 {
-    text-shadow: 0 0 40px @slate;
-
-    &::before {
-      background: transparent;
-    }
-  }
+body.html.domain-christian .main-nav .chat-menu-item {
+  background-color: @city-blue;
 }
 
 .hs-line-14,
@@ -756,7 +779,7 @@ body.html,
       > a:hover,
       > a:focus {
         color: white;
-        background-color: @city-blue;
+        background-color: @cardinal;
       }
     }
 
@@ -1075,12 +1098,12 @@ body.html,
   }
 }
 
-.domain-thirdspace .episode-content-tab .nav-pills {
+.domain-christian .episode-content-tab .nav-pills {
   li.active {
     > a,
     > a:hover,
     > a:focus {
-      background-color: @cardinal;
+      background-color: @city-blue;
     }
   }
 }
@@ -1215,14 +1238,11 @@ body.html,
     .form-item-taxonomy-vocabulary-1-tid,
     .form-item-field-office-tid,
     .form-item-field-highlight-location-tid,
-    .form-item-field-networks-visibility-tid,
-    .form-item-field-topic-tid,
-    .form-item-term-node-tid-depth {
+    .form-item-field-networks-visibility-tid {
       .bef-select-as-links > .form-item > .form-type-bef-link {
         /*
          * On large displays, centre the Ministry Centres and visibility
-         * and Topic filters by 'prefixing' 2 columns to the grid
-         * (so 2 + 1 (All) + 7 (Cities) + 2 = 12)
+         * filters by 'prefixing' and 'suffixing' 2 columns to the grid
          */
 
         &:first-child {
@@ -1232,6 +1252,26 @@ body.html,
         &:last-child {
           @media (min-width: @screen-lg-min) {
             margin-right: 100%*(2/12);
+          }
+        }
+      }
+    }
+
+    .form-item-term-node-tid-depth,
+    .form-item-field-topic-tid {
+      .bef-select-as-links > .form-item > .form-type-bef-link {
+        /*
+         * On large displays, centre the Topic filters by 'prefixing' and
+         * 'suffixing' a single column to the grid
+         */
+
+        &:first-child {
+          .make-lg-column-offset(1);
+        }
+
+        &:last-child {
+          @media (min-width: @screen-lg-min) {
+            margin-right: 100%*(1/12);
           }
         }
       }
@@ -1336,6 +1376,20 @@ body.html,
         }
       }
     }
+  }
+}
+
+.view .attachment {
+  .make-row();
+
+  .attachment-inner {
+    .make-xs-column(10);
+    .make-xs-column-offset(1);
+    .make-lg-column(8);
+    .make-lg-column-offset(2);
+
+    margin-bottom: 2*@line-height-computed;
+    text-align: center;
   }
 }
 
@@ -1614,7 +1668,7 @@ body.html,
         line-height: 1.3em;
         text-align: center;
         margin-bottom: 0;
-        color: @city-blue;
+        color: @cardinal;
       }
 
       .views-label {
@@ -1636,8 +1690,8 @@ body.html,
   }
 }
 
-.domain-thirdspace .office-view .views-row .views-field.view-icon {
-  color: @cardinal;
+.domain-christian .office-view .views-row .views-field.view-icon {
+  color: @city-blue;
 }
 
 .item-carousel-3-view {
@@ -2198,13 +2252,16 @@ body.html,
           .make-480-column(12);
           .make-sm-column(6);
           .make-md-column(6);
-          .make-lg-column(4);
-          .make-lg-column-offset(2);
+          .make-lg-column(5);
+          .make-lg-column-offset(1);
         }
 
         &.views-widget-filter-field_resource_type_value,
         &.views-submit-button {
           .make-sm-column(3);
+        }
+
+        &.views-submit-button {
           .make-lg-column(2);
         }
       }
@@ -2833,7 +2890,7 @@ body.html,
       margin-bottom: @line-height-computed; // .view-header-and-more
       text-align: center;
       font-size: 18px;
-      color: @city-blue;
+      color: @cardinal;
     }
 
     tr {
@@ -2857,8 +2914,8 @@ body.html,
   }
 }
 
-.domain-thirdspace .views-field-field-details .tablefield caption {
-  color: @cardinal;
+.domain-christian .views-field-field-details .tablefield caption {
+  color: @city-blue;
 }
 
 /*****************************
@@ -3659,7 +3716,7 @@ body.html,
 
       .present {
         color: white;
-        background: @city-blue;
+        background: @cardinal;
         font-weight: 400;
       }
 
@@ -3689,6 +3746,10 @@ body.html,
       font-weight: 400;
     }
   }
+}
+
+.domain-christian .block-system #crm-container.crm-container .progress.payment .present {
+  background: @city-blue;
 }
 
 body.html {

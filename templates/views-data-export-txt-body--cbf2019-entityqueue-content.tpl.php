@@ -111,17 +111,17 @@
   foreach ($themed_rows as $row => $article) {
     if ($promotedRow) {
       $currentDomain = domain_get_domain();
-      $currentDomainId = $currentDomain['domain_id'];
+      $currentDomainName = $currentDomain['machine_name'];
       $currentDomainPath = $currentDomain['path'];
-      $currentDomainName = $currentDomain['sitename'];
+      $currentDomainSite = $currentDomain['sitename'];
 
-      switch ($currentDomainId) {
-        case '6':
-          $primaryColour = '#cf2e4f';
+      switch ($currentDomainName) {
+        case 'christian':
+          $primaryColour = '#1c9cd6';
           break;
         
         default:
-          $primaryColour = '#1c9cd6';
+          $primaryColour = '#cf2e4f';
           break;
       }
 
@@ -147,7 +147,7 @@
                 <tr>
                   <td align="left" style="font-weight: normal; text-align: left; font-size: 14px; padding-bottom: 22px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #ffffff;" valign="top" width="100%">
                     <a href="<?php print $currentDomainPath; ?>" target="_new">
-                      <img src="<?php print $currentDomainPath; ?>sites/all/themes/cbf2019/images/<?php print $currentDomainId; ?>/brand/logo.png" style="border: 0px; display: block; width: 200px;" />
+                      <img src="<?php print $currentDomainPath; ?>sites/all/themes/cbf2019/images/<?php print $currentDomainName; ?>/brand/logo.png" style="border: 0px; display: block; width: 200px;" />
                     </a>
                   </td>
                 </tr>
@@ -389,7 +389,7 @@
               <tbody>
                 <tr>
                   <td align="left" class="long-text links-color mobile-textcenter" style="font-size: 14px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #989898; text-align: left;" valign="middle">
-                  <p style="Margin: 1em 0px;"><a href="<?php print $currentDomainPath; ?>" style="color: #cccccc; color: #cccccc; text-decoration: underline;"><img alt="<?php print $currentDomainName; ?>" src="<?php print $currentDomainPath; ?>sites/all/themes/cbf2019/images/<?php print $currentDomainId; ?>/brand/logo-white.png" style="border: 0px; display: block; width: 200px;" /> </a></p>
+                  <p style="Margin: 1em 0px;"><a href="<?php print $currentDomainPath; ?>" style="color: #cccccc; color: #cccccc; text-decoration: underline;"><img alt="<?php print $currentDomainSite; ?>" src="<?php print $currentDomainPath; ?>sites/all/themes/cbf2019/images/<?php print $currentDomainName; ?>/brand/logo-white.png" style="border: 0px; display: block; width: 200px;" /> </a></p>
                   </td>
                 </tr>
               </tbody>
@@ -403,7 +403,7 @@
             <table align="right" border="0" cellpadding="0" cellspacing="9" class="vb-content" style="border-collapse: separate; width: 100%;" width="276">
               <tbody>
                 <tr>
-                  <td align="right" class="links-color socialLinks mobile-textcenter" style="font-size: 6px;" valign="middle"><span>&ensp;</span> <a href="<?php print $currentDomainPath; ?>domain/<?php print $currentDomainId; ?>/facebook" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Facebook" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/facebook_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="https://www.linkedin.com/company/city-bible-forum" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Linkedin" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/linkedin_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="<?php print $currentDomainPath; ?>domain/<?php print $currentDomainId; ?>/youtube" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Youtube" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/youtube_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a></td>
+                  <td align="right" class="links-color socialLinks mobile-textcenter" style="font-size: 6px;" valign="middle"><span>&ensp;</span> <a href="<?php print $currentDomainPath; ?>domain/<?php print $currentDomainName; ?>/facebook" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Facebook" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/facebook_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="https://www.linkedin.com/company/city-bible-forum" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Linkedin" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/linkedin_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a> <span>&ensp;</span> <a href="<?php print $currentDomainPath; ?>domain/<?php print $currentDomainName; ?>/youtube" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;" target="_new"> <img alt="Youtube" border="0" class="socialIcon" src="https://citybibleforum.org/sites/default/files/civicrm/extensions/uk.co.vedaconsulting.mosaico/packages/mosaico/templates/versafix-1/img/social_def/youtube_ok.png" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; margin-top: 22px; margin-left: 10px;" /> </a></td>
                 </tr>
               </tbody>
             </table>

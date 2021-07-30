@@ -11,12 +11,9 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="map-marker-alt--solid.svg"
+   sodipodi:docname="marker.svg"
    width="460.80002"
-   height="614.40015"
-   inkscape:export-filename="/var/www/test/sites/all/themes/cbf2019/images/general/map/marker.png"
-   inkscape:export-xdpi="7.3200002"
-   inkscape:export-ydpi="7.3200002">
+   height="614.40015">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -78,7 +75,7 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="0.4609375"
-     inkscape:cx="-307.6339"
+     inkscape:cx="230.4"
      inkscape:cy="307.20013"
      inkscape:window-x="1407"
      inkscape:window-y="24"
@@ -91,6 +88,6 @@
   <path
      d="M 210.668,552.87001 C 65.370002,342.23101 38.400002,320.61301 38.400002,243.20001 38.400002,137.16101 124.361,51.200012 230.4,51.200012 c 106.039,0 192,85.960998 192,191.999998 0,77.413 -26.97,99.031 -172.268,309.67 -9.535,13.774 -29.93,13.773 -39.464,0 z m 19.732,-229.67 c 44.183,0 80,-35.817 80,-80 0,-44.183 -35.817,-80 -80,-80 -44.183,0 -80,35.817 -80,80 0,44.183 35.817,80 80,80 z"
      id="path4"
-     style="fill:#cf2e4f;fill-opacity:1;filter:url(#filter4138)"
+     style="fill:#1c9cd6;fill-opacity:1;filter:url(#filter4138)"
      inkscape:connector-curvature="0" />
 </svg>
