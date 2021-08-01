@@ -92,12 +92,12 @@
       </tr>
     </tbody>
   </table>
-  <table cellspacing="0" style="border-collapse:collapse;border:none;width:100%;max-width:520px;" width="520">
+  <table cellspacing="0" style="border-collapse:collapse;border:none;width:100%;max-width:420px;" width="420">
     <tbody>
       <tr>
         <td colspan="2" style="border-color:white ;border-style:solid;border-width:1px;padding:5pt;vertical-align:top;width:100%;">
           <a href="https://<?php print $domainUrl; ?>/domain/<?php print $audience; ?>/promotional/link">
-            <img src="https://<?php print $domainUrl; ?>/domain/<?php print $audience; ?>/promotional/image" style="border:none;width:100%;height:auto;max-width:500px;" width="500">
+            <img src="https://<?php print $domainUrl; ?>/domain/<?php print $audience; ?>/promotional/image" style="border:none;width:100%;height:auto;max-width:400px;" width="400">
           </a>
         </td>
       </tr>
