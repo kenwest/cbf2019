@@ -2,11 +2,11 @@ Marker
 
 1.  Start with the SVG for icon map-marker-alt from the FontAwesome Pro desktop version
 2.  This icons's dimensions will be in the ratio of 3:4.
-3.  There will be 3 versions - 'christian', 'general' and classic 'thirdspace'
+3.  There will be 3 versions - 'christian', 'general' and legacy 'thirdspace'
 4.  Edit the SVG using Inkscape
 5.  Set the fill colour of the icon
      - rgba(28, 156, 214, 255) for 'christian'
-     - rgba(207, 46, 79, 255) for 'general' and classic 'thirdspace'
+     - rgba(207, 46, 79, 255) for 'general' and legacy 'thirdspace'
 6.  The icon has an opaque centre
      - use the icon for map-marker
      - set its colour to white
