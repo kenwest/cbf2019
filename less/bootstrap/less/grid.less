@@ -66,6 +66,17 @@
 .make-grid(xs);
 
 
+/**********************************************
+ * cbf2019: Add an extra Bootstrap grid at 480px
+ *
+ * Need to modify the Bootstrap file because the
+ * grids need to be declared in the right order
+ */
+@media (min-width: @screen-xs-min) {
+  .make-grid(480);
+}
+
+
 // Small grid
 //
 // Columns, offsets, pushes, and pulls for the small device range, from phones
