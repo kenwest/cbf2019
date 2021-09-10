@@ -3229,17 +3229,6 @@ body.html,
     .crm-block {
       .make-row();
 
-      .help,
-      .messages {
-        /*
-         * Simulate .col-xs-12 with a margin rather than padding, and clear
-         * rather than float so side borders align with other content.
-         */
-        clear: both;
-        margin-left: @grid-gutter-half-width;
-        margin-right: @grid-gutter-half-width;
-      }
-
       fieldset > legend,
       .header-dark,
       .crm-profile-view-title,
@@ -3248,6 +3237,33 @@ body.html,
       .action-link,
       .event_summary-section {
         .make-xs-column(12);
+      }
+
+      .help,
+      .messages,
+      .alert {
+        /*
+         * Can't use padding because this element has a border.
+         * Simulate .col-xs-12 with a margin rather than padding, and clear
+         * rather than float so side borders align with other content.
+         */
+        clear: both;
+        margin-left: @grid-gutter-half-width;
+        margin-right: @grid-gutter-half-width;
+      }
+
+      .crm-section {
+        &.help,
+        &.messages,
+        &.alert {
+          > p {
+            /*
+             * Avoid doubling the column padding.
+             */
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
       }
 
       .crm-group > table {
@@ -3320,6 +3336,14 @@ body.html,
   #crm-container.crm-container {
     #crm-main-content-wrapper {
       line-height: @line-height-computed !important;
+
+      .crm-form-block {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: inherit;
+        background-color: white;
+        color: inherit;
+      }
 
       .crm-section {
         margin-bottom: @line-height-computed !important; // Override 0
@@ -3474,6 +3498,10 @@ body.html,
         font-weight: 400;
       }
 
+      .crm-section.crm-socialnetwork {
+        display: inline-block;
+      }
+
       .crm-section.helprow-post {
         margin-top: 5px - @line-height-computed; // 5px space below previous .crm-section
 
@@ -3524,7 +3552,8 @@ body.html,
       }
 
       .help,
-      .messages {
+      .messages,
+      .alert {
         margin-bottom: @line-height-computed;
         border: 1px solid rgba(0, 0, 0, 0.1);
         font-size: @font-size-base;
@@ -3542,6 +3571,12 @@ body.html,
             margin: 0;
           }
         }
+      }
+
+      .alert i {    // Undo body.html .alert i in this case
+        float: initial;
+        font-size: initial;
+        margin: 0;
       }
 
       table {
@@ -3685,6 +3720,44 @@ body.html,
               color: white;
               background-color: black;
             }
+          }
+        }
+
+        button.crm-button {
+          i {
+            display: initial;
+          }
+
+          display: inline-block;
+          box-sizing: border-box;
+          margin: 0;
+          border: 2px solid white;
+          border-left-width: @grid-gutter-half-width;
+          border-right-width: @grid-gutter-half-width;
+          border-radius: 2px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: initial;
+          padding-right: initial;
+          color: white;
+          background-color: rgba(34, 34, 34, 0.9);
+          background-image: none;
+          font-size: 12px;
+          text-align: center;
+          text-shadow: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          line-height: 1.42857143;
+
+          -webkit-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+          -moz-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+          -o-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+          -ms-transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+          transition: all 0.2s cubic-bezier(0.000,0.000,0.580,1.000);
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.85);
+            background-color: rgba(0, 0, 0, 0.7);
           }
         }
       }
