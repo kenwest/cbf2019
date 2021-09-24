@@ -57,13 +57,13 @@
         <?php
           $domainName = domain_get_domain()['machine_name'];
           switch ($domainName) {
+            case 'christian':
             case 'not-used':
               $extraMenuClass = 'give-menu-item';
               $extraMenuUrl = '/donate';
               $extraMenuText = 'Give';
               break;
             case 'general':
-            case 'christian':
               $extraMenuClass = 'chat-menu-item';
               $extraMenuUrl = "/domain/$domainName/chat";
               $extraMenuText = 'Schedule a chat';
