@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
        */
       object[type="image/svg+xml"],
       img {
-        width: 140px;
+        width: 175px;
         max-height: 45px;
       }
     }
@@ -345,22 +345,23 @@ body.html {
 
     .chat-menu-item,
     .give-menu-item {
-      // Mobile
-        padding: 0 @main-nav-item-spacing; // Matches other menu items when mobile-on
-      @media (min-width: @screen-lg-min) {
-        padding: 0 @main-nav-item-spacing-wide;
-      }
-
       a {
         color: white;
       }
     }
 
     .chat-menu-item {
+      // Mobile
+        padding: 0 @main-nav-item-spacing; // Matches other menu items when mobile-on
+      @media (min-width: @screen-lg-min) {
+        padding: 0 @main-nav-item-spacing-wide;
+      }
+
       background-color: @cardinal;
     }
 
     .give-menu-item {
+      padding: 0 @main-nav-item-spacing-wide;
       background-color: @city-blue;
     }
   }

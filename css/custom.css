@@ -992,7 +992,7 @@ h6,
 }
 .main-nav .nav-logo-wrap .logo object[type="image/svg+xml"],
 .main-nav .nav-logo-wrap .logo img {
-  width: 140px;
+  width: 175px;
   max-height: 45px;
 }
 .main-nav .inner-nav ul.clearlist > li {
@@ -1138,24 +1138,21 @@ body.html .main-nav .full-wrapper {
   margin-left: 0;
   margin-right: 0;
 }
-body.html .main-nav .chat-menu-item,
-body.html .main-nav .give-menu-item {
-  padding: 0 14px;
-}
-@media (min-width: 1200px) {
-  body.html .main-nav .chat-menu-item,
-  body.html .main-nav .give-menu-item {
-    padding: 0 28px;
-  }
-}
 body.html .main-nav .chat-menu-item a,
 body.html .main-nav .give-menu-item a {
   color: white;
 }
 body.html .main-nav .chat-menu-item {
+  padding: 0 14px;
   background-color: #cf2e4f;
 }
+@media (min-width: 1200px) {
+  body.html .main-nav .chat-menu-item {
+    padding: 0 28px;
+  }
+}
 body.html .main-nav .give-menu-item {
+  padding: 0 28px;
   background-color: #1c9cd6;
 }
 body.html.domain-christian .main-nav .chat-menu-item {
