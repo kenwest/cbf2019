@@ -5436,6 +5436,10 @@ body.html .paragraph-image-right img,
   color: #697891;
   font-weight: 400;
 }
+.block-system #crm-container.crm-public .price-set-row span.crm-hover-button,
+.block-system #crm-container.crm-public .price-set-row a.crm-hover-button {
+  position: absolute;
+}
 .domain-christian .block-system #crm-container.crm-container .progress.payment .present {
   background: #1c9cd6;
 }
