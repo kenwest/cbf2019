@@ -5428,16 +5428,16 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-container #civicrm-footer {
   border-width: 0;
 }
-.block-system #crm-container.crm-public .price-set-row .crm-price-amount-label {
+.block-system #crm-container.crm-container.crm-public .price-set-row .crm-price-amount-label {
   color: #697891;
   font-weight: 500;
 }
-.block-system #crm-container.crm-public .price-set-row .crm-price-amount-amount {
+.block-system #crm-container.crm-container.crm-public .price-set-row .crm-price-amount-amount {
   color: #697891;
   font-weight: 400;
 }
-.block-system #crm-container.crm-public .price-set-row span.crm-hover-button,
-.block-system #crm-container.crm-public .price-set-row a.crm-hover-button {
+.block-system #crm-container.crm-container.crm-public span.crm-hover-button,
+.block-system #crm-container.crm-container.crm-public a.crm-hover-button {
   position: absolute;
 }
 .domain-christian .block-system #crm-container.crm-container .progress.payment .present {
