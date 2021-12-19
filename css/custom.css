@@ -1372,18 +1372,417 @@ body.html .paragraph-image-right img,
   padding: 0 0 0 15px !important;
 }
 /******************************
- * Format blog-specific content
+ * Format course-specific and blog-specific content
  */
+.course-specific-content .h3,
 .blog-specific-content .h3 {
   text-transform: uppercase;
 }
+.course-specific-content .h3,
 .blog-specific-content .h3,
+.course-specific-content .field,
 .blog-specific-content .field {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
 }
+.course-specific-content .embed-responsive-16by9,
 .blog-specific-content .embed-responsive-16by9 {
   background: #c3c9d3;
+}
+.course-specific-content .paragraphs-item-with-speaker,
+.blog-specific-content .paragraphs-item-with-speaker {
+  display: inline;
+}
+.course-specific-content .paragraphs-item-with-speaker .content,
+.blog-specific-content .paragraphs-item-with-speaker .content {
+  display: inline;
+  font-size: 0;
+}
+.course-specific-content .paragraphs-item-with-speaker .content .field,
+.blog-specific-content .paragraphs-item-with-speaker .content .field {
+  display: inline;
+  font-size: initial;
+}
+.course-specific-content .field-name-field-course-options .field-items,
+.blog-specific-content .field-name-field-course-options .field-items {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.course-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
+.blog-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
+.course-specific-content .field-name-field-course-options .field-items .field-item.trial-license,
+.blog-specific-content .field-name-field-course-options .field-items .field-item.trial-license {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .course-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
+  .blog-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
+  .course-specific-content .field-name-field-course-options .field-items .field-item.trial-license,
+  .blog-specific-content .field-name-field-course-options .field-items .field-item.trial-license {
+    float: left;
+    width: 50%;
+  }
+}
+.course-specific-content .field-name-field-course-options .field-items .field-item.group-license,
+.blog-specific-content .field-name-field-course-options .field-items .field-item.group-license {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .course-specific-content .field-name-field-course-options .field-items .field-item.group-license,
+  .blog-specific-content .field-name-field-course-options .field-items .field-item.group-license {
+    float: left;
+    width: 100%;
+  }
+}
+.course-specific-content .webform-client-form {
+  margin-top: 100px;
+}
+.course-specific-content .webform-client-form .webform-progressbar {
+  display: none;
+}
+.course-specific-content .webform-client-form .form-actions {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .course-specific-content .webform-client-form .form-actions {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .course-specific-content .webform-client-form .form-actions {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .course-specific-content .webform-client-form .form-actions {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .course-specific-content .webform-client-form .form-actions {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .course-specific-content .webform-client-form .form-actions {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .course-specific-content .webform-client-form .form-actions {
+    float: left;
+    width: 100%;
+  }
+}
+.page-node-done .webform-progressbar,
+.node-course .content .webform-client-form .webform-progressbar {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 100px;
+}
+@media (min-width: 992px) {
+  .page-node-done .webform-progressbar,
+  .node-course .content .webform-client-form .webform-progressbar {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done .webform-progressbar,
+  .node-course .content .webform-client-form .webform-progressbar {
+    margin-left: 16.66666667%;
+  }
+}
+.page-node-done .webform-progressbar .webform-progressbar-outer,
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-outer {
+  border: 0;
+}
+.page-node-done .webform-progressbar .webform-progressbar-inner,
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-inner {
+  display: none;
+}
+.page-node-done .webform-progressbar .webform-progressbar-page,
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page {
+  width: 25%;
+  height: 50px;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  font-weight: 400;
+  /*
+       * The pages on the form are ...
+       *  - Start - display = none
+       *  - My details
+       *  - Payment
+       *  - Preview
+       *  - Complete
+       */
+}
+.page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(1),
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(1) {
+  display: none;
+}
+.page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(2),
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(2) {
+  left: 0% !important;
+}
+.page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(3),
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(3) {
+  left: 25% !important;
+}
+.page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(4),
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(4) {
+  left: 50% !important;
+}
+.page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(5),
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(5) {
+  left: 75% !important;
+}
+.page-node-done .webform-progressbar .webform-progressbar-page.completed,
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page.completed {
+  background-color: initial;
+}
+.page-node-done .webform-progressbar .webform-progressbar-page.current,
+.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page.current {
+  color: white;
+  background-color: #cf2e4f;
+}
+.page-node-done .messages,
+.node-course .content .webform-client-form .messages {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .page-node-done .messages,
+  .node-course .content .webform-client-form .messages {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done .messages,
+  .node-course .content .webform-client-form .messages {
+    margin-left: 16.66666667%;
+  }
+}
+.page-node-done .webform-component-fieldset,
+.node-course .content .webform-client-form .webform-component-fieldset {
+  margin-bottom: 100px;
+}
+.page-node-done .webform-component-fieldset .form-control[disabled],
+.node-course .content .webform-client-form .webform-component-fieldset .form-control[disabled],
+.page-node-done .webform-component-fieldset .form-control[readonly],
+.node-course .content .webform-client-form .webform-component-fieldset .form-control[readonly],
+.page-node-done .webform-component-fieldset fieldset[disabled] .form-control,
+.node-course .content .webform-client-form .webform-component-fieldset fieldset[disabled] .form-control {
+  background-color: #e1e4e9;
+}
+.page-node-done #wf-crm-billing-items,
+.node-course .content .webform-client-form #wf-crm-billing-items {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .page-node-done #wf-crm-billing-items,
+  .node-course .content .webform-client-form #wf-crm-billing-items {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done #wf-crm-billing-items,
+  .node-course .content .webform-client-form #wf-crm-billing-items {
+    margin-left: 33.33333333%;
+  }
+}
+.page-node-done #wf-crm-billing-items caption,
+.node-course .content .webform-client-form #wf-crm-billing-items caption {
+  display: none;
+}
+.page-node-done #wf-crm-billing-items #wf-crm-billing-total,
+.node-course .content .webform-client-form #wf-crm-billing-items #wf-crm-billing-total {
+  font-weight: 400;
+}
+.page-node-done .crm-container.crm-public fieldset,
+.node-course .content .webform-client-form .crm-container.crm-public fieldset {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 100px;
+}
+@media (min-width: 992px) {
+  .page-node-done .crm-container.crm-public fieldset,
+  .node-course .content .webform-client-form .crm-container.crm-public fieldset {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done .crm-container.crm-public fieldset,
+  .node-course .content .webform-client-form .crm-container.crm-public fieldset {
+    margin-left: 33.33333333%;
+  }
+}
+.page-node-done .crm-container.crm-public fieldset legend,
+.node-course .content .webform-client-form .crm-container.crm-public fieldset legend {
+  font-weight: 400;
+}
+.page-node-done .form-actions,
+.node-course .content .webform-client-form .form-actions {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .page-node-done .form-actions,
+  .node-course .content .webform-client-form .form-actions {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .page-node-done .form-actions,
+  .node-course .content .webform-client-form .form-actions {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .page-node-done .form-actions,
+  .node-course .content .webform-client-form .form-actions {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .page-node-done .form-actions,
+  .node-course .content .webform-client-form .form-actions {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done .form-actions,
+  .node-course .content .webform-client-form .form-actions {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done .form-actions,
+  .node-course .content .webform-client-form .form-actions {
+    margin-left: 16.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-node-done .form-actions,
+  .node-course .content .webform-client-form .form-actions {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.page-node-done .form-actions .form-submit,
+.node-course .content .webform-client-form .form-actions .form-submit {
+  width: 50%;
+  border: 0 solid white;
+}
+.page-node-done .form-actions .webform-previous,
+.node-course .content .webform-client-form .form-actions .webform-previous {
+  color: #697891;
+  background-color: #e1e4e9;
+  border-right-width: 15px;
+}
+.page-node-done .form-actions .webform-next,
+.node-course .content .webform-client-form .form-actions .webform-next {
+  border-left-width: 15px;
+}
+.page-node-done .form-actions .btn + .btn,
+.node-course .content .webform-client-form .form-actions .btn + .btn {
+  margin-left: 0;
+}
+.domain-christian.page-node-done .webform-progressbar .webform-progressbar-page.current,
+.domain-christian .node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page.current {
+  background-color: #1c9cd6;
+}
+.page-node-done .webform-confirmation,
+.page-node-done .links {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 100px;
+}
+@media (min-width: 480px) {
+  .page-node-done .webform-confirmation,
+  .page-node-done .links {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .page-node-done .webform-confirmation,
+  .page-node-done .links {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 768px) {
+  .page-node-done .webform-confirmation,
+  .page-node-done .links {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .page-node-done .webform-confirmation,
+  .page-node-done .links {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done .webform-confirmation,
+  .page-node-done .links {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .page-node-done .webform-confirmation,
+  .page-node-done .links {
+    margin-left: 16.66666667%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-node-done .webform-confirmation,
+  .page-node-done .links {
+    float: left;
+    width: 66.66666667%;
+  }
 }
 /*********************************
  * Format the .episode-content-tab
