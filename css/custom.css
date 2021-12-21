@@ -1519,7 +1519,7 @@ body.html .paragraph-image-right img,
 }
 .page-node-done .webform-progressbar .webform-progressbar-page,
 .node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page {
-  width: 25%;
+  width: 33.33333333%;
   height: 50px;
   border: 0;
   border-radius: 0;
@@ -1530,7 +1530,6 @@ body.html .paragraph-image-right img,
        *  - Start - display = none
        *  - My details
        *  - Payment
-       *  - Preview
        *  - Complete
        */
 }
@@ -1544,19 +1543,15 @@ body.html .paragraph-image-right img,
 }
 .page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(3),
 .node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(3) {
-  left: 25% !important;
+  left: 33.33333333% !important;
 }
 .page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(4),
 .node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(4) {
-  left: 50% !important;
-}
-.page-node-done .webform-progressbar .webform-progressbar-page:nth-of-type(5),
-.node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page:nth-of-type(5) {
-  left: 75% !important;
+  left: 66.66666667% !important;
 }
 .page-node-done .webform-progressbar .webform-progressbar-page.completed,
 .node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page.completed {
-  background-color: initial;
+  background-color: #e1e4e9;
 }
 .page-node-done .webform-progressbar .webform-progressbar-page.current,
 .node-course .content .webform-client-form .webform-progressbar .webform-progressbar-page.current {
