@@ -68,7 +68,7 @@
 
       $price = cbf_field_get_items('paragraphs_item', $courseOption['#entity'], 'field_training_option_price', 'amount', false);
       $group = cbf_field_get_items('paragraphs_item', $courseOption['#entity'], 'field_group_license_count', 'value', false);
-      
+
       if ($group && !$options['group-license']['available']) {
         $options['group-license']['available'] = true;
         $options['group-license']['args']['@expiry'] =
