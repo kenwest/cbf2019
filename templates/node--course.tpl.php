@@ -80,7 +80,7 @@
 // Hide fields that will be displayed in the $typeSpecific variable
 hide($content['field_in_activity']);
 hide($content['field_subtitle']);
-hide($content['field_with_speaker_s_']);
+hide($content['field_with']);
 hide($content['body']);
 hide($content['field_highlight_video']);
 hide($content['field_course_options']);
@@ -102,7 +102,7 @@ if ($variables['elements']['webform']['#form']['progressbar']['#page_num'] == 1)
   $typeSpecific .=     '</p>';
   $typeSpecific .=     views_embed_view('cbf2019_activity_logo', 'block_2');
   $typeSpecific .=     render($content['field_subtitle']);
-  $typeSpecific .=     render($content['field_with_speaker_s_']);
+  $typeSpecific .=     render($content['field_with']);
   $typeSpecific .=   '</div>';
   $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-pull-4">';
   if (!empty($content['field_highlight'])) {
