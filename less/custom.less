@@ -725,11 +725,22 @@ body.html,
     }
   }
 
+  .form-type-radio:not(:first-of-type) .required-span {
+    display: none; // Avoid annoying repeats of red '*' - just leave the first
+  }
+
   #wf-crm-billing-items {
+    .make-xs-column(12);
+    .make-480-column(8);
+    .make-480-column-offset(2);
     .make-md-column(4);
     .make-md-column-offset(4);
 
+    display: block;
     margin-bottom: 2 * @line-height-computed;
+
+    tbody, tr { display: block; }
+    th, td { display: inline-block; width: 50%; }
 
     caption {
       display: none;
@@ -741,6 +752,8 @@ body.html,
   }
 
   .crm-container.crm-public fieldset {
+    .make-sm-column(8);
+    .make-sm-column-offset(2);
     .make-md-column(4);
     .make-md-column-offset(4);
 
@@ -748,6 +761,13 @@ body.html,
 
     legend {
       font-weight: 400;
+    }
+
+    .crm-section {
+      .label { width: 33%; color: @slate; font-size: 14px; text-align: left; }
+      .content { margin-left: 34%; font-size: 14px;}
+      .description { font-size: 14px;}
+      input[type="text"] { vertical-align: top; font-size: 14px; }
     }
   }
 
@@ -800,6 +820,10 @@ body.html,
 
     .btn + .btn {
       margin-left: 0;
+    }
+
+    .btn-mod.btn-medium {
+      padding: 10px;
     }
   }
 }
