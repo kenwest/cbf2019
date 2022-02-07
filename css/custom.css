@@ -4503,6 +4503,9 @@ body.html .paragraph-image-right img,
 .view-cbf2019-third-space-category .view-content .views-field.image-plus-fixed-overlay .field-content .image-overlay .views-field:last-child {
   margin-bottom: 0;
 }
+.view-cbf2019-with .view-content .views-field-field-title {
+  font-size: initial;
+}
 /******************
  * Block formatting
  */
