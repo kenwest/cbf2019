@@ -1389,20 +1389,6 @@ body.html .paragraph-image-right img,
 .blog-specific-content .embed-responsive-16by9 {
   background: #c3c9d3;
 }
-.course-specific-content .paragraphs-item-with-speaker,
-.blog-specific-content .paragraphs-item-with-speaker {
-  display: inline;
-}
-.course-specific-content .paragraphs-item-with-speaker .content,
-.blog-specific-content .paragraphs-item-with-speaker .content {
-  display: inline;
-  font-size: 0;
-}
-.course-specific-content .paragraphs-item-with-speaker .content .field,
-.blog-specific-content .paragraphs-item-with-speaker .content .field {
-  display: inline;
-  font-size: initial;
-}
 .course-specific-content .field-name-field-course-options .field-items,
 .blog-specific-content .field-name-field-course-options .field-items {
   margin-right: -15px;
@@ -1927,6 +1913,20 @@ body.html .paragraph-image-right img,
     float: left;
     width: 66.66666667%;
   }
+}
+/*********************************
+ * Format paragraphs
+ */
+.paragraphs-item-with-speaker {
+  display: inline;
+}
+.paragraphs-item-with-speaker .content {
+  display: inline;
+  font-size: 0;
+}
+.paragraphs-item-with-speaker .content .field {
+  display: inline;
+  font-size: initial;
 }
 /*********************************
  * Format the .episode-content-tab

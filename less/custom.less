@@ -613,20 +613,6 @@ body.html,
     background: @slate-40;
   }
 
-  .paragraphs-item-with-speaker {
-    display: inline;
-
-    .content {
-      display: inline;
-      font-size: 0; // hide extra whitespace ...
-
-      .field {
-        display: inline;
-        font-size: initial; // ... but show field
-      }
-    }
-  }
-
   .field-name-field-course-options {
     .field-items {
       .make-row();
@@ -850,6 +836,23 @@ body.html,
   .make-lg-column(8);
 
   margin-bottom: 4 * @line-height-computed;
+}
+
+/*********************************
+ * Format paragraphs
+ */
+.paragraphs-item-with-speaker {
+  display: inline;
+
+   .content {
+    display: inline;
+    font-size: 0; // hide extra whitespace ...
+
+    .field {
+      display: inline;
+      font-size: initial; // ... but show field
+    }
+  }
 }
 
 /*********************************
