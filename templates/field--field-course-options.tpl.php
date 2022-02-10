@@ -58,8 +58,8 @@
       ],
       'group-license' => [
         'available' => false,
-        'title' => 'Group license',
-        'text' => 'Purchasing a group license will allow you to deliver the course in-person at a discount. The license will provide you with a presenter\'s login for the course with access for @expiry. Also, members of your group will have the ability to access the course materials under the group license from their own device during this period.',
+        'title' => 'Group licence',
+        'text' => 'Purchasing a group licence will allow you to deliver the course in-person at a discount. The licence will provide you with a presenter\'s login for the course with access for @expiry. Also, members of your group will have the ability to access the course materials under the group licence from their own device during this period.',
         'args' => [],
       ],
     ];
