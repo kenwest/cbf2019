@@ -120,6 +120,10 @@ if ($variables['elements']['webform']['#form']['progressbar']['#page_num'] == 1)
   $typeSpecific .=   '</div>';
   $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-md-7">';
   $typeSpecific .=     render($content['field_course_options']);
+  if (!empty($content['field_attachment'])) {
+    $typeSpecific .=   '<p class="uppercase"><strong>Downloads</strong></p>';
+    $typeSpecific .=   render($content['field_attachment']);
+  }
   $typeSpecific .=   '</div>';
   $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-push-1">';
   $typeSpecific .=     render($content['field_training_pathway']);
