@@ -82,9 +82,11 @@ hide($content['field_in_activity']);
 hide($content['field_subtitle']);
 hide($content['field_with']);
 hide($content['body']);
+hide($content['field_highlight']);
 hide($content['field_highlight_video']);
 hide($content['field_course_options']);
 hide($content['field_training_pathway']);
+hide($content['field_attachment']);
 
 // Hide links
 $suppressLinks = true;
