@@ -5450,14 +5450,15 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-container .crm-block .display-block {
   margin-left: 33.33333333%;
 }
+.block-system #crm-container.crm-container .crm-block .event_info-group .display-block,
 .block-system #crm-container.crm-container .crm-block .helprow-post .content {
+  margin-left: 0%;
   position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: 0%;
 }
 .block-system #crm-container.crm-container .crm-block .crm-section > a.button {
   float: left;
