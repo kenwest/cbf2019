@@ -102,7 +102,7 @@ function cbf2019_breadcrumb($variables) {
     $crumbs[] = ['Home', '/'];
 
     $event = menu_get_object('civicrm_entity_loader');
-    if (!empty($event) && $event->entityType() == 'civicrm_event') {
+    if (!empty($event) && is_object($event) && $event->entityType() == 'civicrm_event') {
       $crumbs[] = ["What's on", '/whats-on'];
     }
     else {
