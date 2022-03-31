@@ -47,13 +47,13 @@
       'paid-license' => [
         'available' => false,
         'title' => 'Full course',
-        'text' => 'Purchase the full @sessions course for @price. You will have access for @expiry.',
+        'text' => 'Purchase the @sessions course for @price. You will have access for @expiry.',
         'args' => [],
       ],
       'trial-license' => [
         'available' => false,
         'title' => 'Free trial',
-        'text' => 'Enrol in the trial version for @expiry of free access to the first @sessions.',
+        'text' => 'Enrol in the trial version for @expiry of free access to @sessions.',
         'args' => [],
       ],
       'group-license' => [
@@ -77,8 +77,13 @@
       }
       else if ($price && !$options['paid-license']['available']) {
         $options['paid-license']['available'] = true;
-        $options['paid-license']['args']['@sessions'] =
-        $courseOption['field_training_option_sessions'][0]['#markup'] . ' sessions';
+        if ($courseOption['field_training_option_sessions'][0]['#markup']) {
+          $options['paid-license']['args']['@sessions'] = 'full ' .
+            $courseOption['field_training_option_sessions'][0]['#markup'] . ' sessions';
+        }
+        else {
+          $options['paid-license']['args']['@sessions'] = 'full';
+        }
         $options['paid-license']['args']['@price'] =
           $courseOption['field_training_option_price'][0]['#markup'];
         $options['paid-license']['args']['@expiry'] =
@@ -86,8 +91,13 @@
       }
       else if (is_numeric($price) && !$price && !$options['trial-license']['available']) {
         $options['trial-license']['available'] = true;
-        $options['trial-license']['args']['@sessions'] =
-          $courseOption['field_training_option_sessions'][0]['#markup'] . ' sessions';
+        if ($courseOption['field_training_option_sessions'][0]['#markup']) {
+          $options['trial-license']['args']['@sessions'] = 'the first ' .
+            $courseOption['field_training_option_sessions'][0]['#markup'] . ' sessions';
+        }
+        else {
+          $options['trial-license']['args']['@sessions'] = 'a cut-down version of the course';
+        }
         $options['trial-license']['args']['@expiry'] =
           $courseOption['field_thinkific_expiry_period'][0]['#markup'];
       }
