@@ -23,53 +23,59 @@
  *
  * @ingroup views_templates
  */
-$activity = $row->field_activity_components_paragraphs_item_nid;
-$embeddedView = $row->field_field_summary[0]['raw']['value'];
-$defaultTitle = $row->field_field_title_1[0]['rendered']['#markup'] ?? '';
-$title = $row->field_field_title[0]['rendered']['#markup'] ?? $defaultTitle;
-$blockContent = $row->field_field_description[0]['rendered']['#markup'] ?? '';
-$currentDomain = domain_get_domain()['domain_id'];
-$highlightLocation = $view->exposed_data['field_highlight_location_tid'];
-$ministryCentre = _cbf_convert_banner_to_city_tid($highlightLocation);
 
-$embeddedView = explode(',', $embeddedView);
-$parameters = [];
-foreach ($embeddedView as $i => $v) {
-  $v = trim($v);
-  switch ($v) {
-    case 'activity':
-      $parameters[] = $activity;
-      break;
-    case 'ministry_centre':
-      $parameters[] = $ministryCentre;
-      break;
-    case 'domain':
-      $parameters[] = $currentDomain;
-      break;
-    case 'title':
-      $parameters[] = $title;
-      break;
-    default:
-      $parameters[] = $v;
-      break;
+$embeddedView = $row->field_field_summary[0]['raw']['value'] ?? '';
+
+if ($embeddedView) {
+  $embeddedView = explode(',', $embeddedView);
+  $parameters = [];
+  foreach ($embeddedView as $i => $v) {
+    $v = trim($v);
+    switch ($v) {
+      case 'activity':
+        $activity = $row->nid;
+        $parameters[] = $activity;
+        break;
+      case 'ministry_centre':
+        $highlightLocation = $view->exposed_data['field_highlight_location_tid'];
+        $ministryCentre = _cbf_convert_banner_to_city_tid($highlightLocation);
+        $parameters[] = $ministryCentre;
+        break;
+      case 'domain':
+        $currentDomain = domain_get_domain()['domain_id'];
+        $parameters[] = $currentDomain;
+        break;
+      case 'title':
+        $defaultTitle = $row->field_field_title_1[0]['rendered']['#markup'] ?? '';
+        $title = $row->field_field_title[0]['rendered']['#markup'] ?? $defaultTitle;
+        $parameters[] = $title;
+        break;
+      default:
+        $parameters[] = $v;
+        break;
+    }
+  }
+
+  if (count($parameters) >= 2) {
+    print call_user_func_array('views_embed_view', $parameters);
   }
 }
+else {
 
-if (count($parameters) >= 2) {
-  print call_user_func_array('views_embed_view', $parameters);
-}
-else if ($blockContent) {
-  print '<div class="view view-cbf2019-activity-components-block views-1-row">';
-  print   '<div class="clearfix"></div>';
-  print   '<div class="view-content">';
-  print     '<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">';
-  print       '<div class="views-field">';
-  print         '<div class="field-content">';
-  print           $blockContent;
-  print         '</div>';
-  print       '</div>';
-  print     '</div>';
-  print   '</div>';
-  print '</div>';
-}
+  $blockContent = $row->field_field_description[0]['rendered']['#markup'] ?? '';
 
+  if ($blockContent) {
+    print '<div class="view view-cbf2019-activity-components-block views-1-row">';
+    print   '<div class="clearfix"></div>';
+    print   '<div class="view-content">';
+    print     '<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">';
+    print       '<div class="views-field">';
+    print         '<div class="field-content">';
+    print           $blockContent;
+    print         '</div>';
+    print       '</div>';
+    print     '</div>';
+    print   '</div>';
+    print '</div>';
+  }
+}
