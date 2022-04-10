@@ -37,7 +37,7 @@ if ($embeddedView) {
         $parameters[] = $activity;
         break;
       case 'ministry_centre':
-        $highlightLocation = $view->exposed_data['field_highlight_location_tid'];
+        $highlightLocation = $view->exposed_data['field_highlight_location_tid'] ?? 'All';
         $ministryCentre = _cbf_convert_banner_to_city_tid($highlightLocation);
         $parameters[] = $ministryCentre;
         break;
