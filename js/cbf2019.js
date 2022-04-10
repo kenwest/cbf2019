@@ -247,6 +247,21 @@
         });
       });
 
+      if (context instanceof jQuery) {
+        $(".fullwidth-slider", context).each(function() {
+          var autoplay = $(this).closest('.slider-wrapper').data('autoplay')
+
+          $(this).owlCarousel({
+            autoPlay: autoplay ? autoplay : false,
+            slideSpeed: 350,
+            singleItem: true,
+            autoHeight: true,
+            navigation: true,
+            navigationText: ["<i class='fal fa-angle-left'></i>", "<i class='fal fa-angle-right'></i>"]
+          });
+        });
+      }
+
       $(".item-carousel-4-view", context).each(function() {
         var autoplay = $(this).closest('.slider-wrapper').data('autoplay')
 
