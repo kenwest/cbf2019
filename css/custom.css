@@ -4545,6 +4545,15 @@ body.html .paragraph-image-right img,
 .front .block.block-system {
   display: none;
 }
+.block .footer-social-links {
+  /* Enlarge the .footer-social-links */
+  font-size: 21px;
+}
+.block .footer-social-links a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px !important;
+}
 .block .footer-social-links a:before {
   top: -1;
   -webkit-transform: rotate(0deg);
@@ -4552,6 +4561,7 @@ body.html .paragraph-image-right img,
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
+  border: 1px solid #697891;
 }
 /*
  * Other domains need the search block visible on all pages.

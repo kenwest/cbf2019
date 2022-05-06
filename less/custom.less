@@ -2943,13 +2943,25 @@ body.html,
 }
 
 .block {
-  .footer-social-links a:before {
-    top: -1;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+  .footer-social-links {
+    /* Enlarge the .footer-social-links */
+    font-size: 21px;
+
+    a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px !important;
+    }
+
+    a:before {
+      top: -1;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      border: 1px solid @slate;
+    }
   }
 }
 
