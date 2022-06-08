@@ -2620,6 +2620,10 @@ body.html .paragraph-image-right img,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .office-view .view-content,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view.view-cbf2019-courses .item-list,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-cbf2019-third-space-content .item-list,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-cbf2019-third-space-category .item-list,
+.view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view-cbf2019-search .item-list,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view.view-cbf2019-blog .item-list,
 .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links .view.view-cbf2019-recent-library .item-list {
   /*
@@ -3069,6 +3073,10 @@ body.html .paragraph-image-right img,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .office-view .view-content,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view.view-cbf2019-courses .item-list,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-cbf2019-third-space-content .item-list,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-cbf2019-third-space-category .item-list,
+.container-view-content .view-content .views-bootstrap-grid-plugin-style .view-cbf2019-search .item-list,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .view.view-cbf2019-blog .item-list,
 .container-view-content .view-content .views-bootstrap-grid-plugin-style .view.view-cbf2019-recent-library .item-list {
   /*
@@ -3135,6 +3143,10 @@ body.html .paragraph-image-right img,
 .office-view .view-content .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .office-view .view-content .office-view .view-content,
 .office-view .view-content .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.office-view .view-content .view.view-cbf2019-courses .item-list,
+.office-view .view-content .view-cbf2019-third-space-content .item-list,
+.office-view .view-content .view-cbf2019-third-space-category .item-list,
+.office-view .view-content .view-cbf2019-search .item-list,
 .office-view .view-content .view.view-cbf2019-blog .item-list,
 .office-view .view-content .view.view-cbf2019-recent-library .item-list {
   /*
@@ -4196,6 +4208,30 @@ body.html .paragraph-image-right img,
 .view.view-cbf2019-search .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
 .view.view-cbf2019-blog .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
 .view.view-cbf2019-recent-library .item-list .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.view.view-cbf2019-courses .item-list .view.view-cbf2019-courses .item-list,
+.view.view-cbf2019-third-space-content .item-list .view.view-cbf2019-courses .item-list,
+.view.view-cbf2019-third-space-category .item-list .view.view-cbf2019-courses .item-list,
+.view.view-cbf2019-search .item-list .view.view-cbf2019-courses .item-list,
+.view.view-cbf2019-blog .item-list .view.view-cbf2019-courses .item-list,
+.view.view-cbf2019-recent-library .item-list .view.view-cbf2019-courses .item-list,
+.view.view-cbf2019-courses .item-list .view-cbf2019-third-space-content .item-list,
+.view.view-cbf2019-third-space-content .item-list .view-cbf2019-third-space-content .item-list,
+.view.view-cbf2019-third-space-category .item-list .view-cbf2019-third-space-content .item-list,
+.view.view-cbf2019-search .item-list .view-cbf2019-third-space-content .item-list,
+.view.view-cbf2019-blog .item-list .view-cbf2019-third-space-content .item-list,
+.view.view-cbf2019-recent-library .item-list .view-cbf2019-third-space-content .item-list,
+.view.view-cbf2019-courses .item-list .view-cbf2019-third-space-category .item-list,
+.view.view-cbf2019-third-space-content .item-list .view-cbf2019-third-space-category .item-list,
+.view.view-cbf2019-third-space-category .item-list .view-cbf2019-third-space-category .item-list,
+.view.view-cbf2019-search .item-list .view-cbf2019-third-space-category .item-list,
+.view.view-cbf2019-blog .item-list .view-cbf2019-third-space-category .item-list,
+.view.view-cbf2019-recent-library .item-list .view-cbf2019-third-space-category .item-list,
+.view.view-cbf2019-courses .item-list .view-cbf2019-search .item-list,
+.view.view-cbf2019-third-space-content .item-list .view-cbf2019-search .item-list,
+.view.view-cbf2019-third-space-category .item-list .view-cbf2019-search .item-list,
+.view.view-cbf2019-search .item-list .view-cbf2019-search .item-list,
+.view.view-cbf2019-blog .item-list .view-cbf2019-search .item-list,
+.view.view-cbf2019-recent-library .item-list .view-cbf2019-search .item-list,
 .view.view-cbf2019-courses .item-list .view.view-cbf2019-blog .item-list,
 .view.view-cbf2019-third-space-content .item-list .view.view-cbf2019-blog .item-list,
 .view.view-cbf2019-third-space-category .item-list .view.view-cbf2019-blog .item-list,
@@ -4520,9 +4556,11 @@ body.html .paragraph-image-right img,
 .view-cbf2019-with .view-content .views-field-field-title {
   font-size: initial;
 }
-.view-cbf2019-activity-components > .view-content > .views-row > .view > .view-content:last-child,
-.view-cbf2019-activity-components > .view-content > .views-row > .view > .item-list:last-child {
+.view-cbf2019-activity-components > .view-content > .views-row > .view > .view-content:last-child {
   margin-bottom: 75px;
+}
+.view-cbf2019-activity-components > .view-content > .views-row > .view > .item-list:last-child {
+  margin-bottom: 100px;
 }
 .view-cbf2019-activity-components > .view-content > .views-row:last-child > .view > .view-content:last-child,
 .view-cbf2019-activity-components > .view-content > .views-row:last-child > .view > .item-list:last-child {
@@ -6043,6 +6081,10 @@ body.html .crm-container .select2-results .select2-highlighted {
 .container .container-view-content .view-content .views-bootstrap-grid-plugin-style,
 .container .office-view .view-content,
 .container .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+.container .view.view-cbf2019-courses .item-list,
+.container .view-cbf2019-third-space-content .item-list,
+.container .view-cbf2019-third-space-category .item-list,
+.container .view-cbf2019-search .item-list,
 .container .view.view-cbf2019-blog .item-list,
 .container .view.view-cbf2019-recent-library .item-list {
   /*

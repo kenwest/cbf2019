@@ -2889,9 +2889,12 @@ body.html,
 }
 
 .view-cbf2019-activity-components {
-  > .view-content > .views-row > .view > .view-content:last-child,
-  > .view-content > .views-row > .view > .item-list:last-child {
+  > .view-content > .views-row > .view > .view-content:last-child {
     margin-bottom: 3*@line-height-computed;
+  }
+
+  > .view-content > .views-row > .view > .item-list:last-child {
+    margin-bottom: 4*@line-height-computed; // Extra spacing for .pager
   }
 
   > .view-content > .views-row:last-child > .view > .view-content:last-child,
@@ -4140,6 +4143,10 @@ body.html {
   .container-view-content .view-content .views-bootstrap-grid-plugin-style,
   .office-view .view-content,
   .view-filters .views-exposed-form .views-exposed-widget .bef-select-as-links,
+  .view.view-cbf2019-courses .item-list,
+  .view-cbf2019-third-space-content .item-list,
+  .view-cbf2019-third-space-category .item-list,
+  .view-cbf2019-search .item-list,
   .view.view-cbf2019-blog .item-list,
   .view.view-cbf2019-recent-library .item-list {
     /*
