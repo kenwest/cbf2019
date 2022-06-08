@@ -4508,7 +4508,7 @@ body.html .paragraph-image-right img,
 }
 .view-cbf2019-activity-components > .view-content > .views-row > .view > .view-content:last-child,
 .view-cbf2019-activity-components > .view-content > .views-row > .view > .item-list:last-child {
-  margin-bottom: 125px;
+  margin-bottom: 75px;
 }
 .view-cbf2019-activity-components > .view-content > .views-row:last-child > .view > .view-content:last-child,
 .view-cbf2019-activity-components > .view-content > .views-row:last-child > .view > .item-list:last-child {
@@ -4518,7 +4518,7 @@ body.html .paragraph-image-right img,
  * Block formatting
  */
 .block {
-  margin-bottom: 125px;
+  margin-bottom: 75px;
 }
 .block.with-bottom-border {
   padding-bottom: 50px;
@@ -4540,7 +4540,7 @@ body.html .paragraph-image-right img,
   margin-bottom: 50px;
 }
 .block .office-view .google-map {
-  margin-top: 125px;
+  margin-top: 75px;
 }
 .front .block.block-system {
   display: none;
