@@ -63,6 +63,7 @@ if ($embeddedView) {
 else {
 
   $blockContent = $row->field_field_description[0]['rendered']['#markup'] ?? '';
+  $fixedWidth = $row->field_field_fixed_width_container[0]['raw']['value'] ?? 0;
 
   if ($blockContent) {
     print '<div class="view view-cbf2019-activity-components-block views-1-row">';
@@ -71,7 +72,19 @@ else {
     print     '<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">';
     print       '<div class="views-field">';
     print         '<div class="field-content">';
-    print           $blockContent;
+
+    if ($fixedWidth) {
+      print         '<div class="container">';
+      print           '<div class="row">';
+      print             '<div class="col-xs-12">';
+      print               $blockContent;
+      print             '</div>';
+      print           '</div>';
+      print         '</div>';
+    }
+    else {
+      print         $blockContent;
+    }
     print         '</div>';
     print       '</div>';
     print     '</div>';
