@@ -3586,12 +3586,15 @@ body.html .paragraph-image-right img,
     font-size: 344px;
   }
 }
+.view.view-cbf2019-activity-component-list > .view-content,
 .view.venue > .view-content,
 .view.event-details > .view-content {
   padding-bottom: 1.6em;
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field,
 .view.venue > .view-content > .views-row > .views-field,
 .view.event-details > .view-content > .views-row > .views-field,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field,
 .view.venue > .view-content .owl-carousel .owl-item .views-field,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field {
   margin-right: -15px;
@@ -3599,25 +3602,33 @@ body.html .paragraph-image-right img,
   margin-left: 0;
   margin-right: 0;
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field:before,
 .view.venue > .view-content > .views-row > .views-field:before,
 .view.event-details > .view-content > .views-row > .views-field:before,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field:before,
 .view.venue > .view-content .owl-carousel .owl-item .views-field:before,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field:before,
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field:after,
 .view.venue > .view-content > .views-row > .views-field:after,
 .view.event-details > .view-content > .views-row > .views-field:after,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field:after,
 .view.venue > .view-content .owl-carousel .owl-item .views-field:after,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field:after {
   display: table;
   content: " ";
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field:after,
 .view.venue > .view-content > .views-row > .views-field:after,
 .view.event-details > .view-content > .views-row > .views-field:after,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field:after,
 .view.venue > .view-content .owl-carousel .owl-item .views-field:after,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field:after {
   clear: both;
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .views-label,
 .view.venue > .view-content > .views-row > .views-field > .views-label,
 .view.event-details > .view-content > .views-row > .views-field > .views-label,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .views-label,
 .view.venue > .view-content .owl-carousel .owl-item .views-field > .views-label,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field > .views-label {
   float: left;
@@ -3630,8 +3641,10 @@ body.html .paragraph-image-right img,
   border-top: 1px solid #888;
 }
 @media (min-width: 480px) {
+  .view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .views-label,
   .view.venue > .view-content > .views-row > .views-field > .views-label,
   .view.event-details > .view-content > .views-row > .views-field > .views-label,
+  .view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .views-label,
   .view.venue > .view-content .owl-carousel .owl-item .views-field > .views-label,
   .view.event-details > .view-content .owl-carousel .owl-item .views-field > .views-label {
     float: left;
@@ -3639,16 +3652,20 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .views-label,
   .view.venue > .view-content > .views-row > .views-field > .views-label,
   .view.event-details > .view-content > .views-row > .views-field > .views-label,
+  .view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .views-label,
   .view.venue > .view-content .owl-carousel .owl-item .views-field > .views-label,
   .view.event-details > .view-content .owl-carousel .owl-item .views-field > .views-label {
     float: left;
     width: 25%;
   }
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .field-content,
 .view.venue > .view-content > .views-row > .views-field > .field-content,
 .view.event-details > .view-content > .views-row > .views-field > .field-content,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .field-content,
 .view.venue > .view-content .owl-carousel .owl-item .views-field > .field-content,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field > .field-content {
   float: left;
@@ -3661,8 +3678,10 @@ body.html .paragraph-image-right img,
   border-top: 1px solid #888;
 }
 @media (min-width: 480px) {
+  .view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .field-content,
   .view.venue > .view-content > .views-row > .views-field > .field-content,
   .view.event-details > .view-content > .views-row > .views-field > .field-content,
+  .view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .field-content,
   .view.venue > .view-content .owl-carousel .owl-item .views-field > .field-content,
   .view.event-details > .view-content .owl-carousel .owl-item .views-field > .field-content {
     float: left;
@@ -3670,39 +3689,85 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .field-content,
   .view.venue > .view-content > .views-row > .views-field > .field-content,
   .view.event-details > .view-content > .views-row > .views-field > .field-content,
+  .view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .field-content,
   .view.venue > .view-content .owl-carousel .owl-item .views-field > .field-content,
   .view.event-details > .view-content .owl-carousel .owl-item .views-field > .field-content {
     float: left;
     width: 75%;
   }
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .field-content:first-child,
+.view.venue > .view-content > .views-row > .views-field > .field-content:first-child,
+.view.event-details > .view-content > .views-row > .views-field > .field-content:first-child,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child,
+.view.venue > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child,
+.view.event-details > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 480px) {
+  .view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .field-content:first-child,
+  .view.venue > .view-content > .views-row > .views-field > .field-content:first-child,
+  .view.event-details > .view-content > .views-row > .views-field > .field-content:first-child,
+  .view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child,
+  .view.venue > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child,
+  .view.event-details > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field > .field-content:first-child,
+  .view.venue > .view-content > .views-row > .views-field > .field-content:first-child,
+  .view.event-details > .view-content > .views-row > .views-field > .field-content:first-child,
+  .view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child,
+  .view.venue > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child,
+  .view.event-details > .view-content .owl-carousel .owl-item .views-field > .field-content:first-child {
+    float: left;
+    width: 100%;
+  }
+}
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field.views-field-taxonomy-vocabulary-1 > .views-label,
 .view.venue > .view-content > .views-row > .views-field.views-field-taxonomy-vocabulary-1 > .views-label,
 .view.event-details > .view-content > .views-row > .views-field.views-field-taxonomy-vocabulary-1 > .views-label,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .views-label,
 .view.venue > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .views-label,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .views-label,
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field.views-field-taxonomy-vocabulary-1 > .field-content,
 .view.venue > .view-content > .views-row > .views-field.views-field-taxonomy-vocabulary-1 > .field-content,
 .view.event-details > .view-content > .views-row > .views-field.views-field-taxonomy-vocabulary-1 > .field-content,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .field-content,
 .view.venue > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .field-content,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field.views-field-taxonomy-vocabulary-1 > .field-content {
   border-top-width: 0px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-city,
 .view.venue > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-city,
 .view.event-details > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-city,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-city,
 .view.venue > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-city,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-city {
   float: left;
   clear: left;
 }
+.view.view-cbf2019-activity-component-list > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-time,
 .view.venue > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-time,
 .view.event-details > .view-content > .views-row > .views-field.views-field-field-national-date-text .tz-time,
+.view.view-cbf2019-activity-component-list > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-time,
 .view.venue > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-time,
 .view.event-details > .view-content .owl-carousel .owl-item .views-field.views-field-field-national-date-text .tz-time {
   text-align: right;
 }
+.view.view-cbf2019-activity-component-list .views-field,
 .view.venue .views-field,
 .view.event-details .views-field {
   margin-bottom: 0;
@@ -3712,26 +3777,32 @@ body.html .paragraph-image-right img,
   letter-spacing: initial;
   line-height: inherit;
 }
+.view.view-cbf2019-activity-component-list .views-field:last-child,
 .view.venue .views-field:last-child,
 .view.event-details .views-field:last-child {
   margin-bottom: 0;
 }
+.view.view-cbf2019-activity-component-list .views-field a,
 .view.venue .views-field a,
 .view.event-details .views-field a {
   color: #697891;
   font-weight: 500;
 }
+.view.view-cbf2019-activity-component-list .views-field p,
 .view.venue .views-field p,
 .view.event-details .views-field p {
   margin: 0;
 }
+.view.view-cbf2019-activity-component-list .view.event-price .views-row,
 .view.venue .view.event-price .views-row,
 .view.event-details .view.event-price .views-row,
+.view.view-cbf2019-activity-component-list .view.event-price .h3,
 .view.venue .view.event-price .h3,
 .view.event-details .view.event-price .h3 {
   margin-right: -15px;
   margin-left: -15px;
 }
+.view.view-cbf2019-activity-component-list .view.event-price .views-field,
 .view.venue .view.event-price .views-field,
 .view.event-details .view.event-price .views-field {
   float: left;
@@ -3743,6 +3814,7 @@ body.html .paragraph-image-right img,
   padding-right: 3px;
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-activity-component-list .view.event-price .views-field,
   .view.venue .view.event-price .views-field,
   .view.event-details .view.event-price .views-field {
     float: left;
@@ -3750,6 +3822,7 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 992px) {
+  .view.view-cbf2019-activity-component-list .view.event-price .views-field,
   .view.venue .view.event-price .views-field,
   .view.event-details .view.event-price .views-field {
     float: left;
@@ -3757,12 +3830,14 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 1200px) {
+  .view.view-cbf2019-activity-component-list .view.event-price .views-field,
   .view.venue .view.event-price .views-field,
   .view.event-details .view.event-price .views-field {
     float: left;
     width: 66.66666667%;
   }
 }
+.view.view-cbf2019-activity-component-list .view.event-price .views-field.views-field-amount,
 .view.venue .view.event-price .views-field.views-field-amount,
 .view.event-details .view.event-price .views-field.views-field-amount {
   float: left;
@@ -3775,6 +3850,7 @@ body.html .paragraph-image-right img,
   text-align: right;
 }
 @media (min-width: 768px) {
+  .view.view-cbf2019-activity-component-list .view.event-price .views-field.views-field-amount,
   .view.venue .view.event-price .views-field.views-field-amount,
   .view.event-details .view.event-price .views-field.views-field-amount {
     float: left;
@@ -3782,6 +3858,7 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 992px) {
+  .view.view-cbf2019-activity-component-list .view.event-price .views-field.views-field-amount,
   .view.venue .view.event-price .views-field.views-field-amount,
   .view.event-details .view.event-price .views-field.views-field-amount {
     float: left;
@@ -3789,12 +3866,14 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 1200px) {
+  .view.view-cbf2019-activity-component-list .view.event-price .views-field.views-field-amount,
   .view.venue .view.event-price .views-field.views-field-amount,
   .view.event-details .view.event-price .views-field.views-field-amount {
     float: left;
     width: 33.33333333%;
   }
 }
+.view.view-cbf2019-activity-component-list .view.event-price .h3,
 .view.venue .view.event-price .h3,
 .view.event-details .view.event-price .h3 {
   margin-top: 0;
@@ -3803,14 +3882,18 @@ body.html .paragraph-image-right img,
   font-weight: 500 !important;
   line-height: 1.6;
 }
+.view.view-cbf2019-activity-component-list .view.event-price .h3 .Radio,
 .view.venue .view.event-price .h3 .Radio,
 .view.event-details .view.event-price .h3 .Radio,
+.view.view-cbf2019-activity-component-list .view.event-price .h3 .CheckBox,
 .view.venue .view.event-price .h3 .CheckBox,
 .view.event-details .view.event-price .h3 .CheckBox,
+.view.view-cbf2019-activity-component-list .view.event-price .h3 .Text,
 .view.venue .view.event-price .h3 .Text,
 .view.event-details .view.event-price .h3 .Text {
   display: none;
 }
+.view.view-cbf2019-activity-component-list .view.event-price .h3 .Select,
 .view.venue .view.event-price .h3 .Select,
 .view.event-details .view.event-price .h3 .Select {
   position: relative;
@@ -3821,12 +3904,19 @@ body.html .paragraph-image-right img,
   padding-left: 15px;
   padding-top: 25px;
 }
+.view.view-cbf2019-activity-component-list .view.event-price .h3:first-child .Select,
 .view.venue .view.event-price .h3:first-child .Select,
 .view.event-details .view.event-price .h3:first-child .Select {
   padding-top: 0;
 }
 .view.venue .views-row + .views-row {
   margin-top: 25px;
+}
+.view.view-cbf2019-activity-component-list > .view-content > .views-row:last-child > .views-field > .field-content:last-child {
+  border-bottom: 1px solid #888;
+}
+.view.view-cbf2019-activity-logo > .view-content > .views-row .views-field.views-field-field-subtitle + .views-field.views-field-view {
+  margin-top: -25px;
 }
 .view.view-cbf2019-staff-slider .owl-prev,
 .view.view-cbf2019-staff-slider .owl-next {
