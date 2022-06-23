@@ -1567,7 +1567,7 @@ body.html .paragraph-image-right img,
 }
 .page-node-done .webform-component-fieldset,
 .node-course .content .webform-client-form .webform-component-fieldset {
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 .page-node-done .webform-component-fieldset .form-control[disabled],
 .node-course .content .webform-client-form .webform-component-fieldset .form-control[disabled],
@@ -1660,7 +1660,7 @@ body.html .paragraph-image-right img,
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 @media (min-width: 480px) {
   .page-node-done .crm-container.crm-public fieldset,
@@ -1734,8 +1734,6 @@ body.html .paragraph-image-right img,
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: -50px;
-  margin-bottom: 75px;
 }
 @media (min-width: 768px) {
   .page-node-done .captcha,
@@ -1775,6 +1773,7 @@ body.html .paragraph-image-right img,
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 75px;
 }
 @media (min-width: 480px) {
   .page-node-done .form-actions,
@@ -5091,6 +5090,9 @@ body.html .paragraph-image-right img,
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+.webform-client-form fieldset:nth-child(odd) {
+  clear: both;
 }
 @media (min-width: 480px) {
   .webform-client-form fieldset:nth-child(odd) {

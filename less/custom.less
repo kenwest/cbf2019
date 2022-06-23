@@ -704,7 +704,7 @@ body.html,
   }
 
   .webform-component-fieldset {
-    margin-bottom: 4 * @line-height-computed;
+    margin-bottom: @line-height-computed;
 
     .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
       background-color: @slate-20;
@@ -748,7 +748,7 @@ body.html,
     .make-md-column(6);
     .make-md-column-offset(3);
 
-    margin-bottom: 4 * @line-height-computed;
+    margin-bottom: @line-height-computed;
 
     legend {
       font-weight: 400;
@@ -769,9 +769,6 @@ body.html,
     .make-md-column(4);
     .make-md-column-offset(4);
 
-    margin-top: -2 * @line-height-computed;
-    margin-bottom: 3 * @line-height-computed;
-
     > div > div { // This div is 304x78 px
       margin: auto;
     }
@@ -786,6 +783,8 @@ body.html,
     .make-md-column(8);
     .make-md-column-offset(2);
     .make-lg-column(8);
+
+    margin-top: 3 * @line-height-computed;
 
     .form-submit {
       width: 50%;
@@ -3273,6 +3272,8 @@ body.html,
     .make-480-column-offset(2);
     .make-sm-column-offset(1);
     .make-lg-column-offset(2);
+
+    clear: both;
   }
 
   fieldset:nth-child(even) {
