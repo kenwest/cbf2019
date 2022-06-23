@@ -5091,6 +5091,9 @@ body.html .paragraph-image-right img,
   padding-right: 15px;
   padding-left: 15px;
 }
+.webform-client-form .fieldset-description {
+  margin-bottom: 25px;
+}
 .webform-client-form fieldset:nth-child(odd) {
   clear: both;
 }
