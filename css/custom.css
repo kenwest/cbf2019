@@ -1394,36 +1394,32 @@ body.html .paragraph-image-right img,
   margin-right: -15px;
   margin-left: -15px;
 }
-.course-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
-.blog-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
-.course-specific-content .field-name-field-course-options .field-items .field-item.trial-license,
-.blog-specific-content .field-name-field-course-options .field-items .field-item.trial-license {
+.course-specific-content .field-name-field-course-options .field-items .field-item,
+.blog-specific-content .field-name-field-course-options .field-items .field-item {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .course-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
-  .blog-specific-content .field-name-field-course-options .field-items .field-item.paid-license,
-  .course-specific-content .field-name-field-course-options .field-items .field-item.trial-license,
-  .blog-specific-content .field-name-field-course-options .field-items .field-item.trial-license {
-    float: left;
-    width: 50%;
-  }
-}
-.course-specific-content .field-name-field-course-options .field-items .field-item.group-license,
-.blog-specific-content .field-name-field-course-options .field-items .field-item.group-license {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-@media (min-width: 768px) {
-  .course-specific-content .field-name-field-course-options .field-items .field-item.group-license,
-  .blog-specific-content .field-name-field-course-options .field-items .field-item.group-license {
+  .course-specific-content .field-name-field-course-options .field-items .field-item,
+  .blog-specific-content .field-name-field-course-options .field-items .field-item {
     float: left;
     width: 100%;
+  }
+}
+.course-specific-content .field-name-field-course-options .field-items .field-item.short,
+.blog-specific-content .field-name-field-course-options .field-items .field-item.short {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .course-specific-content .field-name-field-course-options .field-items .field-item.short,
+  .blog-specific-content .field-name-field-course-options .field-items .field-item.short {
+    float: left;
+    width: 50%;
   }
 }
 .course-specific-content .webform-client-form {
@@ -1575,7 +1571,19 @@ body.html .paragraph-image-right img,
 .node-course .content .webform-client-form .webform-component-fieldset .form-control[readonly],
 .page-node-done .webform-component-fieldset fieldset[disabled] .form-control,
 .node-course .content .webform-client-form .webform-component-fieldset fieldset[disabled] .form-control {
-  background-color: #e1e4e9;
+  background-color: #f0f2f4;
+}
+.page-node-done .webform-component-fieldset .form-item.webform-component--civicrm-1-contact-1-fieldset-fieldset--civicrm-1-contact-1-contact-existing,
+.node-course .content .webform-client-form .webform-component-fieldset .form-item.webform-component--civicrm-1-contact-1-fieldset-fieldset--civicrm-1-contact-1-contact-existing {
+  margin-bottom: 0 !important;
+}
+.page-node-done .webform-component-fieldset input[placeholder="Price"],
+.node-course .content .webform-client-form .webform-component-fieldset input[placeholder="Price"] {
+  font-weight: 500;
+}
+.page-node-done .webform-component-fieldset .single-option,
+.node-course .content .webform-client-form .webform-component-fieldset .single-option {
+  display: none;
 }
 .page-node-done .form-type-radio:not(:first-of-type) .required-span,
 .node-course .content .webform-client-form .form-type-radio:not(:first-of-type) .required-span {
