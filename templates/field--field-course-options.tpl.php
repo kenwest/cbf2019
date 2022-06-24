@@ -72,13 +72,17 @@
       $price = cbf_field_get_items('paragraphs_item', $courseOption['#entity'], 'field_training_option_price', 'amount', false);
       $group = cbf_field_get_items('paragraphs_item', $courseOption['#entity'], 'field_group_license_count', 'value', false);
 
-      if ($group && !$options['group-license']['available']) {
+      if (
+        $group
+        && !$options['group-license']['available']
+        && $options['paid-license']['available']
+      ) {
         $options['group-license']['available'] = true;
         $options['group-license']['args']['@expiry'] =
           $courseOption['field_thinkific_expiry_period'][0]['#markup']
           ?? $options['paid-license']['args']['@expiry'];
       }
-      else if ($price && !$options['paid-license']['available']) {
+      else if (!$options['paid-license']['available']) {
         $options['paid-license']['available'] = true;
         if ($courseOption['field_training_option_sessions'][0]['#markup']) {
           $options['paid-license']['args']['@sessions'] = 'full ' .
@@ -92,7 +96,12 @@
         $options['paid-license']['args']['@expiry'] =
           $courseOption['field_thinkific_expiry_period'][0]['#markup'];
       }
-      else if (is_numeric($price) && !$price && !$options['trial-license']['available']) {
+      else if (
+        is_numeric($price)
+        && !$price
+        && !$options['trial-license']['available']
+        && $options['paid-license']['available']
+      ) {
         $options['trial-license']['available'] = true;
         if ($courseOption['field_training_option_sessions'][0]['#markup']) {
           $options['trial-license']['args']['@sessions'] = 'the first ' .
