@@ -119,6 +119,11 @@
         $options['paid-license']['format'] =
         $options['trial-license']['format'] = 'short';
       }
+      else if (!$options['group-license']['available']) {
+        // Only the paid-license is available so 'full course' is meaningless
+        $options['paid-license']['title'] = 'When you enrol';
+        $options['paid-license']['text'] = 'You will be charged @price and have access for @expiry.';
+      }
     }
   ?>
   <div class="field-items"<?php print $content_attributes; ?>>
