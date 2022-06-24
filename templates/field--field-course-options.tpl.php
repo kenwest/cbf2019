@@ -46,18 +46,21 @@
     $options = [
       'paid-license' => [
         'available' => false,
+        'format' => '',
         'title' => 'Full course',
         'text' => 'Purchase the @sessions course for @price. You will have access for @expiry.',
         'args' => [],
       ],
       'trial-license' => [
         'available' => false,
+        'format' => '',
         'title' => 'Free trial',
         'text' => 'Enrol in the trial version for @expiry of free access to @sessions.',
         'args' => [],
       ],
       'group-license' => [
         'available' => false,
+        'format' => '',
         'title' => 'Group licence',
         'text' => 'Purchasing a group licence will allow you to deliver the course in-person at a discount. The licence will provide you with a facilitator\'s login for the course with access for @expiry. Also, members of your group will have the ability to access the course materials under the group licence from their own device during this period.',
         'args' => [],
@@ -102,6 +105,12 @@
           $courseOption['field_thinkific_expiry_period'][0]['#markup'];
       }
     }
+    if ($options['paid-license']['available']) {
+      if ($options['trial-license']['available']) {
+        $options['paid-license']['format'] =
+        $options['trial-license']['format'] = 'short';
+      }
+    }
   ?>
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php
@@ -109,7 +118,7 @@
       foreach ($options as $license => $option) {
         if ($option['available']) {
      ?>
-        <div class="field-item <?php print $license . (($delta % 2) ? ' odd' : ' even'); ?>"<?php print $item_attributes[$delta]; ?>>
+        <div class="field-item <?php print "$license {$option['format']}" . (($delta % 2) ? ' odd' : ' even'); ?>"<?php print $item_attributes[$delta]; ?>>
           <?php
             $description = format_string(
               $option['text'],
