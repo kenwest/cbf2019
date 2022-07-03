@@ -29,6 +29,9 @@
   <?php if (stripos($_SERVER['HTTP_HOST'], "nikadevs") !== FALSE && module_exists('nikadevs_dev')) include DRUPAL_ROOT . '/' . drupal_get_path('module', 'nikadevs_dev') . '/g_analytics/rhythm.js'; ?>
 </head>
 <body class="appear-animate <?php print $classes; ?>"<?php print $attributes; ?>>
+
+  <?php print $page_top; ?>
+
   <div class="main-wrap">
     <?php if(theme_get_setting('loader_image')): ?>
       <!-- Page Loader -->
@@ -38,7 +41,6 @@
       <!-- End Page Loader -->
     <?php endif; ?>
 
-    <?php print $page_top; ?>
     <?php
       if (drupal_is_front_page()) {
         /*
