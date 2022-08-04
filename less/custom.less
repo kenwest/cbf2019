@@ -3632,20 +3632,6 @@ body.html,
         .make-xs-column(6);
         .make-sm-column(4);
       }
-
-      /*
-       * Some CiviCRM forms put the back button before the next button.
-       * These 2 rules switch them to make the interface consistent.
-       */
-      .crm-button-type-back:nth-child(1):nth-last-child(2) {
-        .make-xs-column-push(6);
-        .make-sm-column-push(4);
-      }
-
-      .crm-button-type-next:nth-child(2):nth-last-child(1) {
-        .make-xs-column-pull(6);
-        .make-sm-column-pull(4);
-      }
     }
 
     .crm-submit-buttons > a.button.cancel[href="/"] {
