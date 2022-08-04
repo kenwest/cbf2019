@@ -5647,6 +5647,14 @@ body.html .paragraph-image-right img,
     width: 33.33333333%;
   }
 }
+.block-system #crm-container.crm-container .crm-submit-buttons,
+.block-system #crm-container.crm-container .crm-actionlinks-top,
+.block-system #crm-container.crm-container .crm-actionlinks-bottom {
+  /*
+       * Some CiviCRM forms put the next button before the back button.
+       * These 2 rules switch them to make the interface consistent.
+       */
+}
 .block-system #crm-container.crm-container .crm-submit-buttons .crm-button,
 .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button,
 .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button,
@@ -5669,6 +5677,30 @@ body.html .paragraph-image-right img,
   .block-system #crm-container.crm-container .crm-actionlinks-bottom .action-link {
     float: left;
     width: 33.33333333%;
+  }
+}
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(1):nth-last-child(2),
+.block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-next:nth-child(1):nth-last-child(2),
+.block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-next:nth-child(1):nth-last-child(2) {
+  left: 50%;
+}
+@media (min-width: 768px) {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-next:nth-child(1):nth-last-child(2),
+  .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-next:nth-child(1):nth-last-child(2),
+  .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-next:nth-child(1):nth-last-child(2) {
+    left: 33.33333333%;
+  }
+}
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(2):nth-last-child(1),
+.block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-back:nth-child(2):nth-last-child(1),
+.block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-back:nth-child(2):nth-last-child(1) {
+  right: 50%;
+}
+@media (min-width: 768px) {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(2):nth-last-child(1),
+  .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-back:nth-child(2):nth-last-child(1),
+  .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-back:nth-child(2):nth-last-child(1) {
+    right: 33.33333333%;
   }
 }
 .block-system #crm-container.crm-container .crm-submit-buttons > a.button.cancel[href="/"] {
