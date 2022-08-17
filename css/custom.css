@@ -5651,7 +5651,7 @@ body.html .paragraph-image-right img,
 .block-system #crm-container.crm-container .crm-actionlinks-top,
 .block-system #crm-container.crm-container .crm-actionlinks-bottom {
   /*
-       * Some CiviCRM forms put the next button before the back button.
+       * Some CiviCRM forms put the next button before the back/cancel button.
        * These 2 rules switch them to make the interface consistent.
        */
 }
@@ -5691,12 +5691,18 @@ body.html .paragraph-image-right img,
     left: 33.33333333%;
   }
 }
+.block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-cancel:nth-child(2):nth-last-child(1),
+.block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-cancel:nth-child(2):nth-last-child(1),
+.block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-cancel:nth-child(2):nth-last-child(1),
 .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(2):nth-last-child(1),
 .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-back:nth-child(2):nth-last-child(1),
 .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-back:nth-child(2):nth-last-child(1) {
   right: 50%;
 }
 @media (min-width: 768px) {
+  .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-cancel:nth-child(2):nth-last-child(1),
+  .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-cancel:nth-child(2):nth-last-child(1),
+  .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-cancel:nth-child(2):nth-last-child(1),
   .block-system #crm-container.crm-container .crm-submit-buttons .crm-button-type-back:nth-child(2):nth-last-child(1),
   .block-system #crm-container.crm-container .crm-actionlinks-top .crm-button-type-back:nth-child(2):nth-last-child(1),
   .block-system #crm-container.crm-container .crm-actionlinks-bottom .crm-button-type-back:nth-child(2):nth-last-child(1) {
