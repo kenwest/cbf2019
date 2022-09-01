@@ -99,6 +99,7 @@
       else if (
         is_numeric($price)
         && !$price
+        && !$group
         && !$options['trial-license']['available']
         && $options['full-course']['available']
       ) {
