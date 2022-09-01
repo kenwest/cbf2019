@@ -48,7 +48,7 @@
         'available' => false,
         'css-class' => '',
         'title' => 'Full course',
-        'text' => 'Purchase the @sessions course for @price. You will have access for @expiry.',
+        'text' => 'Enrol in the @sessions course for @price. You will have access for @expiry.',
         'args' => [],
       ],
       'trial-license' => [
@@ -62,7 +62,7 @@
         'available' => false,
         'css-class' => '',
         'title' => 'Group licence',
-        'text' => 'Purchasing a group licence will allow you to deliver the course in-person at a discount. The licence will provide you with a facilitator\'s login for the course with access for @expiry. Also, members of your group will have the ability to access the course materials under the group licence from their own device during this period.',
+        'text' => 'Enrolling in a group licence will allow you to deliver the course in-person at a discount. The licence will provide you with a facilitator\'s login for the course with access for @expiry. Also, members of your group will have the ability to access the course materials under the group licence from their own device during this period.',
         'args' => [],
       ],
     ];
