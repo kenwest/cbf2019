@@ -44,25 +44,25 @@
   <?php endif; ?>
   <?php
     $options = [
-      'paid-license' => [
+      'full-course' => [
         'available' => false,
-        'format' => '',
+        'css-class' => '',
         'title' => 'Full course',
-        'text' => 'Purchase the @sessions course for @price. You will have access for @expiry.',
+        'text' => 'Enrol in the @sessions course for @price. You will have access for @expiry.',
         'args' => [],
       ],
       'trial-license' => [
         'available' => false,
-        'format' => '',
+        'css-class' => '',
         'title' => 'Free trial',
         'text' => 'Enrol in the trial version for @expiry of free access to @sessions.',
         'args' => [],
       ],
       'group-license' => [
         'available' => false,
-        'format' => '',
+        'css-class' => '',
         'title' => 'Group licence',
-        'text' => 'Purchasing a group licence will allow you to deliver the course in-person at a discount. The licence will provide you with a facilitator\'s login for the course with access for @expiry. Also, members of your group will have the ability to access the course materials under the group licence from their own device during this period.',
+        'text' => 'Enrolling in a group licence will allow you to deliver the course in-person at a discount. The licence will provide you with a facilitator\'s login for the course with access for @expiry. Also, members of your group will have the ability to access the course materials under the group licence from their own device during this period.',
         'args' => [],
       ],
     ];
@@ -75,32 +75,33 @@
       if (
         $group
         && !$options['group-license']['available']
-        && $options['paid-license']['available']
+        && $options['full-course']['available']
       ) {
         $options['group-license']['available'] = true;
         $options['group-license']['args']['@expiry'] =
           $courseOption['field_thinkific_expiry_period'][0]['#markup']
-          ?? $options['paid-license']['args']['@expiry'];
+          ?? $options['full-course']['args']['@expiry'];
       }
-      else if (!$options['paid-license']['available']) {
-        $options['paid-license']['available'] = true;
+      else if (!$options['full-course']['available']) {
+        $options['full-course']['available'] = true;
         if ($courseOption['field_training_option_sessions'][0]['#markup']) {
-          $options['paid-license']['args']['@sessions'] = 'full ' .
+          $options['full-course']['args']['@sessions'] = 'full ' .
             $courseOption['field_training_option_sessions'][0]['#markup'] . ' sessions';
         }
         else {
-          $options['paid-license']['args']['@sessions'] = 'full';
+          $options['full-course']['args']['@sessions'] = 'full';
         }
-        $options['paid-license']['args']['@price'] =
+        $options['full-course']['args']['@price'] =
           $courseOption['field_training_option_price'][0]['#markup'];
-        $options['paid-license']['args']['@expiry'] =
+        $options['full-course']['args']['@expiry'] =
           $courseOption['field_thinkific_expiry_period'][0]['#markup'];
       }
       else if (
         is_numeric($price)
         && !$price
+        && !$group
         && !$options['trial-license']['available']
-        && $options['paid-license']['available']
+        && $options['full-course']['available']
       ) {
         $options['trial-license']['available'] = true;
         if ($courseOption['field_training_option_sessions'][0]['#markup']) {
@@ -114,15 +115,15 @@
           $courseOption['field_thinkific_expiry_period'][0]['#markup'];
       }
     }
-    if ($options['paid-license']['available']) {
+    if ($options['full-course']['available']) {
       if ($options['trial-license']['available']) {
-        $options['paid-license']['format'] =
-        $options['trial-license']['format'] = 'short';
+        $options['full-course']['css-class'] =
+        $options['trial-license']['css-class'] = 'short';
       }
       else if (!$options['group-license']['available']) {
-        // Only the paid-license is available so 'full course' is meaningless
-        $options['paid-license']['title'] = 'When you enrol';
-        $options['paid-license']['text'] = 'You will be charged @price and have access for @expiry.';
+        // Only the full-course is available so writing 'full course' is meaningless
+        $options['full-course']['title'] = 'When you enrol';
+        $options['full-course']['text'] = 'You will be charged @price and have access for @expiry.';
       }
     }
   ?>
@@ -132,7 +133,7 @@
       foreach ($options as $license => $option) {
         if ($option['available']) {
      ?>
-        <div class="field-item <?php print "$license {$option['format']}" . (($delta % 2) ? ' odd' : ' even'); ?>"<?php print $item_attributes[$delta]; ?>>
+        <div class="field-item <?php print "$license {$option['css-class']}" . (($delta % 2) ? ' odd' : ' even'); ?>"<?php print $item_attributes[$delta]; ?>>
           <?php
             $description = format_string(
               $option['text'],
