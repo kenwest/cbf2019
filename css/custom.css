@@ -4887,6 +4887,11 @@ body.html .paragraph-image-right img,
 .page-civicrm-event- .region-content .block-system .field + .field {
   margin-top: 2em;
 }
+.page-civicrm-event- .region-content .block-system .entity-property + .field,
+.page-civicrm-event- .region-content .block-system .field + .entity-property,
+.page-civicrm-event- .region-content .block-system .entity-property + .entity-property {
+  margin-top: 2em;
+}
 .node-type-episode .content {
   border-top: 1px solid #a5aebd;
   padding-top: 50px;
