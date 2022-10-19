@@ -1936,6 +1936,13 @@ body.html .paragraph-image-right img,
   font-size: initial;
 }
 /*********************************
+ * Format fields embedded in other fields
+ */
+.field .field.field-name-field-short-form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/*********************************
  * Format the .episode-content-tab
  */
 .episode-content-tab {
@@ -4952,6 +4959,20 @@ body.html .paragraph-image-right img,
 @media (min-width: 992px) {
   .node-type-blog .content .field-name-body img {
     max-width: 58.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .node-type-blog .content .field-name-body .field-name-field-short-form img {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100%;
+    padding: 0 !important;
+    margin: 0 0 25px 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .node-type-blog .content .field-name-body .field-name-field-short-form img {
+    max-width: 100%;
   }
 }
 .node-type-blog .content .field-name-body div.video-filter {
