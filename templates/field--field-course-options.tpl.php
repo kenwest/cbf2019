@@ -139,7 +139,7 @@
               $option['text'],
               $option['args']);
             print format_string(
-              '<p class="uppercase"><strong>@name</strong></p><p>!description</p>',
+              '<p class="bold uppercase">@name</p><p>!description</p>',
               [
                 '@name' => $option['title'],
                 '!description' => $description,

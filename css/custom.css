@@ -882,7 +882,8 @@ body.html a:not(.btn) {
   color: #495365;
 }
 body.html b,
-body.html strong {
+body.html strong,
+body.html .bold {
   font-weight: 400;
 }
 body.html .font-alt,
@@ -901,7 +902,8 @@ body.html .bg-gray {
   background-color: #f0f2f4;
 }
 body.html .bold-is-bold b,
-body.html .bold-is-bold strong {
+body.html .bold-is-bold strong,
+body.html .bold-is-bold .bold {
   font-weight: bold;
 }
 .cardinal,

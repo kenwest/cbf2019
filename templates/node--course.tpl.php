@@ -129,7 +129,7 @@ if ($variables['elements']['webform']['#form']['progressbar']['#page_num'] == 1)
   $typeSpecific .=   '</div>';
   if (!empty($content['field_attachment'][0])) {
     $typeSpecific .= '<div class = "col-xs-12 col-sm-6 col-md-7">';
-    $typeSpecific .=   '<p class="uppercase"><strong>Downloads</strong></p>';
+    $typeSpecific .=   '<p class="bold uppercase">Downloads</p>';
     $typeSpecific .=   render($content['field_attachment']);
     $typeSpecific .= '</div>';
   }
