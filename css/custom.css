@@ -956,6 +956,7 @@ h6,
 .h5,
 .h6 {
   font-weight: 300 !important;
+  letter-spacing: 1px;
 }
 /***********************
  * Format the Navigation
@@ -1383,7 +1384,9 @@ body.html .paragraph-image-right img,
 .course-specific-content .h3,
 .blog-specific-content .h3,
 .course-specific-content .field,
-.blog-specific-content .field {
+.blog-specific-content .field,
+.course-specific-content .paragraphs-items-field-course-options,
+.blog-specific-content .paragraphs-items-field-course-options {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
 }
@@ -1391,41 +1394,42 @@ body.html .paragraph-image-right img,
 .blog-specific-content .embed-responsive-16by9 {
   background: #c3c9d3;
 }
-.course-specific-content .field-name-field-course-options .field-items,
-.blog-specific-content .field-name-field-course-options .field-items {
+.course-specific-content .paragraphs-items-field-course-options .field,
+.blog-specific-content .paragraphs-items-field-course-options .field {
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 0 !important;
 }
-.course-specific-content .field-name-field-course-options .field-items .field-item,
-.blog-specific-content .field-name-field-course-options .field-items .field-item {
+.course-specific-content .paragraphs-items-field-course-options .field .field-item,
+.blog-specific-content .paragraphs-items-field-course-options .field .field-item {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .course-specific-content .field-name-field-course-options .field-items .field-item,
-  .blog-specific-content .field-name-field-course-options .field-items .field-item {
+  .course-specific-content .paragraphs-items-field-course-options .field .field-item,
+  .blog-specific-content .paragraphs-items-field-course-options .field .field-item {
     float: left;
     width: 100%;
   }
 }
-.course-specific-content .field-name-field-course-options .field-items .field-item.short,
-.blog-specific-content .field-name-field-course-options .field-items .field-item.short {
+.course-specific-content .paragraphs-items-field-course-options .field .field-item.short,
+.blog-specific-content .paragraphs-items-field-course-options .field .field-item.short {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  .course-specific-content .field-name-field-course-options .field-items .field-item.short,
-  .blog-specific-content .field-name-field-course-options .field-items .field-item.short {
+  .course-specific-content .paragraphs-items-field-course-options .field .field-item.short,
+  .blog-specific-content .paragraphs-items-field-course-options .field .field-item.short {
     float: left;
     width: 50%;
   }
 }
 .course-specific-content .webform-client-form {
-  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .course-specific-content .webform-client-form .webform-progressbar {
   display: none;
@@ -5015,6 +5019,7 @@ body.html .paragraph-image-right img,
 }
 .views-field-field-details .tablefield caption {
   font-weight: 300 !important;
+  letter-spacing: 1px;
   font-family: 'Rubik', arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;

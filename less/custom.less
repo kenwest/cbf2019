@@ -607,7 +607,8 @@ body.html,
   }
 
   .h3,
-  .field {
+  .field,
+  .paragraphs-items-field-course-options {
     margin-top: 0 !important;
     margin-bottom: 30px !important;
   }
@@ -616,9 +617,12 @@ body.html,
     background: @slate-40;
   }
 
-  .field-name-field-course-options {
-    .field-items {
+  .paragraphs-items-field-course-options {
+    .field {
       .make-row();
+
+      margin-bottom: 0 !important;
+
       .field-item {
         .make-sm-column(12);
       }
