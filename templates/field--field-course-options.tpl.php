@@ -46,6 +46,7 @@
     $options = [
       'full-course' => [
         'available' => false,
+        'multiple' => false,
         'css-class' => '',
         'title' => 'Full course',
         'text' => 'Enrol in the @sessions course for @price. You will have access for @expiry.',
@@ -114,18 +115,34 @@
         $options['trial-license']['args']['@expiry'] =
           $courseOption['field_thinkific_expiry_period'][0]['#markup'];
       }
-    }
-    if ($options['full-course']['available']) {
-      if ($options['trial-license']['available']) {
-        $options['full-course']['css-class'] =
-        $options['trial-license']['css-class'] = 'short';
-      }
-      else if (!$options['group-license']['available']) {
-        // Only the full-course is available so writing 'full course' is meaningless
-        $options['full-course']['title'] = 'When you enrol';
-        $options['full-course']['text'] = 'You will be charged @price and have access for @expiry.';
+      else if (
+        (!is_numeric($price) || $price) // Not a zero price
+        && !$group
+        && $options['full-course']['available']
+        && !$options['full-course']['multiple']
+      ) {
+        $options['full-course']['multiple'] = true;
       }
     }
+
+    /*
+     * If there are multiple full-course options then displaying the field-items
+     * is meaningless as they will potentially have different prices and expiry
+     * periods and sessions. Display nothing and leave it to the course author
+     * to explain the options in the Body.
+     */
+    if (!$options['full-course']['multiple']) {
+      if ($options['full-course']['available']) {
+        if ($options['trial-license']['available']) {
+          $options['full-course']['css-class'] =
+          $options['trial-license']['css-class'] = 'short';
+        }
+        else if (!$options['group-license']['available']) {
+          // Only the full-course is available so writing 'full course' is meaningless
+          $options['full-course']['title'] = 'When you enrol';
+          $options['full-course']['text'] = 'You will be charged @price and have access for @expiry.';
+        }
+      }
   ?>
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php
@@ -152,4 +169,7 @@
       }
     ?>
   </div>
+  <?php
+    }
+  ?>
 </div>
