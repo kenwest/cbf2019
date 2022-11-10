@@ -883,7 +883,8 @@ body.html a:not(.btn) {
 }
 body.html b,
 body.html strong,
-body.html .bold {
+body.html .bold,
+body.html th {
   font-weight: 400;
 }
 body.html .font-alt,
