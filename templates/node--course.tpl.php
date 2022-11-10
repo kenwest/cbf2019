@@ -97,40 +97,48 @@ $typeSpecific = '';
 if ($variables['elements']['webform']['#form']['progressbar']['#page_num'] == 1) {
   hide($content['webform']);
 
-  $typeSpecific .= '<div class="course-specific-content course row">';
-  $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-8">';
-  $typeSpecific .=     '<p class="h3">';
-  $typeSpecific .=       filter_xss(drupal_get_title());
-  $typeSpecific .=     '</p>';
-  $typeSpecific .=     views_embed_view('cbf2019_activity_logo', 'block_2');
-  $typeSpecific .=     render($content['field_subtitle']);
-  $typeSpecific .=     render($content['field_with']);
-  $typeSpecific .=   '</div>';
-  $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-pull-4">';
+  $typeSpecific .= '<div class="course-specific-content course">';
+  $typeSpecific .=   '<div class="row">';
+  $typeSpecific .=     '<div class = "col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-8">';
+  $typeSpecific .=       '<p class="h3">';
+  $typeSpecific .=         filter_xss(drupal_get_title());
+  $typeSpecific .=       '</p>';
+  $typeSpecific .=       views_embed_view('cbf2019_activity_logo', 'block_2');
+  $typeSpecific .=       render($content['field_subtitle']);
+  $typeSpecific .=       render($content['field_with']);
+  $typeSpecific .=     '</div>';
+  $typeSpecific .=     '<div class = "col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-pull-4">';
   if (!empty($content['field_highlight'])) {
-    $typeSpecific .=   render($content['field_highlight']);
+    $typeSpecific .=     render($content['field_highlight']);
   }
   else {
-    $typeSpecific .=   '<div class="field embed-responsive-16by9"></div>';
+    $typeSpecific .=     '<div class="field embed-responsive-16by9"></div>';
   }
+  $typeSpecific .=     '</div>';
   $typeSpecific .=   '</div>';
-  $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-md-7">';
-  $typeSpecific .=     render($content['body']);
+  $typeSpecific .=   '<div class="row">';
+  $typeSpecific .=     '<div class = "col-xs-12 col-sm-6 col-md-7">';
+  $typeSpecific .=       render($content['body']);
+  $typeSpecific .=     '</div>';
+  $typeSpecific .=     '<div class = "col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-push-1">';
+  $typeSpecific .=       render($content['webform']); // 'Enrol now' button
+  $typeSpecific .=       render($content['field_highlight_video']);
+  $typeSpecific .=     '</div>';
   $typeSpecific .=   '</div>';
-  $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-push-1">';
-  $typeSpecific .=     render($content['field_highlight_video']);
-  $typeSpecific .=   '</div>';
-  $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-md-7">';
-  $typeSpecific .=     render($content['field_course_options']);
-  $typeSpecific .=   '</div>';
-  $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-push-1">';
-  $typeSpecific .=     render($content['field_training_pathway']);
-  $typeSpecific .=     render($content['webform']);
+  $typeSpecific .=   '<div class="row">';
+  $typeSpecific .=     '<div class = "col-xs-12 col-sm-6 col-md-7">';
+  $typeSpecific .=       render($content['field_course_options']);
+  $typeSpecific .=     '</div>';
+  $typeSpecific .=     '<div class = "col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-push-1">';
+  $typeSpecific .=       render($content['field_training_pathway']);
+  $typeSpecific .=     '</div>';
   $typeSpecific .=   '</div>';
   if (!empty($content['field_attachment'][0])) {
-    $typeSpecific .= '<div class = "col-xs-12 col-sm-6 col-md-7">';
-    $typeSpecific .=   '<p class="bold uppercase">Downloads</p>';
-    $typeSpecific .=   render($content['field_attachment']);
+    $typeSpecific .= '<div class="row">';
+    $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-md-7">';
+    $typeSpecific .=     '<p class="bold uppercase">Downloads</p>';
+    $typeSpecific .=     render($content['field_attachment']);
+    $typeSpecific .=   '</div>';
     $typeSpecific .= '</div>';
   }
   $typeSpecific .= '</div>';
