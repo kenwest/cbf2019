@@ -717,10 +717,6 @@ body.html,
       background-color: @slate-10;
     }
 
-    .form-item.webform-component--civicrm-1-contact-1-fieldset-fieldset--civicrm-1-contact-1-contact-existing {
-      margin-bottom: 0 !important;
-    }
-
     input[placeholder="Price"] {
       font-weight: 500;
     }
@@ -3299,12 +3295,35 @@ body.html,
   input[type="color"],
   select,
   textarea,
-  label {
+  label,
+  ul.token-input-list {
     text-transform: none !important; // Override the uppercase setting
     color: @slate;
     line-height: @line-height-computed;
   }
+
+  ul.token-input-list {
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-image: none;
+
+    &:hover {
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+
+    li.token-input-token,
+    li.token-input-input-token input {
+      background-color: @sea-foam-60;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
 }
+
+body.html div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+  background-color: @sea-foam-60;
+}
+
 
 .webform-client-form {
   // Contact Us form

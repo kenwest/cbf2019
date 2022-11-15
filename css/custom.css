@@ -1580,10 +1580,6 @@ body.html .paragraph-image-right img,
 .node-course .content .webform-client-form .webform-component-fieldset fieldset[disabled] .form-control {
   background-color: #f0f2f4;
 }
-.page-node-done .webform-component-fieldset .form-item.webform-component--civicrm-1-contact-1-fieldset-fieldset--civicrm-1-contact-1-contact-existing,
-.node-course .content .webform-client-form .webform-component-fieldset .form-item.webform-component--civicrm-1-contact-1-fieldset-fieldset--civicrm-1-contact-1-contact-existing {
-  margin-bottom: 0 !important;
-}
 .page-node-done .webform-component-fieldset input[placeholder="Price"],
 .node-course .content .webform-client-form .webform-component-fieldset input[placeholder="Price"] {
   font-weight: 500;
@@ -5078,10 +5074,28 @@ body.html .paragraph-image-right img,
 .form .form-item input[type="color"],
 .form .form-item select,
 .form .form-item textarea,
-.form .form-item label {
+.form .form-item label,
+.form .form-item ul.token-input-list {
   text-transform: none !important;
   color: #697891;
   line-height: 25px;
+}
+.form .form-item ul.token-input-list {
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-image: none;
+}
+.form .form-item ul.token-input-list:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.form .form-item ul.token-input-list li.token-input-token,
+.form .form-item ul.token-input-list li.token-input-input-token input {
+  background-color: #c8dddd;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+body.html div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+  background-color: #c8dddd;
 }
 .webform-client-form {
   margin-right: -15px;
