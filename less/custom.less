@@ -3119,16 +3119,6 @@ body.html,
   .content {
     border-top: 1px solid @slate-60;
     padding-top: 2*@line-height-computed;
-    column-count: 1;
-    column-gap: @grid-gutter-width;
-
-    @media (min-width: @screen-sm-min) {
-      column-count: 2;
-    }
-
-    @media (min-width: @screen-md-min) {
-      column-count: 3;
-    }
 
     .field + .field {
       margin-top: 2em; // Format the space between the fields to be like that between P elements

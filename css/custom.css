@@ -4905,18 +4905,6 @@ body.html .paragraph-image-right img,
 .node-type-episode .content {
   border-top: 1px solid #a5aebd;
   padding-top: 50px;
-  column-count: 1;
-  column-gap: 30px;
-}
-@media (min-width: 768px) {
-  .node-type-episode .content {
-    column-count: 2;
-  }
-}
-@media (min-width: 992px) {
-  .node-type-episode .content {
-    column-count: 3;
-  }
 }
 .node-type-episode .content .field + .field {
   margin-top: 2em;
