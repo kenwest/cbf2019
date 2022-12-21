@@ -114,10 +114,31 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
+      if ($addSidebar ?? false) {
+    ?>
+        <div class = "row">
+          <div class = "col-xs-12 col-md-9 col-md-push-3">
+    <?php
+      }
+
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
       print render($content);
+
+      if ($addSidebar ?? false) {
+    ?>
+          </div>
+          <div class = "col-xs-12 col-md-3 col-md-pull-9">
+    <?php
+        // Show the Article Topics and Top 10 speakers
+        print views_embed_view('cbf2019_article_topics', 'block_1');
+        print views_embed_view('cbf2019_speaker_listings', 'block_7');
+    ?>
+          </div>
+        </div>
+    <?php
+      }
     ?>
   </div>
 

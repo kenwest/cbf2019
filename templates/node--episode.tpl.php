@@ -210,4 +210,10 @@ if ($tabActive['count'] > 0) {
   $typeSpecific .= '</div>';
 }
 
+// Add a sidebar
+if (stripos(drupal_get_path_alias(), 'city/episode/test-') === 0) {
+  $addSidebar = true;
+}
+
+
 include 'node.tpl.php';
