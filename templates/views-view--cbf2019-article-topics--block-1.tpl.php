@@ -87,7 +87,7 @@
 
   <?php if ($rows): ?>
     <div class="view-content">
-      <dl class="accordion">
+      <dl class="toggle">
         <?php print $rows; ?>
       </dl>
     </div>

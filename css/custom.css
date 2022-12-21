@@ -4673,10 +4673,12 @@ body.html .paragraph-image-right img,
 .view-cbf2019-activity-components > .view-content > .views-row:last-child > .view > .item-list:last-child {
   margin-bottom: 0;
 }
-.view-cbf2019-article-topics .view-content .accordion {
+.view-cbf2019-article-topics .view-content .accordion,
+.view-cbf2019-article-topics .view-content .toggle {
   margin-bottom: 50px;
 }
-.view-cbf2019-article-topics .view-content .accordion .views-field {
+.view-cbf2019-article-topics .view-content .accordion .views-field,
+.view-cbf2019-article-topics .view-content .toggle .views-field {
   margin-bottom: 0;
 }
 .view-cbf2019-speaker-listings .view-content {
