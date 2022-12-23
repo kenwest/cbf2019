@@ -212,7 +212,7 @@ if ($tabActive['count'] > 0) {
 
 // Add a sidebar
 if (stripos(drupal_get_path_alias(), 'city/episode/test-') === 0) {
-  $addSidebar = true;
+  $addArticleSidebar = true;
 }
 
 

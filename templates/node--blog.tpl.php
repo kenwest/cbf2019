@@ -109,7 +109,7 @@ $typeSpecific .= '</div>';
 
 // Add a sidebar
 if (stripos(drupal_get_path_alias(), 'city/blog/test-') === 0) {
-  $addSidebar = true;
+  $addArticleSidebar = true;
 }
 
 
