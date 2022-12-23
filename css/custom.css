@@ -5010,6 +5010,33 @@ body.html .paragraph-image-right img,
 .node .content + div h4.blog-page-title {
   margin-top: 50px;
 }
+/*
+ * Format the sidebar used on /articles/topic etc
+ */
+.region.region-sidebar {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.region.region-sidebar .block {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .region.region-sidebar .block {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .region.region-sidebar .block {
+    float: left;
+    width: 100%;
+  }
+}
 /*******************************
  * Format field_details in views
  */
