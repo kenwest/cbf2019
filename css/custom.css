@@ -3032,6 +3032,9 @@ body.html .paragraph-image-right img,
   height: 100%;
   margin: 0 auto;
 }
+.view.content-min-height-100 .view-content {
+  min-height: 100px;
+}
 .views-bootstrap-grid-plugin-style .views-field-title,
 .item-carousel-4-view .views-field-title,
 .view-content .views-field-field-details .views-field-title,
@@ -4673,12 +4676,10 @@ body.html .paragraph-image-right img,
 .view-cbf2019-activity-components > .view-content > .views-row:last-child > .view > .item-list:last-child {
   margin-bottom: 0;
 }
-.view-cbf2019-article-topics .view-content .accordion,
-.view-cbf2019-article-topics .view-content .toggle {
+.view-cbf2019-article-topics .view-content {
   margin-bottom: 50px;
 }
-.view-cbf2019-article-topics .view-content .accordion .views-field,
-.view-cbf2019-article-topics .view-content .toggle .views-field {
+.view-cbf2019-article-topics .view-content .views-field {
   margin-bottom: 0;
 }
 .view-cbf2019-speaker-listings .view-content {
@@ -4687,6 +4688,8 @@ body.html .paragraph-image-right img,
 .view-cbf2019-speaker-listings .view-content .views-field {
   margin-bottom: 0;
   font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0;
 }
 /******************
  * Block formatting
