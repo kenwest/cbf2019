@@ -128,13 +128,34 @@
 
       if ($addArticleSidebar ?? false) {
     ?>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+    <?php
+        print views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
+        print views_embed_view('cbf2019_rated_content', 'block_2'); // More on Topic
+    ?>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+    <?php
+        print views_embed_view('cbf2019_speaker_listings', 'block_6'); // Article Speaker link
+        print views_embed_view('cbf2019_rated_content', 'block_1'); // More by Speaker
+    ?>
+              </div>
+            </div>
           </div>
           <div class="col-xs-12 col-md-3 col-md-pull-9">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-12">
     <?php
-        // Show the Article Topics and Top 10 speakers
-        print views_embed_view('cbf2019_article_topics', 'block_1');
-        print views_embed_view('cbf2019_speaker_listings', 'block_7');
+        print views_embed_view('cbf2019_article_topics', 'block_1'); // Article topic hierarchy
     ?>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12">
+    <?php
+        print views_embed_view('cbf2019_speaker_listings', 'block_7'); // Top 10 rated Speakers
+    ?>
+              </div>
+            </div>
           </div>
         </div>
     <?php
