@@ -2969,6 +2969,22 @@ body.html,
 
     margin-bottom: 2*@line-height-computed;
   }
+
+  &.view-display-id-block_1 {
+	/*
+	 * Don't display the link for the Parent Article Topic
+	 * unless it is the first. Then give it some vertical spacing
+	 * to highlight it.
+	 */
+    .views-field.views-field-nothing-1 {
+      display: none;
+    }
+
+    .views-row-first .views-field.views-field-nothing-1 {
+      display: block;
+      margin-bottom: 0.5*@line-height-computed;
+    }
+  }
 }
 
 .view-cbf2019-speaker-listings {
