@@ -147,7 +147,7 @@
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-12">
     <?php
-        print views_embed_view('cbf2019_article_topics', 'block_1'); // Article topic hierarchy
+        print views_embed_view('cbf2019_article_topics', 'block_2'); // Article topic hierarchy
     ?>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-12">
