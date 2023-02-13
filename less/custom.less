@@ -2963,8 +2963,25 @@ body.html,
 
 .view-cbf2019-article-topics {
   .view-content {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
     .views-field {
       margin-bottom: 0;
+    }
+
+    ul {
+      margin-bottom: 1em;
+      padding-left: 2*@grid-gutter-width;
+
+      li {
+        list-style: none;
+        text-indent: -@grid-gutter-width;
+
+        &:first-child {
+          margin-top: 0.5em;
+        }
+      }
     }
 
     margin-bottom: 2*@line-height-computed;
@@ -2992,8 +3009,7 @@ body.html,
     .views-field {
       margin-bottom: 0;
       font-size: @font-size-base;
-      text-transform: none;
-      letter-spacing: 0;
+      letter-spacing: 1px;
     }
 
     margin-bottom: 2*@line-height-computed;

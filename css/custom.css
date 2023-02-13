@@ -4677,10 +4677,23 @@ body.html .paragraph-image-right img,
   margin-bottom: 0;
 }
 .view-cbf2019-article-topics .view-content {
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 50px;
 }
 .view-cbf2019-article-topics .view-content .views-field {
   margin-bottom: 0;
+}
+.view-cbf2019-article-topics .view-content ul {
+  margin-bottom: 1em;
+  padding-left: 60px;
+}
+.view-cbf2019-article-topics .view-content ul li {
+  list-style: none;
+  text-indent: -30px;
+}
+.view-cbf2019-article-topics .view-content ul li:first-child {
+  margin-top: 0.5em;
 }
 .view-cbf2019-article-topics.view-display-id-block_1 {
   /*
@@ -4702,8 +4715,7 @@ body.html .paragraph-image-right img,
 .view-cbf2019-speaker-listings .view-content .views-field {
   margin-bottom: 0;
   font-size: 16px;
-  text-transform: none;
-  letter-spacing: 0;
+  letter-spacing: 1px;
 }
 /******************
  * Block formatting
