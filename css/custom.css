@@ -2572,6 +2572,9 @@ body.html .paragraph-image-right img,
   letter-spacing: initial;
   font-size: 18px;
 }
+.view-header-must-align-left .view-header.align-center {
+  text-align: left !important;
+}
 .view-header-and-more {
   /*
   * Put a line-height margin under .view-header-and-more row
