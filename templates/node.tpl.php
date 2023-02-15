@@ -128,14 +128,6 @@
 
       if ($addArticleSidebar ?? false) {
     ?>
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">
-    <?php
-        print views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
-        print views_embed_view('cbf2019_rated_content', 'block_2'); // More on Topic
-    ?>
-              </div>
-            </div>
           </div>
           <div class="col-xs-12 col-md-3 col-md-pull-9 col-lg-pull-8">
             <div class="row">
@@ -150,6 +142,14 @@
     ?>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+    <?php
+        print views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
+        print views_embed_view('cbf2019_rated_content', 'block_2'); // More on Topic
+    ?>
           </div>
         </div>
     <?php
