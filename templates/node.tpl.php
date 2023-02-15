@@ -135,12 +135,6 @@
         print views_embed_view('cbf2019_rated_content', 'block_2'); // More on Topic
     ?>
               </div>
-              <div class="col-xs-12 col-sm-6">
-    <?php
-        print views_embed_view('cbf2019_speaker_listings', 'block_6'); // Article Speaker link
-        print views_embed_view('cbf2019_rated_content', 'block_1'); // More by Speaker
-    ?>
-              </div>
             </div>
           </div>
           <div class="col-xs-12 col-md-3 col-md-pull-9 col-lg-pull-8">
