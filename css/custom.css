@@ -3029,9 +3029,6 @@ body.html .paragraph-image-right img,
   height: 100%;
   margin: 0 auto;
 }
-.view.content-min-height-100 .view-content {
-  min-height: 100px;
-}
 .views-bootstrap-grid-plugin-style .views-field-title,
 .item-carousel-4-view .views-field-title,
 .view-content .views-field-field-details .views-field-title,
