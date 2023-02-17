@@ -1952,7 +1952,7 @@ body.html .paragraph-image-right img,
   margin-right: -15px;
   margin-left: -15px;
 }
-.episode-content-tab .episode-pills {
+.episode-content-tab .episode-summary {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -1962,24 +1962,24 @@ body.html .paragraph-image-right img,
   border-bottom-width: 1px;
 }
 @media (min-width: 992px) {
-  .episode-content-tab .episode-pills {
+  .episode-content-tab .episode-summary {
     float: left;
     width: 41.66666667%;
   }
 }
 @media (min-width: 992px) {
-  .episode-content-tab .episode-pills {
+  .episode-content-tab .episode-summary {
     left: 58.33333333%;
   }
 }
 @media (min-width: 1200px) {
-  .episode-content-tab .episode-pills {
+  .episode-content-tab .episode-summary {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 1200px) {
-  .episode-content-tab .episode-pills {
+  .episode-content-tab .episode-summary {
     left: 66.66666667%;
   }
 }
@@ -2099,38 +2099,38 @@ body.html .paragraph-image-right img,
 .episode-content-tab .tab-content .view-cbf2019-content-videos .pager-last {
   display: none;
 }
-.episode-content-tab .nav-pills {
+.episode-content-tab .episode-pills .nav-pills {
   text-transform: uppercase;
 }
-.episode-content-tab .nav-pills > li > a {
+.episode-content-tab .episode-pills .nav-pills > li > a {
   border-radius: 2px;
   line-height: 32px;
 }
-.episode-content-tab .nav-pills > li > a i,
-.episode-content-tab .nav-pills > li > a svg.svg-inline--fa {
+.episode-content-tab .episode-pills .nav-pills > li > a i,
+.episode-content-tab .episode-pills .nav-pills > li > a svg.svg-inline--fa {
   float: left;
   font-size: 32px;
 }
-.episode-content-tab .nav-pills > li > a:hover,
-.episode-content-tab .nav-pills > li > a:focus {
+.episode-content-tab .episode-pills .nav-pills > li > a:hover,
+.episode-content-tab .episode-pills .nav-pills > li > a:focus {
   background-color: #f0f2f4;
 }
-.episode-content-tab .nav-pills li.active > a,
-.episode-content-tab .nav-pills li.active > a:hover,
-.episode-content-tab .nav-pills li.active > a:focus {
+.episode-content-tab .episode-pills .nav-pills li.active > a,
+.episode-content-tab .episode-pills .nav-pills li.active > a:hover,
+.episode-content-tab .episode-pills .nav-pills li.active > a:focus {
   color: white;
   background-color: #cf2e4f;
 }
 @media (min-width: 992px) {
-  .episode-content-tab .nav-pills {
+  .episode-content-tab .episode-pills .nav-pills {
     border-bottom-width: 0px;
   }
-  .episode-content-tab .nav-pills > li {
+  .episode-content-tab .episode-pills .nav-pills > li {
     display: block;
     float: none;
     width: 100%;
   }
-  .episode-content-tab .nav-pills > li + li {
+  .episode-content-tab .episode-pills .nav-pills > li + li {
     margin-left: 0;
   }
 }
@@ -2141,6 +2141,8 @@ body.html .paragraph-image-right img,
 .episode-content-tab ul,
 .episode-content-tab .field,
 .episode-content-tab .view-cbf2019-content-videos,
+.episode-content-tab .view-cbf2019-article-topics .view-content,
+.episode-content-tab .view-cbf2019-speaker-listings .view-content,
 .episode-content-tab .episode-tags {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
@@ -4557,7 +4559,6 @@ body.html .paragraph-image-right img,
 .view-cbf2019-article-topics .view-content {
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 50px;
 }
 .view-cbf2019-article-topics .view-content .views-field {
   margin-bottom: 0;
@@ -4573,27 +4574,55 @@ body.html .paragraph-image-right img,
 .view-cbf2019-article-topics .view-content ul li:first-child {
   margin-top: 0.5em;
 }
-.view-cbf2019-article-topics.view-display-id-block_1 {
-  /*
-	 * Don't display the link for the Parent Article Topic
-	 * unless it is the first. Then give it some vertical spacing
-	 * to highlight it.
-	 */
-}
-.view-cbf2019-article-topics.view-display-id-block_1 .views-field.views-field-nothing-1 {
-  display: none;
-}
-.view-cbf2019-article-topics.view-display-id-block_1 .views-row-first .views-field.views-field-nothing-1 {
-  display: block;
-  margin-bottom: 12.5px;
-}
-.view-cbf2019-speaker-listings .view-content {
+.view-cbf2019-article-topics.view-display-id-block_2 .view-content {
   margin-bottom: 50px;
+}
+.view-cbf2019-article-topics.view-display-id-block_6 .view-content .views-row {
+  display: inline;
+}
+.view-cbf2019-article-topics.view-display-id-block_6 .view-content .views-row .views-field {
+  display: inline;
+  font-size: 0;
+}
+.view-cbf2019-article-topics.view-display-id-block_6 .view-content .views-row a {
+  font-size: 16px;
+}
+.view-cbf2019-article-topics.view-display-id-block_6 .view-content .views-row + .views-row::before {
+  content: ',';
+  white-space: pre;
+}
+.episode-tags .field {
+  display: inline;
+  font-style: italic;
+}
+.episode-tags .field:first-child::before {
+  content: 'Tags:\00a0';
+  white-space: pre;
 }
 .view-cbf2019-speaker-listings .view-content .views-field {
   margin-bottom: 0;
   font-size: 16px;
   letter-spacing: 1px;
+}
+.view-cbf2019-speaker-listings.view-display-id-block_7 .view-content {
+  margin-bottom: 50px;
+}
+.view-cbf2019-speaker-listings.view-display-id-block_6 .view-content {
+  margin-bottom: 25px;
+}
+.view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row {
+  display: inline;
+}
+.view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row .views-field {
+  display: inline;
+  font-size: 0;
+}
+.view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row a {
+  font-size: 16px;
+}
+.view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row + .views-row::before {
+  content: ',';
+  white-space: pre;
 }
 /******************
  * Block formatting

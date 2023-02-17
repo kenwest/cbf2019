@@ -886,7 +886,7 @@ body.html,
 .episode-content-tab {
   .make-row();
 
-  .episode-pills {
+  .episode-summary {
     .make-md-column(5);
     .make-md-column-push(7);
     .make-lg-column(4);
@@ -1021,47 +1021,49 @@ body.html,
     }
   }
 
-  .nav-pills {
-    text-transform: uppercase;
+  .episode-pills {
+    .nav-pills {
+      text-transform: uppercase;
 
-    > li {
-      > a {
-        border-radius: 2px; // Emulate .btn-mod.btn-round
-        line-height: 2*@font-size-base; // Make room for icon
+      > li {
+        > a {
+          border-radius: 2px; // Emulate .btn-mod.btn-round
+          line-height: 2*@font-size-base; // Make room for icon
 
-        i,
-        svg.svg-inline--fa {
-          float: left;
-          font-size: 2*@font-size-base;
+          i,
+          svg.svg-inline--fa {
+            float: left;
+            font-size: 2*@font-size-base;
+          }
+        }
+
+        > a:hover,
+        > a:focus {
+          background-color: @slate-10;
         }
       }
 
-      > a:hover,
-      > a:focus {
-        background-color: @slate-10;
-      }
-    }
-
-    li.active {
-      > a,
-      > a:hover,
-      > a:focus {
-        color: white;
-        background-color: @cardinal;
-      }
-    }
-
-    @media (min-width: @screen-md-min) {
-      border-bottom-width: 0px;
-
-      > li {
-        display: block;
-        float: none;
-        width: 100%;
+      li.active {
+        > a,
+        > a:hover,
+        > a:focus {
+          color: white;
+          background-color: @cardinal;
+        }
       }
 
-      > li + li {
-        margin-left: 0;
+      @media (min-width: @screen-md-min) {
+        border-bottom-width: 0px;
+
+        > li {
+          display: block;
+          float: none;
+          width: 100%;
+        }
+
+        > li + li {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -1074,6 +1076,8 @@ body.html,
   ul,
   .field,
   .view-cbf2019-content-videos,
+  .view-cbf2019-article-topics .view-content,
+  .view-cbf2019-speaker-listings .view-content,
   .episode-tags {
     margin-top: 0 !important;
     margin-bottom: 30px !important;
@@ -2983,26 +2987,49 @@ body.html,
         }
       }
     }
-
-    margin-bottom: 2*@line-height-computed;
   }
 
-  &.view-display-id-block_1 {
-	/*
-	 * Don't display the link for the Parent Article Topic
-	 * unless it is the first. Then give it some vertical spacing
-	 * to highlight it.
-	 */
-    .views-field.views-field-nothing-1 {
-      display: none;
+  &.view-display-id-block_2 {
+	.view-content {
+      margin-bottom: 2*@line-height-computed;
     }
+  }
 
-    .views-row-first .views-field.views-field-nothing-1 {
-      display: block;
-      margin-bottom: 0.5*@line-height-computed;
+  &.view-display-id-block_6 {
+	.view-content {
+      .views-row {
+        display: inline;
+
+        .views-field {
+          display: inline;
+          font-size: 0;
+        }
+
+        a {
+          font-size: @font-size-base;
+        }
+
+        + .views-row::before {
+          content: ',';
+          white-space: pre;
+        }
+      }
     }
   }
 }
+  .episode-tags {
+    .field {
+      display: inline;
+      font-style: italic;
+
+      &:first-child::before {
+        content: 'Tags:\00a0';
+        white-space: pre;
+      }
+
+    }
+  }
+
 
 .view-cbf2019-speaker-listings {
   .view-content {
@@ -3011,8 +3038,36 @@ body.html,
       font-size: @font-size-base;
       letter-spacing: 1px;
     }
+  }
 
-    margin-bottom: 2*@line-height-computed;
+  &.view-display-id-block_7 {
+	.view-content {
+      margin-bottom: 2*@line-height-computed;
+    }
+  }
+
+  &.view-display-id-block_6 {
+	.view-content {
+      margin-bottom: @line-height-computed;
+
+      .views-row {
+        display: inline;
+
+        .views-field {
+          display: inline;
+          font-size: 0;
+        }
+
+        a {
+          font-size: @font-size-base;
+        }
+
+        + .views-row::before {
+          content: ',';
+          white-space: pre;
+        }
+      }
+    }
   }
 }
 

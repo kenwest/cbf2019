@@ -86,6 +86,11 @@ hide($content['field_subtitle']);
 // Hide links
 $suppressLinks = true;
 
+// Add a sidebar
+if (stripos(drupal_get_path_alias(), 'city/blog/test-') === 0) {
+  $addArticleSidebar = true;
+}
+
 // Display the $typeSpecific for blogs
 $typeSpecific = '';
 $typeSpecific .= '<div class="blog-specific-content row">';
@@ -96,6 +101,10 @@ $typeSpecific .=     '</p>';
 $typeSpecific .=     views_embed_view('cbf2019_activity_logo', 'block_2');
 $typeSpecific .=     render($content['field_episode_date']);
 $typeSpecific .=     render($content['field_subtitle']);
+if ($addArticleSidebar) {
+  $typeSpecific .=   views_embed_view('cbf2019_speaker_listings', 'block_6'); // Article Speakers links
+  $typeSpecific .=   views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
+}
 $typeSpecific .=   '</div>';
 $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-pull-4">';
 if (!empty($content['field_highlight'])) {
@@ -106,11 +115,6 @@ else {
 }
 $typeSpecific .=   '</div>';
 $typeSpecific .= '</div>';
-
-// Add a sidebar
-if (stripos(drupal_get_path_alias(), 'city/blog/test-') === 0) {
-  $addArticleSidebar = true;
-}
 
 
 include 'node.tpl.php';

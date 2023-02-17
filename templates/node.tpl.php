@@ -147,7 +147,6 @@
         <div class="row">
           <div class="col-xs-12">
     <?php
-        print views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
         print views_embed_view('cbf2019_rated_content', 'block_2'); // More on Topic
     ?>
           </div>

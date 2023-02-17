@@ -176,25 +176,38 @@ if ($tabActive['count'] > 0) {
   hide($content['field_topic']);
   hide($content['field_topics']);
 
+  // Add a sidebar
+  if (stripos(drupal_get_path_alias(), 'city/episode/test-') === 0) {
+    $addArticleSidebar = true;
+  }
+
   // Display the episode-content-tab
   $typeSpecific = '';
   $typeSpecific .= '<div class="episode-content-tab clearfix">';
-  $typeSpecific .=   '<div class = "episode-pills">';
+  $typeSpecific .=   '<div class = "episode-summary">';
   $typeSpecific .=     '<p class="h3">';
   $typeSpecific .=       filter_xss(drupal_get_title());
   $typeSpecific .=     '</p>';
   $typeSpecific .=     views_embed_view('cbf2019_activity_logo', 'block_2');
   $typeSpecific .=     render($content['field_episode_date']);
   $typeSpecific .=     render($content['field_subtitle']);
+  if ($addArticleSidebar) {
+    $typeSpecific .=   views_embed_view('cbf2019_speaker_listings', 'block_6'); // Article Speakers links
+    $typeSpecific .=   views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
+  }
+  if (!$addArticleSidebar) {
+    $typeSpecific .=   '<div class = "episode-tags">';
+    $typeSpecific .=     render($content['field_topic']);
+    $typeSpecific .=     render($content['field_topics']);
+    $typeSpecific .=   '</div>';
+  }
   if ($tabActive['count'] > 1) {
+    $typeSpecific .= '<div class = "episode-pills">';
     $typeSpecific .=   '<ul class="nav nav-pills animate">';
     $typeSpecific .=     $tabContent;
     $typeSpecific .=   '</ul>';
+    $typeSpecific .= '</div>';
   }
-  $typeSpecific .=     '<div class = "episode-tags">';
-  $typeSpecific .=       render($content['field_topic']);
-  $typeSpecific .=       render($content['field_topics']);
-  $typeSpecific .=     '</div>';
   $typeSpecific .=   '</div>';
   $typeSpecific .=   '<div class = "tab-content section-text">';
   $typeSpecific .=     '<div class = "overlaid-image">';
@@ -208,11 +221,6 @@ if ($tabActive['count'] > 0) {
   $typeSpecific .=     $tabPaneContent;
   $typeSpecific .=   '</div>';
   $typeSpecific .= '</div>';
-}
-
-// Add a sidebar
-if (stripos(drupal_get_path_alias(), 'city/episode/test-') === 0) {
-  $addArticleSidebar = true;
 }
 
 
