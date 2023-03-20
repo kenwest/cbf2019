@@ -4591,14 +4591,6 @@ body.html .paragraph-image-right img,
   content: ',';
   white-space: pre;
 }
-.episode-tags .field {
-  display: inline;
-  font-style: italic;
-}
-.episode-tags .field:first-child::before {
-  content: 'Tags:\00a0';
-  white-space: pre;
-}
 .view-cbf2019-speaker-listings .view-content .views-field {
   margin-bottom: 0;
   font-size: 16px;
@@ -4672,6 +4664,9 @@ body.html .paragraph-image-right img,
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   border: 1px solid #697891;
+}
+#views-exposed-form-cbf2019-rated-content-page-5 .views-submit-button {
+  display: none;
 }
 /*
  * Other domains need the search block visible on all pages.
