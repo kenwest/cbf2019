@@ -4665,10 +4665,6 @@ body.html .paragraph-image-right img,
   transform: rotate(0deg);
   border: 1px solid #697891;
 }
-#views-exposed-form-cbf2019-rated-content-page-3 .views-submit-button,
-#views-exposed-form-cbf2019-rated-content-page-5 .views-submit-button {
-  display: none;
-}
 /*
  * Other domains need the search block visible on all pages.
  * This theme only requires it on /search/node/*.
@@ -4953,6 +4949,11 @@ body.html .paragraph-image-right img,
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  /*
+     * Format the search filter for Rated Content
+     * .rated-content-search is applied to the block containing the views exposed filter
+     * Undo views defaults and make Bootstrap structure
+     */
 }
 @media (min-width: 768px) {
   .region.region-sidebar .block {
@@ -4965,6 +4966,37 @@ body.html .paragraph-image-right img,
     float: left;
     width: 100%;
   }
+}
+.region.region-sidebar .block.rated-content-search {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .region.region-sidebar .block.rated-content-search {
+    float: left;
+    width: 100%;
+  }
+}
+.region.region-sidebar .block.rated-content-search .views-exposed-widgets {
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 0;
+}
+.region.region-sidebar .block.rated-content-search .views-exposed-widgets .views-exposed-widget {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.region.region-sidebar .block.rated-content-search .views-exposed-widgets .views-exposed-widget input {
+  margin-top: 0;
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 /*******************************
  * Format field_details in views

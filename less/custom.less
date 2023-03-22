@@ -3125,13 +3125,6 @@ body.html,
   }
 }
 
-#views-exposed-form-cbf2019-rated-content-page-3,
-#views-exposed-form-cbf2019-rated-content-page-5 {
-  .views-submit-button {
-    display: none;
-  }
-}
-
 /*
  * Other domains need the search block visible on all pages.
  * This theme only requires it on /search/node/*.
@@ -3342,6 +3335,33 @@ body.html,
     .make-xs-column(12);
     .make-sm-column(6);
     .make-md-column(12);
+
+    /*
+     * Format the search filter for Rated Content
+     * .rated-content-search is applied to the block containing the views exposed filter
+     * Undo views defaults and make Bootstrap structure
+     */
+
+    &.rated-content-search {
+      .make-sm-column(12);
+
+      .views-exposed-widgets {
+        .make-row();
+
+        margin-bottom: 0;
+
+        .views-exposed-widget {
+          .make-xs-column(6);
+
+          input {
+            margin-top: 0;
+            width: 100%;
+            padding-left: 13px;
+            padding-right: 13px;
+          }
+        }
+      }
+    }
   }
 }
 
