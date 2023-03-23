@@ -907,6 +907,9 @@ body.html .bold-is-bold strong,
 body.html .bold-is-bold .bold {
   font-weight: bold;
 }
+body.html .unpadded-paragraphs p {
+  padding: 0;
+}
 .cardinal,
 .primary-colour {
   color: #cf2e4f;
