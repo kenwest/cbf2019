@@ -21,13 +21,13 @@
   print $wrapper_prefix;
   if (!empty($title)) {
     if (!empty($titleParam)) {
-      $articleLink = "/resources?topic={$titleParam}&focus={$titleParam}#featured";
+      $articleLink = "/resources/topic?topic={$titleParam}&focus={$titleParam}";
       if ($focus == $titleParam) {
         $showList = true;
       }
     }
     else {
-      $articleLink = "/resources";
+      $articleLink = "/resources/topic";
     }
 ?>
     <div><a href="<?php print $articleLink; ?>"><?php print $title; ?></a></div>
