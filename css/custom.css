@@ -1956,6 +1956,8 @@ body.html .paragraph-image-right img,
   margin-left: -15px;
 }
 .episode-content-tab .episode-summary {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -1987,6 +1989,8 @@ body.html .paragraph-image-right img,
   }
 }
 .episode-content-tab .tab-content {
+  float: left;
+  width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
@@ -2550,6 +2554,33 @@ body.html .paragraph-image-right img,
 .episode-content-tab .episode-tags .field:not(first-child)::before {
   content: ',\00a0';
   white-space: pre;
+}
+.episode-content-tab.new-resource-library .episode-summary .h3,
+.episode-content-tab.new-resource-library .episode-summary .field-name-field-subtitle {
+  margin-bottom: 5px !important;
+}
+.episode-content-tab.new-resource-library .episode-summary .field-name-field-subtitle {
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.episode-content-tab.new-resource-library .episode-summary .field-name-field-episode-date {
+  color: #cf2e4f;
+}
+.episode-content-tab.new-resource-library .episode-pills {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.episode-content-tab.new-resource-library .episode-pills .nav-pills > li {
+  float: left;
+  width: unset;
+}
+.domain-christian .episode-content-tab.new-resource-library .episode-summary .field-name-field-episode-date {
+  color: #1c9cd6;
 }
 .domain-christian .episode-content-tab .nav-pills li.active > a,
 .domain-christian .episode-content-tab .nav-pills li.active > a:hover,

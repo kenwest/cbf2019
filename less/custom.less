@@ -893,6 +893,7 @@ body.html,
   .make-row();
 
   .episode-summary {
+    .make-xs-column(12);
     .make-md-column(5);
     .make-md-column-push(7);
     .make-lg-column(4);
@@ -904,6 +905,7 @@ body.html,
   }
 
   .tab-content{
+    .make-xs-column(12);
     .make-md-column(7);
     .make-md-column-pull(5);
     .make-lg-column-pull(4);
@@ -1376,6 +1378,43 @@ body.html,
   }
 }
 
+.episode-content-tab.new-resource-library {
+  .episode-summary {
+    .h3,
+    .field-name-field-subtitle {
+      margin-bottom: 5px !important;
+    }
+
+    .field-name-field-subtitle {
+      text-transform: uppercase;
+      line-height: 1.4;
+      letter-spacing: 1px;
+    }
+
+    .field-name-field-episode-date {
+      color: @cardinal;
+    }
+  }
+
+  .episode-pills {
+    .make-xs-column(12);
+//    .make-md-column(7);
+
+    .nav-pills > li {
+      float: left;
+      width: unset;
+    }
+  }
+}
+
+.domain-christian .episode-content-tab.new-resource-library {
+  .episode-summary {
+    .field-name-field-episode-date {
+      color: @city-blue;
+    }
+  }
+}
+
 .domain-christian .episode-content-tab .nav-pills {
   li.active {
     > a,
@@ -1385,6 +1424,7 @@ body.html,
     }
   }
 }
+
 
 /******************************
  * Format the contents of views
