@@ -1378,8 +1378,9 @@ body.html,
   }
 }
 
-.episode-content-tab.new-resource-library {
-  .episode-summary {
+.new-resource-library {
+  &.blog-specific-content,
+  &.episode-content-tab {
     .h3,
     .field-name-field-subtitle {
       margin-bottom: 5px !important;
@@ -1394,21 +1395,38 @@ body.html,
     .field-name-field-episode-date {
       color: @cardinal;
     }
-  }
 
-  .episode-pills {
-    .make-xs-column(12);
+    .view-cbf2019-article-topics {
+      .view-header-and-more {
+        margin-bottom: 0;
+
+        .h4.align-center {
+          margin-top: 0;
+          font-size: @font-size-base;
+          text-align: left !important;
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .episode-pills {
+      .make-xs-column(12);
 //    .make-md-column(7);
 
-    .nav-pills > li {
-      float: left;
-      width: unset;
+      .nav-pills > li {
+        float: left;
+        width: unset;
+      }
     }
   }
 }
 
-.domain-christian .episode-content-tab.new-resource-library {
-  .episode-summary {
+.domain-christian .new-resource-library {
+  &.blog-specific-content,
+  &.episode-content-tab {
     .field-name-field-episode-date {
       color: @city-blue;
     }

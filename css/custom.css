@@ -2555,19 +2555,38 @@ body.html .paragraph-image-right img,
   content: ',\00a0';
   white-space: pre;
 }
-.episode-content-tab.new-resource-library .episode-summary .h3,
-.episode-content-tab.new-resource-library .episode-summary .field-name-field-subtitle {
+.new-resource-library.blog-specific-content .h3,
+.new-resource-library.episode-content-tab .h3,
+.new-resource-library.blog-specific-content .field-name-field-subtitle,
+.new-resource-library.episode-content-tab .field-name-field-subtitle {
   margin-bottom: 5px !important;
 }
-.episode-content-tab.new-resource-library .episode-summary .field-name-field-subtitle {
+.new-resource-library.blog-specific-content .field-name-field-subtitle,
+.new-resource-library.episode-content-tab .field-name-field-subtitle {
   text-transform: uppercase;
   line-height: 1.4;
   letter-spacing: 1px;
 }
-.episode-content-tab.new-resource-library .episode-summary .field-name-field-episode-date {
+.new-resource-library.blog-specific-content .field-name-field-episode-date,
+.new-resource-library.episode-content-tab .field-name-field-episode-date {
   color: #cf2e4f;
 }
-.episode-content-tab.new-resource-library .episode-pills {
+.new-resource-library.blog-specific-content .view-cbf2019-article-topics .view-header-and-more,
+.new-resource-library.episode-content-tab .view-cbf2019-article-topics .view-header-and-more {
+  margin-bottom: 0;
+}
+.new-resource-library.blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center,
+.new-resource-library.episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center {
+  margin-top: 0;
+  font-size: 16px;
+  text-align: left !important;
+}
+.new-resource-library.blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center p,
+.new-resource-library.episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center p {
+  margin-bottom: 0;
+}
+.new-resource-library.blog-specific-content .episode-pills,
+.new-resource-library.episode-content-tab .episode-pills {
   position: relative;
   float: left;
   width: 100%;
@@ -2575,11 +2594,13 @@ body.html .paragraph-image-right img,
   padding-right: 15px;
   padding-left: 15px;
 }
-.episode-content-tab.new-resource-library .episode-pills .nav-pills > li {
+.new-resource-library.blog-specific-content .episode-pills .nav-pills > li,
+.new-resource-library.episode-content-tab .episode-pills .nav-pills > li {
   float: left;
   width: unset;
 }
-.domain-christian .episode-content-tab.new-resource-library .episode-summary .field-name-field-episode-date {
+.domain-christian .new-resource-library.blog-specific-content .field-name-field-episode-date,
+.domain-christian .new-resource-library.episode-content-tab .field-name-field-episode-date {
   color: #1c9cd6;
 }
 .domain-christian .episode-content-tab .nav-pills li.active > a,
