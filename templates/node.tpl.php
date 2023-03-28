@@ -138,7 +138,31 @@
               </div>
               <div class="col-xs-12 col-sm-6 col-md-12">
     <?php
-        print views_embed_view('cbf2019_speaker_listings', 'block_7'); // Top 10 rated Speakers
+        /*
+         * Find the Contributors block for this Domain and render it
+         */
+        $currentDomainId = domain_get_domain()['domain_id'];
+        $christianDomainId = domain_load_domain_id('christian');
+        if ($currentDomainId == $christianDomainId) {
+          $contributorBlockInfo = 'Contributors for City Bible Forum';
+        }
+        else {
+          $contributorBlockInfo = 'Contributors for Third Space';
+        }
+        $blocks_info = block_block_info();
+        foreach ($blocks_info as $bid => $block_info) {
+          if ($block_info['info'] == $contributorBlockInfo) {
+            /*
+             * Render the block
+             * See https://www.drupal.org/project/drupal/issues/957038#comment-12723048
+             */
+            $block_object = block_load('block', $bid);
+            $block_element = _block_get_renderable_array(_block_render_blocks([$block_object]));
+            $block_output = drupal_render($block_element);
+            print $block_output;
+            break;
+          }
+        }
     ?>
               </div>
             </div>
