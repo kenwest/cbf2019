@@ -100,13 +100,15 @@ else {
 $typeSpecific = '';
 $typeSpecific .= '<div class="' . $episodeSpecificClass . ' row">';
 $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-8">';
+if ($addArticleSidebar) {
+  $typeSpecific .=   views_embed_view('cbf2019_activity_logo', 'block_2');
+}
 $typeSpecific .=     '<p class="h3">';
 $typeSpecific .=       filter_xss(drupal_get_title());
 $typeSpecific .=     '</p>';
 if ($addArticleSidebar) {
   $typeSpecific .=   render($content['field_subtitle']);
   $typeSpecific .=   render($content['field_episode_date']);
-  $typeSpecific .=   views_embed_view('cbf2019_activity_logo', 'block_2');
   $typeSpecific .=   views_embed_view('cbf2019_speaker_listings', 'block_6'); // Article Speakers links
   $typeSpecific .=   views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
 }
