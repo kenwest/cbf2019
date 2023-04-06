@@ -87,18 +87,13 @@ hide($content['field_subtitle']);
 $suppressLinks = true;
 
 // Add a sidebar
-if (stripos(drupal_get_path_alias(), 'city/blog/test-') === 0) {
-  $addArticleSidebar = true;
-  $episodeSpecificClass = 'blog-specific-content new-resource-library';
-}
-else {
-  $addArticleSidebar = false;
-  $episodeSpecificClass = 'blog-specific-content';
-}
+$addArticleSidebar = true;
+$blogSpecificClass = 'blog-specific-content new-resource-library';
+
 
 // Display the $typeSpecific for blogs
 $typeSpecific = '';
-$typeSpecific .= '<div class="' . $episodeSpecificClass . ' row">';
+$typeSpecific .= '<div class="' . $blogSpecificClass . ' row">';
 $typeSpecific .=   '<div class = "col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-8">';
 if ($addArticleSidebar) {
   $typeSpecific .=   views_embed_view('cbf2019_activity_logo', 'block_2');

@@ -177,14 +177,8 @@ if ($tabActive['count'] > 0) {
   hide($content['field_topics']);
 
   // Add a sidebar
-  if (stripos(drupal_get_path_alias(), 'city/episode/test-') === 0) {
-    $addArticleSidebar = true;
-    $episodeSpecificClass = 'episode-content-tab new-resource-library';
-  }
-  else {
-    $addArticleSidebar = false;
-    $episodeSpecificClass = 'episode-content-tab';
-  }
+  $addArticleSidebar = true;
+  $episodeSpecificClass = 'episode-content-tab new-resource-library';
 
   // Display the episode-content-tab
   $typeSpecific = '';
