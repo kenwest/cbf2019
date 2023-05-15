@@ -52,26 +52,32 @@
 
     case 'HubSpot':
       ?>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-            region: "na1",
-            portalId: "<?php print variable_get('hubspot_portal_id'); ?>",
-            formId: "<?php print $formId; ?>"
-          });
-        </script>
+        <div id="form-<?php print $formId; ?>">
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "<?php print variable_get('hubspot_portal_id'); ?>",
+              formId: "<?php print $formId; ?>",
+              target: "#form-<?php print $formId; ?>"
+            });
+          </script>
+        </div>
       <?php
       break;
 
     case 'DepositFix':
       ?>
-        <script id='df-widget-js' src='https://widgets.depositfix.com/v1/app.min.js?v2'></script>
-        <script id='df-script' type='text/javascript'>
-          DepositFixForm.init({
-            formId: '<?php print $formId; ?>',
-            portalId: '<?php print variable_get('depositfix_portal_id'); ?>'
-          });
-        </script>
+        <div id="form-<?php print $formId; ?>">
+          <script id='df-widget-js' src='https://widgets.depositfix.com/v1/app.min.js?v2'></script>
+          <script id='df-script' type='text/javascript'>
+            DepositFixForm.init({
+              portalId: '<?php print variable_get('depositfix_portal_id'); ?>',
+              formId: '<?php print $formId; ?>',
+              target: '#form-<?php print $formId; ?>'
+            });
+          </script>
+        </div>
       <?php
       break;
 
