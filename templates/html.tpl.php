@@ -50,14 +50,24 @@
         $site_frontpage = variable_get('site_frontpage', 'node');
         $page = preg_replace('!( href="https://[a-z.]+/)' . $site_frontpage . '(["?])!i', '$1$2', $page);
       }
-      $fragments = preg_split('|(</?script[^>]*>)|i', $page, -1, PREG_SPLIT_DELIM_CAPTURE);
-      for ($i = 0; $i < count($fragments); $i += 4) {
-        print $fragments[$i];
+      if (stripos($page, 'cbf2019-do-not-optimise-script-placement') !== false) {
+        $hubspotScript = cbf_hubspot_script_cache();
+        if ($hubspotScript) {
+          $page = str_ireplace('cbf-hubspot-script-cache', $hubspotScript, $page);
+        }
+        print $page;
+        print $scripts;
       }
-      print $scripts;
-      for ($i = 1; $i < count($fragments); $i++) {
-        if ($i % 4 != 0) {
+      else {
+        $fragments = preg_split('|(</?script[^>]*>)|i', $page, -1, PREG_SPLIT_DELIM_CAPTURE);
+        for ($i = 0; $i < count($fragments); $i += 4) {
           print $fragments[$i];
+        }
+        print $scripts;
+        for ($i = 1; $i < count($fragments); $i++) {
+          if ($i % 4 != 0) {
+            print $fragments[$i];
+          }
         }
       }
     ?>
