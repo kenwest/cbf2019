@@ -51,44 +51,47 @@
   switch ($formType) {
 
     case 'HubSpot':
-      ?>
-        <div id="cbf2019-do-not-optimise-script-placement">
-          cbf-hubspot-script-cache
-          <?php
-            $portalId = variable_get('hubspot_portal_id');
-            cbf_hubspot_script_cache(
-              "<script charset='utf-8' type='text/javascript' src='//js.hsforms.net/forms/embed/v2.js'></script>
-              <script>
-                hbspt.forms.create({
-                  region: 'na1',
-                  portalId: '$portalId',
-                  formId: '$formId'
-                });
-              </script>");
-          ?>
-        </div>
-      <?php
+      $portalId = variable_get('hubspot_portal_id');
+      cbf_hubspot_script_cache(
+        "<script charset='utf-8' type='text/javascript' src='//js.hsforms.net/forms/embed/v2.js'></script>
+        <script>
+          hbspt.forms.create({
+            region: 'na1',
+            portalId: '$portalId',
+            formId: '$formId'
+          });
+        </script>");
       break;
 
     case 'DepositFix':
-      ?>
-        <div id="cbf2019-do-not-optimise-script-placement">
-          cbf-hubspot-script-cache
-          <?php
-            $portalId = variable_get('depositfix_portal_id');
-            cbf_hubspot_script_cache(
-              "<script id='df-widget-js' src='https://widgets.depositfix.com/v1/app.min.js?v2'></script>
-              <script id='df-script' type='text/javascript'>
-                DepositFixForm.init({
-                  portalId: '$portalId',
-                  formId: '$formId'
-                });
-              </script>");
-          ?>
-        </div>
-      <?php
+      $portalId = variable_get('depositfix_portal_id');
+      cbf_hubspot_script_cache(
+        "<script id='df-widget-js' src='https://widgets.depositfix.com/v1/app.min.js?v2'></script>
+        <script id='df-script' type='text/javascript'>
+          DepositFixForm.init({
+            portalId: '$portalId',
+            formId: '$formId'
+          });
+        </script>");
       break;
 
     default:
       break;
   }
+?>
+
+<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <?php if (!$label_hidden) { ?>
+  <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
+  <?php } ?>
+  <div class="field-items"<?php print $content_attributes; ?>>
+    <?php foreach ($items as $delta => $item) { ?>
+    <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+      <cbf-hubspot-script/>
+    </div>
+    <?php
+            break; /* Only one HubSpot script */
+          }
+    ?>
+  </div>
+</div>
