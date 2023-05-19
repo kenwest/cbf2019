@@ -48,36 +48,7 @@
   $formType = taxonomy_term_load($formType);
   $formType = $formType->name;
 
-  switch ($formType) {
-
-    case 'HubSpot':
-      $portalId = variable_get('hubspot_portal_id');
-      cbf_hubspot_script_cache(
-        "<script charset='utf-8' type='text/javascript' src='//js.hsforms.net/forms/embed/v2.js'></script>
-        <script>
-          hbspt.forms.create({
-            region: 'na1',
-            portalId: '$portalId',
-            formId: '$formId'
-          });
-        </script>");
-      break;
-
-    case 'DepositFix':
-      $portalId = variable_get('depositfix_portal_id');
-      cbf_hubspot_script_cache(
-        "<script id='df-widget-js' src='https://widgets.depositfix.com/v1/app.min.js?v2'></script>
-        <script id='df-script' type='text/javascript'>
-          DepositFixForm.init({
-            portalId: '$portalId',
-            formId: '$formId'
-          });
-        </script>");
-      break;
-
-    default:
-      break;
-  }
+  cbf_hubspot_script($formType, $formId);
 ?>
 
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
