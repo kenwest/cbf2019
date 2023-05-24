@@ -90,14 +90,14 @@ hide($content['field_subtitle']);
 $staffSliderDisplay = views_embed_view('cbf2019_staff_slider', 'block_2');
 if (stripos($staffSliderDisplay, 'cbf2019-staff-slider-view-header') !== false) {
   $staffContactText = '';
-  if (!empty($content['field_staff_contact'])) {
-    $staffContactOutput = render($content['field_staff_contact']);
+  if (!empty($content['field_staff_member'])) {
+    $staffContactOutput = render($content['field_staff_member']);
     $staffContacts = [];
     preg_match('"<a [^>]+>[^<]+</a>"i', $staffContactOutput, $staffContacts);
     if (!empty($staffContacts)) {
       $staffContactText = implode(', ', $staffContacts) . ' or one of ';
     }
-    hide($content['field_staff_contact']);
+    hide($content['field_staff_member']);
   }
   $content['body'][0]['#markup']
     .= '<p>Please contact '
