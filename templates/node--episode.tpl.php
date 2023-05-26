@@ -178,40 +178,19 @@ if ($tabActive['count'] > 0) {
 
   // Add a sidebar
   $addArticleSidebar = true;
-  $episodeSpecificClass = 'episode-content-tab new-resource-library';
 
   // Display the episode-content-tab
   $typeSpecific = '';
-  $typeSpecific .= '<div class="' . $episodeSpecificClass . ' clearfix">';
+  $typeSpecific .= '<div class="episode-content-tab clearfix">';
   $typeSpecific .=   '<div class = "episode-summary">';
-  if ($addArticleSidebar) {
-    $typeSpecific .=   views_embed_view('cbf2019_activity_logo', 'block_2');
-  }
+  $typeSpecific .=   views_embed_view('cbf2019_activity_logo', 'block_2');
   $typeSpecific .=     '<p class="h3">';
   $typeSpecific .=       filter_xss(drupal_get_title());
   $typeSpecific .=     '</p>';
-  if ($addArticleSidebar) {
-    $typeSpecific .=   render($content['field_subtitle']);
-    $typeSpecific .=   render($content['field_episode_date']);
-    $typeSpecific .=   views_embed_view('cbf2019_speaker_listings', 'block_6'); // Article Speakers links
-    $typeSpecific .=   views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
-  }
-  else {
-    $typeSpecific .=   views_embed_view('cbf2019_activity_logo', 'block_2');
-    $typeSpecific .=   render($content['field_episode_date']);
-    $typeSpecific .=   render($content['field_subtitle']);
-    $typeSpecific .=   '<div class = "episode-tags">';
-    $typeSpecific .=     render($content['field_topic']);
-    $typeSpecific .=     render($content['field_topics']);
-    $typeSpecific .=   '</div>';
-    if ($tabActive['count'] > 1) {
-      $typeSpecific .= '<div class = "episode-pills">';
-      $typeSpecific .=   '<ul class="nav nav-pills animate">';
-      $typeSpecific .=     $tabContent;
-      $typeSpecific .=   '</ul>';
-      $typeSpecific .= '</div>';
-    }
-  }
+  $typeSpecific .=   render($content['field_subtitle']);
+  $typeSpecific .=   render($content['field_episode_date']);
+  $typeSpecific .=   views_embed_view('cbf2019_speaker_listings', 'block_6'); // Article Speakers links
+  $typeSpecific .=   views_embed_view('cbf2019_article_topics', 'block_6'); // Article Topics links
   $typeSpecific .=   '</div>';
   $typeSpecific .=   '<div class = "tab-content section-text">';
   $typeSpecific .=     '<div class = "overlaid-image">';
@@ -224,7 +203,7 @@ if ($tabActive['count'] > 0) {
   $typeSpecific .=     '</div>';
   $typeSpecific .=     $tabPaneContent;
   $typeSpecific .=   '</div>';
-  if ($addArticleSidebar && $tabActive['count'] > 1) {
+  if ($tabActive['count'] > 1) {
     $typeSpecific .= '<div class = "episode-pills">';
     $typeSpecific .=   '<ul class="nav nav-pills animate">';
     $typeSpecific .=     $tabContent;

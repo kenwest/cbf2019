@@ -2555,38 +2555,38 @@ body.html .paragraph-image-right img,
   content: ',\00a0';
   white-space: pre;
 }
-.new-resource-library.blog-specific-content .h3,
-.new-resource-library.episode-content-tab .h3,
-.new-resource-library.blog-specific-content .field-name-field-subtitle,
-.new-resource-library.episode-content-tab .field-name-field-subtitle {
+.blog-specific-content .h3,
+.episode-content-tab .h3,
+.blog-specific-content .field-name-field-subtitle,
+.episode-content-tab .field-name-field-subtitle {
   margin-bottom: 5px !important;
 }
-.new-resource-library.blog-specific-content .field-name-field-subtitle,
-.new-resource-library.episode-content-tab .field-name-field-subtitle {
+.blog-specific-content .field-name-field-subtitle,
+.episode-content-tab .field-name-field-subtitle {
   text-transform: uppercase;
   line-height: 1.4;
   letter-spacing: 1px;
 }
-.new-resource-library.blog-specific-content .field-name-field-episode-date,
-.new-resource-library.episode-content-tab .field-name-field-episode-date {
+.blog-specific-content .field-name-field-episode-date,
+.episode-content-tab .field-name-field-episode-date {
   color: #cf2e4f;
 }
-.new-resource-library.blog-specific-content .view-cbf2019-article-topics .view-header-and-more,
-.new-resource-library.episode-content-tab .view-cbf2019-article-topics .view-header-and-more {
+.blog-specific-content .view-cbf2019-article-topics .view-header-and-more,
+.episode-content-tab .view-cbf2019-article-topics .view-header-and-more {
   margin-bottom: 0;
 }
-.new-resource-library.blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center,
-.new-resource-library.episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center {
+.blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center,
+.episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center {
   margin-top: 0;
   font-size: 16px;
   text-align: left !important;
 }
-.new-resource-library.blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center p,
-.new-resource-library.episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center p {
+.blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center p,
+.episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center p {
   margin-bottom: 0;
 }
-.new-resource-library.blog-specific-content .episode-pills,
-.new-resource-library.episode-content-tab .episode-pills {
+.blog-specific-content .episode-pills,
+.episode-content-tab .episode-pills {
   position: relative;
   float: left;
   width: 100%;
@@ -2594,13 +2594,13 @@ body.html .paragraph-image-right img,
   padding-right: 15px;
   padding-left: 15px;
 }
-.new-resource-library.blog-specific-content .episode-pills .nav-pills > li,
-.new-resource-library.episode-content-tab .episode-pills .nav-pills > li {
+.blog-specific-content .episode-pills .nav-pills > li,
+.episode-content-tab .episode-pills .nav-pills > li {
   float: left;
   width: unset;
 }
-.domain-christian .new-resource-library.blog-specific-content .field-name-field-episode-date,
-.domain-christian .new-resource-library.episode-content-tab .field-name-field-episode-date {
+.domain-christian .blog-specific-content .field-name-field-episode-date,
+.domain-christian .episode-content-tab .field-name-field-episode-date {
   color: #1c9cd6;
 }
 .domain-christian .episode-content-tab .nav-pills li.active > a,
@@ -4654,19 +4654,24 @@ body.html .paragraph-image-right img,
 .view-cbf2019-speaker-listings.view-display-id-block_7 .view-content {
   margin-bottom: 50px;
 }
+.view-cbf2019-speaker-listings.view-display-id-block_1 .view-content,
 .view-cbf2019-speaker-listings.view-display-id-block_6 .view-content {
   margin-bottom: 25px;
 }
+.view-cbf2019-speaker-listings.view-display-id-block_1 .view-content .views-row,
 .view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row {
   display: inline;
 }
+.view-cbf2019-speaker-listings.view-display-id-block_1 .view-content .views-row .views-field,
 .view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row .views-field {
   display: inline;
   font-size: 0;
 }
-.view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row a {
+.view-cbf2019-speaker-listings.view-display-id-block_1 .view-content .views-row .field-content,
+.view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row .field-content {
   font-size: 16px;
 }
+.view-cbf2019-speaker-listings.view-display-id-block_1 .view-content .views-row + .views-row::before,
 .view-cbf2019-speaker-listings.view-display-id-block_6 .view-content .views-row + .views-row::before {
   content: ',';
   white-space: pre;
@@ -4987,14 +4992,14 @@ body.html .paragraph-image-right img,
     margin-left: 15px;
   }
 }
-.node-type-blog .blog-specific-content.new-resource-library + .content .field-name-field-video {
+.node-type-blog .blog-specific-content + .content .field-name-field-video {
   float: none;
   width: 100%;
   padding: 0;
   margin: 0 0 25px 0;
 }
 @media (min-width: 768px) {
-  .node-type-blog .blog-specific-content.new-resource-library + .content .field-name-field-video {
+  .node-type-blog .blog-specific-content + .content .field-name-field-video {
     float: none;
     width: 100%;
     padding: 0;
@@ -5002,11 +5007,11 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 992px) {
-  .node-type-blog .blog-specific-content.new-resource-library + .content .field-name-field-video {
+  .node-type-blog .blog-specific-content + .content .field-name-field-video {
     width: 100%;
   }
 }
-.node-type-blog .blog-specific-content.new-resource-library + .content .field-name-body img {
+.node-type-blog .blog-specific-content + .content .field-name-body img {
   float: none !important;
   width: 100% !important;
   height: auto !important;
@@ -5014,7 +5019,7 @@ body.html .paragraph-image-right img,
   margin: 0 0 25px 0 !important;
 }
 @media (min-width: 768px) {
-  .node-type-blog .blog-specific-content.new-resource-library + .content .field-name-body img {
+  .node-type-blog .blog-specific-content + .content .field-name-body img {
     float: none !important;
     width: 100% !important;
     padding: 0 !important;
@@ -5022,19 +5027,19 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 768px) {
-  .node-type-blog .blog-specific-content.new-resource-library + .content .field-name-body .field-name-field-short-form img {
+  .node-type-blog .blog-specific-content + .content .field-name-body .field-name-field-short-form img {
     float: none !important;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 0 25px 0 !important;
   }
 }
-.node-type-blog .blog-specific-content.new-resource-library + .content .field-name-body div.video-filter {
+.node-type-blog .blog-specific-content + .content .field-name-body div.video-filter {
   width: 100%;
   margin: 0 0 25px 0;
 }
 @media (min-width: 768px) {
-  .node-type-blog .blog-specific-content.new-resource-library + .content .field-name-body div.video-filter {
+  .node-type-blog .blog-specific-content + .content .field-name-body div.video-filter {
     float: none;
     width: 100%;
     padding-bottom: 56.25%;
@@ -5042,13 +5047,13 @@ body.html .paragraph-image-right img,
   }
 }
 @media (min-width: 992px) {
-  .node-type-blog .blog-specific-content.new-resource-library + .content .field-name-body div.video-filter {
+  .node-type-blog .blog-specific-content + .content .field-name-body div.video-filter {
     width: 100%;
     padding-bottom: 56.25%;
   }
 }
 @media (min-width: 768px) {
-  .node-type-blog .blog-specific-content.new-resource-library + .content .field-name-body div.video-filter iframe.video-filter {
+  .node-type-blog .blog-specific-content + .content .field-name-body div.video-filter iframe.video-filter {
     margin-left: 0;
   }
 }

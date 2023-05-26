@@ -1378,55 +1378,53 @@ body.html,
   }
 }
 
-.new-resource-library {
-  &.blog-specific-content,
-  &.episode-content-tab {
-    .h3,
-    .field-name-field-subtitle {
-      margin-bottom: 5px !important;
-    }
+.blog-specific-content,
+.episode-content-tab {
+  .h3,
+  .field-name-field-subtitle {
+    margin-bottom: 5px !important;
+  }
 
-    .field-name-field-subtitle {
-      text-transform: uppercase;
-      line-height: 1.4;
-      letter-spacing: 1px;
-    }
+  .field-name-field-subtitle {
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
 
-    .field-name-field-episode-date {
-      color: @cardinal;
-    }
+  .field-name-field-episode-date {
+    color: @cardinal;
+  }
 
-    .view-cbf2019-article-topics {
-      .view-header-and-more {
-        margin-bottom: 0;
+  .view-cbf2019-article-topics {
+    .view-header-and-more {
+      margin-bottom: 0;
 
-        .h4.align-center {
-          margin-top: 0;
-          font-size: @font-size-base;
-          text-align: left !important;
+      .h4.align-center {
+        margin-top: 0;
+        font-size: @font-size-base;
+        text-align: left !important;
 
-          p {
-            margin-bottom: 0;
-          }
+        p {
+          margin-bottom: 0;
         }
       }
     }
+  }
 
-    .episode-pills {
-      .make-xs-column(12);
-//    .make-md-column(7);
+  .episode-pills {
+    .make-xs-column(12);
+//  .make-md-column(7);
 
-      .nav-pills > li {
-        float: left;
-        width: unset;
-      }
+    .nav-pills > li {
+      float: left;
+      width: unset;
     }
   }
 }
 
-.domain-christian .new-resource-library {
-  &.blog-specific-content,
-  &.episode-content-tab {
+.domain-christian {
+  .blog-specific-content,
+  .episode-content-tab {
     .field-name-field-episode-date {
       color: @city-blue;
     }
@@ -3098,6 +3096,7 @@ body.html,
     }
   }
 
+  &.view-display-id-block_1,
   &.view-display-id-block_6 {
 	.view-content {
       margin-bottom: @line-height-computed;
@@ -3110,7 +3109,7 @@ body.html,
           font-size: 0;
         }
 
-        a {
+        .field-content {
           font-size: @font-size-base;
         }
 
@@ -3382,7 +3381,7 @@ body.html,
 }
 
 .node-type-blog {
-  .blog-specific-content.new-resource-library {
+  .blog-specific-content {
 
     + .content {
       .field-name-field-video {
