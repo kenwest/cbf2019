@@ -81,18 +81,62 @@
 hide($content['field_in_activity']);
 hide($content['field_subtitle']);
 hide($content['field_with']);
-hide($content['body']);
 hide($content['field_highlight']);
-hide($content['field_highlight_video']);
-hide($content['field_course_options']);
-hide($content['field_training_pathway']);
-hide($content['field_attachment']);
+hide($content['field_event_options']);
 hide($content['field_registration_buttons']);
+hide($content['body']);
+hide($content['field_attachment']);
+hide($content['field_staff_member']);
 
 // Hide links
 $suppressLinks = true;
 
 // Display the $typeSpecific for courses
-$typeSpecific = cbf_eventbrite_registration_buttons($content['field_registration_buttons']);
+$output_logo = views_embed_view('cbf2019_activity_logo', 'block_2');
+$output_title = filter_xss(drupal_get_title());
+$output_subtitle = render($content['field_subtitle']);
+$output_date = render($content['field_national_date_text']);
+$output_with = views_embed_view('cbf2019_speaker_listings', 'block_1'); // Event Speaker links
+if (trim(strip_tags($output_with))) {
+  $output_with = '<a href="#cbf2019-speakers-view-header">' . $output_with . '</a>';
+}
+$output_location = views_embed_view('cbf2019_event_location', 'block');
+$output_highlight = render($content['field_highlight']);
+$output_event_options = render($content['field_event_options']);
+$output_registration_buttons = cbf_eventbrite_registration_buttons($content['field_registration_buttons']);
+$output_body = render($content['body']);
+$output_attachment = render($content['field_attachment']);
+$output_staff_member = render($content['field_staff_member']);
+
+$typeSpecific = "
+<div class=\"eventbrite-event-content-tab\">
+  <div class=\"row\">
+    <div class=\"col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-8\">
+      $output_logo
+      <p class=\"h3\">
+        $output_title
+      </p>
+      $output_subtitle
+      $output_date
+      $output_with
+      $output_location
+    </div>
+    <div class=\"col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-pull-4\">
+      $output_highlight
+    </div>
+  </div>
+  <div class=\"row\">
+    <div class=\"col-xs-12 col-md-3\">
+      $output_event_options
+    </div>
+    <div class=\"col-xs-12 col-md-9 col-lg-8 col-lg-offset-1\">
+      $output_registration_buttons
+      $output_body
+      $output_attachment
+      $output_staff_member
+    </div>
+  </div>
+</div>
+";
 
 include 'node.tpl.php';

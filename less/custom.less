@@ -607,6 +607,7 @@ body.html,
 /******************************
  * Format course-specific and blog-specific content
  */
+.eventbrite-event-content-tab,
 .course-specific-content,
 .blog-specific-content {
   .h3 {
@@ -656,6 +657,45 @@ body.html,
       .make-sm-column-offset(0);
       .make-md-column(12);
       .make-lg-column(12);
+    }
+  }
+}
+
+.eventbrite-event-content-tab {
+  .field-registration-buttons {
+    margin-top: 0 !important;
+    margin-bottom: 30px !important;
+  }
+
+  .paragraphs-items-field-event-options {
+    font-size: 0;
+
+    .paragraphs-item-event-option {
+      .make-row();
+      .clearfix();
+
+      font-size: @font-size-base;
+
+      .field {
+        margin-bottom: 0 !important;
+      }
+
+      .field-name-field-title {
+        .make-xs-column(8);
+        .make-sm-column(4);
+        .make-md-column(8);
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .field-name-field-event-option-price {
+        .make-xs-column(4);
+        .make-sm-column(2);
+        .make-md-column(4);
+
+        text-align: right;
+      }
     }
   }
 }
@@ -1378,6 +1418,7 @@ body.html,
   }
 }
 
+.eventbrite-event-content-tab,
 .blog-specific-content,
 .episode-content-tab {
   .h3,
@@ -1385,12 +1426,14 @@ body.html,
     margin-bottom: 5px !important;
   }
 
+  .view-cbf2019-event-location,
   .field-name-field-subtitle {
     text-transform: uppercase;
     line-height: 1.4;
     letter-spacing: 1px;
   }
 
+  .field-name-field-national-date-text,
   .field-name-field-episode-date {
     color: @cardinal;
   }
@@ -1423,8 +1466,10 @@ body.html,
 }
 
 .domain-christian {
+  .eventbrite-event-content-tab,
   .blog-specific-content,
   .episode-content-tab {
+    .field-name-field-national-date-text,
     .field-name-field-episode-date {
       color: @city-blue;
     }

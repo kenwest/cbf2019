@@ -1381,29 +1381,36 @@ body.html .paragraph-image-right img,
 /******************************
  * Format course-specific and blog-specific content
  */
+.eventbrite-event-content-tab .h3,
 .course-specific-content .h3,
 .blog-specific-content .h3 {
   text-transform: uppercase;
 }
+.eventbrite-event-content-tab .h3,
 .course-specific-content .h3,
 .blog-specific-content .h3,
+.eventbrite-event-content-tab .field,
 .course-specific-content .field,
 .blog-specific-content .field,
+.eventbrite-event-content-tab .paragraphs-items-field-course-options,
 .course-specific-content .paragraphs-items-field-course-options,
 .blog-specific-content .paragraphs-items-field-course-options {
   margin-top: 0 !important;
   margin-bottom: 30px !important;
 }
+.eventbrite-event-content-tab .embed-responsive-16by9,
 .course-specific-content .embed-responsive-16by9,
 .blog-specific-content .embed-responsive-16by9 {
   background: #c3c9d3;
 }
+.eventbrite-event-content-tab .paragraphs-items-field-course-options .field,
 .course-specific-content .paragraphs-items-field-course-options .field,
 .blog-specific-content .paragraphs-items-field-course-options .field {
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 0 !important;
 }
+.eventbrite-event-content-tab .paragraphs-items-field-course-options .field .field-item,
 .course-specific-content .paragraphs-items-field-course-options .field .field-item,
 .blog-specific-content .paragraphs-items-field-course-options .field .field-item {
   position: relative;
@@ -1412,12 +1419,14 @@ body.html .paragraph-image-right img,
   padding-left: 15px;
 }
 @media (min-width: 768px) {
+  .eventbrite-event-content-tab .paragraphs-items-field-course-options .field .field-item,
   .course-specific-content .paragraphs-items-field-course-options .field .field-item,
   .blog-specific-content .paragraphs-items-field-course-options .field .field-item {
     float: left;
     width: 100%;
   }
 }
+.eventbrite-event-content-tab .paragraphs-items-field-course-options .field .field-item.short,
 .course-specific-content .paragraphs-items-field-course-options .field .field-item.short,
 .blog-specific-content .paragraphs-items-field-course-options .field .field-item.short {
   position: relative;
@@ -1426,6 +1435,7 @@ body.html .paragraph-image-right img,
   padding-left: 15px;
 }
 @media (min-width: 768px) {
+  .eventbrite-event-content-tab .paragraphs-items-field-course-options .field .field-item.short,
   .course-specific-content .paragraphs-items-field-course-options .field .field-item.short,
   .blog-specific-content .paragraphs-items-field-course-options .field .field-item.short {
     float: left;
@@ -1478,6 +1488,72 @@ body.html .paragraph-image-right img,
   .course-specific-content .webform-client-form .form-actions {
     float: left;
     width: 100%;
+  }
+}
+.eventbrite-event-content-tab .field-registration-buttons {
+  margin-top: 0 !important;
+  margin-bottom: 30px !important;
+}
+.eventbrite-event-content-tab .paragraphs-items-field-event-options {
+  font-size: 0;
+}
+.eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option {
+  margin-right: -15px;
+  margin-left: -15px;
+  font-size: 16px;
+}
+.eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option:before,
+.eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option:after {
+  display: table;
+  content: " ";
+}
+.eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option:after {
+  clear: both;
+}
+.eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field {
+  margin-bottom: 0 !important;
+}
+.eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-title {
+  float: left;
+  width: 66.66666667%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media (min-width: 768px) {
+  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-title {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-title {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-event-option-price {
+  float: left;
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-event-option-price {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-event-option-price {
+    float: left;
+    width: 33.33333333%;
   }
 }
 .page-node-done .webform-progressbar,
@@ -2555,36 +2631,50 @@ body.html .paragraph-image-right img,
   content: ',\00a0';
   white-space: pre;
 }
+.eventbrite-event-content-tab .h3,
 .blog-specific-content .h3,
 .episode-content-tab .h3,
+.eventbrite-event-content-tab .field-name-field-subtitle,
 .blog-specific-content .field-name-field-subtitle,
 .episode-content-tab .field-name-field-subtitle {
   margin-bottom: 5px !important;
 }
+.eventbrite-event-content-tab .view-cbf2019-event-location,
+.blog-specific-content .view-cbf2019-event-location,
+.episode-content-tab .view-cbf2019-event-location,
+.eventbrite-event-content-tab .field-name-field-subtitle,
 .blog-specific-content .field-name-field-subtitle,
 .episode-content-tab .field-name-field-subtitle {
   text-transform: uppercase;
   line-height: 1.4;
   letter-spacing: 1px;
 }
+.eventbrite-event-content-tab .field-name-field-national-date-text,
+.blog-specific-content .field-name-field-national-date-text,
+.episode-content-tab .field-name-field-national-date-text,
+.eventbrite-event-content-tab .field-name-field-episode-date,
 .blog-specific-content .field-name-field-episode-date,
 .episode-content-tab .field-name-field-episode-date {
   color: #cf2e4f;
 }
+.eventbrite-event-content-tab .view-cbf2019-article-topics .view-header-and-more,
 .blog-specific-content .view-cbf2019-article-topics .view-header-and-more,
 .episode-content-tab .view-cbf2019-article-topics .view-header-and-more {
   margin-bottom: 0;
 }
+.eventbrite-event-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center,
 .blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center,
 .episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center {
   margin-top: 0;
   font-size: 16px;
   text-align: left !important;
 }
+.eventbrite-event-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center p,
 .blog-specific-content .view-cbf2019-article-topics .view-header-and-more .h4.align-center p,
 .episode-content-tab .view-cbf2019-article-topics .view-header-and-more .h4.align-center p {
   margin-bottom: 0;
 }
+.eventbrite-event-content-tab .episode-pills,
 .blog-specific-content .episode-pills,
 .episode-content-tab .episode-pills {
   position: relative;
@@ -2594,11 +2684,16 @@ body.html .paragraph-image-right img,
   padding-right: 15px;
   padding-left: 15px;
 }
+.eventbrite-event-content-tab .episode-pills .nav-pills > li,
 .blog-specific-content .episode-pills .nav-pills > li,
 .episode-content-tab .episode-pills .nav-pills > li {
   float: left;
   width: unset;
 }
+.domain-christian .eventbrite-event-content-tab .field-name-field-national-date-text,
+.domain-christian .blog-specific-content .field-name-field-national-date-text,
+.domain-christian .episode-content-tab .field-name-field-national-date-text,
+.domain-christian .eventbrite-event-content-tab .field-name-field-episode-date,
 .domain-christian .blog-specific-content .field-name-field-episode-date,
 .domain-christian .episode-content-tab .field-name-field-episode-date {
   color: #1c9cd6;
