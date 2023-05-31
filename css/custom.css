@@ -2657,6 +2657,65 @@ body.html .paragraph-image-right img,
 .episode-content-tab .field-name-field-episode-date {
   color: #cf2e4f;
 }
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time,
+.blog-specific-content .field-name-field-national-date-text .cbf-time,
+.episode-content-tab .field-name-field-national-date-text .cbf-time,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time,
+.blog-specific-content .field-name-field-episode-date .cbf-time,
+.episode-content-tab .field-name-field-episode-date .cbf-time {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time:before,
+.blog-specific-content .field-name-field-national-date-text .cbf-time:before,
+.episode-content-tab .field-name-field-national-date-text .cbf-time:before,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time:before,
+.blog-specific-content .field-name-field-episode-date .cbf-time:before,
+.episode-content-tab .field-name-field-episode-date .cbf-time:before,
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time:after,
+.blog-specific-content .field-name-field-national-date-text .cbf-time:after,
+.episode-content-tab .field-name-field-national-date-text .cbf-time:after,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time:after,
+.blog-specific-content .field-name-field-episode-date .cbf-time:after,
+.episode-content-tab .field-name-field-episode-date .cbf-time:after {
+  display: table;
+  content: " ";
+}
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time:after,
+.blog-specific-content .field-name-field-national-date-text .cbf-time:after,
+.episode-content-tab .field-name-field-national-date-text .cbf-time:after,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time:after,
+.blog-specific-content .field-name-field-episode-date .cbf-time:after,
+.episode-content-tab .field-name-field-episode-date .cbf-time:after {
+  clear: both;
+}
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz-city,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz-city,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz-city,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz-city,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz-city,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz-city {
+  position: relative;
+  float: left;
+  width: 16.66666667%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 8.33333333%;
+}
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz-time,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz-time,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz-time,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz-time,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz-time,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz-time {
+  position: relative;
+  float: left;
+  width: 75%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .eventbrite-event-content-tab .view-cbf2019-article-topics .view-header-and-more,
 .blog-specific-content .view-cbf2019-article-topics .view-header-and-more,
 .episode-content-tab .view-cbf2019-article-topics .view-header-and-more {

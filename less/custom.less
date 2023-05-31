@@ -1436,6 +1436,20 @@ body.html,
   .field-name-field-national-date-text,
   .field-name-field-episode-date {
     color: @cardinal;
+
+    .cbf-time {
+      .make-row();
+      .clearfix();
+
+      .tz-city {
+        .make-xs-column(2);
+        .make-xs-column-offset(1);
+      }
+
+      .tz-time {
+        .make-xs-column(9);
+      }
+    }
   }
 
   .view-cbf2019-article-topics {
