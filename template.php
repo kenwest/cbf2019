@@ -110,13 +110,12 @@ function cbf2019_breadcrumb($variables) {
       if (!empty($node)) {
         switch ($node->type) {
           case 'activity':
+          case 'brite_event':
             $crumbs[] = ["What's on", '/whats-on'];
             break;
           case 'episode':
-            $crumbs[] = ['Resources', '/library'];
-            break;
           case 'blog':
-            $crumbs[] = ['Blog', '/articles'];
+            $crumbs[] = ['Resources', '/resources'];
             break;
         }
       }
