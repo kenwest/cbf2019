@@ -1511,7 +1511,7 @@ body.html .paragraph-image-right img,
   clear: both;
 }
 .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field {
-  margin-bottom: 0 !important;
+  margin-bottom: 5px !important;
 }
 .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-title {
   position: relative;
