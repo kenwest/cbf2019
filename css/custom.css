@@ -1514,47 +1514,23 @@ body.html .paragraph-image-right img,
   margin-bottom: 0 !important;
 }
 .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-title {
+  position: relative;
   float: left;
   width: 66.66666667%;
-  position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-@media (min-width: 768px) {
-  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-title {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-@media (min-width: 992px) {
-  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-title {
-    float: left;
-    width: 66.66666667%;
-  }
-}
 .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-event-option-price {
+  position: relative;
   float: left;
   width: 33.33333333%;
-  position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
   text-align: right;
-}
-@media (min-width: 768px) {
-  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-event-option-price {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-@media (min-width: 992px) {
-  .eventbrite-event-content-tab .paragraphs-items-field-event-options .paragraphs-item-event-option .field-name-field-event-option-price {
-    float: left;
-    width: 33.33333333%;
-  }
 }
 .page-node-done .webform-progressbar,
 .node-course .content .webform-client-form .webform-progressbar {

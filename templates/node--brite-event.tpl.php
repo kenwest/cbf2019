@@ -130,8 +130,14 @@ $typeSpecific = "
   </div>
   <div class=\"row\">
     <div class=\"col-xs-12 col-md-3\">
-      $output_event_options
-      $output_registration_buttons
+      <div class=\"row\">
+        <div class=\"col-xs-12 col-sm-6 col-md-12\">
+          $output_event_options
+        </div>
+        <div class=\"col-xs-12 col-sm-6 col-md-12\">
+          $output_registration_buttons
+        </div>
+      </div>
     </div>
     <div class=\"col-xs-12 col-md-9 col-lg-8 col-lg-offset-1\">
       $output_body
