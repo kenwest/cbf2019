@@ -103,6 +103,9 @@ if (trim(strip_tags($output_with))) {
 $output_location = views_embed_view('cbf2019_event_location', 'block');
 $output_highlight = render($content['field_highlight']);
 $output_event_options = render($content['field_event_options']);
+if (trim(strip_tags($output_event_options)) == '') {
+  $output_event_options = '<p class="uppercase">Registration is free</p>';
+}
 $output_registration_buttons = cbf_eventbrite_registration_buttons($content['field_registration_buttons']);
 $output_body = render($content['body']);
 $output_attachment = render($content['field_attachment']);
