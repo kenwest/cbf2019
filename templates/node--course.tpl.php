@@ -87,6 +87,7 @@ hide($content['field_highlight_video']);
 hide($content['field_course_options']);
 hide($content['field_training_pathway']);
 hide($content['field_attachment']);
+hide($content['field_order_url']);
 
 // Hide links
 $suppressLinks = true;
@@ -94,8 +95,14 @@ $suppressLinks = true;
 // Display the $typeSpecific for courses
 $typeSpecific = '';
 
+// @TODO once Courses are no longer dependent on civiCRM, we can also remove the dependency on webforms
 if ($variables['elements']['webform']['#form']['progressbar']['#page_num'] == 1) {
   hide($content['webform']);
+
+  $enrolButton = render($content['field_order_url']);
+  if (!trim(strip_tags($enrolButton))) {
+    $enrolButton = render($content['webform']);
+  }
 
   $typeSpecific .= '<div class="course-specific-content course">';
   $typeSpecific .=   '<div class="row">';
@@ -121,7 +128,7 @@ if ($variables['elements']['webform']['#form']['progressbar']['#page_num'] == 1)
   $typeSpecific .=       render($content['body']);
   $typeSpecific .=     '</div>';
   $typeSpecific .=     '<div class = "col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-push-1">';
-  $typeSpecific .=       render($content['webform']); // 'Enrol now' button
+  $typeSpecific .=       $enrolButton;
   $typeSpecific .=       render($content['field_highlight_video']);
   $typeSpecific .=     '</div>';
   $typeSpecific .=   '</div>';
