@@ -76,7 +76,7 @@
         }
       }
     ?>
-    <script src="//maps.googleapis.com/maps/api/js?key=<?php print theme_get_setting('gmap_key'); ?>" type="text/javascript"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=<?php print variable_get('gmap_api_key', theme_get_setting('gmap_key')); ?>" type="text/javascript"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="<?php print base_path() . drupal_get_path('theme', 'rhythm'); ?>/js/placeholder.js"></script><![endif]-->
     <?php print $page_bottom; ?>
   </div>
