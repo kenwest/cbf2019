@@ -55,18 +55,8 @@
         }
 
         $itemOutput = render($item);
-        $matches = null;
-        $itemModified = preg_replace(
-          '/ (href=")/i',
-          ' rel="nofollow" $1',
-          $itemModified
-        );
-        if (!empty($itemModified)) {
-          print $itemModified;
-        }
-        else {
-          print $itemOutput;
-        }
+        $itemModified = preg_replace('/ (href=")/i', ' rel="nofollow" $1', $itemOutput) ?? $itemOutput;
+        print $itemModified;
       }
 
       if ($itemCount > 0) {
