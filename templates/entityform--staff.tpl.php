@@ -28,11 +28,9 @@
  * @see template_process()
  */
 
+$url = '';
 if ($field_enquiry_form[0]['taxonomy_term']->description ?? '') {
   $url = $field_enquiry_form[0]['taxonomy_term']->description;
-}
-else if ($field_staff_contact[0]['contact_id'] ?? '') {
-  $url = "/staff-contact?cid1={$field_staff_contact[0]['contact_id']}";
 }
 
 ?>

@@ -81,10 +81,9 @@
 hide($content['field_subtitle']);
 
 /*
- * The Staff Slider view extends the field_staff_contact.
  * If the 'Staff Slider for Activity' display is not empty then insert text
  * that links to that display. This link replaces the markup for the Staff
- * Contact. The link is appended to the Body (Staff Contact follows the Body
+ * Contact. The link is appended to the Body (Staff Member follows the Body
  * in the Activity display).
  */
 $staffSliderDisplay = views_embed_view('cbf2019_staff_slider', 'block_2');
