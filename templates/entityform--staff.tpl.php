@@ -28,23 +28,23 @@
  * @see template_process()
  */
 
-$url = '';
+$enquiryUrl = '';
 if ($field_enquiry_form[0]['taxonomy_term']->description ?? '') {
-  $url = $field_enquiry_form[0]['taxonomy_term']->description;
+  $enquiryUrl = $field_enquiry_form[0]['taxonomy_term']->description;
 }
 
 ?>
 <?php if (!$page) { ?>
-      <?php if (!empty($url)) { ?>
-        <a href="<?php print $url; ?>"><?php print $title; ?></a>
+      <?php if (!empty($enquiryUrl)) { ?>
+        <a href="<?php print $enquiryUrl; ?>"><?php print $title; ?></a>
       <?php } else { ?>
         <?php print $title; ?>
       <?php } ?>
 <?php } else { ?>
   <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
     <h2<?php print $title_attributes; ?>>
-      <?php if (!empty($url)) { ?>
-        <a href="<?php print $url; ?>"><?php print $title; ?></a>
+      <?php if (!empty($enquiryUrl)) { ?>
+        <a href="<?php print $enquiryUrl; ?>"><?php print $title; ?></a>
       <?php } else { ?>
         <?php print $title; ?>
       <?php } ?>
