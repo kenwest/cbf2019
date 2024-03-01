@@ -35,10 +35,6 @@
         $mainMenuName = 'menu-cbf-2019-plus-menu';
         break;
 
-      case 'thirdspace':
-        $mainMenuName = 'menu-third-space-main-menu';
-        break;
-
       default:
         $mainMenuName = 'menu-cbf-2019-main-menu';
         break;
