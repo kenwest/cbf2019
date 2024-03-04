@@ -55,7 +55,7 @@
           </li>
         <?php endif; ?>
         <?php
-          $domainName = domain_get_domain()['machine_name'];
+          $domainName = domain_lookup(domain_get_domain()['domain_id'])['machine_name'];
           switch ($domainName) {
             case 'christian':
             case 'not-used':

@@ -10,7 +10,7 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 
   <?php
-    $domainName = domain_get_domain()['machine_name'];
+    $domainName = domain_lookup(domain_get_domain()['domain_id'])['machine_name'];
     $primaryColour = ($domainName == 'christian') ? '#1c9cd6' : '#cf2e4f';
   ?>
 
