@@ -62,7 +62,7 @@ if ($embeddedView) {
 }
 else {
 
-  $blockContent = $row->field_field_description[0]['rendered']['#markup'] ?? '';
+  $blockContent = $row->field_field_short_form[0]['rendered']['#markup'] ?? '';
   $fixedWidth = $row->field_field_fixed_width_container[0]['raw']['value'] ?? 0;
 
   if ($blockContent) {
