@@ -2729,61 +2729,61 @@ body.html .paragraph-image-right img,
 .episode-content-tab .field-name-field-episode-date {
   color: #cf2e4f;
 }
-.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time,
-.blog-specific-content .field-name-field-national-date-text .cbf-time,
-.episode-content-tab .field-name-field-national-date-text .cbf-time,
-.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time,
-.blog-specific-content .field-name-field-episode-date .cbf-time,
-.episode-content-tab .field-name-field-episode-date .cbf-time {
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz {
   margin-right: -15px;
   margin-left: -15px;
 }
-.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time:before,
-.blog-specific-content .field-name-field-national-date-text .cbf-time:before,
-.episode-content-tab .field-name-field-national-date-text .cbf-time:before,
-.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time:before,
-.blog-specific-content .field-name-field-episode-date .cbf-time:before,
-.episode-content-tab .field-name-field-episode-date .cbf-time:before,
-.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time:after,
-.blog-specific-content .field-name-field-national-date-text .cbf-time:after,
-.episode-content-tab .field-name-field-national-date-text .cbf-time:after,
-.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time:after,
-.blog-specific-content .field-name-field-episode-date .cbf-time:after,
-.episode-content-tab .field-name-field-episode-date .cbf-time:after {
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz:before,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz:before,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz:before,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz:before,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz:before,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz:before,
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz:after,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz:after,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz:after,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz:after,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz:after,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz:after {
   display: table;
   content: " ";
 }
-.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time:after,
-.blog-specific-content .field-name-field-national-date-text .cbf-time:after,
-.episode-content-tab .field-name-field-national-date-text .cbf-time:after,
-.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time:after,
-.blog-specific-content .field-name-field-episode-date .cbf-time:after,
-.episode-content-tab .field-name-field-episode-date .cbf-time:after {
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz:after,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz:after,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz:after,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz:after,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz:after,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz:after {
   clear: both;
 }
-.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz-city,
-.blog-specific-content .field-name-field-national-date-text .cbf-time .tz-city,
-.episode-content-tab .field-name-field-national-date-text .cbf-time .tz-city,
-.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz-city,
-.blog-specific-content .field-name-field-episode-date .cbf-time .tz-city,
-.episode-content-tab .field-name-field-episode-date .cbf-time .tz-city {
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz .tz-city,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz .tz-city,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz .tz-city,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz .tz-city,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz .tz-city,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz .tz-city {
   position: relative;
   float: left;
-  width: 16.66666667%;
+  width: 50%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: 8.33333333%;
 }
-.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz-time,
-.blog-specific-content .field-name-field-national-date-text .cbf-time .tz-time,
-.episode-content-tab .field-name-field-national-date-text .cbf-time .tz-time,
-.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz-time,
-.blog-specific-content .field-name-field-episode-date .cbf-time .tz-time,
-.episode-content-tab .field-name-field-episode-date .cbf-time .tz-time {
+.eventbrite-event-content-tab .field-name-field-national-date-text .cbf-time .tz .tz-time,
+.blog-specific-content .field-name-field-national-date-text .cbf-time .tz .tz-time,
+.episode-content-tab .field-name-field-national-date-text .cbf-time .tz .tz-time,
+.eventbrite-event-content-tab .field-name-field-episode-date .cbf-time .tz .tz-time,
+.blog-specific-content .field-name-field-episode-date .cbf-time .tz .tz-time,
+.episode-content-tab .field-name-field-episode-date .cbf-time .tz .tz-time {
   position: relative;
   float: left;
-  width: 75%;
+  width: 41.66666667%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
