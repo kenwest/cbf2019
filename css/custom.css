@@ -2769,7 +2769,7 @@ body.html .paragraph-image-right img,
 .episode-content-tab .field-name-field-episode-date .cbf-time .tz .tz-city {
   position: relative;
   float: left;
-  width: 50%;
+  width: 33.33333333%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
@@ -2783,7 +2783,7 @@ body.html .paragraph-image-right img,
 .episode-content-tab .field-name-field-episode-date .cbf-time .tz .tz-time {
   position: relative;
   float: left;
-  width: 41.66666667%;
+  width: 58.33333333%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
