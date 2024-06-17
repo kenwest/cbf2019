@@ -50,31 +50,18 @@
         $site_frontpage = variable_get('site_frontpage', 'node');
         $page = preg_replace('!( href="https://[a-z.]+/)' . $site_frontpage . '(["?])!i', '$1$2', $page);
       }
+
       /*
        * If there is a HubSpot script in this page, replace the <cbf-hubspot-script/>
        * with that script
        */
       $hubspotScript = cbf_hubspot_script_cache();
-      /*
-       * CiviCRM pages may define inline scripts that depend on $scripts. Split the
-       * $page into $fragments (non-script text, <script...>, script text, </script>)
-       * and print non-script $fragments, then $scripts, then script $fragments
-       */
-      $fragments = preg_split('|(</?script[^>]*>)|i', $page, -1, PREG_SPLIT_DELIM_CAPTURE);
-      for ($i = 0; $i < count($fragments); $i += 4) {
-        if ($hubspotScript) {
-          print str_ireplace('<cbf-hubspot-script/>', $hubspotScript, $fragments[$i]);
-        }
-        else {
-          print $fragments[$i];
-        }
+      if ($hubspotScript) {
+        $page = str_ireplace('<cbf-hubspot-script/>', $hubspotScript, $page);
       }
+
+      print $page;
       print $scripts;
-      for ($i = 1; $i < count($fragments); $i++) {
-        if ($i % 4 != 0) {
-          print $fragments[$i];
-        }
-      }
     ?>
     <script src="//maps.googleapis.com/maps/api/js?key=<?php print variable_get('gmap_api_key', theme_get_setting('gmap_key')); ?>" type="text/javascript"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="<?php print base_path() . drupal_get_path('theme', 'rhythm'); ?>/js/placeholder.js"></script><![endif]-->
