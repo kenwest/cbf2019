@@ -4696,8 +4696,14 @@ body.html .paragraph-image-right img,
 /******************
  * Block formatting
  */
-.block {
+.block.block-system,
+.block.block-block,
+.block.block-search,
+.block.block-views .view-content {
   margin-bottom: 75px;
+}
+.block.block-views .view-empty {
+  margin-bottom: 0;
 }
 .block.with-bottom-border {
   padding-bottom: 50px;
