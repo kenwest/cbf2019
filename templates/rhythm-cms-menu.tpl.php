@@ -6,7 +6,7 @@
       <div class="nav-logo-wrap local-scroll">
         <a href="<?php print url('<front>'); ?>" class="logo">
           <?php
-            if ($transparent && $color == 'dark') {
+            if ($color == 'dark') {
               $logo = str_replace('logo', 'logo-white', $logo);
             }
           ?>
