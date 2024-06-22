@@ -436,6 +436,22 @@ body.html {
       z-index: 5;
     }
   }
+
+  .owl-prev,
+  .owl-next {
+
+    &:before {
+      /*
+       * The Previous and Next buttons on the OWL carousel are a mid grey
+       */
+      background-color: @slate-60;
+    }
+
+    i,
+    .svg-inline--fa {
+      position: relative; // Reproduce Rhythm style for .owl-prev .fa and .owl-next .fa
+    }
+  }
 }
 
 /*********
@@ -1863,42 +1879,6 @@ body.html,
        */
       font-weight: 500;
     }
-
-//    .owl-controls {
-//      width: 100vw;
-//      position: absolute;
-//      left: calc(~"(100% - 100vw)/2");
-//      top: 50%;
-//    }
-
-//    .owl-buttons {
-//      position: relative;
-//    }
-
-    .owl-prev,
-    .owl-next {
-//      opacity: 1;
-
-      &:before {
-        /*
-         * The Previous and Next buttons on the OWL carousel are a mid grey
-         */
-        background-color: @slate-60;
-      }
-
-      i,
-      .svg-inline--fa {
-        position: relative; // Reproduce Rhythm style for .owl-prev .fa and .owl-next .fa
-      }
-    }
-
-//    .owl-prev {
-//      left: 0;
-//    }
-
-//    .owl-right {
-//      right: 0;
-//    }
 
     .owl-pagination {
       bottom: @line-height-half;
