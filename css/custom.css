@@ -1316,6 +1316,19 @@ body.html .local-scroll .scroll-down-icon {
   font-size: 50px;
   z-index: 5;
 }
+body.html .owl-prev:before,
+body.html .owl-next:before {
+  /*
+       * The Previous and Next buttons on the OWL carousel are a mid grey
+       */
+  background-color: #a5aebd;
+}
+body.html .owl-prev i,
+body.html .owl-next i,
+body.html .owl-prev .svg-inline--fa,
+body.html .owl-next .svg-inline--fa {
+  position: relative;
+}
 /*********
  * Alerts
  */
@@ -3260,19 +3273,6 @@ body.html .paragraph-image-right img,
        * The In Activity and City fields are bold in an OWL Carousel
        */
   font-weight: 500;
-}
-.view-content .owl-carousel .owl-prev:before,
-.view-content .owl-carousel .owl-next:before {
-  /*
-         * The Previous and Next buttons on the OWL carousel are a mid grey
-         */
-  background-color: #a5aebd;
-}
-.view-content .owl-carousel .owl-prev i,
-.view-content .owl-carousel .owl-next i,
-.view-content .owl-carousel .owl-prev .svg-inline--fa,
-.view-content .owl-carousel .owl-next .svg-inline--fa {
-  position: relative;
 }
 .view-content .owl-carousel .owl-pagination {
   bottom: 12px;

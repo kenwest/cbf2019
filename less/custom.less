@@ -441,6 +441,22 @@ body.html {
       z-index: 5;
     }
   }
+
+  .owl-prev,
+  .owl-next {
+
+    &:before {
+      /*
+       * The Previous and Next buttons on the OWL carousel are a mid grey
+       */
+      background-color: @slate-60;
+    }
+
+    i,
+    .svg-inline--fa {
+      position: relative; // Reproduce Rhythm style for .owl-prev .fa and .owl-next .fa
+    }
+  }
 }
 
 /*********
@@ -1867,22 +1883,6 @@ body.html,
        * The In Activity and City fields are bold in an OWL Carousel
        */
       font-weight: 500;
-    }
-
-    .owl-prev,
-    .owl-next {
-
-      &:before {
-        /*
-         * The Previous and Next buttons on the OWL carousel are a mid grey
-         */
-        background-color: @slate-60;
-      }
-
-      i,
-      .svg-inline--fa {
-        position: relative; // Reproduce Rhythm style for .owl-prev .fa and .owl-next .fa
-      }
     }
 
     .owl-pagination {
