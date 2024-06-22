@@ -64,9 +64,9 @@
               $extraMenuText = 'Give';
               break;
             case 'general':
-              $extraMenuClass = 'chat-menu-item';
-              $extraMenuUrl = "/domain/$domainName/chat";
-              $extraMenuText = 'Schedule a chat';
+              $extraMenuClass = 'about-menu-item';
+              $extraMenuUrl = "/about-us";
+              $extraMenuText = 'What&#039;s a Third Space?';
               break;
           }
         ?>
