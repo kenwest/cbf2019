@@ -2954,7 +2954,18 @@ body.html,
  * Block formatting
  */
 .block {
-  margin-bottom: 3*@line-height-computed; // Vertical spacing between blocks
+
+  // Vertical spacing between blocks
+  &.block-system,
+  &.block-block,
+  &.block-search,
+  &.block-views .view-content {
+    margin-bottom: 3*@line-height-computed;
+  }
+
+  &.block-views .view-empty {
+    margin-bottom: 0;
+  }
 
   &.with-bottom-border {
     padding-bottom: 2*@line-height-computed;
