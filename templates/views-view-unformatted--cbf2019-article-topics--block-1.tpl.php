@@ -9,7 +9,8 @@
  * @ingroup views_templates
  */
 ?>
-<dt>
+<div class="view-content">
+  <dt>
     <a href="#">
       <?php print $title; ?>
     </a>
@@ -19,4 +20,4 @@
       <div class="clearfix <?php print $classes_array[$id]; ?>"><?php print $row; ?></div>
     <?php endforeach; ?>
   </dd>
-</dt>
+</div>
