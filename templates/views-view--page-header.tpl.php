@@ -28,7 +28,8 @@
  */
 ?>
 
-<div id="sticky-wrapper" class="sticky-wrapper" style="height: 75px;">
+<div class="view-content">
+  <div id="sticky-wrapper" class="sticky-wrapper" style="height: 75px;">
   <?php
 
     $domainName = domain_lookup(domain_get_domain()['domain_id'])['machine_name'];
@@ -55,7 +56,7 @@
       ''
     );
   ?>
-</div>
+  </div>
 <?php
   $fid = 0;
   $h2 = '';
@@ -125,3 +126,4 @@
     print '<h2 class="element-invisible">' . $h2 . '</h2>';
   }
 ?>
+</div>

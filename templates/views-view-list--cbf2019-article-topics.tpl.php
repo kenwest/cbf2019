@@ -11,6 +11,10 @@
  * @ingroup views_templates
  */
 
+?>
+  <div class="view-content">
+<?php
+
   $focus = cbf_convert_article_topics_to_focus();
   $firstRow = reset($rows) ?? '';
   $matches = [];
@@ -43,4 +47,6 @@
     print $list_type_suffix;
   }
   print $wrapper_suffix;
+
 ?>
+  </div>

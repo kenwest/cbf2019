@@ -7,6 +7,7 @@
  * @ingroup views_templates
  */
 ?>
+<div class="view-content">
 <?php if (!empty($title)): ?>
   <p class="h3"><?php print $title; ?></p>
 <?php endif; ?>
@@ -15,3 +16,4 @@
     <?php print $row; ?>
   </div>
 <?php endforeach; ?>
+</div>
