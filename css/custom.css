@@ -4718,6 +4718,9 @@ body.html .paragraph-image-right img,
 .block.without-bottom-margin {
   margin-bottom: 0;
 }
+.block.without-bottom-margin.block-views .view-content {
+  margin-bottom: 0;
+}
 .block.small-gap-to-previous-block {
   margin-top: -75px;
 }
