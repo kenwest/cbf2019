@@ -27,7 +27,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-7">
-      <?php $owl_carousel_column_formatting = '</div><div class="col-md-5 col-lg-4 col-lg-offset-1">'; ?>
+      <?php $first_field = true; ?>
       <?php foreach ($fields as $id => $field): ?>
         <?php if (!empty($field->separator)): ?>
           <?php print $field->separator; ?>
@@ -40,8 +40,11 @@
           <?php print preg_replace('/href=\"([^"]+)\"/i', 'href="/' . $row->__cbf_merge_events . '"', $field->content); ?>
         <?php endif; ?>
         <?php print $field->wrapper_suffix; ?>
-        <?php print $owl_carousel_column_formatting; ?>
-        <?php $owl_carousel_column_formatting = ''; ?>
+        <?php if ($first_field): ?>
+    </div>
+    <div class="col-md-5 col-lg-4 col-lg-offset-1">
+          <?php $first_field = false; ?>
+        <?php endif; ?>
       <?php endforeach; ?>
     </div>
   </div>
