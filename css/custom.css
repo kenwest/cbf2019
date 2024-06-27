@@ -3316,12 +3316,15 @@ body.html .paragraph-image-right img,
   height: 100%;
   margin: 0 auto;
 }
+.views-embedded .views-field-title,
 .views-bootstrap-grid-plugin-style .views-field-title,
 .item-carousel-4-view .views-field-title,
 .view-content .views-field-field-details .views-field-title,
+.views-embedded .views-field-field-title,
 .views-bootstrap-grid-plugin-style .views-field-field-title,
 .item-carousel-4-view .views-field-field-title,
 .view-content .views-field-field-details .views-field-field-title,
+.views-embedded .tablefield th,
 .views-bootstrap-grid-plugin-style .tablefield th,
 .item-carousel-4-view .tablefield th,
 .view-content .views-field-field-details .tablefield th {
