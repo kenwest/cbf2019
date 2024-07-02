@@ -1241,15 +1241,18 @@ body.html .main-nav .full-wrapper {
   margin-left: 0;
   margin-right: 0;
 }
+body.html .main-nav .about-menu-item a,
 body.html .main-nav .chat-menu-item a,
 body.html .main-nav .give-menu-item a {
   color: white;
 }
+body.html .main-nav .about-menu-item,
 body.html .main-nav .chat-menu-item {
   padding: 0 14px;
   background-color: #cf2e4f;
 }
 @media (min-width: 1200px) {
+  body.html .main-nav .about-menu-item,
   body.html .main-nav .chat-menu-item {
     padding: 0 28px;
   }
@@ -1258,6 +1261,7 @@ body.html .main-nav .give-menu-item {
   padding: 0 28px;
   background-color: #1c9cd6;
 }
+body.html.domain-christian .main-nav .about-menu-item,
 body.html.domain-christian .main-nav .chat-menu-item {
   background-color: #1c9cd6;
 }

@@ -345,6 +345,7 @@ body.html {
       margin-right: 0; // Move margin to .inner-nav .search-dropdown-list
     }
 
+    .about-menu-item,
     .chat-menu-item,
     .give-menu-item {
       a {
@@ -352,6 +353,7 @@ body.html {
       }
     }
 
+    .about-menu-item,
     .chat-menu-item {
       // Mobile
         padding: 0 @main-nav-item-spacing; // Matches other menu items when mobile-on
@@ -369,8 +371,11 @@ body.html {
   }
 }
 
-body.html.domain-christian .main-nav .chat-menu-item {
-  background-color: @city-blue;
+body.html.domain-christian .main-nav {
+  .about-menu-item,
+  .chat-menu-item {
+    background-color: @city-blue;
+  }
 }
 
 .hs-line-14,
