@@ -217,6 +217,7 @@
               icon: {
                 url: '/sites/all/themes/cbf2019/images/general/map/cluster.png',
                 scaledSize: new google.maps.Size(37, 37),
+                anchor: new google.maps.Point(19, 19),
               },
               label: {
                 text: String(count),
