@@ -210,21 +210,29 @@
           gmInfoWindow.close();
         });
 
-        var gmMarkerClusterer = new MarkerClusterer(
-          gmMap,
-          gmMarkers,
-          {
-            imagePath: '/sites/all/themes/cbf2019/images/general/map/m',
-            gridSize: 20,
-            maxZoom: 15,
+        const gmRenderer = {
+          render: function({count, position}, stats) {
+            return new google.maps.Marker({
+              position,
+              icon: {
+                url: '/sites/all/themes/cbf2019/images/general/map/cluster.png',
+                scaledSize: new google.maps.Size(37, 37),
+              },
+              label: {
+                text: String(count),
+                color: "rgba(255,255,255,0.9)",
+                fontSize: "12px",
+              },
+            });
           }
-        );
-        gmMarkerClusterer.setStyles([{
-          url: '/sites/all/themes/cbf2019/images/general/map/cluster.png',
-          width: 37,
-          height: 37,
-          textColor: 'white'
-        }]);
+        };
+
+        const gmMarkerClusterer = new markerClusterer.MarkerClusterer({
+          map: gmMap,
+          markers: gmMarkers,
+          renderer: gmRenderer,
+          algorithmOptions: { maxZoom: 15 },
+        });
 
         if (
           gmBounds.getNorthEast().lat() - gmBounds.getSouthWest().lat() > 0.01

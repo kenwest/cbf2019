@@ -13,7 +13,7 @@ function cbf2019_preprocess_html(&$variables) {
     array('group' => CSS_THEME)
   );
   drupal_add_js(
-    '//developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js',
+    '//unpkg.com/@googlemaps/markerclusterer/dist/index.min.js',
     array('type' => 'external', 'scope' => 'footer'));
 }
 
