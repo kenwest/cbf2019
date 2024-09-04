@@ -3635,15 +3635,15 @@ body.html .paragraph-image-right img,
  * with other content when hovered over or touched. This is
  * copied from Rhythm's .team-item.
  */
-.views-field.image-plus-hover-overlay .field-content {
+.image-plus-hover-overlay {
   display: block;
   position: relative;
   overflow: hidden;
 }
-.views-field.image-plus-hover-overlay .field-content .overlaid-image img {
+.image-plus-hover-overlay .overlaid-image img {
   width: 100%;
 }
-.views-field.image-plus-hover-overlay .field-content .overlaid-image:after {
+.image-plus-hover-overlay .overlaid-image:after {
   content: " ";
   display: block;
   position: absolute;
@@ -3659,7 +3659,7 @@ body.html .paragraph-image-right img,
   -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
 }
-.views-field.image-plus-hover-overlay .field-content .image-overlay {
+.image-plus-hover-overlay .image-overlay {
   opacity: 0;
   width: 100%;
   position: absolute;
